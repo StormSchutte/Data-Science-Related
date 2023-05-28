@@ -3,7 +3,8 @@
 ########################################
 
 """
-Two Sum: Given an array of integers, can you find the two numbers such that they add up to a specific target?
+Two Sum: Given an array of integers, can you find the two numbers such that
+they add up to a specific target?
 """
 
 
@@ -54,7 +55,8 @@ print(reversed_num)
 ########################################
 
 """
-Can you determine if a given integer is a palindrome without converting the integer to a string?
+Can you determine if a given integer is a palindrome without converting the 
+integer to a string?
 """
 
 
@@ -114,7 +116,8 @@ assert roman_to_int('MCMIV') == 1904
 ########################################
 
 """
-Given a string containing just the characters '(', ')', '{', '}', '[' and ']', can you determine if the input string is valid?
+Given a string containing just the characters '(', ')', '{', '}', '[' and ']',
+ can you determine if the input string is valid?
 """
 
 
@@ -165,7 +168,8 @@ def merge_two_Lists(l1: ListNode, l2: ListNode) -> ListNode:
 # Remove Duplicates from Sorted Array
 ########################################
 """
-Given a sorted array, can you remove the duplicates in-place and return the new length?
+Given a sorted array, can you remove the duplicates in-place and return
+ the new length?
 """
 
 
@@ -233,7 +237,8 @@ def is_valid(nums):
 # Container With Most Water
 ########################################
 """
- How would you find two lines, which together with the x-axis forms a container, such that the container contains the most water?
+ How would you find two lines, which together with the x-axis forms a 
+ container, such that the container contains the most water?
 """
 
 
@@ -382,7 +387,8 @@ def subsets(nums):
 ########################################
 
 """
-Can you find the length of the longest subsequence of a given sequence such that all elements of the subsequence are sorted in increasing order?
+Can you find the length of the longest subsequence of a given sequence such
+ that all elements of the subsequence are sorted in increasing order?
 """
 
 
@@ -438,7 +444,8 @@ def dfs(board, i, j, word):
 ########################################
 
 """
-Can you find all unique combinations in a set of candidates where the candidate numbers sums to a target?
+Can you find all unique combinations in a set of candidates where the 
+candidate numbers sums to a target?
 """
 
 
@@ -504,7 +511,8 @@ print(numIslands(grid))
 ########################################
 
 """
-Given an input string (s) and a pattern (p), implement regular expression matching with support for '.' and '*'?
+Given an input string (s) and a pattern (p), implement regular expression
+ matching with support for '.' and '*'?
 """
 
 
@@ -528,7 +536,8 @@ print(isMatch('aa', 'a*'))
 # Maximum Subarray
 ########################################
 """
-Can you find the contiguous subarray within an array (containing at least one number) which has the largest sum?
+Can you find the contiguous subarray within an array (containing at least one 
+number) which has the largest sum?
 """
 
 
@@ -547,7 +556,8 @@ print(maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]))
 ########################################
 
 """
-Can you retrieve all the values of a binary tree's nodes in the order of Inorder Traversal?
+Can you retrieve all the values of a binary tree's nodes in the order of 
+Inorder Traversal?
 """
 
 
@@ -647,7 +657,8 @@ print(inorder_traversal(deserialized))  # Prints [1, 2, 3]
 ########################################
 
 """
-Given the total number of courses and a list of prerequisite pairs, can you determine if it is possible for you to finish all courses
+Given the total number of courses and a list of prerequisite pairs, can you 
+determine if it is possible for you to finish all courses
 """
 
 
