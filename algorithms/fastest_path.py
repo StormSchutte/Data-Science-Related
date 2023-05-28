@@ -4,10 +4,16 @@ import random
 from collections import defaultdict
 from collections import deque
 
-
 ####################################
 #### Dijkstra's Algorithm ####
 ####################################
+"""
+Dijkstra's Algorithm: Dijkstra's algorithm is a classic and widely-used 
+algorithm for finding the shortest path between nodes in a graph. It is 
+efficient and guarantees the shortest path in a graph with non-negative 
+edge weights.
+
+"""
 def dijkstra(graph, start, end):
     queue = [(0, start)]
     distances = {start: 0}
@@ -36,6 +42,13 @@ def dijkstra(graph, start, end):
 ####################################
 #### A* Algorithm ####
 ####################################
+"""
+A* Algorithm: A* is an informed search algorithm that combines the best 
+features of Dijkstra's algorithm and the Breadth-First Search. It uses a 
+heuristic function to estimate the cost to reach the goal, which allows it 
+to explore the search space more efficiently.
+
+"""
 def heuristic(a, b):
     return abs(a[0] - b[0]) + abs(a[1] - b[1])
 
@@ -71,6 +84,12 @@ def a_star(graph, start, end):
 ####################################
 #### Bellman-Ford Algorithm ####
 ####################################
+"""
+Bellman-Ford Algorithm: The Bellman-Ford algorithm is capable of handling 
+graphs with negative edge weights. It can detect negative weight cycles, 
+making it a valuable tool for applications where negative weights are allowed.
+
+"""
 
 def bellman_ford(graph, start, end):
     distances = {node: float('inf') for node in graph}
@@ -101,6 +120,13 @@ def bellman_ford(graph, start, end):
 ####################################
 #### Floyd-Warshall Algorithm ####
 ####################################
+"""
+Floyd-Warshall Algorithm: The Floyd-Warshall algorithm is an all-pairs shortest 
+path algorithm that finds the shortest paths between all pairs of vertices in 
+a graph. It is especially efficient for dense graphs, where the number of 
+edges is large compared to the number of vertices.
+
+"""
 def floyd_warshall(graph):
     dist = {}
 
@@ -120,6 +146,13 @@ def floyd_warshall(graph):
 ####################################
 #### Johnson's Algorithm ####
 ####################################
+"""
+Johnson's Algorithm: Johnson's algorithm combines Dijkstra's and the 
+Bellman-Ford algorithms to find the shortest paths between all pairs of 
+vertices in a sparse graph, even with negative edge weights, as long as 
+there are no negative weight cycles.
+
+"""
 
 def bellman_ford_with_source(graph, source):
     distances = {node: float('inf') for node in graph}
@@ -164,6 +197,13 @@ def johnson(graph):
 ####################################
 #### Bidirectional Search ####
 ####################################
+"""
+Bidirectional Search: Bidirectional search involves running two simultaneous 
+searches, one forward from the start and one backward from the goal. The 
+searches meet in the middle, which can significantly speed up the search 
+process, especially in large graphs.
+
+"""
 def bidirectional_search(graph, start, end):
     if start == end:
         return [start]
@@ -198,6 +238,13 @@ def bidirectional_search(graph, start, end):
 ####################################
 #### Contraction Hierarchies ####
 ####################################
+"""
+Contraction Hierarchies: Contraction Hierarchies is a technique for 
+preprocessing a graph to accelerate shortest-path queries. It involves 
+contracting nodes in a hierarchical order and adding shortcut edges to 
+maintain shortest-path distances between the remaining nodes.
+
+"""
 def preprocess_contraction_hierarchy(graph):
     order = {node: 0 for node in graph}
     shortcut_count = {node: 0 for node in graph}
@@ -280,6 +327,15 @@ print("Shortest path from 'A' to 'D':", shortest_path)
 ####################################
 #### ALT (A*, Landmarks, and Triangle inequality) algorithm ####
 ####################################
+
+"""
+ALT (A*, Landmarks, and Triangle inequality): The ALT algorithm is an 
+improvement on the A* algorithm. It introduces landmarks and leverages 
+the triangle inequality to produce better heuristic functions, leading to 
+faster search times.
+
+"""
+
 def heuristic(a, b, landmarks):
     return max([abs(l[a] - l[b]) for l in landmarks])
 
@@ -345,6 +401,14 @@ print("Shortest path from 'A' to 'D':", shortest_path)
 ####################################
 #### Ant Colony Optimization (ACO) algorithm ####
 ####################################
+"""
+Ant Colony Optimization (ACO): ACO is a nature-inspired metaheuristic 
+algorithm that simulates the behavior of ants searching for the shortest path 
+between their nest and a food source. It is useful for finding good approximate 
+solutions to complex optimization problems, such as the Traveling Salesman 
+Problem.
+
+"""
 def distance(a, b):
     return math.sqrt((b[0] - a[0]) ** 2 + (b[1] - a[1]) ** 2)
 
@@ -432,6 +496,13 @@ print("Best tour length:", best_tour_length)
 ####################################
 #### D* Lite algorithm ####
 ####################################
+"""
+D* Lite: D* Lite is an incremental heuristic search algorithm designed for 
+pathfinding in dynamic environments. It is an extension of the A* algorithm 
+and can efficiently adapt its solution as the graph changes, making it 
+suitable for applications like robotic navigation.
+
+"""
 
 def neighbors(node, grid):
     x, y = node
