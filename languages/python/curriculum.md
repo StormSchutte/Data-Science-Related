@@ -2,7 +2,11 @@
 # Python Programming | Curriculum
 ### Put together by Storm Schutte
 
+### Python as a language: 
+Python's versatility extends beyond data science. It powers web development frameworks like Django and Flask, facilitates scripting tasks, and supports automation. Its extensive standard library and vibrant community ensure abundant resources. Python's syntax promotes clean, concise code, fostering productivity and collaboration.
 
+### Python in data science: 
+Python is crucial in data science due to its rich ecosystem of libraries like NumPy, Pandas, and scikit-learn. These tools enable efficient data manipulation, analysis, and machine learning. Python's simplicity and readability make it accessible to researchers and industry professionals alike.
 
 ## Module 1: Introduction to Python
 Overview of Python: History and Advantages
