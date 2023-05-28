@@ -20,7 +20,7 @@ out on [LinkedIn](https://www.linkedin.com/in/storm-schutte/).
 
 Happy exploring! 
 
-# Repository Overview
+#  Overview
 
 ## Algorithms
  * Algos for Interviews [View](algorithms/algos_for_interviews.py)
@@ -28,26 +28,29 @@ Happy exploring!
  * 10 most used algos in Data Science [View](algorithms/ten_most_used_algos_in_ds.py)
  * Understanding deep learning layers [View](algorithms/understanding_deep_learning_layers.py)
 
-## Languages
- * Python Programming
-    * Find a Python course with exercises and solutions [here](languages/python)
-    * [Curriculum](languages/python/curriculum.md)
- * R Programming
-    * Coming Soon
-
 ## Models
  * Machine Learning
     * Audio Classification [View](machine_learning_models/audio)
     * Face Detection  [View](machine_learning_models/face_detection)
     * Simple Machine Learning Models [View](machine_learning_models/simple_ml_models)
 
-# Date Related
+## Languages
+ * Python Programming
+    * Find a Python course with exercises and solutions [here](languages/python)
+    * [Curriculum](languages/python/curriculum.md)
+    * [Exercises](languages/python/exercises)
+ * R Programming
+    * Coming Soon
+
+
+
+## Date Related
   * Extracting data from a date [View](data_related/extracting_data)
   * Hadoop Distributed File System (HDFS) [View](data_related/hadoop_hdfs)
     * Watermarking Images [View](data_related/watermarking_data/watermarking_images.py)
   * Watermarking Audio [View](data_related/watermarking_data/watermarking_audio_simple.py)
 
-# Text Book
+## Text Book
  * Data Science Thesaurus [View](text_book/Data Science Thesaurus.pdf)
 
 
