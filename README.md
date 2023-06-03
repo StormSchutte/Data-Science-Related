@@ -25,14 +25,14 @@ Happy exploring!
 ## Algorithms
  * Algos for Interviews [View](algorithms/algos_for_interviews.py)
  * Fastest Path Algos [View](algorithms/fastest_path_algos.py)
- * 10 most used algos in Data Science [View](algorithms/ten_most_used_algos_in_ds.py)
+ * 10 most used algos in Data Science [View](algorithms/ten_most_used_ml_algos_in.py)
  * Understanding deep learning layers [View](algorithms/understanding_deep_learning_layers.py)
 
 ## Models
  * Machine Learning
     * Audio Classification [View](machine_learning_models/audio)
     * Face Detection  [View](machine_learning_models/face_detection)
-    * Simple Machine Learning Models [View](machine_learning_models/simple_ml_models)
+    * Simple Machine Learning Models [View](machine_learning_models/machine_learning_models)
 
 ## Languages
  * Python Programming
