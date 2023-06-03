@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><title>Detecting Malicious URL using Machine Learning | Engineering Education (EngEd) Program | Section</title>
+<meta name="title" content="Detecting Malicious URL using Machine Learning | Engineering Education (EngEd) Program | Section">
+<meta name="description" content="In this tutorial, we will learn how to build a Machine Learning model to detect malicious URLs.">
+<meta name="apple-mobile-web-app-title" content="Detecting Malicious URL using Machine Learning | Engineering Education (EngEd) Program | Section" />
+<meta name="application-name" content="Detecting Malicious URL using Machine Learning | Engineering Education (EngEd) Program | Section" />
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://www.section.io/engineering-education/detecting-malicious-url-using-machine-learning/">
+<meta property="og:title" content="Detecting Malicious URL using Machine Learning">
+<meta property="og:image" content='/engineering-education/detecting-malicious-url-using-machine-learning/hero.jpg'>
+<meta property="og:description" content="In this tutorial, we will learn how to build a Machine Learning model to detect malicious URLs.">
+<meta property="og:site_name" content="Engineering Education (EngEd) Program | Section">
+
+
+<meta name="twitter:site" content="@sectionio">
+<meta name="twitter:creator" content="@sectionio" />
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://www.section.io/engineering-education/detecting-malicious-url-using-machine-learning/">
+<meta property="twitter:title" content="Detecting Malicious URL using Machine Learning | Engineering Education (EngEd) Program | Section">
+<meta property="twitter:description" content="In this tutorial, we will learn how to build a Machine Learning model to detect malicious URLs.">
+<meta property="twitter:image" content='https://www.section.io/engineering-education/detecting-malicious-url-using-machine-learning/hero.jpg'>
+
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Accept-CH" content="DPR,Width,Viewport-Width" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="theme-color" content="#00A86B" />
+
+
+<link rel="dns-prefetch" href="https://www.section.io/engineering-education/">
+<link rel="canonical" href="https://www.section.io/engineering-education/detecting-malicious-url-using-machine-learning/">
+
+
+
+	
+	<link rel="prefetch" href="https://www.section.io/engineering-education/why-devsecops-need-security-as-code/">
+	<link rel="prerender" href="https://www.section.io/engineering-education/why-devsecops-need-security-as-code/">
+	
+	
+	<link rel="prefetch" href="https://www.section.io/engineering-education/getting-started-with-burpsuite/">
+	<link rel="prerender" href="https://www.section.io/engineering-education/getting-started-with-burpsuite/">
+	
+
+
+
+  <script type="application/ld+json">
+  {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "url": "https://www.section.io",
+      "logo": "https://www.section.io/images/logo.png",
+      "sameAs" : [
+      "https://twitter.com/section_io",
+      "https://www.linkedin.com/company/section_io/",
+      "https://github.com/section-engineering-education/engineering-education"
+      ]
+  }
+</script>
+<script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "WebPage",
+      "name" : "Detecting Malicious URL using Machine Learning",
+      "headline" : "Detecting Malicious URL using Machine Learning",
+      "description" : "In this tutorial, we will learn how to build a Machine Learning model to detect malicious URLs.",
+      "url" : "https:\/\/www.section.io\/engineering-education\/detecting-malicious-url-using-machine-learning\/"
+  }
+</script>
+<meta name="robots" content="index, follow" /><meta name="generator" content="Hugo 0.101.0" />
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="apple-touch-icon" href="/favicon.png?v=1">
+<link rel="icon" href="/favicon.ico?v=1">
+
+
+
+<link rel="stylesheet" href="/engineering-education/scss/styles.min.970f203bc8190624ec749f447dcbc1a94b823f74605d30ff267527d22900c49c125f2edef916449844da091635161ddc43f973366f0b81e55b54e8b152d6c5b0.css" integrity="sha512-lw8gO8gZBiTsdJ9EfcvBqUuCP3RgXTD/JnUn0ikAxJwSXy7e&#43;RZEmETaCRY1Fh3cQ/lzNm8LgeVbVOixUtbFsA==">
+
+	
+<script src="https://unpkg.com/@sajari/sdk-js@^2/dist/sajarisdk.umd.production.min.js"></script>
+
+
+<script>
+  let TABNAB_DEBUG = false;
+    setInterval(() => {
+      document.querySelectorAll('a[target="_blank"]:not([rel="noopener"])').forEach((link)=>{
+      link.rel="noopener"
+      TABNAB_DEBUG && console.log(`mitigated tabnabbing for link ${link.href}`);
+      })
+    },300);
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TVKJV5G');</script>
+
+  
+
+<script type="text/javascript">
+  var _sj = _sj || [];
+  _sj.push(['project', '1568234116078614868']);
+  _sj.push(['collection', 'section-io']);
+  (function () {
+    var sj = document.createElement('script');
+    sj.type = 'text/javascript';
+    sj.async = true;
+    sj.src = '//cdn.sajari.net/v2/js/sj.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(sj, s);
+  })();
+</script>
+
+  
+
+<script type="text/javascript" async src="https://play.vidyard.com/embed/v4.js"></script>
+
+
+<script>
+  (function () {
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = 'https://app.termly.io/embed.min.js';
+    s.id = '1bac0735-ac84-43e1-a6aa-7cf7c2c28711';
+    s.setAttribute("data-name", "termly-embed-banner");
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  })();
+</script>
+
+  
+
+<script type="text/javascript">
+window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
+heap.load("892134159");
+</script>
+
+
+
+  
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+
+  <body class="section-articles kind-page type-articles ">
+     
+     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVKJV5G"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <nav id="sectionNav" class="section-nav">
+  <div class="section-nav-inner flex align-center justify-space-between">
+    <div class="section-nav-primary flex align-center">
+      <a href="/" class="section-logo decoration-none">
+        <svg width="117" height="40" aria-label="Section Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <path id="logoc" d="M0 39.174h116.87V.437H0z"/>
+          </defs>
+          <g fill="none" fill-rule="evenodd">
+            <path d="M8.84 27.888l10.95 2.333V9.743L8.84 12.067v15.821zM23.05 34.48L6.215 29.93V10.018l16.81-4.517.024 28.98z" fill="#00A86B"/>
+            <path d="M16.145.622L0 6.478v27.024l16.145 5.857V.622zM2.877 31.915V8.067l10.044-3.1v30.047l-10.044-3.1z" fill="#00A86B"/>
+            <path fill="#038754" d="M16.145 10.515l1.593-.337V6.922l-1.593.427zM16.145 32.613l1.593.43v-3.259l-1.593-.34z"/>
+            <g transform="translate(0 .185)">
+              <path d="M39.904 18.07c-3.144-.454-3.753-1.185-3.753-2.646 0-1.386 1.065-2.369 3.119-2.369 2.051 0 3.136.79 3.48 2.625l2.966-.801c-.64-2.874-2.887-4.344-6.446-4.344-3.778 0-6.313 2.217-6.313 5.166 0 3.376 2.053 4.686 6.388 5.266 2.942.479 3.779 1.109 3.779 2.772 0 1.663-1.42 2.772-3.423 2.772-3.068 0-3.804-1.512-4.031-3.326h-.01l-3.125.844c.523 2.953 2.643 5.002 7.166 5.002 4.006 0 6.668-2.445 6.668-5.57 0-3.603-2.206-4.812-6.465-5.392M50.681 20.816c.304-2.042 1.546-3.276 3.397-3.276 1.902 0 3.068 1.008 3.22 3.276h-6.617zm3.397-5.493c-3.777 0-6.592 2.72-6.592 6.803v.202c0 4.158 2.815 6.703 6.719 6.703 3.398 0 5.655-1.513 6.085-4.284h-2.966c-.229 1.285-1.192 2.016-3.044 2.016-2.281 0-3.549-1.412-3.65-3.906h9.71v-.882c0-4.712-2.966-6.652-6.262-6.652zM68.506 26.687c-2.257 0-3.677-1.512-3.677-4.384V22.1c0-2.721 1.496-4.334 3.6-4.334 1.623 0 2.79.731 3.043 2.494h2.967c-.355-3.628-3.12-4.938-6.06-4.938-3.702 0-6.693 2.646-6.693 6.829v.2c0 4.209 2.89 6.679 6.693 6.679 3.6 0 5.908-2.142 6.136-5.166H71.7c-.177 1.865-1.571 2.822-3.194 2.822M79.369 24.822v-6.929h2.916V15.6h-2.916v-4.236l-3.068.83V25.1c0 2.494 1.369 3.905 4.006 3.905.938 0 1.597-.15 2.079-.327v-2.42c-.43.177-.888.253-1.496.253-.963 0-1.521-.53-1.521-1.689" fill="#000"/>
+              <mask id="logod" fill="#fff">
+                <use xlink:href="#logoc"/>
+              </mask>
+              <path fill="#000" mask="url(#logod)" d="M84.719 28.779h3.068V15.6h-3.068zM100.085 22.277c0 2.696-1.37 4.385-3.652 4.385-2.332 0-3.676-1.689-3.676-4.385v-.201c0-2.721 1.394-4.36 3.676-4.36s3.652 1.664 3.652 4.385v.176zm-3.652-6.954c-3.905 0-6.82 2.72-6.82 6.803v.202c0 4.007 2.89 6.703 6.795 6.703 3.904 0 6.82-2.672 6.82-6.779v-.201c0-4.032-2.916-6.728-6.795-6.728zM112.332 15.323c-2.18 0-3.651 1.083-4.285 2.368v-2.09h-3.068v13.178h3.068v-7.762c0-2.09 1.394-3.15 3.118-3.15 1.826 0 2.637.907 2.637 2.899v8.013h3.068v-8.29c0-3.63-1.876-5.166-4.538-5.166M84.719 13.792h3.068v-3.049h-3.068z"/>
+            </g>
+          </g>
+        </svg>
+      </a>
+      <div style="position: relative;" class="section-nav-primary-uncollapsed">
+        
+        <ul class="section-nav-main list-flex">
+          <li><a href="https://www.section.io/docs/" class="text-16 text-link decoration-none">Docs</a></li>
+          <li class="has-dropdown relative"><a class="text-16 text-link decoration-none"><span>Resources</span></a>
+            <ul class="section-nav-main-dropdown list-unstyled fill-white xs-pt-10 xs-pb-5 absolute flex xs-flex-column">
+              <li class="xs-mb-10"><a class="decoration-none text-15 text-color" href="/blog/?utm_source=enged&utm_campaign=article&utm_medium=organic">Blog</a></li>
+              <li class="xs-mb-10"><a class="decoration-none text-15 text-color" href="/edge-compute-content-resources/?utm_source=enged&utm_campaign=article&utm_medium=organic">Content Library</a></li>
+              <li class="xs-mb-10"><a class="decoration-none text-15 text-color" href="/engineering-education/?utm_source=enged&utm_campaign=article&utm_medium=organic">Engineering Education</a></li>
+              <li class="xs-mb-10"><a class="decoration-none text-15 text-color" href="/about/?utm_source=enged&utm_campaign=article&utm_medium=organic">About</a></li>
+            </ul>
+          </li>
+          <li><a href="https://www.section.io/pricing/?utm_source=enged&utm_campaign=article&utm_medium=organic" class="text-16 text-link decoration-none">Pricing</a></li>
+        </ul>
+        
+      </div>
+    </div>
+    
+    <div class="section-nav-secondary flex align-center">
+    </div>
+    
+    <div class="section-nav-triggers">
+      <div class="section-nav-triggers-show pointer"><span class="text-15-semi text-black"><svg width="24" height="17" xmlns="http://www.w3.org/2000/svg">
+        <g fill="#09090B" fill-rule="nonzero">
+          <path d="M0 0h24v3H0zM0 7h24v3H0zM0 14h24v3H0z"/>
+        </g>
+      </svg></span></div>
+    </div>
+  </div>
+  <div class="section-nav-mobile fill-green">
+    <div class="section-nav-mobile-wrap">
+      
+      <a href="/" class="section-logo decoration-none">
+      
+        <svg width="117" height="39" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+          <path id="a" d="M0 38.884h117V.057H0z"/>
+        </defs>
+        <g fill="none" fill-rule="evenodd">
+          <path d="M16 0L0 5.897v27.206L16 39V0zM2.85 31.505V7.495l9.956-3.12v3.27L6.159 9.46v20.046l6.647 1.826v3.294l-9.955-3.12zm5.911-4.054V11.523l4.045-.872v17.676L8.76 27.45zM22.978 5L18 6.422V9.68l1.93-.436V29.74L18 29.3v3.262L23 34z" fill="#FFF"/>
+          <g>
+            <path d="M39.948 17.753c-3.147-.455-3.756-1.187-3.756-2.652 0-1.39 1.065-2.374 3.121-2.374 2.054 0 3.14.791 3.486 2.631l2.968-.803c-.64-2.88-2.89-4.354-6.454-4.354-3.781 0-6.32 2.223-6.32 5.178 0 3.384 2.056 4.697 6.396 5.278 2.945.48 3.783 1.111 3.783 2.778s-1.422 2.779-3.427 2.779c-3.071 0-3.808-1.516-4.036-3.334h-.01l-3.128.847c.524 2.96 2.646 5.012 7.174 5.012 4.01 0 6.676-2.45 6.676-5.581 0-3.612-2.209-4.824-6.473-5.405M50.737 20.506c.305-2.046 1.548-3.284 3.402-3.284 1.903 0 3.07 1.01 3.223 3.284h-6.625zM54.14 15c-3.783 0-6.6 2.727-6.6 6.82v.201c0 4.167 2.817 6.718 6.726 6.718 3.401 0 5.661-1.515 6.092-4.293h-2.97c-.228 1.288-1.193 2.02-3.046 2.02-2.284 0-3.554-1.414-3.655-3.915h9.722v-.884c0-4.723-2.97-6.667-6.27-6.667zM68.582 26.39c-2.26 0-3.68-1.515-3.68-4.394v-.202c0-2.728 1.497-4.344 3.604-4.344 1.624 0 2.792.732 3.045 2.5h2.97C74.167 16.313 71.4 15 68.456 15c-3.706 0-6.701 2.652-6.701 6.844v.202c0 4.218 2.894 6.693 6.7 6.693 3.606 0 5.915-2.147 6.144-5.177H71.78c-.178 1.869-1.574 2.828-3.198 2.828M79.457 24.521v-6.945h2.919v-2.298h-2.92v-4.246l-3.07.831V24.8c0 2.5 1.37 3.915 4.01 3.915.94 0 1.599-.152 2.081-.328V25.96c-.43.177-.888.253-1.497.253-.965 0-1.523-.53-1.523-1.693" fill="#FFF"/>
+            <mask id="b" fill="#fff">
+              <use xlink:href="#a"/>
+            </mask>
+            <path fill="#FFF" mask="url(#b)" d="M84.813 28.487h3.071v-13.21h-3.071zM100.196 21.97c0 2.703-1.372 4.395-3.656 4.395-2.335 0-3.68-1.692-3.68-4.395v-.202c0-2.727 1.396-4.369 3.68-4.369 2.284 0 3.656 1.667 3.656 4.395v.176zM96.54 15c-3.909 0-6.828 2.727-6.828 6.82v.201c0 4.016 2.894 6.718 6.803 6.718s6.827-2.677 6.827-6.794v-.202c0-4.04-2.918-6.743-6.802-6.743zM112.457 15c-2.183 0-3.656 1.086-4.29 2.374v-2.096h-3.071v13.209h3.07v-7.78c0-2.096 1.397-3.156 3.123-3.156 1.828 0 2.64.909 2.64 2.904v8.032H117v-8.31c0-3.637-1.879-5.177-4.543-5.177M84.813 13.466h3.071V10.41h-3.071z"/>
+          </g>
+        </g>
+      </svg>
+      
+      </a>
+      
+      <div class="section-nav-triggers-close pointer"><span> <svg width="20" height="19" xmlns="http://www.w3.org/2000/svg">
+        <g fill="#FFF" fill-rule="nonzero">
+          <path d="M2.575-.046l16.97 16.97-2.12 2.122L.455 2.076z"/>
+          <path d="M17.425-.046L.455 16.924l2.12 2.122 16.97-16.97z"/>
+        </g>
+      </svg></span></div>
+    </div>
+    <div class="section-nav-mobile-inner">
+      <ul class="section-nav-mobile-inner-main list-unstyled pt-5">
+      <li class="has-dropdown xs-mb-20"><span class="text-white decoration-none title-4-menu xs-pb-20 section-nav-mobile-inner-main-noclick"><span>Resources</span></span>
+        <div class="section-nav-mobile-dropdown xs-mt-10 pr-10">
+            <div class="pointer-wrapper">
+              <div class="pointer-object -flip">
+                <svg width="17" height="12" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.642 1.071l-7.07 8.071L1.5 1.072" fill-rule="nonzero" stroke="#FFF" stroke-width="3" fill="none"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <ul class="section-nav-mobile-drop list-unstyled fill-white xs-pt-20 xs-pb-10 xs-mt-10">
+            <li class="xs-mb-10"><a class="text-20-regular text-color decoration-none" href="/blog/?utm_source=enged&utm_campaign=article&utm_medium=organic">Blog</a></li>
+            <li class="xs-mb-10"><a class="text-20-regular text-color decoration-none" href="/edge-compute-content-resources/?utm_source=enged&utm_campaign=article&utm_medium=organic">Content Library</a></li>
+            <li class="xs-mb-10"><a class="text-20-regular text-color decoration-none" href="/engineering-education/?utm_source=enged&utm_campaign=article&utm_medium=organic">Engineering Education</a></li>
+            <li class="xs-mb-10"><a class="text-20-regular text-color decoration-none" href="/about/?utm_source=enged&utm_campaign=article&utm_medium=organic">About Section</a></li>
+          </ul>
+        </li>
+
+        <li class="xs-mb-20">
+          <a href="https://www.section.io/docs/" class="text-white decoration-none xs-pb-20 title-4-menu"><span>Docs</span></a>
+        </li>
+        <li class="xs-mb-20"><a href="https://section.io/pricing/?utm_source=enged&utm_campaign=article&utm_medium=organic" class="text-white decoration-none title-4-menu xs-pb-20"><span>Pricing</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="main-wrapper fill-white xs-mt-80"> 
+
+
+<div class="sticky-wrapper">
+  <aside class="author-sidebar" id="stickyAuthorSidebar">
+    <h4>EngEd Author Bio</h4>
+    
+    <div class="author-header">
+      
+      <div class="img-wrap">
+        <img class="avatar" src="https://www.section.io/engineering-education/authors/bravin-wasike/avatar_hu9e360aed936d44d536c46de716025f11_47581_180x0_resize_q75_box.jpg">
+      </div>
+      
+      <div class="author-info">
+        <h3>
+          <a class="link-basic" href="https://www.section.io/engineering-education/authors/bravin-wasike/">Bravin Wasike</a>
+        </h3>
+        <div class="bio"><p>Bravin wasike holds an undergraduate degree in Software Engineering. He is currently a freelance data scientist and machine learning engineer. He is passionate about machine learning and deploying models to production using Docker and Kubernetes. Bravin also loves writing articles on machine learning and various advances in the technological industry. He spends most of his time doing research and learning new skills in order to solve different problems.</p>
+</div>
+      </div>
+    </div>
+    <a class="sidebar-profile-link" href="https://www.section.io/engineering-education/authors/bravin-wasike/"
+      >View author's full profile
+      <img
+        src="/engineering-education/images/right-arrow.png"
+        alt="View authors profile arrow icon"
+    /></a>
+    <div class="author-cta fill-dark">
+      <p class="text-16 text-white">Deploy your apps to a supercloud in a few clicks</p>
+      <p class="text-16">
+        <a href="https://www.section.io/?utm_source=enged&utm_campaign=article&utm_medium=organic">Try It For Free</a>
+      </p>
+    </div>
+    
+  </aside>
+</div>
+
+<article>
+  <div class="engEd-banner fill-dark">
+  <div class="copy">
+    <h2 class="text-white">Deploy your apps to a supercloud in a few clicks</h2>
+    <p class="text-16 text-white">This Engineering Education program is supported by Section. Instantly deploy your GitHub apps, Docker containers or K8s namespaces to a supercloud.</p>
+    <p class="text-16">
+      <a href="https://www.section.io/?utm_source=enged&utm_campaign=article&utm_medium=organic">Try It For Free</a>
+    </p>
+  </div>
+</div>
+
+  <section
+    class="hero-blocks xs-pt-50 xs-pb-50 sm-pt-100 sm-pb-100 -blue-blocks"
+  >
+    <div class="section-container relative">
+      <div class="hero-blocks-inner relative prl-5">
+        <div class="hero-blocks-middle">
+          <h1 class="title-2 xs-mb-30">Detecting Malicious URL using Machine Learning</h1>
+          <h5 class="text-16 text-blockquote">
+            January 20, 2022
+          </h5>
+          
+          <ul class="list-flex xs-mt-8 topics">
+            <li class="xs-mr-6 text-18-regular">Topics:</li>
+            <li class="xs-mr-6 topic">
+              <a
+                class="text-18-regular text-light-blue decoration-none"
+                href="/engineering-education/topic/machine-learning/"
+                >Machine Learning</a
+              >
+            </li>
+            
+          </ul>
+
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-rich-text blog-styling xs-pb-30">
+    <div class="section-container">
+      <div class="section-rich-text-inner prl-5">
+        <div class="social-list">
+          <a class="social-list-twitter" href=""></a>
+          <a class="social-list-linkedin" href=""></a>
+          <a class="social-list-facebook" href=""></a>
+        </div>
+        <div class="social-list">
+          <div class="addthis_inline_share_toolbox"></div>
+        </div>
+        <div class="section-rich-text-leading"><p>A malicious URL is a website link that is designed to promote virus attacks, phishing attacks, scams, and fraudulent activities. When a user clicks a malicious URL they can download computer viruses such as trojan horses, ransomware, worms, and spyware.</p>
+<p>The end goal of these viruses is to access personal information, damage the user&rsquo;s device, and for financial gain. They may also destroy the company&rsquo;s network, leading to losses.</p>
+<p>A malicious URL can also be used to lure people to submit their personal information on a fake website. This makes these people share their personal and sensitive information with unknown people. They use the information for an ulterior motive. The harm caused by these malicious URLs can be very large.</p>
+<p>In this tutorial, we will build a machine learning model that can be able to detect these malicious URLs. We will train our model using a dataset with URLs labeled both <code>bad</code> and <code>good</code>. We will build the model using <a href="https://scikit-learn.org/stable/">Scikit-learn</a> Python library.</p>
+<h3 id="table-of-contents">Table of contents</h3>
+<ul>
+<li><a href="#prerequisites">Prerequisites</a></li>
+<li><a href="#exploring-our-dataset">Exploring our dataset</a></li>
+<li><a href="#loading-dataset">Loading dataset</a></li>
+<li><a href="#dataset-cleaning">Dataset cleaning</a></li>
+<li><a href="#features-and-labels">Features and labels</a></li>
+<li><a href="#importing-packages">Importing packages</a></li>
+<li><a href="#convert-the-text-data-into-a-vectors-of-numbers">Convert the text data into a vectors of numbers</a></li>
+<li><a href="#dataset-splitting">Dataset splitting</a></li>
+<li><a href="#model-building-using-logisticregression">Model building using LogisticRegression</a></li>
+<li><a href="#fitting-algorithm">Fitting algorithm</a></li>
+<li><a href="#calculating-the-model's-accuracy-score">Calculating the model&rsquo;s accuracy score</a></li>
+<li><a href="#making-predictions">Making predictions</a></li>
+<li><a href="#another-prediction">Another prediction</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>To understand this tutorial easily, a reader should:</p>
+<ul>
+<li>Have <a href="/engineering-education/python-projects-for-beginners/">Python programming</a> skills.</li>
+<li>Understand <a href="/engineering-education/house-price-prediction/">machine learning</a> processes.</li>
+<li>Have some <a href="/engineering-education/nlp-based-detection-model-using-neattext-and-scikit-learn">natural language processing</a> knowledge.</li>
+<li>Know some <a href="https://scikit-learn.org/stable/">Scikit-learn</a> algorithms.</li>
+<li>Code using <a href="https://research.google.com/">Google Colab notebook</a>.</li>
+</ul>
+<h3 id="exploring-our-dataset">Exploring our dataset</h3>
+<p>To build this model, we will use a dataset with URLs labeled both <code>bad</code> and <code>good</code>. The model will learn from the dataset and gain useful knowledge which it will use to make predictions. The dataset is shown below.</p>
+<p><img src="/engineering-education/detecting-malicious-url-using-machine-learning/dataset-used.jpg" alt="Dataset used"></p>
+<p>The URLs dataset can be downloaded from <a href="https://drive.google.com/file/d/18QthCgAj-ENJ1U7ky0f6HWtpXXFgp0eO/view?usp=sharing">here.</a></p>
+<p>After successfully downloading the URLs dataset, we can now load this dataset into our notebook.</p>
+<h3 id="loading-dataset">Loading dataset</h3>
+<p>We will use the Pandas package to load our package. To import Pandas, use the following code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span></code></pre></div><p>We can now load the dataset using the following code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>urls_data <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;urldata.csv&#34;</span>)
+</span></span></code></pre></div><p>After loading the dataset, let&rsquo;s see how it is structured using the following code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>urls_data<span style="color:#f92672">.</span>head()
+</span></span></code></pre></div><p>The output is shown below:</p>
+<p><img src="/engineering-education/detecting-malicious-url-using-machine-learning/dataset-structure.jpg" alt="Dataset structure"></p>
+<p>From the image above, the dataset has two columns. The first column is <code>url</code> which represents the actual ULR links. The second column is <code>label</code> which contains both <code>bad</code> and <code>good</code> URLs.</p>
+<p>From here, we now need to clean our dataset to make it ready to be used by our model during training.</p>
+<h3 id="dataset-cleaning">Dataset cleaning</h3>
+<p>Dataset cleaning involves removing noise from our dataset. Noise is unnecessary characters in the text data, punctuations, and repetitive words.</p>
+<p>Removing noise from our dataset will enable the model to focus only on the most important information in the dataset. This will increase the model performance. The model will be able to make accurate predictions.</p>
+<p>In this tutorial, we will first split the texts, then remove repetitions in the dataset. Finally, we will remove the <code>com</code> from each URL.</p>
+<p>We will create a custom Python function to clean our dataset. The function is shown below.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">makeTokens</span>(f):
+</span></span><span style="display:flex;"><span>    tkns_BySlash <span style="color:#f92672">=</span> str(f<span style="color:#f92672">.</span>encode(<span style="color:#e6db74">&#39;utf-8&#39;</span>))<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39;/&#39;</span>) <span style="color:#75715e"># make tokens after splitting by slash</span>
+</span></span><span style="display:flex;"><span>    total_Tokens <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> tkns_BySlash:
+</span></span><span style="display:flex;"><span>        tokens <span style="color:#f92672">=</span> str(i)<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39;-&#39;</span>) <span style="color:#75715e"># make tokens after splitting by dash</span>
+</span></span><span style="display:flex;"><span>        tkns_ByDot <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,len(tokens)):
+</span></span><span style="display:flex;"><span>            temp_Tokens <span style="color:#f92672">=</span> str(tokens[j])<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39;.&#39;</span>) <span style="color:#75715e"># make tokens after splitting by dot</span>
+</span></span><span style="display:flex;"><span>            tkns_ByDot <span style="color:#f92672">=</span> tkns_ByDot <span style="color:#f92672">+</span> temp_Tokens
+</span></span><span style="display:flex;"><span>        total_Tokens <span style="color:#f92672">=</span> total_Tokens <span style="color:#f92672">+</span> tokens <span style="color:#f92672">+</span> tkns_ByDot
+</span></span><span style="display:flex;"><span>    total_Tokens <span style="color:#f92672">=</span> list(set(total_Tokens))  <span style="color:#75715e">#remove redundant tokens</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#39;com&#39;</span> <span style="color:#f92672">in</span> total_Tokens:
+</span></span><span style="display:flex;"><span>        total_Tokens<span style="color:#f92672">.</span>remove(<span style="color:#e6db74">&#39;com&#39;</span>) <span style="color:#75715e"># removing .com since it occurs a lot of times and it should not be included in our features</span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">return</span> total_Tokens
+</span></span></code></pre></div><p>The function above is named <code>makeTokens</code>. The function is used to split our text by slash, dash, and dot. This will ensure we have a clean text with these unnecessary characters.</p>
+<p>The function will also remove the redundant words in the text. Finally, it removes the <code>com</code> word using the <code>total_Tokens.remove('com')</code> method. The function will then return a clean text.</p>
+<p>After this text cleaning, we now need to add features and labels to our dataset.</p>
+<h3 id="features-and-labels">Features and labels</h3>
+<p>Features are the unique data points in our dataset that are used as input for the model during training. Features are represented by the <code>url</code> column, which is our input column.</p>
+<p>In machine learning, a label is the model&rsquo;s output after prediction. It is represented using the <code>label</code> column. The model&rsquo;s output can either be <code>bad</code> or <code>good</code>.</p>
+<p>To add these features and labels, use this code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>url_list <span style="color:#f92672">=</span> urls_data[<span style="color:#e6db74">&#34;url&#34;</span>]
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> urls_data[<span style="color:#e6db74">&#34;label&#34;</span>]
+</span></span></code></pre></div><p>Let&rsquo;s now start importing the machine learning packages.</p>
+<h3 id="importing-packages">Importing packages</h3>
+<p>To build our machine learning model, we have various Python packages that are essential for this process. We will import all the important packages and explain their functions later.</p>
+<p>To import these packages, use this code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.linear_model <span style="color:#f92672">import</span> LogisticRegression
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.model_selection <span style="color:#f92672">import</span> train_test_split
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.feature_extraction.text <span style="color:#f92672">import</span> TfidfVectorizer
+</span></span></code></pre></div><p>The functions of each of these packages are as follows:</p>
+<p><strong>LogisticRegression</strong></p>
+<p>This is a <a href="https://scikit-learn.org/stable/">Scikit-learn</a> algorithm that we will use to train our model. This algorithm will enable our model to understand patterns and relationships in our dataset. The model will gain useful knowledge and insight, which it will use to make predictions.</p>
+<p><strong>train_test_split</strong></p>
+<p>This is the function in Sklearn model selection for splitting data arrays into two subsets: for training data and for testing data.</p>
+<p><strong>TfidfVectorizer</strong></p>
+<p>This package will enable the model to understand and manipulate text data. Text is a big problem for machines, machines cannot consume text in its raw form. We need to convert text into vectors of numbers that machines can read and understand.</p>
+<p><code>TfidfVectorizer</code> is used to convert the raw text data into vectors of numbers that represents the original text. This text is converted based on the frequency of occurrence of each word in the text data.</p>
+<p>For further reading on how <code>TfidfVectorizer</code> works, read this <a href="https://towardsdatascience.com/text-vectorization-term-frequency-inverse-document-frequency-tfidf-5a3f9604da6d">article</a>.</p>
+<p>Let&rsquo;s now use these packages.</p>
+<h4 id="convert-the-text-data-into-vectors-of-numbers">Convert the text data into vectors of numbers</h4>
+<p>To convert the text data into vectors of numbers, use this code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>vectorizer <span style="color:#f92672">=</span> TfidfVectorizer(tokenizer<span style="color:#f92672">=</span>makeTokens)
+</span></span></code></pre></div><p>We convert the text using <code>TfidfVectorizer</code> and also pass <code>makeTokens</code> as a parameter. <code>makeTokens</code> is the function used to clean our text.</p>
+<p>After converting text, we will save our vectors of numbers into a new variable using the following code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>X <span style="color:#f92672">=</span> vectorizer<span style="color:#f92672">.</span>fit_transform(url_list)
+</span></span></code></pre></div><p>The next step is to split our dataset.</p>
+<h4 id="dataset-splitting">Dataset splitting</h4>
+<p>We will use <code>train_test_split</code> to split our dataset into two sets. One set will be used for model training and the other one will be used for model testing.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>X_train, X_test, y_train, y_test <span style="color:#f92672">=</span> train_test_split(X, y, test_size<span style="color:#f92672">=</span><span style="color:#ae81ff">0.2</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)   
+</span></span></code></pre></div><p>In this code, we have used <code>test_size=0.2</code>. This is the ratio applied when splitting the dataset. The ratio will ensure that <code>80%</code> of the dataset is used to train the model and <code>20%</code> will be used to test the model.</p>
+<p>We can now build the model using the <code>LogisticRegression</code>.</p>
+<h3 id="model-building-using-logisticregression">Model building using LogisticRegression</h3>
+<p>We will initialize the <code>LogisticRegression</code> algorithm using the following code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>logit <span style="color:#f92672">=</span> LogisticRegression()
+</span></span></code></pre></div><p>After initializing the algorithm, we will fit the algorithm onto our training dataset. The model will learn from this dataset.</p>
+<h4 id="fitting-algorithm">Fitting algorithm</h4>
+<p>To fit the algorithm, use this code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>logit<span style="color:#f92672">.</span>fit(X_train, y_train)
+</span></span></code></pre></div><p>This process will train our model and produce the following output.</p>
+<p><img src="/engineering-education/detecting-malicious-url-using-machine-learning/model-training.jpg" alt="Model training"></p>
+<p>The output shows our model trained with all the best parameters. Let&rsquo;s now calculate the accuracy score of our model.</p>
+<h3 id="calculating-the-models-accuracy-score">Calculating the model&rsquo;s accuracy score</h3>
+<p>To calculate the accuracy score, run this code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Accuracy &#34;</span>,logit<span style="color:#f92672">.</span>score(X_test, y_test))
+</span></span></code></pre></div><p>The output is shown below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Accuracy  0.96163771063
+</span></span></code></pre></div><p>The accuracy score is <code>96.164%</code>. This is a very high accuracy score and implies that our model was well trained. The model learned a lot from the dataset during the training phase and can now be used to make predictions.</p>
+<h3 id="making-predictions">Making predictions</h3>
+<p>To make predictions, we will use several URLs and see if the model can classify if the URL is <code>bad</code> or <code>good</code>. The URLs that we will use are shown below.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>X_predict <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;https://www.section.io/engineering-education/&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;https://www.youtube.com/&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;https://www.traversymedia.com/&#34;</span>, 
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;https://www.kleinehundezuhause.com&#34;</span>, 
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;http://ttps://www.mecymiafinance.com&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;https://www.atlanticoceanicoilandgas.com&#34;</span>]
+</span></span></code></pre></div><p>We can run predictions on these URLs using the following code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>X_predict <span style="color:#f92672">=</span> vectorizer<span style="color:#f92672">.</span>transform(X_predict)
+</span></span><span style="display:flex;"><span>New_predict <span style="color:#f92672">=</span> logit<span style="color:#f92672">.</span>predict(X_predict)
+</span></span></code></pre></div><p>From the code above, we use the <code>vectorizer.transform</code> method to convert the text to vectors of numbers. Then we apply the <code>logit.predict</code> method to make the actual predictions.</p>
+<p>To print the prediction results, run this code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(New_predict)
+</span></span></code></pre></div><p>The prediction results are shown below.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span><span style="color:#e6db74">&#39;good&#39;</span> <span style="color:#e6db74">&#39;good&#39;</span> <span style="color:#e6db74">&#39;good&#39;</span> <span style="color:#e6db74">&#39;bad&#39;</span> <span style="color:#e6db74">&#39;bad&#39;</span> <span style="color:#e6db74">&#39;bad&#39;</span><span style="color:#f92672">]</span>
+</span></span></code></pre></div><p>From the prediction results, the model has predicted the first three websites as <code>good</code>. This is a correct prediction because these are known websites. The last websites have been classified as <code>bad</code>.</p>
+<p>Let&rsquo;s make another prediction.</p>
+<h4 id="another-prediction">Another prediction</h4>
+<p>The following are the website URLs.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>X_predict1 <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;www.buyfakebillsonlinee.blogspot.com&#34;</span>, 
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;www.unitedairlineslogistics.com&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;www.stonehousedelivery.com&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;www.silkroadmeds-onlinepharmacy.com&#34;</span> ]
+</span></span></code></pre></div><p>To make the predictions use the following code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>X_predict1 <span style="color:#f92672">=</span> vectorizer<span style="color:#f92672">.</span>transform(X_predict1)
+</span></span><span style="display:flex;"><span>New_predict1 <span style="color:#f92672">=</span> logit<span style="color:#f92672">.</span>predict(X_predict1)
+</span></span><span style="display:flex;"><span>print(New_predict1)
+</span></span></code></pre></div><p>The prediction result is shown below.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span><span style="color:#e6db74">&#39;bad&#39;</span> <span style="color:#e6db74">&#39;bad&#39;</span> <span style="color:#e6db74">&#39;bad&#39;</span> <span style="color:#e6db74">&#39;bad&#39;</span><span style="color:#f92672">]</span>
+</span></span></code></pre></div><p>The model has classified all the URLs as <code>bad</code>. Using this model we are able to classify URLs as either <code>bad</code> or <code>good</code>.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>In this tutorial, we have learned how to detect malicious URLs using machine learning. We started by discussing the negative impact of clicking a malicious URL.</p>
+<p>We learned how to clean our dataset to ensure that it is correctly formatted.</p>
+<p>The Google Colab notebook used in this tutorial can be found <a href="https://colab.research.google.com/drive/1gsHe5AhCPVtsomlydwAfFmGJNTcXdnZ8?usp=sharing">here.</a></p>
+<h3 id="references">References</h3>
+<ul>
+<li><a href="https://scikit-learn.org/stable/">Scikit-learn documentation</a></li>
+<li><a href="https://cheapsslsecurity.com/blog/what-is-a-malicious-url/">What is a malicious URL?</a></li>
+<li><a href="https://colab.research.google.com/drive/1H9ZSa3S6E0inX8zDK9LxDdFbeQ2yNXsr?usp=sharing">Google Colab notebook</a></li>
+<li><a href="/engineering-education/logistic-regression-in-python/">Logistic Regression in Python</a></li>
+</ul>
+<hr>
+<p>Peer Review Contributions by: <a href="/engineering-education/authors/ahmad-mardeni/">Ahmad Mardeni</a></p>
+</div>
+
+        
+      </div>
+    </div>
+  </section>
+  <div class="comments-wrapper">
+    <div id="hyvor-talk-view"></div>
+  </div>
+
+   
+  
+
+  <section class="resource-block section-container xs-mb-40 xs-mt-40 relative">
+    <div class="resource-block-left-large absolute"></div>
+    <div class="resource-block-left-stripes absolute"></div>
+    <div class="resource-block-header text-center">
+      <h2 class="title-3 xs-mb-40 text-link">Similar Articles</h2>
+    </div>
+    <div class="resource-block-inner flex flex-wrap justify-center">
+
+      
+      <a class="decoration-none resource-block-item" href="/engineering-education/probability-predictions-on-multi-class-labels/">
+        <div class="resource-block-item-wrap fill-white flex cta-shadow flex-column">
+          <img src="/engineering-education/probability-predictions-on-multi-class-labels/hero.jpg"  alt="Probability Distributions and their Simulations in R Hero Image"/>
+
+          <div class="resource-block-item-content flex flex-column">
+            <div class="resource-block-item-content-inner pt-5 pb-5 flex flex-column fill-white">
+
+              
+              <p class="text-16 text-blockquote xs-mb-6">
+                Machine Learning
+              </p>
+              
+
+              <h3 class="title-5 text-link xs-mb-40">Guide to Probability Predictions on Multi-class Labels</h3>
+            </div><span class="link-with-arrow-blue text-blue text-18-medium featured-content-item-content-inner-span">Read More</span>
+          </div>
+        </div>
+      </a>
+      
+      <a class="decoration-none resource-block-item" href="/engineering-education/kernel-pca-in-python/">
+        <div class="resource-block-item-wrap fill-white flex cta-shadow flex-column">
+          <img src="/engineering-education/kernel-pca-in-python/hero.jpg"  alt="Kernel PCA in Python example image"/>
+
+          <div class="resource-block-item-content flex flex-column">
+            <div class="resource-block-item-content-inner pt-5 pb-5 flex flex-column fill-white">
+
+              
+              <p class="text-16 text-blockquote xs-mb-6">
+                Machine Learning
+              </p>
+              
+
+              <h3 class="title-5 text-link xs-mb-40">Getting Started with Kernel PCA in Python</h3>
+            </div><span class="link-with-arrow-blue text-blue text-18-medium featured-content-item-content-inner-span">Read More</span>
+          </div>
+        </div>
+      </a>
+      
+      <a class="decoration-none resource-block-item" href="/engineering-education/gaussian-elimination-in-r/">
+        <div class="resource-block-item-wrap fill-white flex cta-shadow flex-column">
+          <img src="/engineering-education/gaussian-elimination-in-r/hero.jpg"  alt="Garbage collection in c# dotnet framework image"/>
+
+          <div class="resource-block-item-content flex flex-column">
+            <div class="resource-block-item-content-inner pt-5 pb-5 flex flex-column fill-white">
+
+              
+              <p class="text-16 text-blockquote xs-mb-6">
+                Machine Learning, Languages
+              </p>
+              
+
+              <h3 class="title-5 text-link xs-mb-40">System of Linear Equations using Gaussian Elimination Algorithm</h3>
+            </div><span class="link-with-arrow-blue text-blue text-18-medium featured-content-item-content-inner-span">Read More</span>
+          </div>
+        </div>
+      </a>
+      
+
+    </div>
+    <div class="resource-block-right-large absolute"></div>
+    <div class="resource-block-right-stripes absolute"></div>
+  </section>
+
+
+</article>
+
+
+<script type="text/javascript">
+  var HYVOR_TALK_WEBSITE = 5716;
+  var HYVOR_TALK_CONFIG = {
+    url: false,
+    id: false,
+  };
+</script>
+
+<script
+  async
+  type="text/javascript"
+  src="//talk.hyvor.com/web-api/embed.js"
+></script>
+
+</div><footer class="section-footer fill-bg" id="mainFooter">
+  <div class="section-container xs-pt-50">
+    
+
+    
+
+    <div class="section-footer-inner flex flex-wrap prl-5">
+      <div class="section-footer-inner-col">
+        <h4 class="title-6 text-link xs-mb-20">Company</h4>
+        <ul class="list-unstyled">
+          <li class="xs-mb-20"><a href="/about/" class="text-16 link-footer decoration-none">About</a></li>
+          <li class="xs-mb-20"><a href="/about/careers/" class="text-16 link-footer decoration-none">Careers</a></li>
+          <li class="xs-mb-20"><a href="/legal-stuff/" class="text-16 link-footer decoration-none">Legals</a></li>
+        </ul>
+      </div>
+
+      <div class="section-footer-inner-col">
+        <h4 class="title-6 text-link xs-mb-20">Resources</h4>
+        <ul class="list-unstyled">
+          <li class="xs-mb-20"><a href="/blog/" class="text-16 link-footer decoration-none">Blog</a></li>
+          <li class="xs-mb-20"><a href="/edge-compute-content-resources/" class="text-16 link-footer decoration-none">Content Library</a></li>
+          <li class="xs-mb-20"><a href="/engineering-education/" class="text-16 link-footer decoration-none">Engineering Education</a></li>
+        </ul>
+      </div>
+
+      <div class="section-footer-inner-col">
+        <h4 class="title-6 text-link xs-mb-20">Support</h4>
+        <ul class="list-unstyled">
+          <li class="xs-mb-20"><a href="/docs/" class="text-16 link-footer decoration-none">Docs</a></li>
+          <li class="xs-mb-20"><a href="https://sectionio-community.slack.com/" class="text-16 link-footer decoration-none" title="(opens new window)">Community Slack</a></li>
+          <li class="xs-mb-20"><a href="https://support.section.io/hc/en-us" class="text-16 link-footer decoration-none">Help & Support</a></li>
+          <li class="xs-mb-20"><a href="/release-notes/" class="text-16 link-footer decoration-none">Release Notes</a></li>
+          <li class="xs-mb-20"><a href="https://status.section.io/" class="text-16 link-footer decoration-none">Platform Status</a></li>
+
+        </ul>
+      </div>
+      <div class="section-footer-inner-col">
+        <a class="button button-nav button-white button-outline" href="/contact-us/">Contact Us</a>
+        <div class="section-footer-inner-col-social list-flex xs-mt-30">
+          <a class="section-footer-inner-col-social-twitter" href="https://twitter.com/sectionio" Title="Section on Twitter"></a>
+          <a class="section-footer-inner-col-social-linkedin" href="https://www.linkedin.com/company/section_io/" Title="Section on LinkedIn"></a>
+          <a class="section-footer-inner-col-social-github" href="https://github.com/section-io/" Title="Section on Github"></a>
+          <a class="section-footer-inner-col-social-slack" href="https://sectionio-community.slack.com/" Title="Section on Slack"></a>
+        </div>
+      </div>
+    </div>
+    <div class="section-footer-bottom prl-5 xs-pt-50">
+      <div class="section-footer-bottom-inner">
+        <p class="text-16 text-light-gray">Section supports many open source projects including:</p>
+        <ul class="section-footer-bottom-inner-logos list-flex align-center xs-mt-20 xs-pb-30">
+          <li class="section-footer-bottom-logo1 xs-mr-20"><a href="https://varnish-cache.org/"><img class="lozad" data-src="/images/footer-logo1.png" alt="varnish cache logo"></a></li>
+          <li class="section-footer-bottom-logo2 xs-mr-20"><a href="https://www.cncf.io/"><img class="lozad" data-src="/images/footer-logo2.png" alt="cloud native computing foundation logo"></a></li>
+          <li class="section-footer-bottom-logo3 xs-mr-20"><a href="https://www.linuxfoundation.org/"><img class="lozad" data-src="/images/footer-logo3.png" alt="the linux foundation logo"></a></li>
+          <li class="section-footer-bottom-logo3 xs-mr-20"><a href="https://www.lfedge.org/"><img class="lozad" data-src="/images/footer-logo4.png" alt="lf edge logo"></a></li>
+        </ul>
+
+        <div class="section-footer-bottom-inner-wrap xs-pt-30 xs-pb-30 flex">
+          <div class="section-footer-bottom-inner-wrap-left">
+            <ul class="list-flex align-center">
+              <li class="xs-mr-30"><a href="/" Title="Section Home Page">
+                <svg width="100" height="34" aria-label="Section Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                  <path id="footera" d="M0 33.436h100V.05H0z"/>
+                </defs>
+                <g fill="none" fill-rule="evenodd" opacity=".6">
+                  <path d="M13.815.1L0 5.148V28.44l13.815 5.048V.1zM2.462 27.071V6.516l8.595-2.67v2.8L5.318 8.199V25.36l5.739 1.563v2.82L2.462 27.07zm5.103-3.47V9.965l3.492-.747V24.35l-3.492-.75zM19.702 4.306L15.177 5.53v2.807l1.755-.376v17.65l-1.755-.376v2.81l4.545 1.237z" fill="#000"/>
+                  <g transform="translate(0 .051)">
+                    <path d="M34.143 15.266c-2.69-.391-3.21-1.021-3.21-2.28 0-1.195.91-2.042 2.668-2.042 1.755 0 2.684.68 2.98 2.263l2.536-.691c-.547-2.477-2.47-3.744-5.516-3.744-3.232 0-5.402 1.911-5.402 4.452 0 2.91 1.757 4.04 5.467 4.54 2.517.412 3.233.955 3.233 2.388 0 1.433-1.215 2.39-2.93 2.39-2.624 0-3.253-1.304-3.448-2.868h-.009l-2.674.729c.448 2.545 2.262 4.31 6.132 4.31 3.428 0 5.706-2.107 5.706-4.8 0-3.105-1.888-4.148-5.533-4.647M43.365 17.633c.26-1.76 1.323-2.823 2.907-2.823 1.627 0 2.625.868 2.755 2.823h-5.662zm2.907-4.735c-3.232 0-5.64 2.346-5.64 5.864v.174c0 3.583 2.408 5.777 5.748 5.777 2.907 0 4.839-1.303 5.207-3.692H49.05c-.195 1.107-1.02 1.738-2.604 1.738-1.952 0-3.037-1.217-3.123-3.367h8.309v-.76c0-4.061-2.539-5.734-5.359-5.734zM58.617 22.693c-1.931 0-3.146-1.303-3.146-3.779v-.174c0-2.345 1.28-3.735 3.081-3.735 1.388 0 2.386.63 2.603 2.15h2.539c-.304-3.127-2.67-4.257-5.186-4.257-3.167 0-5.727 2.28-5.727 5.886v.174c0 3.627 2.473 5.755 5.727 5.755 3.081 0 5.056-1.846 5.25-4.452H61.35c-.151 1.607-1.345 2.432-2.733 2.432M67.912 21.086v-5.972h2.495v-1.977h-2.495v-3.65l-2.625.714v11.124c0 2.15 1.171 3.366 3.428 3.366.803 0 1.366-.13 1.778-.282v-2.085c-.368.152-.759.217-1.28.217-.824 0-1.301-.456-1.301-1.455" fill="#000"/>
+                    <mask id="footerb" fill="#fff">
+                      <use xlink:href="#footera"/>
+                    </mask>
+                    <path fill="#000" mask="url(#footerb)" d="M72.49 24.496h2.625V13.137H72.49zM85.637 18.892c0 2.324-1.172 3.78-3.124 3.78-1.996 0-3.146-1.456-3.146-3.78v-.173c0-2.346 1.194-3.757 3.146-3.757s3.124 1.433 3.124 3.778v.152zm-3.124-5.994c-3.341 0-5.836 2.346-5.836 5.864v.174c0 3.453 2.474 5.777 5.814 5.777 3.341 0 5.836-2.302 5.836-5.842v-.174c0-3.475-2.495-5.799-5.814-5.799zM96.117 12.898c-1.866 0-3.124.934-3.667 2.042v-1.803h-2.625v11.359h2.625v-6.69c0-1.802 1.193-2.714 2.669-2.714 1.562 0 2.256.782 2.256 2.498v6.906H100V17.35c0-3.128-1.606-4.453-3.883-4.453M72.49 11.58h2.625V8.952H72.49z"/>
+                  </g>
+                </g>
+              </svg>
+              </a></li>
+              <li class="text-13 text-light-gray section-footer-bottom-inner-wrap-left-copy">© 2022 Section</li>
+            </ul>
+          </div>
+          <div class="section-footer-bottom-inner-wrap-right flex align-center">
+            <ul class="list-flex section-footer-bottom-inner-wrap-right-list">
+              <li><a href="/legal-stuff/privacy-policy" class="text-13 link-footer decoration-none">Privacy Policy</a></li>
+              <li><a href="/legal-stuff/terms-and-conditions" class="text-13 link-footer decoration-none">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+      
+      
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="https://www.section.io/engineering-education/js/app.min.79bc5bd6ecb2165e0c8d88149acd6b97fe3c208f32bfc32267073d1d854fbf9bcbbeb3d0c95283784d4d3cd72994c0a8c3ba383f9004ccdc1873822e1431d8b4.js" integrity="sha512-ebxb1uyyFl4MjYgUms1rl/48II8yv8MiZwc9HYVPv5vLvrPQyVKDeE1NPNcplMCow7o4P5AEzNwYc4IuFDHYtA=="></script>
+
+
+
+
+<script type="text/javascript" src="https://www.section.io/engineering-education/js/search.min.8298abc85d3bbf6a30e96ba4220b3051e0f2c87c13dde33ca8c82530b924866d95fa5192fe9fe1b29fd6926e97c7f94db11630509968d82eb64cc24e532e6785.js" integrity="sha512-gpiryF07v2ow6WukIgswUeDyyHwT3eM8qMglMLkkhm2V&#43;lGS/p/hsp/Wkm6Xx/lNsRYwUJlo2C62TMJOUy5nhQ=="></script>
+  
+  <script defer type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c813f776d53bc87"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+</html>
