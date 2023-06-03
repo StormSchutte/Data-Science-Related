@@ -32,7 +32,7 @@ Happy exploring!
  * Machine Learning
     * Audio Classification [View](machine_learning_models/audio)
     * Face Detection  [View](machine_learning_models/face_detection)
-    * Simple Machine Learning Models [View](machine_learning_models/simple_ml_models)
+    * Simple Machine Learning Models [View](machine_learning_models/machine_learning_models)
 
 ## Languages
  * Python Programming
