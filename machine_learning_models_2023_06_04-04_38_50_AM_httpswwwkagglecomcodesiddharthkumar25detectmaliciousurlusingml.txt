@@ -1,0 +1,190 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Detect Malicious URL using ML | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="Explore and run machine learning code with Kaggle Notebooks | Using data from Malicious And Benign URLs" />
+  <meta name="turbolinks-cache-control" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="Au5cPZfwN3K/U49P4r&#x2B;HFQ==" type="text/javascript">
+    window["pageRequestStartTime"] = 1685821131167;
+    window["pageRequestEndTime"] = 1685821131458;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+  <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons&display=block"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons&display=block"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="Au5cPZfwN3K/U49P4r&#x2B;HFQ==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+    <link rel="canonical" href="/code/siddharthkumar25/detect-malicious-url-using-ml" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/vendor.css?v=347bcfc883299a7a24f3" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=81f9b0bf40d37d37cc8f" />
+  
+    
+ 
+      <script nonce="Au5cPZfwN3K/U49P4r&#x2B;HFQ==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="Au5cPZfwN3K/U49P4r&#x2B;HFQ==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T7QHS60L4Q', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Notebooks'
+        });
+    </script>
+    <script nonce="Au5cPZfwN3K/U49P4r&#x2B;HFQ==" async src="https://www.googletagmanager.com/gtag/js?id=G-T7QHS60L4Q"></script>
+
+  
+    
+    <meta name="og:url" content="https://kaggle.com/code/siddharthkumar25/detect-malicious-url-using-ml" />
+    <meta property="og:title" content="Detect Malicious URL using ML" />
+    <meta property="og:description" content="Explore and run machine learning code with Kaggle Notebooks | Using data from Malicious And Benign URLs" />
+    <meta property="og:type" content="website" />
+    <meta name="og:image" content="https://storage.googleapis.com/kaggle-avatars/thumbnails/1822344-kg.jpg" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+    <script nonce="Au5cPZfwN3K/U49P4r+HFQ==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Article","author":{"@type":"Person","name":"siddharthkumar25","sameAs":"/siddharthkumar25"},"headline":"Detect Malicious URL using ML","url":"https://www.kaggle.com/code/siddharthkumar25/detect-malicious-url-using-ml","dateModified":"2019-05-31T19:00:22.15Z","datePublished":"2019-05-31T19:00:22.15Z","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.kaggle.com/code/siddharthkumar25/detect-malicious-url-using-ml"},"publisher":{"@type":"Organization","name":"Kaggle","sameAs":"https://www.kaggle.com","logo":{"type":"ImageObject","url":"https://www.kaggle.com/static/images/site-logo.png"}},"image":["https://storage.googleapis.com/kaggle-avatars/thumbnails/1822344-kg.jpg"]}</script>
+
+
+  
+    
+        <link rel="alternate" type="application/json+oembed"
+          href="https://www.kaggle.com/oembed/kernel?url=https%3A%2F%2Fwww.kaggle.com%2Fcode%2Fsiddharthkumar25%2Fdetect-malicious-url-using-ml%3FscriptVersionId%3D14989467"
+          title="Detect Malicious URL using ML" />
+
+
+  
+    
+
+
+    <script nonce="Au5cPZfwN3K/U49P4r&#x2B;HFQ==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="Au5cPZfwN3K/U49P4r&#x2B;HFQ==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="Au5cPZfwN3K/U49P4r+HFQ==" src="/static/assets/runtime.js?v=603aa75426d2f2975c56" data-turbolinks-track="reload"></script>
+  <script nonce="Au5cPZfwN3K/U49P4r+HFQ==" src="/static/assets/vendor.js?v=96642a6758af2c414ac1" data-turbolinks-track="reload"></script>
+  <script nonce="Au5cPZfwN3K/U49P4r+HFQ==" src="/static/assets/app.js?v=44cd576480dad3d979ca" data-turbolinks-track="reload"></script>
+    <script nonce="Au5cPZfwN3K/U49P4r&#x2B;HFQ==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+
+<body data-turbolinks="false">
+  <main>
+    
+
+
+
+
+
+<div id="site-container"></div>
+
+<div id="site-body" class="hide">
+    
+
+
+
+
+<div data-component-name="KernelViewerMaterialContainer" style="display: flex; flex-direction: column; flex: 1 0 auto;"></div><script class="kaggle-component" nonce="Au5cPZfwN3K/U49P4r+HFQ==">var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push({"kernel":{"id":4100693,"title":"Detect Malicious URL using ML","currentRunId":14989467,"mostRecentRunId":14989467,"url":"/code/siddharthkumar25/detect-malicious-url-using-ml","upvoteCount":12,"viewCount":15351,"forkCount":223,"author":{"id":1822344,"displayName":"Siddharth Kumar","userName":"siddharthkumar25","thumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/1822344-kg.jpg","profileUrl":"/siddharthkumar25"},"updatedTime":"2019-05-31T19:00:22.150Z","selfLink":"/kernels/4100693","dockerImagePinningType":"DOCKER_IMAGE_PINNING_TYPE_ORIGINAL","topicId":189858,"slug":"detect-malicious-url-using-ml","canToggleVisibility":true},"kernelRun":{"id":14989467,"kernelId":4100693,"status":"COMPLETE","kernelVersionType":"BATCH","sourceType":"EDITOR_TYPE_NOTEBOOK","language":"LANGUAGE_PYTHON","title":"Detect Malicious URL using ML","dateCreated":"2019-05-31T19:00:21.627Z","dateEvaluated":"2019-05-31T19:00:22.150Z","workerUptimeSeconds":776674,"workerIpAddress":"172.21.0.221   ","scriptLanguageId":9,"scriptLanguageName":"IPython Notebook HTML","renderedOutputUrl":"https://www.kaggleusercontent.com/kf/14989467/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..RfZWSD3PrVhZpn4cX5W5EA.2Q5phnRGYOB6NTXbKnHeFRvEBXjTZpuOApn36EC0hcWqkpbLYneyIgbqgbdzLOj5OzAOx78r3PCwFHqryiID-6v-aIGv1i_zIYLkOpXmP2FhX7QopjpSAa2pBi2lpilOApqWMOBIjCM7FQxHS51sxH1Fuf7irH0ofyQIRVlAoPzQbctk6xjVV7048UWGNt5PrWo49QSpt8DYkoS4_Pq1wF336qz1owl0x4_DnU4uoxDA_Qj9IFVPL-pp6rbcA9GRKGYSGfQFmclYndqSkF1zwvCQT6UKA0YVnZWLeCB0Mr7IuA_cdQPdJY1AWDhybs_oWv87eF-WnVUXtfHMkMziCUiqFSKsWok5ca7hqi29Jci_ZmNd7CRnvil077Q7VItMkI5x3eoE7nTRPTOMA19kzfB2Oh2Isa1c_uV_FsPLcbO53o1jS6FKMm_FDB6THZKoLio1n6y6Qv3pF_VNJfZuZPc6qRKVcBFsjffEPpat6l23UYWtxGTK12mN6HIP_RzUPZB-aU3nZTfhwouJjmATrPPN3nYKPIYfjoifuDPScek_OnIv2rFEsThjhN4PXY0hGKyucZeLajLz0tIf-wDSLEP7M_HXTCJYJi7abRfUzmEHOGoMM51Qwf9c_ckEAHbw6TQ_9aRM3Hnm-hnSpR1D9Q4Ly7mT7zl5yahaY0CYGI63mWmPrk_oGPzfbzuVnJWh.tMruCJUEDCbisdohzq143A/__results__.html?sharingControls=true","isolatorResults":"\u003Cresults\u003E\u003Cdisk_kb_free\u003E4820792\u003C/disk_kb_free\u003E\u003Cdocker_image_digest\u003E2d7668563c0156cd53247c766217fb4926c43fcb11c1828dd60a9abc8a430fa2\u003C/docker_image_digest\u003E\u003Cdocker_image_id\u003Esha256:6769a180236fa3d06bc9840f877a4a4c9f2aa60e63ea1d4e2cfab32c8418e2fe\u003C/docker_image_id\u003E\u003Cdocker_image_name\u003Egcr.io/kaggle-images/python\u003C/docker_image_name\u003E\u003Cexit_code\u003E0\u003C/exit_code\u003E\u003Cfailure_message /\u003E\u003Cinvalid_path_errors\u003EFalse\u003C/invalid_path_errors\u003E\u003Cout_of_memory\u003EFalse\u003C/out_of_memory\u003E\u003Crun_time_seconds\u003E84.4853468389483\u003C/run_time_seconds\u003E\u003Csucceeded\u003ETrue\u003C/succeeded\u003E\u003Ctimeout_exceeded\u003EFalse\u003C/timeout_exceeded\u003E\u003Cused_all_space\u003EFalse\u003C/used_all_space\u003E\u003Cwas_killed\u003EFalse\u003C/was_killed\u003E\u003C/results\u003E","runInfo":{"dockerfileUrl":"https://github.com/Kaggle/docker-python/blob/main/Dockerfile.tmpl","dockerHubUrl":"https://gcr.io/kaggle-images/python","dockerImageDigest":"2d7668563c0156cd53247c766217fb4926c43fcb11c1828dd60a9abc8a430fa2","dockerImageId":"sha256:6769a180236fa3d06bc9840f877a4a4c9f2aa60e63ea1d4e2cfab32c8418e2fe","dockerImageName":"gcr.io/kaggle-images/python","diskKbFree":4820792,"failureMessage":"","runTimeSeconds":84.4853468389483,"succeeded":true},"dockerImageVersionId":25114,"dataSources":[{"sourceType":"DATA_SOURCE_TYPE_DATASET_VERSION","sourceId":461384,"datasetId":211817,"mountSlug":""}],"isInternetEnabled":true,"authorUserId":1822344},"author":{"id":1822344,"displayName":"Siddharth Kumar","userName":"siddharthkumar25","thumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/1822344-kg.jpg","profileUrl":"/siddharthkumar25"},"baseUrl":"/code/siddharthkumar25/detect-malicious-url-using-ml","collaborators":{"owner":{"userId":1822344,"profileUrl":"/siddharthkumar25","thumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/1822344-kg.jpg","name":"Siddharth Kumar","slug":"siddharthkumar25","type":"OWNER"}},"initialTab":"","ouputFilesOwnerInfo":{"kernel":{"kernelId":4100693,"kernelVersionId":14989467,"scope":"siddharthkumar25/detect-malicious-url-using-ml"}},"dataSources":[{"sourceType":"DATA_SOURCE_TYPE_DATASET_VERSION","sourceId":461384,"datasetId":211817,"mountSlug":""}],"renderableDataSources":[{"reference":{"sourceType":"DATA_SOURCE_TYPE_DATASET_VERSION","sourceId":461384,"mountSlug":""},"name":"Malicious And Benign URLs","dataSourceUrl":"/datasets/siddharthkumar25/malicious-and-benign-urls","thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/new-version-temp-images/default-backgrounds-100.png-1822344/dataset-thumbnail.png"}],"versions":[{"id":14989467,"isNotebook":true,"languageName":"Python","lastRunTime":"2019-05-31T19:00:21.627Z","linesDeletedFromPrevious":4,"linesInsertedFromPrevious":9,"runInfo":{"dockerfileUrl":"https://github.com/Kaggle/docker-python/blob/master/Dockerfile","dockerHubUrl":"https://registry.hub.docker.com/u/kaggle/python/","dockerImageId":"sha256:6769a180236fa3d06bc9840f877a4a4c9f2aa60e63ea1d4e2cfab32c8418e2fe","dockerImageName":"gcr.io/kaggle-images/python","failureMessage":"","isValidStatus":true,"runTimeSeconds":84.4853468389483,"succeeded":true,"usedAllSpace":false},"status":"COMPLETE","title":"Detect Malicious URL using ML","url":"/siddharthkumar25/detect-malicious-url-using-ml?scriptVersionId=14989467","versionNumber":2,"hasVersionNumber":true,"versionType":"BATCH"},{"id":14989066,"isNotebook":true,"languageName":"Python","lastRunTime":"2019-05-31T18:46:05.070Z","linesInsertedFromPrevious":381,"runInfo":{"dockerfileUrl":"https://github.com/Kaggle/docker-python/blob/master/Dockerfile","dockerHubUrl":"https://registry.hub.docker.com/u/kaggle/python/","dockerImageId":"sha256:6769a180236fa3d06bc9840f877a4a4c9f2aa60e63ea1d4e2cfab32c8418e2fe","dockerImageName":"gcr.io/kaggle-images/python","failureMessage":"","isValidStatus":true,"runTimeSeconds":85.2123857599945,"succeeded":true,"usedAllSpace":false},"status":"COMPLETE","title":"BinaryClassifier For URLs","url":"/siddharthkumar25/detect-malicious-url-using-ml?scriptVersionId=14989066","versionNumber":1,"hasVersionNumber":true,"versionType":"BATCH"}],"downloadAllFilesUrl":"/code/svzip/14989467","menuLinks":[{"href":"/code/siddharthkumar25/detect-malicious-url-using-ml/code","tab":"code","text":"Code","title":"Code"},{"href":"/code/siddharthkumar25/detect-malicious-url-using-ml/notebook","tab":"notebook","text":"Notebook","title":"Notebook"},{"href":"/code/siddharthkumar25/detect-malicious-url-using-ml/execution","showOnMobile":false,"tab":"execution","text":"Execution Info","title":"Execution Info"},{"href":"/code/siddharthkumar25/detect-malicious-url-using-ml/log","showOnMobile":false,"tab":"log","text":"Log","title":"Log"},{"count":0,"href":"/code/siddharthkumar25/detect-malicious-url-using-ml/data","tab":"data","text":"Input","title":"Input"},{"count":1,"href":"/code/siddharthkumar25/detect-malicious-url-using-ml/comments","showZeroCountExplicitly":true,"tab":"comments","text":"Comments","title":"Comments"}],"callToAction":{"href":"/code/fork-version/14989467","reportEventCategory":"kernels","reportEventType":"anonymousKernelForkCreation","text":"Fork Notebook","title":"Fork Notebook"},"voteButton":{"totalVotes":12,"medalVotes":2,"canUpvote":true,"voters":[{"id":3585446,"displayName":"Jonas Neri","userName":"jonaslneri","thumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/3585446-kg.jpg","profileUrl":"/jonaslneri","performanceTier":"EXPERT"},{"id":4630480,"displayName":"MOHIMEN-AL- TAHSIN","userName":"mohimenaltahsin","thumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","profileUrl":"/mohimenaltahsin"},{"id":4800378,"displayName":"Sumit Banik","userName":"thesumitbanik","thumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/4800378-kg.jpg","profileUrl":"/thesumitbanik"},{"id":6890260,"displayName":"gabriela mazabel","userName":"gabrielamazabel","thumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","profileUrl":"/gabrielamazabel"},{"id":7262526,"displayName":"KK124578","userName":"kk124578","thumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","profileUrl":"/kk124578"},{"id":8064574,"displayName":"Bilal Abu Mokh","userName":"bilalabumokh","thumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","profileUrl":"/bilalabumokh"},{"id":8222499,"displayName":"aceirus","userName":"yeongweeping","thumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/8222499-kg.jpg","profileUrl":"/yeongweeping"},{"id":8457820,"displayName":"Lan Nguyen Duy","userName":"lannguyenduy","thumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","profileUrl":"/lannguyenduy"},{"id":8583357,"displayName":"Vangarde","userName":"vangarde","thumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","profileUrl":"/vangarde"},{"id":9568497,"displayName":"Srinath756","userName":"srinath756","thumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","profileUrl":"/srinath756"},{"id":11000605,"displayName":"Robert Trifan","userName":"trifangrobert","thumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","profileUrl":"/trifangrobert","performanceTier":"CONTRIBUTOR"},{"id":11156093,"displayName":"IbrahimAyoub","userName":"ibrahimayoub92","thumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","profileUrl":"/ibrahimayoub92"}],"showVoters":true,"alwaysShowVoters":true,"kernelId":4100693},"showSharingControls":true,"moderationStatus":"PRIVATED_MODERATION_STATUS_NO_ABUSE"});performance && performance.mark && performance.mark("KernelViewerMaterialContainer.componentCouldBootstrap");</script>
+
+<form action="/code/siddharthkumar25/detect-malicious-url-using-ml" id="__AjaxAntiForgeryForm" method="post"><input name="X-XSRF-TOKEN" type="hidden" value="CfDJ8KCSgn9T1oROnY3CWS6bDdxtIeB82hdgLJaa3yAxxY0dcqEaqjMz_XwliqOB9fLvwYN_taL5_jD_EZu3gaqr5X1C4y2qv0OGe8CwzlpXgBQrAQ" /></form>
+<script nonce="Au5cPZfwN3K/U49P4r&#x2B;HFQ==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: ["Safe.js"],
+    });
+</script>
+<script type="text/javascript" nonce="Au5cPZfwN3K/U49P4r&#x2B;HFQ==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const useProdHosts = ["www.kaggle.com", "admin.kaggle.com"];
+    const subdomain = useProdHosts.includes(window.location.hostname) ? "www" : "staging";
+
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    lib.src = `https://${subdomain}.kaggleusercontent.com/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+</div>
+
+
+
+
+  </main>
+</body>
+
+</html>
