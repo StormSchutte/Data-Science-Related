@@ -11,7 +11,7 @@ It's designed to automatically discover the topics that a set of documents cover
 In LDA, each document is assumed to be a mixture of a small number of topics. 
 The 'topics' are represented as a distribution over a fixed vocabulary. These 
 topics are assumed to be 'latent' attributes, meaning they are not observed but 
-rather inferred from the data.
+rather inferred from the dataset_sites.
 
 The basic idea is that documents are represented as random mixtures over latent
  topics, where each topic is characterized by a distribution of words. 
@@ -71,7 +71,7 @@ class LDAModel:
         of most of the topics, and not any single topic specifically. 
         A low alpha indicates that a document is more likely to contain a 
         mixture of just a few topics. If you set alpha to 'auto', Gensim 
-        will learn the alpha parameter from the data.
+        will learn the alpha parameter from the dataset_sites.
         
         per_word_topics: If set to True, the model also computes a list of 
         topics in order of importance for each word, which can be accessed 

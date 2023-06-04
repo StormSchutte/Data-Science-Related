@@ -8,7 +8,7 @@ import numpy as np
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 
-# Load the data
+# Load the dataset_sites
 # Convert text to numerical values
 # Train the Naive Bayes model
 # Evaluate the model
