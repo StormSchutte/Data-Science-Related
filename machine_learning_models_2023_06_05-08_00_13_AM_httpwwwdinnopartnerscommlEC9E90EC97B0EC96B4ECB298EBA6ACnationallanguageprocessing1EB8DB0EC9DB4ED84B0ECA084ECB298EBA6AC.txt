@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://www.dinnopartners.com/xmlrpc.php">
+
+<title>[ML] 자연어 처리, National Language Processing (1) &#8211; 데이터 전처리 &#8211; DINNO PARTNERS</title>
+
+<!-- WordPress KBoard plugin 5.3.11 - http://www.cosmosfarm.com/products/kboard -->
+<link rel="alternate" href="http://www.dinnopartners.com/wp-content/plugins/kboard/rss.php" type="application/rss+xml" title="DINNO PARTNERS &raquo; KBoard 통합 피드">
+<!-- WordPress KBoard plugin 5.3.11 - http://www.cosmosfarm.com/products/kboard -->
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com'/>
+<link rel='dns-prefetch' href='//s.w.org'/>
+<link rel="alternate" type="application/rss+xml" title="DINNO PARTNERS &raquo; 피드" href="http://www.dinnopartners.com/feed/"/>
+<link rel="alternate" type="application/rss+xml" title="DINNO PARTNERS &raquo; 댓글 피드" href="http://www.dinnopartners.com/comments/feed/"/>
+<link rel="alternate" type="application/rss+xml" title="DINNO PARTNERS &raquo; [ML] 자연어 처리, National Language Processing (1) &#8211; 데이터 전처리 댓글 피드" href="http://www.dinnopartners.com/ml-%ec%9e%90%ec%97%b0%ec%96%b4-%ec%b2%98%eb%a6%ac-national-language-processing-1-%eb%8d%b0%ec%9d%b4%ed%84%b0-%ec%a0%84%ec%b2%98%eb%a6%ac/feed/"/>
+		<script type="text/javascript">window._wpemojiSettings={"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.dinnopartners.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.15"}};!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);</script>
+		<style type="text/css">img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:none!important;padding:0!important}</style>
+	<link rel='stylesheet' id='crayon-css' href='http://www.dinnopartners.com/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=_2.7.2_beta' type='text/css' media='all'/>
+<link rel='stylesheet' id='mec-select2-style-css' href='http://www.dinnopartners.com/wp-content/plugins/modern-events-calendar-lite/assets/packages/select2/select2.min.css?ver=5.3.15' type='text/css' media='all'/>
+<link rel='stylesheet' id='mec-font-icons-css' href='http://www.dinnopartners.com/wp-content/plugins/modern-events-calendar-lite/assets/css/iconfonts.css?ver=5.3.15' type='text/css' media='all'/>
+<link rel='stylesheet' id='mec-frontend-style-css' href='http://www.dinnopartners.com/wp-content/plugins/modern-events-calendar-lite/assets/css/frontend.min.css?ver=5.3.15' type='text/css' media='all'/>
+<link rel='stylesheet' id='mec-tooltip-style-css' href='http://www.dinnopartners.com/wp-content/plugins/modern-events-calendar-lite/assets/packages/tooltip/tooltip.css?ver=5.3.15' type='text/css' media='all'/>
+<link rel='stylesheet' id='mec-tooltip-shadow-style-css' href='http://www.dinnopartners.com/wp-content/plugins/modern-events-calendar-lite/assets/packages/tooltip/tooltipster-sideTip-shadow.min.css?ver=5.3.15' type='text/css' media='all'/>
+<link rel='stylesheet' id='mec-featherlight-style-css' href='http://www.dinnopartners.com/wp-content/plugins/modern-events-calendar-lite/assets/packages/featherlight/featherlight.css?ver=5.3.15' type='text/css' media='all'/>
+<link rel='stylesheet' id='mec-google-fonts-css' href='//fonts.googleapis.com/css?family=Montserrat%3A400%2C700%7CRoboto%3A100%2C300%2C400%2C700&#038;ver=5.3.15' type='text/css' media='all'/>
+<link rel='stylesheet' id='mec-lity-style-css' href='http://www.dinnopartners.com/wp-content/plugins/modern-events-calendar-lite/assets/packages/lity/lity.min.css?ver=5.3.15' type='text/css' media='all'/>
+<link rel='stylesheet' id='sydney-bootstrap-css' href='http://www.dinnopartners.com/wp-content/themes/sydney/css/bootstrap/bootstrap.min.css?ver=1' type='text/css' media='all'/>
+<link rel='stylesheet' id='wp-block-library-css' href='http://www.dinnopartners.com/wp-content/plugins/gutenberg/build/block-library/style.css?ver=1585311160' type='text/css' media='all'/>
+<link rel='stylesheet' id='wpos-slick-style-css' href='http://www.dinnopartners.com/wp-content/plugins/blog-designer-for-post-and-widget/assets/css/slick.css?ver=1.8' type='text/css' media='all'/>
+<link rel='stylesheet' id='bdpw-public-css-css' href='http://www.dinnopartners.com/wp-content/plugins/blog-designer-for-post-and-widget/assets/css/bdpw-public.css?ver=1.8' type='text/css' media='all'/>
+<link rel='stylesheet' id='usp_style-css' href='http://www.dinnopartners.com/wp-content/plugins/user-submitted-posts/resources/usp.css?ver=20191110' type='text/css' media='all'/>
+<link rel='stylesheet' id='contact-form-7-css' href='http://www.dinnopartners.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.6' type='text/css' media='all'/>
+<link rel='stylesheet' id='SFSImainCss-css' href='http://www.dinnopartners.com/wp-content/plugins/ultimate-social-media-icons/css/sfsi-style.css?ver=5.3.15' type='text/css' media='all'/>
+<link rel='stylesheet' id='cssblog-css' href='http://www.dinnopartners.com/wp-content/plugins/wp-blog-and-widgets/css/styleblog.css?ver=1.8.1' type='text/css' media='all'/>
+<link rel='stylesheet' id='sydney-fonts-css' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C400italic%2C600%7CRaleway%3A400%2C500%2C600' type='text/css' media='all'/>
+<link rel='stylesheet' id='sydney-style-css' href='http://www.dinnopartners.com/wp-content/themes/sydney/style.css?ver=20180710' type='text/css' media='all'/>
+<style id='sydney-style-inline-css' type='text/css'>.site-header{background-color:rgba(248,247,247,.9)}.site-title{font-size:32px}.site-description{font-size:16px}#mainnav ul li a{font-size:14px}h1{font-size:52px}h2{font-size:42px}h3{font-size:32px}h4{font-size:25px}h5{font-size:20px}h6{font-size:18px}body{font-size:16px}.single .hentry .title-post{font-size:36px}.header-image{background-size:cover}.header-image{height:100px}.site-header.float-header{background-color:rgba(248,247,247,.9)}@media only screen and (max-width:1024px){.site-header{background-color:#f8f7f7}}.site-title a,.site-title a:hover{color:#000}.site-description{color:#fff}#mainnav ul li a,#mainnav ul li::before{color:#595757}#mainnav .sub-menu li a{color:#fff}#mainnav .sub-menu li a{background:#1c1c1c}.text-slider .maintitle,.text-slider .subtitle{color:#fff}body{color:#47425d}#secondary{background-color:#fff}#secondary,#secondary a{color:#767676}.footer-widgets{background-color:#252525}.btn-menu{color:#fff}#mainnav ul li a:hover{color:#90c31f}.site-footer{background-color:#1c1c1c}.site-footer,.site-footer a{color:#666}.overlay{background-color:#000}.page-wrap{padding-top:0px}.page-wrap{padding-bottom:0px}@media only screen and (max-width:1025px){.mobile-slide{display:block}.slide-item{background-image:none!important}.header-slider{}.slide-item{height:auto!important}.slide-inner{min-height:initial}}@media only screen and (max-width:780px){h1{font-size:32px}h2{font-size:28px}h3{font-size:22px}h4{font-size:18px}h5{font-size:16px}h6{font-size:14px}}</style>
+<link rel='stylesheet' id='sydney-font-awesome-css' href='http://www.dinnopartners.com/wp-content/themes/sydney/fonts/font-awesome.min.css?ver=5.3.15' type='text/css' media='all'/>
+<!--[if lte IE 9]>
+<link rel='stylesheet' id='sydney-ie9-css'  href='http://www.dinnopartners.com/wp-content/themes/sydney/css/ie9.css?ver=5.3.15' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='kboard-editor-media-css' href='http://www.dinnopartners.com/wp-content/plugins/kboard/template/css/editor_media.css?ver=5.3.11' type='text/css' media='all'/>
+<link rel='stylesheet' id='wppb_stylesheet-css' href='http://www.dinnopartners.com/wp-content/plugins/profile-builder/assets/css/style-front-end.css?ver=3.0.9' type='text/css' media='all'/>
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>//<![CDATA[
+var CrayonSyntaxSettings={"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"http:\/\/www.dinnopartners.com\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};var CrayonSyntaxStrings={"copy":"%s\ub85c \ubcf5\uc0ac, %s\ub85c \ubd99\uc5ec\ub123\uae30","minimize":"Click To Expand Code"};
+//]]></script>
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js?ver=_2.7.2_beta'></script>
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-content/plugins/modern-events-calendar-lite/assets/js/jquery.typewatch.js?ver=5.3.15'></script>
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-content/plugins/modern-events-calendar-lite/assets/packages/featherlight/featherlight.js?ver=5.3.15'></script>
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-content/plugins/modern-events-calendar-lite/assets/packages/select2/select2.full.min.js?ver=5.3.15'></script>
+<script type='text/javascript'>//<![CDATA[
+var mecdata={"day":"day","days":"days","hour":"hour","hours":"hours","minute":"minute","minutes":"minutes","second":"second","seconds":"seconds","elementor_edit_mode":"no","recapcha_key":"","ajax_url":"http:\/\/www.dinnopartners.com\/wp-admin\/admin-ajax.php","fes_nonce":"14406fc47a"};
+//]]></script>
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-content/plugins/modern-events-calendar-lite/assets/js/frontend.js?ver=5.3.15'></script>
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-content/plugins/modern-events-calendar-lite/assets/packages/tooltip/tooltip.js?ver=5.3.15'></script>
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-content/plugins/modern-events-calendar-lite/assets/js/events.js?ver=5.3.15'></script>
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-content/plugins/modern-events-calendar-lite/assets/packages/lity/lity.min.js?ver=5.3.15'></script>
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-content/plugins/modern-events-calendar-lite/assets/packages/colorbrightness/colorbrightness.min.js?ver=5.3.15'></script>
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-content/plugins/modern-events-calendar-lite/assets/packages/owl-carousel/owl.carousel.min.js?ver=5.3.15'></script>
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-content/plugins/user-submitted-posts/resources/jquery.cookie.js?ver=20191110'></script>
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-content/plugins/user-submitted-posts/resources/jquery.parsley.min.js?ver=20191110'></script>
+<script type='text/javascript'>var usp_custom_field="usp_custom_field";var usp_custom_checkbox="usp_custom_checkbox";var usp_case_sensitivity="false";var usp_challenge_response="2";var usp_min_images=0;var usp_max_images=1;var usp_parsley_error="\uc798\ubabb\ub41c \uc751\ub2f5\uc785\ub2c8\ub2e4.";var usp_multiple_cats=0;</script>
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-content/plugins/user-submitted-posts/resources/jquery.usp.core.js?ver=20191110'></script>
+<link rel='https://api.w.org/' href='http://www.dinnopartners.com/wp-json/'/>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.dinnopartners.com/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.dinnopartners.com/wp-includes/wlwmanifest.xml"/> 
+<link rel='prev' title='AI/ML 마켓플레이스 – 1. 마켓플레이스 사례 (II)' href='http://www.dinnopartners.com/ai-ml-%eb%a7%88%ec%bc%93%ed%94%8c%eb%a0%88%ec%9d%b4%ec%8a%a4-1-%eb%a7%88%ec%bc%93%ed%94%8c%eb%a0%88%ec%9d%b4%ec%8a%a4-%ec%82%ac%eb%a1%80-ii/'/>
+<link rel='next' title='AI/ML 마켓플레이스 – 1. 마켓플레이스 사례 (III)' href='http://www.dinnopartners.com/ai-ml-%eb%a7%88%ec%bc%93%ed%94%8c%eb%a0%88%ec%9d%b4%ec%8a%a4-1-%eb%a7%88%ec%bc%93%ed%94%8c%eb%a0%88%ec%9d%b4%ec%8a%a4-%ec%82%ac%eb%a1%80-iii/'/>
+<meta name="generator" content="WordPress 5.3.15"/>
+<link rel="canonical" href="http://www.dinnopartners.com/ml-%ec%9e%90%ec%97%b0%ec%96%b4-%ec%b2%98%eb%a6%ac-national-language-processing-1-%eb%8d%b0%ec%9d%b4%ed%84%b0-%ec%a0%84%ec%b2%98%eb%a6%ac/"/>
+<link rel='shortlink' href='http://www.dinnopartners.com/?p=2544'/>
+<link rel="alternate" type="application/json+oembed" href="http://www.dinnopartners.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.dinnopartners.com%2Fml-%25ec%259e%2590%25ec%2597%25b0%25ec%2596%25b4-%25ec%25b2%2598%25eb%25a6%25ac-national-language-processing-1-%25eb%258d%25b0%25ec%259d%25b4%25ed%2584%25b0-%25ec%25a0%2584%25ec%25b2%2598%25eb%25a6%25ac%2F"/>
+<link rel="alternate" type="text/xml+oembed" href="http://www.dinnopartners.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.dinnopartners.com%2Fml-%25ec%259e%2590%25ec%2597%25b0%25ec%2596%25b4-%25ec%25b2%2598%25eb%25a6%25ac-national-language-processing-1-%25eb%258d%25b0%25ec%259d%25b4%25ed%2584%25b0-%25ec%25a0%2584%25ec%25b2%2598%25eb%25a6%25ac%2F&#038;format=xml"/>
+<style>.woocommerce .products ul,.woocommerce ul.products{margin:0 0 0em}img.zoomImg{display:inline!important}</style>
+
+<script>jQuery(document).ready(function($){if(''){jQuery.extend(jQuery.lazyLoadXT,{srcAttr:'data-src',visibleOnly:false,updateEvent:'load orientationchange resize scroll touchmove focus hover'});}
+disableClick($);setTimeout(function(){resizeImg($);jQuery('a.woocommerce-product-gallery__trigger').css('visibility','visible');},2500);});jQuery(window).on('ajaxComplete',function(){if(''){setTimeout(function(){jQuery(window).lazyLoadXT();},300);}});jQuery(window).on('load',function(){jQuery('.flex-viewport').css('height','100%');});function resizeImg($){var imgSelector=".post img, .page img, .widget-content img, .product img, .wp-admin img, .tax-product_cat img, .fifu img";var resizeImage=function(sSel){jQuery(sSel).each(function(){var width=$(this)['0'].naturalWidth;var height=$(this)['0'].naturalHeight;jQuery(this).attr('data-large_image_width',width);jQuery(this).attr('data-large_image_height',height);});};resizeImage(imgSelector);}
+function disableClick($){if(''){jQuery('.woocommerce-product-gallery__image').each(function(index){jQuery(this).children().click(function(){return false;});jQuery(this).children().children().css("cursor","default");});}}</script>
+<style>[class$="woocommerce-product-gallery__trigger"]{visibility:hidden}</style><meta name="specificfeeds-verification-code-dzJVZ282aStmTC91WjhtUm1HbUxUOFQ1TW5WZmZ4dmhBanR6Y0NtNlFuYjdyeWh6anE5MlN0clc0VTBsb2d1a3FHK2FhaC82dXF3UUlFTzFDaWsxRmp6Y2Y2aFdLeEYweEgrWW9WcFdxL1lIMnZUNEhJdWpHaFZoOVN1NUNybEJ8YWY3aU9XWFNsZEN2MUFMaXUxZlJrWEZIdGM4OFFqTnN0d0FPdnJpNVI0Zz0=" content="6RMDT81PULXFPJzSTzZ3"/><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="http://www.dinnopartners.com/wp-content/uploads/2019/12/cropped-logo_icon-32x32.png" sizes="32x32"/>
+<link rel="icon" href="http://www.dinnopartners.com/wp-content/uploads/2019/12/cropped-logo_icon-192x192.png" sizes="192x192"/>
+<link rel="apple-touch-icon-precomposed" href="http://www.dinnopartners.com/wp-content/uploads/2019/12/cropped-logo_icon-180x180.png"/>
+<meta name="msapplication-TileImage" content="http://www.dinnopartners.com/wp-content/uploads/2019/12/cropped-logo_icon-270x270.png"/>
+		<style type="text/css" id="wp-custom-css">.site-info.container{display:none}.footer-widgets{padding-top:20px;padding-bottom:0}.post-title.entry-title{display:none}</style>
+		<script type='text/javascript' src='http://www.dinnopartners.com/wp-includes/js/wp-embed.min.js?ver=5.3.15'></script>
+<style id="tt-easy-google-font-styles" type="text/css">p{}h1{}h2{}h3{}h4{}h5{}h6{}</style></head>
+
+<body class="post-template-default single single-post postid-2544 single-format-standard group-blog elementor-default">
+
+	<div class="preloader">
+	    <div class="spinner">
+	        <div class="pre-bounce1"></div>
+	        <div class="pre-bounce2"></div>
+	    </div>
+	</div>
+	
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		
+	<div class="header-clone"></div>
+
+	
+	<header id="masthead" class="site-header" role="banner">
+		<div class="header-wrap">
+            <div class="container">
+                <div class="row">
+				<div class="col-md-4 col-sm-8 col-xs-12">
+		        					<a href="http://www.dinnopartners.com/" title="DINNO PARTNERS"><script pagespeed_no_defer="">//<![CDATA[
+(function(){var g=this,h=function(b,d){var a=b.split("."),c=g;a[0]in c||!c.execScript||c.execScript("var "+a[0]);for(var e;a.length&&(e=a.shift());)a.length||void 0===d?c[e]?c=c[e]:c=c[e]={}:c[e]=d};var l=function(b){var d=b.length;if(0<d){for(var a=Array(d),c=0;c<d;c++)a[c]=b[c];return a}return[]};var m=function(b){var d=window;if(d.addEventListener)d.addEventListener("load",b,!1);else if(d.attachEvent)d.attachEvent("onload",b);else{var a=d.onload;d.onload=function(){b.call(this);a&&a.call(this)}}};var n,p=function(b,d,a,c,e){this.f=b;this.h=d;this.i=a;this.c=e;this.e={height:window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight,width:window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth};this.g=c;this.b={};this.a=[];this.d={}},q=function(b,d){var a,c,e=d.getAttribute("pagespeed_url_hash");if(a=e&&!(e in b.d))if(0>=d.offsetWidth&&0>=d.offsetHeight)a=!1;else{c=d.getBoundingClientRect();var f=document.body;a=c.top+("pageYOffset"in window?window.pageYOffset:(document.documentElement||f.parentNode||f).scrollTop);c=c.left+("pageXOffset"in window?window.pageXOffset:(document.documentElement||f.parentNode||f).scrollLeft);f=a.toString()+","+c;b.b.hasOwnProperty(f)?a=!1:(b.b[f]=!0,a=a<=b.e.height&&c<=b.e.width)}a&&(b.a.push(e),b.d[e]=!0)};p.prototype.checkImageForCriticality=function(b){b.getBoundingClientRect&&q(this,b)};h("pagespeed.CriticalImages.checkImageForCriticality",function(b){n.checkImageForCriticality(b)});h("pagespeed.CriticalImages.checkCriticalImages",function(){r(n)});var r=function(b){b.b={};for(var d=["IMG","INPUT"],a=[],c=0;c<d.length;++c)a=a.concat(l(document.getElementsByTagName(d[c])));if(0!=a.length&&a[0].getBoundingClientRect){for(c=0;d=a[c];++c)q(b,d);a="oh="+b.i;b.c&&(a+="&n="+b.c);if(d=0!=b.a.length)for(a+="&ci="+encodeURIComponent(b.a[0]),c=1;c<b.a.length;++c){var e=","+encodeURIComponent(b.a[c]);131072>=a.length+e.length&&(a+=e)}b.g&&(e="&rd="+encodeURIComponent(JSON.stringify(s())),131072>=a.length+e.length&&(a+=e),d=!0);t=a;if(d){c=b.f;b=b.h;var f;if(window.XMLHttpRequest)f=new XMLHttpRequest;else if(window.ActiveXObject)try{f=new ActiveXObject("Msxml2.XMLHTTP")}catch(k){try{f=new ActiveXObject("Microsoft.XMLHTTP")}catch(u){}}f&&(f.open("POST",c+(-1==c.indexOf("?")?"?":"&")+"url="+encodeURIComponent(b)),f.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),f.send(a))}}},s=function(){var b={},d=document.getElementsByTagName("IMG");if(0==d.length)return{};var a=d[0];if(!("naturalWidth"in a&&"naturalHeight"in a))return{};for(var c=0;a=d[c];++c){var e=a.getAttribute("pagespeed_url_hash");e&&(!(e in b)&&0<a.width&&0<a.height&&0<a.naturalWidth&&0<a.naturalHeight||e in b&&a.width>=b[e].k&&a.height>=b[e].j)&&(b[e]={rw:a.width,rh:a.height,ow:a.naturalWidth,oh:a.naturalHeight})}return b},t="";h("pagespeed.CriticalImages.getBeaconData",function(){return t});h("pagespeed.CriticalImages.Run",function(b,d,a,c,e,f){var k=new p(b,d,a,e,f);n=k;c&&m(function(){window.setTimeout(function(){r(k)},0)})});})();pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','http://www.dinnopartners.com/ml-%EC%9E%90%EC%97%B0%EC%96%B4-%EC%B2%98%EB%A6%AC-national-language-processing-1-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%B2%98%EB%A6%AC/','YddRYU7ik1',true,false,'9CAU_PiIOTQ');
+//]]></script><img class="site-logo" src="http://www.dinnopartners.com/wp-content/uploads/2019/12/header_logo.png" alt="DINNO PARTNERS" pagespeed_url_hash="1409898844" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a>
+		        				</div>
+				<div class="col-md-8 col-sm-4 col-xs-12">
+					<div class="btn-menu"></div>
+					<nav id="mainnav" class="mainnav" role="navigation">
+						<div class="menu-dp-main-container"><ul id="menu-dp-main" class="menu"><li id="menu-item-2164" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2164"><a href="http://www.dinnopartners.com/#home">Home</a></li>
+<li id="menu-item-2160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2160"><a href="http://www.dinnopartners.com/#vision">Vision &#038; Mission</a></li>
+<li id="menu-item-2161" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2161"><a href="http://www.dinnopartners.com/#whatwedo">What We Do</a></li>
+<li id="menu-item-2162" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2162"><a href="http://www.dinnopartners.com/#ourclients">Our Clients</a></li>
+<li id="menu-item-2144" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-2144"><a href="http://www.dinnopartners.com/blog/">Blog</a>
+<ul class="sub-menu">
+	<li id="menu-item-2233" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-2233"><a href="http://www.dinnopartners.com/category/ai_ml/">AI &#038; Machine Learning</a></li>
+</ul>
+</li>
+</ul></div>					</nav><!-- #site-navigation -->
+				</div>
+				</div>
+			</div>
+		</div>
+	</header><!-- #masthead -->
+
+	
+	<div class="sydney-hero-area">
+				<div class="header-image">
+			<div class="overlay"></div>			<img class="header-inner" src="" width="1920" alt="DINNO PARTNERS" title="DINNO PARTNERS" pagespeed_url_hash="3889456075" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+		</div>
+		
+			</div>
+
+	
+	<div id="content" class="page-wrap">
+		<div class="container content-wrapper">
+			<div class="row">	
+	
+	
+	<div id="primary" class="content-area col-md-9 fullwidth">
+
+		
+		<main id="main" class="post-wrap" role="main">
+
+		
+			
+<article id="post-2544" class="post-2544 post type-post status-publish format-standard hentry category-ai_ml">
+	
+	
+	<header class="entry-header">
+		
+		<div class="meta-post">
+					</div>
+
+		<h1 class="title-post entry-title">[ML] 자연어 처리, National Language Processing (1) &#8211; 데이터 전처리</h1>
+			</header><!-- .entry-header -->
+
+	
+	<div class="entry-content">
+		<h3><strong>NLP(Nationial Processing), 텍스트 분석(Text Analytics)</strong></h3>
+<p><span style="font-family: Thread-0000fb48-Id-0000002f;font-size: medium">머신러닝이 보편화되며 NLP와 텍스트 분석를 비교하는 것이 무의미해지고 있지만, 굳이 비교하자면 다음과 같습니다. <code></code></span></p>
+<ul>
+<li>NLP는 머신이 인간의 언어를 이해하고 해석하는데 중점을 두고 발전된 기술
+<ul>
+<li>기계 번역, 질의응답 시스템 등에 사용됨</li>
+</ul>
+</li>
+<li>텍스트 분석은 텍스트 마이닝(Text Mining) 이라고도 불리며 비정형 텍스트에서 의미 있는 정보를 추출하는데 중점을 두고 발전된 기술</li>
+</ul>
+<h3><strong>주요 기술 영역</strong></h3>
+<ul>
+<li><strong>텍스트 분류 (Text Classification)</strong>
+<ul>
+<li>문서가 특정 분류 또는 카테고리에 속하는 지 예측</li>
+<li>지도 학습을 사용하며, 기사 카테고리 분류 및 스팸 메일 검출 프로그램에 활용</li>
+</ul>
+</li>
+<li><strong>감정 분석 (Sentiment Analysis)</strong>
+<ul>
+<li>텍스트에서 나타나는 감정을 분석하는 기법</li>
+<li>소셜 미디어 감정 분석, 영화나 제품의 리뷰 긍정, 부정 분석등에 사용되는 기법</li>
+<li>텍스트 분석에서 가장 활발하게 사용되는 분야</li>
+</ul>
+</li>
+<li><strong>텍스트 요약 (Summarization)</strong>
+<ul>
+<li>텍스트 내 주요 주제나 중심 사상을 추출하는 기법</li>
+<li>토픽 모델링(Topic Modeling)에 사용</li>
+</ul>
+</li>
+<li><strong>텍스트 군집화(Clustering)와 유사도 측정</strong>
+<ul>
+<li>비슷한 유형의 문서를 모아 군집화를 수행하는 기법</li>
+</ul>
+</li>
+</ul>
+<h2></h2>
+<h3><strong>텍스트 분석 프로세스</strong></h3>
+<hr/>
+<p><strong>텍스트 전처리 -&gt; 피처 추출 및 벡터화 -&gt; ML 모델 수립 및 학습</strong></p>
+<hr/>
+<ul>
+<li>텍스트 전처리 : 대/소문자 변경, 특수문자 삭제 등의 클렌징 작업</li>
+<li>피처 추출 및 벡터화 : 전처리된 텍스트에서 피처 추출 및 벡터 값 할당 ( 대표적으로 BOW, Word2Vec 방법 사용)</li>
+</ul>
+<h3></h3>
+<h3><strong>파이썬 기반 NLP, 텍스트 분석 패키지</strong></h3>
+<hr/>
+<ul>
+<li>NLTK(National Language Toolkit for Python)
+<ul>
+<li>파이썬의 가장 대표적인 NLP 패키지</li>
+<li>NLP의 거의 모든 영역 커버</li>
+<li>많은 NLP 패키지가 NLTK의 영향을 받아 작성</li>
+<li>수행 속도 측면에서 아쉬운 부분이 있어 대량 데이터셋에서 제대로 활용되지 못함</li>
+</ul>
+</li>
+<li>Gensim
+<ul>
+<li>토픽 모델링 분야에서 가장 두각을 나타내는 패키지</li>
+</ul>
+</li>
+<li>SpaCy
+<ul>
+<li>뛰어난 수행 성능으로 최근 주목받는 패키지</li>
+</ul>
+</li>
+</ul>
+<h2></h2>
+<h3><strong>텍스트 전처리</strong></h3>
+<hr/>
+<p>분석하고자 하는 데이터를 사용 용도에 맞춰 토큰화, 클렌징, 정제하는 작업이 필요하며 이러한 작업은 텍스트 분석에서 매우 중요합니다.</p>
+<h4></h4>
+<h4><strong>클렌징 (Cleansing)</strong></h4>
+<p>텍스트 분석에 방해가 되는 불필요한 문자, 기호 등을 사전에 제거하는 작업</p>
+<ul>
+<li>HTML, XML 태그나 특정 기호 삭제</li>
+</ul>
+<h4></h4>
+<h4><strong>토큰화 (Tokenization)</strong></h4>
+<p>토큰화는 문서에서 문장을 분리하는 <strong>문장 토큰화</strong>와 문장에서 단어를 분리하는 <strong>단어 토큰화</strong>로 나눌 수 있습니다.</p>
+<ul>
+<li>문장 토큰화
+<ul>
+<li>일반적으로 문장의 마침표(.), 개행문자 등 문장의 마지막을 뜻하는 기호에 따라 분리</li>
+</ul>
+</li>
+<li>단어 토큰화
+<ul>
+<li>기본적으로 공백, 콤마(,), 마침표(.) 등으로 토큰화 수행</li>
+</ul>
+</li>
+</ul>
+<p>입력 : What makes us different is making the connections that digital Innovation demands!</p>
+<p>예를 들면, 위의 입력에 따른 토큰화 작업의 결과는 다음과 같습니다.</p>
+<p>출력 : &#8220;What&#8221;, &#8220;makes&#8221;, &#8220;us&#8221; &#8220;different&#8221;, &#8220;is&#8221;, &#8220;making&#8221;, &#8220;the&#8221;, &#8220;connections&#8221;, &#8220;that&#8221;, &#8220;digital&#8221;, &#8220;Innovation&#8221;, &#8220;demands&#8221;</p>
+<p>위 예제의 경우 공백을 기준으로 토큰화를 진행하고 특수문자(&#8216;!&#8217;)를 제거한 가장 간단한 토큰화 및 클렌징 작업입니다.</p>
+<p>영어의 경우 띄어쓰기(공백) 토큰화를 수행하면 대부분 단어로 분리가 되지만, 한국어의 경우 띄어쓰기를 통한 단어 분리가 쉽지 않기 때문에 한국어 NLP는 영어에 비해 어려움이 많이 존재하며, 자세한 내용은 다음 글에서 다루도록 하겠습니다.</p>
+<h4></h4>
+<h4><strong>토큰화의  고려 사항</strong></h4>
+<p>토큰화는 간단하게 특수문자를 제거하고 공백으로 분류하는 작업만으로 끝나지 않습니다. 토큰화를 진행하다보면 예상하지 못한 경우가 발생하기때문에 토큰화의 기준을 잘 정해야합니다.</p>
+<ul>
+<li><strong>특수문자 처리</strong>
+<ul>
+<li>모든 특수문자를 삭제하는 방법을 좋지 않습니다.</li>
+<li>&#8216;<strong>$</strong>&#8216;의 경우 가격을 표시하는데 사용되고, &#8216;<strong>/</strong>&#8216;의 경우 20/2/16 과 같은 날짜 구분하는 의미를 가지고 있기 때문에 단순 삭제하는  방식은 좋지 않습니다.</li>
+</ul>
+</li>
+</ul>
+<p>사용 용도에 따라 결과에 영향이 없는 기준으로 토큰화를 진행하는 것이 중요합니다.</p>
+<ul>
+<li><strong>줄임말 및 단어 내 띄어쓰기</strong>
+<ul>
+<li>apostrophe(&#8216;)의 경우 단어를 줄이는데 사용됩니다. we&#8217;re의 경우 we are의 줄임말로 표현됩니다.</li>
+<li>띄어쓰기를 기준으로 토큰화를 진행 할 때 New York은 하나의 단어이지만 &#8220;New&#8221;, &#8220;York&#8221;으로 분리될 것입니다. 토큰화 작업 시 New York을 한 단어로 인식할 수 있는 토큰화 능력이 필요합니다.</li>
+</ul>
+</li>
+</ul>
+<p><strong>스톱 워드(Stop Word) 제거</strong></p>
+<ul>
+<li>분석에 큰 의미가 없는 단어를 지칭 (is, the ,a will 등 문장을 구성하는 필수 문법이지만 문맥적으로 큰 의미가 없는 단어)</li>
+<li>스톱 워드를 사전에 제거하지 않으면 그 빈번함으로 인해 중요한 단어로 인지될 수 있습니다.</li>
+</ul>
+<p>언어 별로 이러한 스톱 워드가 목록화 되어 있습니다.</p>
+<p>NLTK의 경우 파이썬 환경에서 아래와 같은 코드로 확인 가능합니다.</p>
+<hr/>
+<p><span style="font-size: 10pt">import nltk</span></p>
+<p><span style="font-size: 10pt">nltk.download(&#8216;stopwords&#8217;)</span></p>
+<p><span style="font-size: 10pt">print(&#8216;영어 stop word 개수 :&#8217;, len(nltk.corpus.stopwords.words(&#8216;english&#8217;)))</span></p>
+<p><span style="font-size: 10pt">print(nltk.corpus.stopwords.words(&#8216;english&#8217;)</span></p>
+<p><span style="font-size: 10pt">출력 결과</span></p>
+<p><span style="font-size: 10pt">영어 stop words 개수 : 179</span></p>
+<p><span style="font-size: 10pt">[&#8216;i&#8217;, &#8216;me&#8217;, &#8216;my&#8217;, &#8216;myself&#8217;, &#8216;we&#8217;, &#8216;our&#8217; &#8216;ours &#8230;&#8230;. ]</span></p>
+<hr/>
+<p>텍스트 전처리 과정은 전체 NLP 성능에 큰 영향을 미치기 때문에 사용 용도에 맞는 기준을 정하는 것이 중요하며, 해당 기준에 맞는 라이브러리를 활용하거나, 직접 전처리 도구를 개발 할 수 있는 능력이 필요합니다.</p>
+			</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
+
+	
+</article><!-- #post-## -->
+
+				<nav class="navigation post-navigation" role="navigation">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links clearfix">
+			<div class="nav-previous"><span>&#10229;</span><a href="http://www.dinnopartners.com/ai-ml-%eb%a7%88%ec%bc%93%ed%94%8c%eb%a0%88%ec%9d%b4%ec%8a%a4-1-%eb%a7%88%ec%bc%93%ed%94%8c%eb%a0%88%ec%9d%b4%ec%8a%a4-%ec%82%ac%eb%a1%80-ii/" rel="prev">AI/ML 마켓플레이스 – 1. 마켓플레이스 사례 (II)</a></div><div class="nav-next"><a href="http://www.dinnopartners.com/ai-ml-%eb%a7%88%ec%bc%93%ed%94%8c%eb%a0%88%ec%9d%b4%ec%8a%a4-1-%eb%a7%88%ec%bc%93%ed%94%8c%eb%a0%88%ec%9d%b4%ec%8a%a4-%ec%82%ac%eb%a1%80-iii/" rel="next">AI/ML 마켓플레이스 – 1. 마켓플레이스 사례 (III)</a><span>&#10230;</span></div>		</div><!-- .nav-links -->
+	</nav><!-- .navigation -->
+	
+			
+<div id="comments" class="comments-area">
+
+	
+	
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">댓글 남기기 <small><a rel="nofollow" id="cancel-comment-reply-link" href="/ml-%EC%9E%90%EC%97%B0%EC%96%B4-%EC%B2%98%EB%A6%AC-national-language-processing-1-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%B2%98%EB%A6%AC/#respond" style="display:none;">댓글 취소</a></small></h3><form action="http://www.dinnopartners.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-notes"><span id="email-notes">이메일은 공개되지 않습니다.</span> 필수 입력창은 <span class="required">*</span> 로 표시되어 있습니다</p><p class="comment-form-comment"><label for="comment">댓글</label> <textarea onfocus="if(!this._s==true){var _i=document.createElement('input');_i.setAttribute('type','hidden');_i.setAttribute('name','ssc_key_360ec6678fd5d3f5');_i.setAttribute('value','c75786f2b4feee47');var _p=this.parentNode;_p.insertBefore(_i,this);this._s=true;}" id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">이름 <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required'/></p>
+<p class="comment-form-email"><label for="email">이메일 <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required'/></p>
+<p class="comment-form-url"><label for="url">웹사이트</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200"/></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="댓글 작성"/> <input type='hidden' name='comment_post_ID' value='2544' id='comment_post_ID'/>
+<input type='hidden' name='comment_parent' id='comment_parent' value='0'/>
+</p><style>.ssc_notice_360ec6678fd5d3f5 strong{display:none}.ssc_notice_360ec6678fd5d3f5:after{content:'\2018\0063\0037\0035\0037\0038\0036\0066\0032\0062\0034\0066\0065\0065\0065\0034\0037\0033\0036\0030\0065\0063\0036\0036\0037\0038\0066\0064\0035\0064\0033\0066\0035\2019';font-weight:bold}</style><noscript><p class="ssc_notice_360ec6678fd5d3f5">Notice: It seems you have Javascript disabled in your Browser. In order to submit a comment to this post, please write this code along with your comment: <strong aria-hidden="true">ff60e478efde64533d6c77ecf525b678</strong></p></noscript></form>	</div><!-- #respond -->
+	
+</div><!-- #comments -->
+
+		
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+	
+			</div>
+		</div>
+	</div><!-- #content -->
+
+	
+			
+
+	
+	<div id="sidebar-footer" class="footer-widgets widget-area" role="complementary">
+		<div class="container">
+							<div class="sidebar-column col-md-6">
+					<aside id="media_image-4" class="widget widget_media_image"><img width="174" height="34" src="http://www.dinnopartners.com/wp-content/uploads/2019/12/footer_logo.png" class="image wp-image-1966  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" pagespeed_url_hash="3989899910" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></aside>				</div>
+				
+							<div class="sidebar-column col-md-6">
+					<aside id="custom_html-3" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div style="font-size: 0.8em;color:#f0f0f0;line-height:1.5em" align=right>
+Address: 3F. 37. Seolleung-ro 112-gil, Gangnam-gu, Seoul, Republic of Korea
+<br>
+<a href="mailto:dinno@dinnopartners.com" style="color:#f0f0f0">E-mail: dinno@dinnopartners.com</a>
+<br>
+Copyright © 2017 Dinno Partners Inc. All Rights Reserved
+</div></div></aside>				</div>
+				
+				
+				
+		</div>	
+	</div>	
+    <a class="go-top"><i class="fa fa-angle-up"></i></a>
+		
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info container">
+			<a href="https://wordpress.org/">Proudly powered by WordPress</a>
+			<span class="sep"> | </span>
+			Theme: <a href="https://athemes.com/theme/sydney" rel="nofollow">Sydney</a> by aThemes.		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+
+	
+</div><!-- #page -->
+
+<script>window.addEventListener('sfsi_functions_loaded',function(){if(typeof sfsi_responsive_toggle=='function'){sfsi_responsive_toggle(0);}})</script>
+
+    <script>window.addEventListener('sfsi_functions_loaded',function(){if(typeof sfsi_plugin_version=='function'){sfsi_plugin_version(2.46);}});function sfsi_processfurther(ref){var feed_id='dzJVZ282aStmTC91WjhtUm1HbUxUOFQ1TW5WZmZ4dmhBanR6Y0NtNlFuYjdyeWh6anE5MlN0clc0VTBsb2d1a3FHK2FhaC82dXF3UUlFTzFDaWsxRmp6Y2Y2aFdLeEYweEgrWW9WcFdxL1lIMnZUNEhJdWpHaFZoOVN1NUNybEJ8YWY3aU9XWFNsZEN2MUFMaXUxZlJrWEZIdGM4OFFqTnN0d0FPdnJpNVI0Zz0=';var feedtype=8;var email=jQuery(ref).find('input[name="data[Widget][email]"]').val();var filter=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;if((email!="Enter your email")&&(filter.test(email))){if(feed_id!=""){if(feedtype=="8"){var url="https://www.specificfeeds.com/widgets/subscribeWidget/"+feed_id+"/"+feedtype;window.open('',"popupwindow","scrollbars=yes,width=1080,height=760");ref.action=url;ref.target="popupwindow";return true;}else{return false}}}else{alert("Please enter email address");jQuery(ref).find('input[name="data[Widget][email]"]').focus();return false;}}</script>
+
+    <style type="text/css" aria-selected="true">.sfsi_subscribe_Popinner{width:100%!important;height:auto!important;border:1px solid #b5b5b5!important;padding:18px 0px!important;background-color:#fff!important}.sfsi_subscribe_Popinner form{margin:0 20px!important}.sfsi_subscribe_Popinner h5{font-family:Helvetica,Arial,sans-serif!important;font-weight:bold!important;color:#000!important;font-size:16px!important;text-align:center!important;margin:0 0 10px!important;padding:0!important}.sfsi_subscription_form_field{margin:5px 0!important;width:100%!important;display:inline-flex;display:-webkit-inline-flex}.sfsi_subscription_form_field input{width:100%!important;padding:10px 0px!important}.sfsi_subscribe_Popinner input[type="email"]{font-family:Helvetica,Arial,sans-serif!important;font-style:normal!important;color:  !important;font-size:14px!important;text-align:center!important}.sfsi_subscribe_Popinner input[type="email"]::-webkit-input-placeholder{font-family:Helvetica,Arial,sans-serif!important;font-style:normal!important;color:  !important;font-size:14px!important;text-align:center!important}.sfsi_subscribe_Popinner input[type="email"]:-moz-placeholder{font-family:Helvetica,Arial,sans-serif!important;font-style:normal!important;color:  !important;font-size:14px!important;text-align:center!important}.sfsi_subscribe_Popinner input[type="email"]::-moz-placeholder{font-family:Helvetica,Arial,sans-serif!important;font-style:normal!important;color:  !important;font-size:14px!important;text-align:center!important}.sfsi_subscribe_Popinner input[type="email"]:-ms-input-placeholder{font-family:Helvetica,Arial,sans-serif!important;font-style:normal!important;color:  !important;font-size:14px!important;text-align:center!important}.sfsi_subscribe_Popinner input[type="submit"]{font-family:Helvetica,Arial,sans-serif!important;font-weight:bold!important;color:#000!important;font-size:16px!important;text-align:center!important;background-color:#dedede!important}.sfsi_shortcode_container{float:left}.sfsi_shortcode_container .norm_row .sfsi_wDiv{position:relative!important}.sfsi_shortcode_container .sfsi_holders{display:none}</style>
+
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.11.4'></script>
+<script type='text/javascript'>jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"\ub2eb\uae30","currentText":"\uc624\ub298","monthNames":["1\uc6d4","2\uc6d4","3\uc6d4","4\uc6d4","5\uc6d4","6\uc6d4","7\uc6d4","8\uc6d4","9\uc6d4","10\uc6d4","11\uc6d4","12\uc6d4"],"monthNamesShort":["1\uc6d4","2\uc6d4","3\uc6d4","4\uc6d4","5\uc6d4","6\uc6d4","7\uc6d4","8\uc6d4","9\uc6d4","10\uc6d4","11\uc6d4","12\uc6d4"],"nextText":"\ub2e4\uc74c","prevText":"\uc774\uc804","dayNames":["\uc77c\uc694\uc77c","\uc6d4\uc694\uc77c","\ud654\uc694\uc77c","\uc218\uc694\uc77c","\ubaa9\uc694\uc77c","\uae08\uc694\uc77c","\ud1a0\uc694\uc77c"],"dayNamesShort":["\uc77c","\uc6d4","\ud654","\uc218","\ubaa9","\uae08","\ud1a0"],"dayNamesMin":["\uc77c","\uc6d4","\ud654","\uc218","\ubaa9","\uae08","\ud1a0"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});</script>
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-content/plugins/sydney-toolbox/js/main.js?ver=20180228'></script>
+<script type='text/javascript'>//<![CDATA[
+var wpcf7={"apiSettings":{"root":"http:\/\/www.dinnopartners.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+//]]></script>
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.6'></script>
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-content/plugins/ultimate-social-media-icons/js/shuffle/modernizr.custom.min.js?ver=5.3.15'></script>
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-content/plugins/ultimate-social-media-icons/js/shuffle/jquery.shuffle.min.js?ver=5.3.15'></script>
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-content/plugins/ultimate-social-media-icons/js/shuffle/random-shuffle-min.js?ver=5.3.15'></script>
+<script type='text/javascript'>//<![CDATA[
+var sfsi_icon_ajax_object={"ajax_url":"http:\/\/www.dinnopartners.com\/wp-admin\/admin-ajax.php"};var sfsi_icon_ajax_object={"ajax_url":"http:\/\/www.dinnopartners.com\/wp-admin\/admin-ajax.php","plugin_url":"http:\/\/www.dinnopartners.com\/wp-content\/plugins\/ultimate-social-media-icons\/"};
+//]]></script>
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-content/plugins/ultimate-social-media-icons/js/custom.js?ver=5.3.15'></script>
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-content/themes/sydney/js/scripts.js?ver=5.3.15'></script>
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-content/themes/sydney/js/main.min.js?ver=20180716'></script>
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-content/themes/sydney/js/skip-link-focus-fix.js?ver=20130115'></script>
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-includes/js/comment-reply.min.js?ver=5.3.15'></script>
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-content/plugins/page-links-to/dist/new-tab.js?ver=3.2.2'></script>
+<script type='text/javascript'>//<![CDATA[
+var kboard_settings={"version":"5.3.11","home_url":"\/","site_url":"\/","post_url":"http:\/\/www.dinnopartners.com\/wp-admin\/admin-post.php","ajax_url":"http:\/\/www.dinnopartners.com\/wp-admin\/admin-ajax.php","plugin_url":"http:\/\/www.dinnopartners.com\/wp-content\/plugins\/kboard","media_group":"647d11ca724df","view_iframe":"","ajax_security":"3c952a6e45"};var kboard_localize_strings={"kboard_add_media":"KBoard \ubbf8\ub514\uc5b4 \ucd94\uac00","next":"\ub2e4\uc74c","prev":"\uc774\uc804","required":"%s\uc740(\ub294) \ud544\uc218\uc785\ub2c8\ub2e4.","please_enter_the_title":"\uc81c\ubaa9\uc744 \uc785\ub825\ud574\uc8fc\uc138\uc694.","please_enter_the_author":"\uc791\uc131\uc790\ub97c \uc785\ub825\ud574\uc8fc\uc138\uc694.","please_enter_the_password":"\ube44\ubc00\ubc88\ud638\ub97c \uc785\ub825\ud574\uc8fc\uc138\uc694.","please_enter_the_CAPTCHA":"\uc606\uc5d0 \ubcf4\uc774\ub294 \ubcf4\uc548\ucf54\ub4dc\ub97c \uc785\ub825\ud574\uc8fc\uc138\uc694.","please_enter_the_name":"\uc774\ub984\uc744 \uc785\ub825\ud574\uc8fc\uc138\uc694.","please_enter_the_email":"\uc774\uba54\uc77c\uc744 \uc785\ub825\ud574\uc8fc\uc138\uc694.","you_have_already_voted":"\uc774\ubbf8 \ud22c\ud45c\ud588\uc2b5\ub2c8\ub2e4.","please_wait":"\uae30\ub2e4\ub824\uc8fc\uc138\uc694.","newest":"\ucd5c\uc2e0\uc21c","best":"\ucd94\ucc9c\uc21c","updated":"\uc5c5\ub370\uc774\ud2b8\uc21c","viewed":"\uc870\ud68c\uc21c","yes":"\uc608","no":"\uc544\ub2c8\uc694","did_it_help":"\ub3c4\uc6c0\uc774 \ub418\uc5c8\ub098\uc694?","hashtag":"\ud574\uc2dc\ud0dc\uadf8","tag":"\ud0dc\uadf8","add_a_tag":"\ud0dc\uadf8 \ucd94\uac00","removing_tag":"\ud0dc\uadf8 \uc0ad\uc81c","changes_you_made_may_not_be_saved":"\ubcc0\uacbd\uc0ac\ud56d\uc774 \uc800\uc7a5\ub418\uc9c0 \uc54a\uc744 \uc218 \uc788\uc2b5\ub2c8\ub2e4.","name":"\uc774\ub984","email":"\uc774\uba54\uc77c","address":"\uc8fc\uc18c","postcode":"\uc6b0\ud3b8\ubc88\ud638","phone_number":"\ud734\ub300\ud3f0\ubc88\ud638","mobile_phone":"\ud734\ub300\ud3f0\ubc88\ud638","phone":"\ud734\ub300\ud3f0\ubc88\ud638","company_name":"\ud68c\uc0ac\uba85","vat_number":"\uc0ac\uc5c5\uc790\ub4f1\ub85d\ubc88\ud638","bank_account":"\uc740\ud589\uacc4\uc88c","name_of_deposit":"\uc785\uae08\uc790\uba85","find":"\ucc3e\uae30","rate":"\ub4f1\uae09","ratings":"\ub4f1\uae09","waiting":"\ub300\uae30","complete":"\uc644\ub8cc","question":"\uc9c8\ubb38","answer":"\ub2f5\ubcc0","notify_me_of_new_comments_via_email":"\uc774\uba54\uc77c\ub85c \uc0c8\ub85c\uc6b4 \ub313\uae00 \uc54c\ub9bc \ubc1b\uae30","ask_question":"\uc9c8\ubb38\ud558\uae30","categories":"\uce74\ud14c\uace0\ub9ac","pages":"\ud398\uc774\uc9c0","all_products":"\uc804\uccb4\uc0c1\ud488","your_orders":"\uc8fc\ubb38\uc870\ud68c","your_sales":"\ud310\ub9e4\uc870\ud68c","my_orders":"\uc8fc\ubb38\uc870\ud68c","my_sales":"\ud310\ub9e4\uc870\ud68c","new_product":"\uc0c1\ud488\ub4f1\ub85d","edit_product":"\uc0c1\ud488\uc218\uc815","delete_product":"\uc0c1\ud488\uc0ad\uc81c","seller":"\ud310\ub9e4\uc790","period":"\uae30\uac04","period_of_use":"\uc0ac\uc6a9\uae30\uac04","last_updated":"\uc5c5\ub370\uc774\ud2b8 \ub0a0\uc9dc","list_price":"\uc815\uc0c1\uac00\uaca9","price":"\ud310\ub9e4\uac00\uaca9","total_price":"\ucd1d \uac00\uaca9","amount":"\uacb0\uc81c\uae08\uc561","quantity":"\uc218\ub7c9","use_points":"\ud3ec\uc778\ud2b8 \uc0ac\uc6a9","my_points":"\ub0b4 \ud3ec\uc778\ud2b8","available_points":"\uc0ac\uc6a9 \uac00\ub2a5 \ud3ec\uc778\ud2b8","apply_points":"\ud3ec\uc778\ud2b8 \uc0ac\uc6a9","buy_it_now":"\uad6c\ub9e4\ud558\uae30","sold_out":"\ud488\uc808","for_free":"\ubb34\ub8cc","pay_s":"%s \uacb0\uc81c","payment_method":"\uacb0\uc81c\uc218\ub2e8","credit_card":"\uc2e0\uc6a9\uce74\ub4dc","make_a_deposit":"\ubb34\ud1b5\uc7a5\uc785\uae08","reward_point":"\uc801\ub9bd \ud3ec\uc778\ud2b8","download_expiry":"\ub2e4\uc6b4\ub85c\ub4dc \uae30\uac04","checkout":"\uc8fc\ubb38\uc815\ubcf4\ud655\uc778","buyer_information":"\uc8fc\ubb38\uc790","applying_cash_receipts":"\ud604\uae08\uc601\uc218\uc99d \uc2e0\uccad","privacy_policy":"\uac1c\uc778 \uc815\ubcf4 \uc815\ucc45","i_agree_to_the_privacy_policy":"\uac1c\uc778 \uc815\ubcf4 \uc815\ucc45\uc5d0 \ub3d9\uc758\ud569\ub2c8\ub2e4.","i_confirm_the_terms_of_the_transaction_and_agree_to_the_payment_process":"\uac70\ub798\uc870\uac74\uc744 \ud655\uc778\ud588\uc73c\uba70 \uacb0\uc81c\uc9c4\ud589\uc5d0 \ub3d9\uc758\ud569\ub2c8\ub2e4.","today":"\uc624\ub298","yesterday":"\uc5b4\uc81c","this_month":"\uc774\ubc88\ub2ec","last_month":"\uc9c0\ub09c\ub2ec","last_30_days":"\ucd5c\uadfc30\uc77c","agree":"\ucc2c\uc131","disagree":"\ubc18\ub300","opinion":"\uc758\uacac","comment":"\ub313\uae00","comments":"\ub313\uae00","your_order_has_been_cancelled":"\uc8fc\ubb38\uc774 \ucde8\uc18c\ub418\uc5c8\uc2b5\ub2c8\ub2e4.","order_information_has_been_changed":"\uc8fc\ubb38\uc815\ubcf4\uac00 \ubcc0\uacbd\ub418\uc5c8\uc2b5\ub2c8\ub2e4.","order_date":"\uc8fc\ubb38\uc77c","point_payment":"\ud3ec\uc778\ud2b8 \uacb0\uc81c","cancel_point_payment":"\ud3ec\uc778\ud2b8 \uacb0\uc81c \ucde8\uc18c"};var kboard_comments_localize_strings={"reply":"\ub2f5\uae00","cancel":"\ucde8\uc18c","please_enter_the_author":"\uc791\uc131\uc790\uba85\uc744 \uc785\ub825\ud574\uc8fc\uc138\uc694.","please_enter_the_password":"\ube44\ubc00\ubc88\ud638\ub97c \uc785\ub825\ud574\uc8fc\uc138\uc694.","please_enter_the_CAPTCHA":"\ubcf4\uc548\ucf54\ub4dc\ub97c \uc785\ub825\ud574\uc8fc\uc138\uc694.","please_enter_the_content":"\ub0b4\uc6a9\uc744 \uc785\ub825\ud574\uc8fc\uc138\uc694.","are_you_sure_you_want_to_delete":"\uc0ad\uc81c \ud558\uc2dc\uaca0\uc2b5\ub2c8\uae4c?","please_wait":"\uc7a0\uc2dc\ub9cc \uae30\ub2e4\ub824\uc8fc\uc138\uc694.","name":"\uc774\ub984","email":"\uc774\uba54\uc77c","address":"\uc8fc\uc18c","postcode":"\uc6b0\ud3b8\ubc88\ud638","phone_number":"\uc5f0\ub77d\ucc98","find":"\ucc3e\uae30","rate":"\ub4f1\uae09","ratings":"\ub4f1\uae09","waiting":"\ub300\uae30","complete":"\uc644\ub8cc","question":"\uc9c8\ubb38","answer":"\ub2f5\ubcc0","notify_me_of_new_comments_via_email":"\uc774\uba54\uc77c\ub85c \uc0c8\ub85c\uc6b4 \ub313\uae00 \uc54c\ub9bc \ubc1b\uae30","comment":"\ub313\uae00","comments":"\ub313\uae00"};
+//]]></script>
+<script type='text/javascript' src='http://www.dinnopartners.com/wp-content/plugins/kboard/template/js/script.js?ver=5.3.11'></script>
+
+</body>
+</html>
