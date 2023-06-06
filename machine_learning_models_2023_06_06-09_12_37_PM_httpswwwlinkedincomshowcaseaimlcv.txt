@@ -1,0 +1,1940 @@
+<!DOCTYPE html>
+
+    
+    
+    
+    
+
+    
+    <html lang="en">
+      <head>
+        <meta name="pageKey" content="d_org_guest_showcase_overview">
+          <meta name="linkedin:pageTag" content="noncanonical_subdomain=enabled">
+        <meta name="locale" content="en_US">
+        <meta id="config" data-app-version="2.0.1477" data-call-tree-id="AAX9dO90CVCwkgcGuSjyUg==" data-multiproduct-name="organization-guest-frontend" data-service-name="organization-guest-frontend" data-browser-id="d266fcb2-083c-4098-8c90-c4775294141a" data-enable-page-view-heartbeat-tracking data-page-instance="urn:li:page:d_org_guest_showcase_overview;Hv9zwVx4S5OXz9bbj8hUJQ==" data-disable-jsbeacon-pagekey-suffix="false" data-member-id="0" data-msafdf-lib="https://static.licdn.com/aero-v1/sc/h/6r58rkh35e7x4dqy7terugz6s">
+
+        <link rel="canonical" href="https://ua.linkedin.com/showcase/ai-ml-cv/">
+<!----><!---->
+<!---->
+<!---->
+          <meta property="al:android:url" content="https://ua.linkedin.com/showcase/ai-ml-cv/">
+          <meta property="al:android:package" content="com.linkedin.android">
+          <meta property="al:android:app_name" content="LinkedIn">
+          <meta property="al:ios:url" content="https://ua.linkedin.com/showcase/ai-ml-cv/">
+          <meta property="al:ios:app_store_id" content="288429040">
+          <meta property="al:ios:app_name" content="LinkedIn">
+
+<!---->
+          <link rel="icon" href="https://static.licdn.com/aero-v1/sc/h/al2o9zrvru7aqj8e1x2rzsrca">
+
+        <script>
+          function getDfd() {let yFn,nFn;const p=new Promise(function(y, n){yFn=y;nFn=n;});p.resolve=yFn;p.reject=nFn;return p;}
+          window.lazyloader = getDfd();
+          window.tracking = getDfd();
+          window.impressionTracking = getDfd();
+          window.ingraphTracking = getDfd();
+          window.appDetection = getDfd();
+          window.pemTracking = getDfd();
+        </script>
+
+<!---->
+        
+        
+    <title>AI/ML/CV (Artificial Intelligence, Machine Learning, Computer Vision) | LinkedIn</title>
+    <meta name="robots" content="noarchive">
+    <meta name="description" content="AI/ML/CV (Artificial Intelligence, Machine Learning, Computer Vision) | 380 followers on LinkedIn. Artificial Intelligence, Machine Learning, Computer Vision solutions for your business. | UDTech offers Machine Learning and Computer Vision solutions for different kind of businesses. We could analyze the problem and offer a solution or develop a custom one that makes your business more efficient.
+
+Machine Learning, Computer Vision, Neural Networks, Artificial Intelligence, Image Recognition">
+
+    <meta property="og:title" content="AI/ML/CV (Artificial Intelligence, Machine Learning, Computer Vision) | LinkedIn">
+    <meta property="og:description" content="AI/ML/CV (Artificial Intelligence, Machine Learning, Computer Vision) | 380 followers on LinkedIn. Artificial Intelligence, Machine Learning, Computer Vision solutions for your business. | UDTech offers Machine Learning and Computer Vision solutions for different kind of businesses. We could analyze the problem and offer a solution or develop a custom one that makes your business more efficient.
+
+Machine Learning, Computer Vision, Neural Networks, Artificial Intelligence, Image Recognition">
+    <meta property="og:image" content="https://media.licdn.com/dms/image/C560BAQEFq5BNB-7W-w/company-logo_200_200/0/1550151611900?e=2147483647&amp;v=beta&amp;t=hNolBNFoCEBUXLUDBq1zEE90OkhiyYyOfO1xIL1Pguc">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://ua.linkedin.com/showcase/ai-ml-cv/">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@linkedin">
+    <meta name="twitter:title" content="AI/ML/CV (Artificial Intelligence, Machine Learning, Computer Vision) | LinkedIn">
+    <meta name="twitter:description" content="AI/ML/CV (Artificial Intelligence, Machine Learning, Computer Vision) | 380 followers on LinkedIn. Artificial Intelligence, Machine Learning, Computer Vision solutions for your business. | UDTech offers Machine Learning and Computer Vision solutions for different kind of businesses. We could analyze the problem and offer a solution or develop a custom one that makes your business more efficient.
+
+Machine Learning, Computer Vision, Neural Networks, Artificial Intelligence, Image Recognition">
+    <meta name="twitter:image" content="https://media.licdn.com/dms/image/C560BAQEFq5BNB-7W-w/company-logo_200_200/0/1550151611900?e=2147483647&amp;v=beta&amp;t=hNolBNFoCEBUXLUDBq1zEE90OkhiyYyOfO1xIL1Pguc">
+
+    <meta name="clientSideIngraphs" content="1" data-gauge-metric-endpoint="/organization-guest/api/ingraphs/gauge" data-counter-metric-endpoint="/organization-guest/api/ingraphs/counter">
+  
+
+        <link rel="stylesheet" href="https://static.licdn.com/aero-v1/sc/h/dxfp8xepgmndllbigxm6andhn">
+
+          
+    
+    <script type="application/ld+json">
+      {"@context":"http://schema.org","@type":"Organization","name":"AI/ML/CV (Artificial Intelligence, Machine Learning, Computer Vision)","url":"https://ua.linkedin.com/showcase/ai-ml-cv/","address":{"type":"PostalAddress","streetAddress":"31 Svyatoho Mykolaia","addressLocality":"Zaporozhye","addressRegion":"Zaporizka district","postalCode":"69000","addressCountry":"UA"},"description":"UDTech offers Machine Learning and Computer Vision solutions for different kind of businesses. We could analyze the problem and offer a solution or develop a custom one that makes your business more efficient.\n\nMachine Learning, Computer Vision, Neural Networks, Artificial Intelligence, Image Recognition","logo":{"contentUrl":"https://media.licdn.com/dms/image/C560BAQEFq5BNB-7W-w/company-logo_200_200/0/1550151611900?e=2147483647&v=beta&t=hNolBNFoCEBUXLUDBq1zEE90OkhiyYyOfO1xIL1Pguc","description":"AI/ML/CV (Artificial Intelligence, Machine Learning, Computer Vision)","@type":"ImageObject"},"slogan":"Artificial Intelligence, Machine Learning, Computer Vision solutions for your business.","sameAs":"http://www.udtech.co"}
+    </script>
+  
+  
+      
+<!---->      </head>
+      <body dir="ltr">
+<!----><!----><!---->
+        
+        
+    
+
+      
+    
+
+    <form class="google-auth" action="https://www.linkedin.com/uas/login-submit" method="post">
+      <input name="loginCsrfParam" value="d266fcb2-083c-4098-8c90-c4775294141a" type="hidden">
+
+        <input name="session_redirect" value="https://ua.linkedin.com/showcase/ai-ml-cv/" type="hidden">
+
+      <input name="trk" value="organization_guest_google-one-tap-submit" type="hidden">
+        <div id="google-one-tap__container" data-tracking-control-name="organization_guest_google-one-tap"></div>
+      
+    <div class="loader loader--full-screen">
+      <div class="loader__container mb-2 overflow-hidden">
+        <icon class="loader__icon inline-block loader__icon--default text-color-progress-loading" data-delayed-url="https://static.licdn.com/aero-v1/sc/h/ddi43qwelxeqjxdd45pe3fvs1" data-svg-class-name="loader__icon-svg--large fill-currentColor h-[60px] min-h-[60px] w-[60px] min-w-[60px]"></icon>
+      </div>
+    </div>
+  
+    </form>
+
+    <script data-delayed-url="https://static.licdn.com/aero-v1/sc/h/8m736dfzskmdn6bwwqz67iiki" data-module-id="google-gsi-lib"></script>
+    <code id="enableGoogleAutoSelect" style="display: none"><!--true--></code>
+    <code id="googleAuthLibraryPath" style="display: none"><!--"https://static.licdn.com/aero-v1/sc/h/8m736dfzskmdn6bwwqz67iiki"--></code>
+    <code id="isLinkedInAppWebView" style="display: none"><!--false--></code>
+  
+
+<!---->
+      
+    
+
+      
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    <div class="contextual-sign-in-modal strong-conversion-modal" data-impression-id="organization_guest_contextual-sign-in-modal" data-cool-off-enabled data-modal="strong-conversion-modal" data-aggressive-upsell="true">
+<!---->
+      
+
+    
+    <div class>
+<!---->
+      <div id="organization_guest_contextual-sign-in" class="modal modal--contextual-sign-in" data-outlet="organization_guest_contextual-sign-in">
+<!---->        <div class="modal__overlay flex items-center bg-color-background-scrim justify-center fixed bottom-0 left-0 right-0 top-0 opacity-0 invisible pointer-events-none z-[1000] transition-[opacity] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] duration-[0.17s]
+            py-4
+            ">
+          <section aria-modal="true" role="dialog" aria-labelledby="organization_guest_contextual-sign-in-modal-header" tabindex="-1" class="max-h-full modal__wrapper overflow-auto p-0 bg-color-surface max-w-[1128px] min-h-[160px] relative scale-[0.25] shadow-sm shadow-color-border-faint transition-[transform] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] duration-[0.33s] focus:outline-0
+              
+              w-[1128px] mamabear:w-[744px] babybear:w-[360px]
+              
+              rounded-md">
+              
+            <button class="modal__dismiss btn-tertiary h-[40px] w-[40px] p-0 rounded-full indent-0
+                contextual-sign-in-modal__modal-dismiss absolute right-0 m-[20px] cursor-pointer" aria-label="Dismiss" data-tracking-control-name="organization_guest_contextual-sign-in-modal_modal_dismiss">
+              <icon class="contextual-sign-in-modal__modal-dismiss-icon" data-delayed-url="https://static.licdn.com/aero-v1/sc/h/gs508lg3t2o81tq7pmcgn6m2"></icon>
+            </button>
+        
+            <div class="modal__main w-full ">
+              
+          <div class="contextual-sign-in-modal__screen contextual-sign-in-modal__context-screen flex flex-col my-4 mx-3">
+              
+      <img class="inline-block relative
+          
+          w-16 h-16
+           contextual-sign-in-modal__img m-auto" data-delayed-url="https://media.licdn.com/dms/image/C560BAQEFq5BNB-7W-w/company-logo_200_200/0/1550151611900?e=2147483647&amp;v=beta&amp;t=hNolBNFoCEBUXLUDBq1zEE90OkhiyYyOfO1xIL1Pguc" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/5fnrxyask3t3av1g9ym526ben" alt>
+  
+            <h2 class="contextual-sign-in-modal__context-screen-title font-sans text-xl text-color-text my-2 mx-4 text-center" id="organization_guest_contextual-sign-in-modal-header">
+              Sign in to see who you already know at AI/ML/CV (Artificial Intelligence, Machine Learning, Computer Vision)
+            </h2>
+<!----><!---->            <div class="contextual-sign-in-modal__btn-container m-auto w-[320px] babybear:w-full">
+<!---->              
+    
+    
+    
+    
+
+    <div class="sign-in-modal" data-impression-id="organization_guest_contextual-sign-in-modal_sign-in-modal">
+        <button class="sign-in-modal__outlet-btn cursor-pointer btn-md btn-primary" data-tracking-control-name="organization_guest_contextual-sign-in-modal_sign-in-modal_outlet-button" data-modal="organization_guest_contextual-sign-in_sign-in-modal">
+            Sign in
+        </button>
+
+      
+
+    
+    <div class>
+<!---->
+      <div id="organization_guest_contextual-sign-in_sign-in-modal" class="modal modal--sign-in" data-outlet="organization_guest_contextual-sign-in_sign-in-modal">
+<!---->        <div class="modal__overlay flex items-center bg-color-background-scrim justify-center fixed bottom-0 left-0 right-0 top-0 opacity-0 invisible pointer-events-none z-[1000] transition-[opacity] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] duration-[0.17s]
+            py-4
+            ">
+          <section aria-modal="true" role="dialog" aria-labelledby="organization_guest_contextual-sign-in_sign-in-modal-modal-header" tabindex="-1" class="max-h-full modal__wrapper overflow-auto p-0 bg-color-surface max-w-[1128px] min-h-[160px] relative scale-[0.25] shadow-sm shadow-color-border-faint transition-[transform] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] duration-[0.33s] focus:outline-0
+              
+              w-[1128px] mamabear:w-[744px] babybear:w-[360px]
+              
+              rounded-md">
+              
+            <button class="modal__dismiss btn-tertiary h-[40px] w-[40px] p-0 rounded-full indent-0 sign-in-modal__dismiss absolute right-0 cursor-pointer m-[20px]" aria-label="Dismiss" data-tracking-control-name="organization_guest_contextual-sign-in-modal_sign-in-modal_dismiss">
+              <icon class="sign-in-modal__dismiss-icon" data-delayed-url="https://static.licdn.com/aero-v1/sc/h/gs508lg3t2o81tq7pmcgn6m2"></icon>
+            </button>
+        
+            <div class="modal__main w-full ">
+              
+          <div class="sign-in-modal__screen flex flex-col py-4 px-3 w-[513px] babybear:w-full">
+            <h2 class="sign-in-modal__header font-sans text-display-md text-color-text">
+                Welcome back
+            </h2>
+            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <code id="i18n_sign_in_form_show_text" style="display: none"><!--"Show"--></code>
+    <code id="i18n_sign_in_form_show_label" style="display: none"><!--"Show your LinkedIn password"--></code>
+    <code id="i18n_sign_in_form_hide_text" style="display: none"><!--"Hide"--></code>
+    <code id="i18n_sign_in_form_hide_label" style="display: none"><!--"Hide your LinkedIn password"--></code>
+
+    
+    <code id="i18n_username_error_empty" style="display: none"><!--"Please enter an email address or phone number"--></code>
+    
+    <code id="i18n_username_error_too_long" style="display: none"><!--"Email or phone number must be between 3 to 128 characters"--></code>
+    <code id="i18n_username_error_too_short" style="display: none"><!--"Email or phone number must be between 3 to 128 characters"--></code>
+
+    
+    <code id="i18n_password_error_empty" style="display: none"><!--"Please enter a password"--></code>
+    
+    <code id="i18n_password_error_too_short" style="display: none"><!--"The password you provided must have at least 6 characters"--></code>
+    
+    <code id="i18n_password_error_too_long" style="display: none"><!--"The password you provided must have at most 400 characters"--></code>
+
+    <form data-id="sign-in-form" action="https://www.linkedin.com/uas/login-submit" method="post" novalidate class="mt-1.5 mb-2">
+      <input name="loginCsrfParam" value="d266fcb2-083c-4098-8c90-c4775294141a" type="hidden">
+
+      <div class="flex flex-col">
+        
+    <div class="mt-1.5" data-js-module-id="guest-input">
+      <div class="flex flex-col">
+        <label class="input-label mb-1" for="organization_guest_contextual-sign-in_sign-in-modal_session_key">
+          Email or phone
+        </label>
+        <div class="text-input flex">
+          <input class="text-color-text font-sans text-md outline-0 bg-color-transparent grow" autocomplete="username" id="organization_guest_contextual-sign-in_sign-in-modal_session_key" name="session_key" required type="text">
+          
+        </div>
+      </div>
+
+      <p class="input-helper mt-1.5" for="organization_guest_contextual-sign-in_sign-in-modal_session_key" role="alert" data-js-module-id="guest-input__message"></p>
+    </div>
+  
+
+        
+    <div class="mt-1.5" data-js-module-id="guest-input">
+      <div class="flex flex-col">
+        <label class="input-label mb-1" for="organization_guest_contextual-sign-in_sign-in-modal_session_password">
+          Password
+        </label>
+        <div class="text-input flex">
+          <input class="text-color-text font-sans text-md outline-0 bg-color-transparent grow" autocomplete="current-password" id="organization_guest_contextual-sign-in_sign-in-modal_session_password" name="session_password" required type="password">
+          
+            <button aria-live="assertive" data-id="sign-in-form__password-visibility-toggle" class="font-sans text-md font-bold text-color-action z-10 ml-[12px] hover:cursor-pointer" aria-label="Show your LinkedIn password" data-tracking-control-name="organization_guest_contextual-sign-in-modal_sign-in-modal_sign-in-password-visibility-toggle-btn" type="button">Show</button>
+          
+        </div>
+      </div>
+
+      <p class="input-helper mt-1.5" for="organization_guest_contextual-sign-in_sign-in-modal_session_password" role="alert" data-js-module-id="guest-input__message"></p>
+    </div>
+  
+
+        <input name="session_redirect" value="https://ua.linkedin.com/showcase/ai-ml-cv/" type="hidden">
+
+<!---->      </div>
+
+      <div data-id="sign-in-form__footer" class="flex justify-between
+          sign-in-form__footer--full-width">
+        <a data-id="sign-in-form__forgot-password" class="font-sans text-md font-bold link leading-regular
+            sign-in-form__forgot-password--full-width" href="https://www.linkedin.com/uas/request-password-reset?trk=organization_guest_contextual-sign-in-modal_sign-in-modal_forgot_password" data-tracking-control-name="organization_guest_contextual-sign-in-modal_sign-in-modal_forgot_password" data-tracking-will-navigate>Forgot password?</a>
+
+<!---->
+        <input name="trk" value="organization_guest_contextual-sign-in-modal_sign-in-modal_sign-in-submit" type="hidden">
+        <button class="btn-md btn-primary flex-shrink-0 cursor-pointer
+            sign-in-form__submit-btn--full-width w-full max-w-[400px] mx-auto" data-id="sign-in-form__submit-btn" data-tracking-control-name="organization_guest_contextual-sign-in-modal_sign-in-modal_sign-in-submit-btn" data-tracking-litms type="submit">
+          Sign in
+        </button>
+      </div>
+        <div class="sign-in-form__divider left-right-divider pt-2 pb-3">
+          <p class="sign-in-form__divider-text font-sans text-sm text-color-text px-2">
+            or
+          </p>
+        </div>
+    </form>
+      <div class="w-full max-w-[400px] mx-auto">
+        
+    <div class="google-auth-button">
+      <div class="google-auth-button__placeholder"></div>
+    </div>
+  
+      </div>
+<!---->  
+              <p class="sign-in-modal__join-now m-auto font-sans text-md text-color-text
+                  mt-2">
+                New to LinkedIn? <a href="https://www.linkedin.com/signup?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fshowcase%2Fai-ml-cv%2F&trk=organization_guest_contextual-sign-in-modal_sign-in-modal_join-link" data-tracking-control-name="organization_guest_contextual-sign-in-modal_sign-in-modal_join-link" data-tracking-will-navigate="true" class="sign-in-modal__join-link">Join now</a>
+              </p>
+          </div>
+        
+            </div>
+
+<!---->          </section>
+        </div>
+      </div>
+    </div>
+  
+    </div>
+  
+
+              <div class="contextual-sign-in-modal__divider left-right-divider">
+                <p class="contextual-sign-in-modal__divider-text font-sans text-sm text-color-text px-2">
+                  or
+                </p>
+              </div>
+                <div class="w-full max-w-[400px] mx-auto">
+                  
+    <div class="google-auth-button">
+      <div class="google-auth-button__placeholder"></div>
+    </div>
+  
+                </div>
+            </div>
+              <p class="contextual-sign-in-modal__join-now m-auto font-sans text-md text-color-text">
+                New to LinkedIn? <a href="https://www.linkedin.com/signup?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fshowcase%2Fai-ml-cv%2F&trk=organization_guest_contextual-sign-in-modal_join-link" data-tracking-control-name="organization_guest_contextual-sign-in-modal_join-link" data-tracking-will-navigate="true" class="contextual-sign-in-modal__join-link">Join now</a>
+              </p>
+          </div>
+        
+            </div>
+
+<!---->          </section>
+        </div>
+      </div>
+    </div>
+  
+    </div>
+  
+  
+
+    
+    
+    
+    
+
+    
+    
+
+    <div class="banner flex w-full justify-center max-h-[500px] text-lg font-normal transition-[max-height,visibility] duration-moderate ease-decelerate
+        bg-color-background-brand-accent-3
+        
+         fixed bottom-0 z-3" data-is-bottom="true" data-impression-id="organization_guest_banner">
+      <div class="banner__content flex flex-1 max-w-screen-content-max-w p-2 relative">
+            
+        <div class="flex w-full justify-between gap-1 babybear:flex-col papamamabear:items-center">
+          <div class="text-md font-semibold babybear:text-sm">
+            Join to see who you already know at AI/ML/CV (Artificial Intelligence, Machine Learning, Computer Vision)
+          </div>
+          <div class="flex gap-1">
+            <a href="https://www.linkedin.com/signup?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fshowcase%2Fai-ml-cv%2F&amp;trk=organization_guest_sticky-cta-join" class="btn-sm btn-secondary w-16 babybear:w-50%" data-tracking-will-navigate data-tracking-control-name="organization_guest_sticky-cta-join">Join now</a>
+            <a href="https://www.linkedin.com/login?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fshowcase%2Fai-ml-cv%2F&amp;fromSignIn=true&amp;trk=organization_guest_sticky-cta-login" class="btn-sm btn-primary w-16 babybear:w-50%" data-tracking-will-navigate data-tracking-control-name="organization_guest_sticky-cta-login">Sign in</a>
+          </div>
+        </div>
+      
+      </div>
+<!---->    </div>
+  
+  
+
+      
+    
+    
+
+<!---->  
+  
+
+        
+    
+<!---->      
+    
+
+    <a href="#main-content" class="skip-link btn-md btn-primary absolute z-11 -top-[100vh] focus:top-0">
+      Skip to main content
+    </a>
+  
+    <header class="header base-detail-page__header px-mobile-container-padding bg-color-background-container global-alert-offset">
+      
+        
+
+    
+    
+    
+    
+
+    <nav class="nav pt-1.5 pb-2 flex items-center justify-between relative flex-nowrap mamabear:flex-wrap mamabear:gap-y-1 babybear:flex-wrap babybear:py-1.5
+        " aria-label="Primary">
+
+      <a href="/?trk=organization_guest_nav-header-logo" class="nav__logo-link link-no-visited-state z-1 mr-auto babybear:z-0 babybear:mr-0 babybear:flex-1 hover:no-underline focus:no-underline active:no-underline" data-tracking-control-name="organization_guest_nav-header-logo" data-tracking-will-navigate>
+          
+              
+    
+    <span class="sr-only">LinkedIn</span>
+<!---->      <icon class="block text-color-brand w-[84px] h-[21px] papabear:w-[135px] papabear:h-[34px]
+          " data-test-id="nav-logo" data-delayed-url="https://static.licdn.com/aero-v1/sc/h/8fkga714vy9b2wk5auqo5reeb"></icon>
+  
+          
+      </a>
+
+<!---->
+        
+    
+    
+    
+    
+    
+    <ul class="top-nav-menu flex items-center nav__menu order-3 after:up-down-divider after:!h-[37px] mr-0.5 babybear:hidden mamabear:hidden">
+        <li class>
+          
+    <a href="https://www.linkedin.com/pulse/topics/home/?trk=organization_guest_guest_nav_menu_discover" data-tracking-control-name="organization_guest_guest_nav_menu_discover" data-tracking-will-navigate class="top-nav-link flex justify-center items-center h-[52px] hover:text-color-text visited:hover:text-color-text hover:no-underline
+        w-[64px] flex-col mx-1
+        text-color-text-low-emphasis visited:text-color-text-low-emphasis">
+      <icon class="top-nav-link__icon flex h-3 w-3 flex-shrink-0 " data-delayed-url="https://static.licdn.com/aero-v1/sc/h/5x5h6fkfoq2njo0ocxqr98mrk">
+      </icon>
+      <span class="top-nav-link__label-text font-sans text-sm leading-regular text-center
+          font-regular">
+        Discover
+      </span>
+    </a>
+  
+        </li>
+        <li class>
+          
+    <a href="https://www.linkedin.com/pub/dir/+/+?trk=organization_guest_guest_nav_menu_people" data-tracking-control-name="organization_guest_guest_nav_menu_people" data-tracking-will-navigate class="top-nav-link flex justify-center items-center h-[52px] hover:text-color-text visited:hover:text-color-text hover:no-underline
+        w-[64px] flex-col mx-1
+        text-color-text-low-emphasis visited:text-color-text-low-emphasis">
+      <icon class="top-nav-link__icon flex h-3 w-3 flex-shrink-0 " data-delayed-url="https://static.licdn.com/aero-v1/sc/h/7kb6sn3tm4cx918cx9a5jlb0">
+      </icon>
+      <span class="top-nav-link__label-text font-sans text-sm leading-regular text-center
+          font-regular">
+        People
+      </span>
+    </a>
+  
+        </li>
+        <li class>
+          
+    <a href="https://www.linkedin.com/learning/search?trk=organization_guest_guest_nav_menu_learning" data-tracking-control-name="organization_guest_guest_nav_menu_learning" data-tracking-will-navigate class="top-nav-link flex justify-center items-center h-[52px] hover:text-color-text visited:hover:text-color-text hover:no-underline
+        w-[64px] flex-col mx-1
+        text-color-text-low-emphasis visited:text-color-text-low-emphasis">
+      <icon class="top-nav-link__icon flex h-3 w-3 flex-shrink-0 " data-delayed-url="https://static.licdn.com/aero-v1/sc/h/8wykgzgbqy0t3fnkgborvz54u">
+      </icon>
+      <span class="top-nav-link__label-text font-sans text-sm leading-regular text-center
+          font-regular">
+        Learning
+      </span>
+    </a>
+  
+        </li>
+        <li class>
+          
+    <a href="https://www.linkedin.com/jobs/search?trk=organization_guest_guest_nav_menu_jobs" data-tracking-control-name="organization_guest_guest_nav_menu_jobs" data-tracking-will-navigate class="top-nav-link flex justify-center items-center h-[52px] hover:text-color-text visited:hover:text-color-text hover:no-underline
+        w-[64px] flex-col mx-1
+        top-nav-link--selected text-color-text visited:text-color-text border-solid border-b-2 border-color-text" aria-current="page">
+      <icon class="top-nav-link__icon flex h-3 w-3 flex-shrink-0 " data-delayed-url="https://static.licdn.com/aero-v1/sc/h/92eb1xekc34eklevj0io6x4ki">
+      </icon>
+      <span class="top-nav-link__label-text font-sans text-sm leading-regular text-center
+          font-regular">
+        Jobs
+      </span>
+    </a>
+  
+        </li>
+    </ul>
+  
+
+      <div class="nav__cta-container order-3 flex gap-x-1 justify-end min-w-[100px] flex-nowrap flex-shrink-0 babybear:flex-wrap flex-2">
+        
+    
+    <a class="nav__button-tertiary btn-md btn-tertiary" href="https://www.linkedin.com/signup?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fshowcase%2Fai-ml-cv%2F&amp;trk=organization_guest_nav-header-join" data-tracking-control-name="organization_guest_nav-header-join" data-test-live-nav-primary-cta data-tracking-will-navigate>
+      Join now
+    </a>
+
+
+        
+  
+  
+
+      
+      <a class="nav__button-secondary btn-md btn-secondary-emphasis" href="https://www.linkedin.com/login?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fshowcase%2Fai-ml-cv%2F&amp;fromSignIn=true&amp;trk=organization_guest_nav-header-signin" data-tracking-control-name="organization_guest_nav-header-signin" data-tracking-will-navigate>
+          Sign in
+      </a>
+
+
+<!---->      </div>
+
+<!---->
+<!---->    </nav>
+  
+      
+    </header>
+
+    
+<!---->      
+
+<!---->
+    <main class="main papabear:flex papabear:w-content-max-w papabear:mx-auto papabear:pt-desktop-content-top-margin mamabear:pt-desktop-content-top-margin
+        " id="main-content" role="main">
+      <section class="core-rail mx-auto papabear:w-core-rail-width mamabear:max-w-[790px] babybear:max-w-[790px]">
+        
+        
+            
+    
+    
+    
+    
+    
+
+    
+    <section class="top-card-layout container-lined overflow-hidden babybear:rounded-[0px]">
+        
+    <figure class="cover-img min-h-[87px] papbear:min-h-[100px] rounded-t-[2px] babybear:rounded-[0px] -z-1">
+        <code id="cover-image" style="display: none"><!--{"width":1920,"x":0,"y":733,"height":325}--></code>
+      <div class="cover-img__image-frame relative w-full overflow-hidden pb-[calc((134/782)*100%)]">
+        <div class="cover-img__image-position absolute top-0 right-0 bottom-0 left-0
+            ">
+            <img class="cover-img__image relative w-full h-full object-cover" src="https://media.licdn.com/dms/image/C561BAQHwkR5_Kzh5Xw/company-background_10000/0/1550152614828?e=1686661200&amp;v=beta&amp;t=78r-2d8V7D_sqWL29aFCLHGZDmXZiqDDEfl-Ih_o2D0" data-embed-id="cover-image" alt>
+        </div>
+      </div>
+<!---->    </figure>
+  
+
+      <div class="top-card-layout__card relative p-2 papabear:p-details-container-padding">
+            <div class="top-card-layout__entity-image-container flex">
+              
+      <img class="inline-block relative
+          
+          w-16 h-16
+           top-card-layout__entity-image shadow-color-shadow shadow-[0_4px_12px] border-2 border-solid border-color-surface mt-[-70px] mb-[14px] papabear:border-4 papabear:mt-[-100px] papabear:mb-[18px]" data-delayed-url="https://media.licdn.com/dms/image/C560BAQEFq5BNB-7W-w/company-logo_200_200/0/1550151611900?e=2147483647&amp;v=beta&amp;t=hNolBNFoCEBUXLUDBq1zEE90OkhiyYyOfO1xIL1Pguc" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/5fnrxyask3t3av1g9ym526ben" alt="AI/ML/CV (Artificial Intelligence, Machine Learning, Computer Vision)">
+  
+            </div>
+
+          <div class="top-card-layout__entity-info-container flex flex-wrap papabear:flex-nowrap">
+            <div class="top-card-layout__entity-info flex-grow flex-shrink-0 basis-0 babybear:flex-none babybear:w-full babybear:flex-none babybear:w-full">
+                  <h1 class="top-card-layout__title font-sans text-lg papabear:text-xl font-bold leading-open text-color-text mb-0">
+                    AI/ML/CV (Artificial Intelligence, Machine Learning, Computer Vision)
+                    
+                  </h1>
+                <h2 class="top-card-layout__headline break-words font-sans text-md leading-open text-color-text">
+                    IT Services and IT Consulting
+                </h2>
+
+                <h3 class="top-card-layout__first-subline font-sans text-md leading-open text-color-text-low-emphasis">
+                  
+        Zaporozhye, Zaporizka district <span class="before:middot"></span> 380 followers
+      
+                </h3>
+
+                <h4 class="top-card-layout__second-subline font-sans text-sm leading-open text-color-text-low-emphasis mt-0.5">
+                  
+        <span class="line-clamp-2">Artificial Intelligence, Machine Learning, Computer Vision solutions for your business.</span>
+      
+                </h4>
+
+              <div class="top-card-layout__cta-container flex flex-wrap mt-0.5 papabear:mt-0 ml-[-12px]">
+                    
+          <a class="top-card-layout__cta mt-2 ml-1.5 h-auto babybear:flex-auto top-card-layout__cta--primary btn-md btn-primary" href="https://www.linkedin.com/login?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fshowcase%2Fai-ml-cv%2F&amp;fromSignIn=true&amp;trk=top-card_top-card-primary-button-top-card-primary-cta" data-tracking-control-name="top-card_top-card-primary-button-top-card-primary-cta" data-tracking-will-navigate>
+            Follow
+          </a>
+              
+
+                    
+<!---->      
+              </div>
+            </div>
+
+<!---->          </div>
+
+          
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+      <div class="ellipsis-menu absolute right-0 top-0 top-card-layout__ellipsis-menu mr-1 papabear:mt-0.5 papabear:mr-2">
+        
+
+    
+
+    <div class="collapsible-dropdown flex items-center relative hyphens-auto">
+          
+            <button class="ellipsis-menu__trigger
+                collapsible-dropdown__button btn-md btn-tertiary cursor-pointer
+                !py-[6px] !px-1 flex items-center rounded-[50%]
+                
+                " aria-expanded="false" aria-label="Open menu" data-tracking-control-name="top-card_ellipsis-menu-trigger">
+              <icon class="ellipsis-menu__trigger-icon m-0 p-0 centered-icon" data-delayed-url="https://static.licdn.com/aero-v1/sc/h/671xosfpvk4c0kqtyl87hashi"></icon>
+            </button>
+          
+
+        <ul class="collapsible-dropdown__list hidden container-raised absolute w-auto overflow-y-auto flex-col items-stretch z-1 bottom-auto top-[100%]" role="menu" tabindex="-1">
+          
+              
+
+                <li class="ellipsis-menu__item border-t-1 border-solid border-color-border-low-emphasis first-of-type:border-none flex">
+                  
+
+    
+    
+
+    
+
+    
+
+    <a href="/uas/login?fromSignIn=true&amp;session_redirect=https%3A%2F%2Fua.linkedin.com%2Fshowcase%2Fai-ml-cv%2F&amp;trk=top-card_ellipsis-menu-semaphore-sign-in-redirect&amp;_f=guest-reporting" data-tracking-control-name="top-card_ellipsis-menu-semaphore-sign-in-redirect" data-tracking-will-navigate data-item-type="semaphore" data-semaphore-content-type="PRODUCT" data-semaphore-content-urn="urn:li:organization:19022277" data-semaphore-tracking-prefix="top-card_ellipsis-menu-semaphore" data-is-logged-in="false" data-modal="semaphore__toggle" class="semaphore__toggle visited:text-color-text-secondary ellipsis-menu__semaphore ellipsis-menu__item-button flex items-center w-full p-1 cursor-pointer font-sans text-sm font-bold link-styled focus:link-styled link:no-underline active:bg-color-background-container-tint focus:bg-color-background-container-tint hover:bg-color-background-container-tint outline-offset-[-2px]">
+<!---->        
+                      <icon class="ellipsis-menu__item-icon text-color-text h-[24px] w-[24px] mr-1" data-delayed-url="https://static.licdn.com/aero-v1/sc/h/iq0x9q37wj214o129ai1yjut">
+                      </icon>
+                      Report this product
+                    
+    </a>
+
+    
+    
+    
+    
+
+    
+
+    
+    <div class="hidden">
+        <button class="modal__outlet " data-tracking-control-name="top-card_ellipsis-menu-semaphore-modal_modal_outlet" data-modal="default-outlet">
+          
+        </button>
+
+      <div id="semaphore-modal" class="modal semaphore-modal max-w-[744px] " data-outlet="default-outlet">
+<!---->        <div class="modal__overlay flex items-center bg-color-background-scrim justify-center fixed bottom-0 left-0 right-0 top-0 opacity-0 invisible pointer-events-none z-[1000] transition-[opacity] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] duration-[0.17s]
+            py-4
+            ">
+          <section aria-modal="true" role="dialog" aria-labelledby="semaphore-modal-modal-header" tabindex="-1" class="max-h-full modal__wrapper overflow-auto p-0 bg-color-surface max-w-[1128px] min-h-[160px] relative scale-[0.25] shadow-sm shadow-color-border-faint transition-[transform] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] duration-[0.33s] focus:outline-0
+               modal__wrapper--with-footer flex flex-col
+              w-[1128px] mamabear:w-[744px] babybear:w-[360px]
+               max-w-[min(744px,100%-24px)]
+              rounded-md">
+              <header class="modal__header flex items-center justify-between border-b-1 border-solid border-color-border-faint py-1.5 px-3
+                  ">
+                  <h2 id="semaphore-modal-modal-header" class="modal__title font-normal leading-open text-color-text text-lg">Report</h2>
+                  <button class="modal__dismiss modal__dismiss--with-icon btn-tertiary h-[40px] w-[40px] p-0 rounded-full indent-0
+                      " aria-label="Dismiss" data-tracking-control-name="top-card_ellipsis-menu-semaphore-modal_modal_dismiss" type="button">
+                      <icon class="modal__dismiss-icon relative top-[2px]" data-delayed-url="https://static.licdn.com/aero-v1/sc/h/gs508lg3t2o81tq7pmcgn6m2"></icon>
+                  </button>
+<!---->              </header>
+            <div class="modal__main w-full flex-1">
+              
+        <h2 class="semaphore-modal__title text-md font-medium mb-1 ml-2 mt-2 text-color-text">
+          Report<!-- semaphore title goes here -->
+        </h2>
+        <div class="semaphore-modal__content text-color-text"></div>
+      
+            </div>
+
+                <footer class="modal__footer flex justify-end py-1.5 px-3 border-t-1 border-solid border-color-border-faint">
+                  
+        <button class="btn-md btn-secondary" data-semaphore-action="back" data-tracking-control-name="semaphore-back">Back</button>
+        <button class="btn-md btn-primary ml-1" data-semaphore-action="submit" data-tracking-control-name="semaphore-submit" disabled="true">Submit</button>
+      
+                </footer>
+          </section>
+        </div>
+      </div>
+    </div>
+  
+  
+      
+    <template id="semaphore-container-template">
+      <ul class="semaphore-options-container mb-2">
+        <!-- list of semaphore options -->
+      </ul>
+    </template>
+  
+      
+    <template id="semaphore-block-template">
+      <li class="px-2 py-1" data-semaphore-item="action">
+        <span class="text-sm text-color-text-low-emphasis whitespace-pre-line" data-attr="block-content"></span>
+        <input class="hidden scale-150" data-tracking-control-name="top-card_ellipsis-menu-semaphore" name="semaphore-action" checked value data-semaphore-input type="radio">
+      </li>
+    </template>
+  
+      
+    <template id="semaphore-section-template">
+      <li class="px-2 py-1" data-semaphore-item="section">
+        <button class="w-full text-color-text" data-tracking-control-name="top-card_ellipsis-menu-semaphore" data-semaphore-input>
+          <span class="text-md text-left inline-block w-[calc(100%-24px)]" data-attr="title"></span>
+          <icon class="float-right w-[24px] h-[24px] opacity-60" data-delayed-url="https://static.licdn.com/aero-v1/sc/h/bib7g6ntpj66fbkg8zzh0psp2"></icon>
+        </button>
+      </li>
+    </template>
+  
+      
+    <template id="semaphore-openpage-template">
+      <li class="px-2 py-1 border-t-1 border-solid border-color-border-faint" data-semaphore-item="openpage">
+        <span class="text-md font-medium block my-1" data-attr="body"></span>
+        <button data-tracking-control-name="top-card_ellipsis-menu-semaphore" data-semaphore-input>
+          <span class="text-md text-color-text" data-attr="title"></span>
+        </button>
+      </li>
+    </template>
+  
+      
+    <template id="semaphore-action-template">
+      <li class="px-2 py-1" data-semaphore-item="action" data-semaphore-type>
+        <span class="text-md font-medium inline-block my-1" data-attr="body"></span>
+        <button class="w-full text-color-text" data-tracking-control-name="top-card_ellipsis-menu-semaphore" data-semaphore-input>
+          <span class="text-md text-left inline-block w-[calc(100%-24px)]" data-attr="title"></span>
+          <icon class="float-right w-[24px] h-[24px] opacity-60" data-delayed-url="https://static.licdn.com/aero-v1/sc/h/bib7g6ntpj66fbkg8zzh0psp2"></icon>
+        </button>
+      </li>
+    </template>
+  
+      
+    <template id="semaphore-action-radio-template">
+      <li class="px-2 py-1" data-semaphore-item="action">
+        <label>
+          <div class="flex">
+            <input class="scale-150" data-tracking-control-name="top-card_ellipsis-menu-semaphore" name="semaphore-action" value data-semaphore-input type="radio">
+            <span class="text-md inline-block ml-1" data-attr="title"></span>
+          </div>
+
+          <span class="text-sm text-left inline-block w-[calc(100%-24px)] opacity-60 pl-[30px]" data-attr="body"></span>
+        </label>
+      </li>
+    </template>
+  
+      
+    <template id="semaphore-openlink-template">
+      <li class="px-2 py-1" data-semaphore-item="openlink">
+        <a class="text-color-text hover:no-underline visited:text-color-text" data-semaphore-input data-tracking-control-name="top-card_ellipsis-menu-semaphore" href target="_blank" data-tracking-will-navigate>
+          <span class="text-md text-color-text font-normal inline-block" data-attr="title"></span>
+          <span class="text-sm text-color-text font-normal inline-block w-[calc(100%-24px)] opacity-60" data-attr="body"></span>
+          <icon class="float-right w-[24px] h-[24px] opacity-60" data-delayed-url="https://static.licdn.com/aero-v1/sc/h/481psuouj1lu3q2laho6vqwhn"></icon>
+        </a>
+      </li>
+    </template>
+  
+      
+    <template id="semaphore-result-template">
+      <p class="semaphore-options-container__item pl-2 pb-2" data-semaphore-item="result">
+        <span class="text-sm font-normal text-color-text-secondary" data-attr="thanks-text-body"></span>
+        <a class="text-sm font-semibold text-color-link" href="https://www.linkedin.com/help/linkedin/answer/37822" target="_blank" data-attr="thanks-help-center-link" data-tracking-control-name="top-card_ellipsis-menu-semaphore-help-center" data-tracking-will-navigate data-semaphore-input></a>
+      </p>
+    </template>
+  
+  
+                </li>
+<!---->          
+        </ul>
+
+<!---->    </div>
+  
+
+      </div>
+  
+
+<!---->      </div>
+    </section>
+  
+  
+          
+      
+
+        <div class="details mx-details-container-padding">
+          
+        
+            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+      
+    <section class="core-section-container my-3 core-section-container--with-border border-b-1 border-solid border-color-border-faint m-0 py-3 text-color-text" data-test-id="about-us">
+<!---->
+          <h2 class="core-section-container__title section-title">
+            About us
+          </h2>
+
+<!---->
+      <div class="core-section-container__content break-words">
+        
+
+          <p class="break-words whitespace-pre-wrap text-color-text" data-test-id="about-us__description">UDTech offers Machine Learning and Computer Vision solutions for different kind of businesses. We could analyze the problem and offer a solution or develop a custom one that makes your business more efficient.
+
+Machine Learning, Computer Vision, Neural Networks, Artificial Intelligence, Image Recognition</p>
+
+          <dl class="mt-6">
+              
+    <div class="mb-2 flex papabear:mr-3 mamabear:mr-3 babybear:flex-wrap" data-test-id="about-us__website">
+      <dt class="font-sans text-md font-bold text-color-text break-words w-40 papabear:flex-shrink-0 papabear:mr-3 mamabear:flex-shrink-0 mamabear:mr-3 babybear:mb-1">
+          Website
+      </dt>
+      <dd class="font-sans text-md text-color-text break-words overflow-hidden">
+        
+                  
+    <a class="link-no-visited-state hover:no-underline" data-tracking-control-name="about_website" href="https://www.linkedin.com/redir/redirect?url=http%3A%2F%2Fwww%2Eudtech%2Eco&amp;urlhash=tRxj&amp;trk=about_website" target="_blank" rel="noopener" data-tracking-will-navigate aria-describedby="websiteLinkDescription">
+      http://www.udtech.co
+      <icon class="align-middle" data-delayed-url="https://static.licdn.com/aero-v1/sc/h/49229g4q0jsla5l1xojq1wob9" aria-hidden="true"></icon>
+    </a>
+  
+                  <p class="hidden" id="websiteLinkDescription">External link for AI/ML/CV (Artificial Intelligence, Machine Learning, Computer Vision)</p>
+                
+      </dd>
+    </div>
+  
+              
+    <div class="mb-2 flex papabear:mr-3 mamabear:mr-3 babybear:flex-wrap" data-test-id="about-us__industries">
+      <dt class="font-sans text-md font-bold text-color-text break-words w-40 papabear:flex-shrink-0 papabear:mr-3 mamabear:flex-shrink-0 mamabear:mr-3 babybear:mb-1">
+          Industries
+      </dt>
+      <dd class="font-sans text-md text-color-text break-words overflow-hidden">
+        
+                  IT Services and IT Consulting
+                
+      </dd>
+    </div>
+  
+              
+    <div class="mb-2 flex papabear:mr-3 mamabear:mr-3 babybear:flex-wrap" data-test-id="about-us__size">
+      <dt class="font-sans text-md font-bold text-color-text break-words w-40 papabear:flex-shrink-0 papabear:mr-3 mamabear:flex-shrink-0 mamabear:mr-3 babybear:mb-1">
+          Company size
+      </dt>
+      <dd class="font-sans text-md text-color-text break-words overflow-hidden">
+        
+                  
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+        11-50 employees
+  
+
+                
+      </dd>
+    </div>
+  
+              
+    <div class="mb-2 flex papabear:mr-3 mamabear:mr-3 babybear:flex-wrap" data-test-id="about-us__headquarters">
+      <dt class="font-sans text-md font-bold text-color-text break-words w-40 papabear:flex-shrink-0 papabear:mr-3 mamabear:flex-shrink-0 mamabear:mr-3 babybear:mb-1">
+          Headquarters
+      </dt>
+      <dd class="font-sans text-md text-color-text break-words overflow-hidden">
+        
+                    Zaporozhye, Zaporizka district
+                
+      </dd>
+    </div>
+  
+<!---->              
+    <div class="mb-2 flex papabear:mr-3 mamabear:mr-3 babybear:flex-wrap" data-test-id="about-us__foundedOn">
+      <dt class="font-sans text-md font-bold text-color-text break-words w-40 papabear:flex-shrink-0 papabear:mr-3 mamabear:flex-shrink-0 mamabear:mr-3 babybear:mb-1">
+          Founded
+      </dt>
+      <dd class="font-sans text-md text-color-text break-words overflow-hidden">
+        
+                  2011
+                
+      </dd>
+    </div>
+  
+
+              
+    <div class="mb-2 flex papabear:mr-3 mamabear:mr-3 babybear:flex-wrap" data-test-id="about-us__specialties">
+      <dt class="font-sans text-md font-bold text-color-text break-words w-40 papabear:flex-shrink-0 papabear:mr-3 mamabear:flex-shrink-0 mamabear:mr-3 babybear:mb-1">
+          Specialties
+      </dt>
+      <dd class="font-sans text-md text-color-text break-words overflow-hidden">
+        
+                  Machine Learning, Computer Vision, Automation, Industry 4.0, Product Development, and Security
+                
+      </dd>
+    </div>
+  
+          </dl>
+      
+      </div>
+    </section>
+  
+  
+            
+    
+
+<!---->  
+          
+      
+        </div>
+      </section>
+      <section class="right-rail papabear:w-right-rail-width papabear:ml-column-gutter mamabear:max-w-[790px] mamabear:px-mobile-container-padding babybear:max-w-[790px] babybear:px-mobile-container-padding">
+        
+        
+            
+    
+    
+    
+
+      
+      <section class="aside-section-container mb-4" data-test-id="affiliated-pages">
+
+            <h2 class="aside-section-container__title section-title">
+              Affiliated pages
+            </h2>
+
+<!---->
+        <div class="aside-section-container__content break-words">
+          
+        
+    
+    
+
+      <ul class="show-more-less__list show-more-less__list--no-hidden-elems" data-impression-id="affiliated-pages_show-more-less">
+        
+              <li>
+                
+
+    
+    
+    
+    
+      <a href="https://ua.linkedin.com/company/udtech?trk=affiliated-pages" target="_self" data-tracking-control-name="affiliated-pages" data-tracking-will-navigate class="base-card relative w-full hover:no-underline focus:no-underline base-card--link base-aside-card flex my-1.5
+        
+        base-aside-card--link">
+        
+
+<!---->
+      
+<!---->
+            
+              
+      <img class="inline-block relative
+          
+          w-6 h-6
+          " data-delayed-url="https://media.licdn.com/dms/image/C560BAQEb5jbypUYRzQ/company-logo_100_100/0/1519886737119?e=2147483647&amp;v=beta&amp;t=qBQQcyaLqww1J1vOWItiXS3IERhlHKkk2ASlLoT5KpY" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt>
+  
+
+        <div class="base-aside-card__info self-center pl-0.5 flex flex-col flex-1">
+          <h3 class="base-aside-card__title font-sans text-md font-bold text-color-text relative">
+            
+        UDTech - Product Development and Support
+      
+<!---->          </h3>
+
+            <p class="base-aside-card__subtitle font-sans text-sm text-color-text leading-open mt-0.5 break-words">
+              
+        IT Services and IT Consulting
+      
+            </p>
+
+            <p class="base-aside-card__second-subtitle font-sans text-sm leading-open text-color-text-low-emphasis">
+              
+        Zaporizhzha, Zaporizhzhia&#39;s district
+      
+            </p>
+
+<!---->
+<!---->
+<!---->        </div>
+      
+    
+      </a>
+  
+  
+  
+  
+              </li>
+          
+      </ul>
+  
+      
+        </div>
+      </section>
+  
+  
+            
+    
+    
+    
+
+      
+      <section class="aside-section-container mb-4" data-test-id="similar-pages">
+
+            <h2 class="aside-section-container__title section-title">
+              Similar pages
+            </h2>
+
+<!---->
+        <div class="aside-section-container__content break-words">
+          
+        
+    
+    
+
+      <div class="show-more-less">
+<!---->
+        <ul data-max-num-to-show="4" class="show-more-less__list show-more-less__list--hide-after-4" data-impression-id="similar-pages_show-more-less">
+          
+              <li>
+                
+
+    
+    
+    
+    
+      <a href="https://in.linkedin.com/company/unified-data-tech-solutions-pvt.-ltd.?trk=similar-pages" target="_self" data-tracking-control-name="similar-pages" data-tracking-will-navigate class="base-card relative w-full hover:no-underline focus:no-underline base-card--link base-aside-card flex my-1.5
+        
+        base-aside-card--link">
+        
+
+<!---->
+      
+<!---->
+            
+              
+      <img class="inline-block relative
+          
+          w-6 h-6
+          " data-delayed-url="https://media.licdn.com/dms/image/C4D0BAQE0YOYnaVo2hA/company-logo_100_100/0/1519919715715?e=2147483647&amp;v=beta&amp;t=YD7GhomRytE1WMZdHY0Ly0zr3rXVAnv8MLWvE4OMgt0" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt>
+  
+
+        <div class="base-aside-card__info self-center pl-0.5 flex flex-col flex-1">
+          <h3 class="base-aside-card__title font-sans text-md font-bold text-color-text relative">
+            
+        Unified Data-Tech Solutions Pvt. Ltd.
+      
+<!---->          </h3>
+
+            <p class="base-aside-card__subtitle font-sans text-sm text-color-text leading-open mt-0.5 break-words">
+              
+        IT Services and IT Consulting
+      
+            </p>
+
+            <p class="base-aside-card__second-subtitle font-sans text-sm leading-open text-color-text-low-emphasis">
+              
+        Mumbai, Maharashtra
+      
+            </p>
+
+<!---->
+<!---->
+<!---->        </div>
+      
+    
+      </a>
+  
+  
+  
+  
+              </li>
+              <li>
+                
+
+    
+    
+    
+    
+      <a href="https://uk.linkedin.com/company/udtech-ltd?trk=similar-pages" target="_self" data-tracking-control-name="similar-pages" data-tracking-will-navigate class="base-card relative w-full hover:no-underline focus:no-underline base-card--link base-aside-card flex my-1.5
+        
+        base-aside-card--link">
+        
+
+<!---->
+      
+<!---->
+            
+              
+      <img class="inline-block relative
+          
+          w-6 h-6
+          " data-delayed-url="https://media.licdn.com/dms/image/C560BAQHCYyK7h6zDfA/company-logo_100_100/0/1519872364844?e=2147483647&amp;v=beta&amp;t=jerOCr3texjgYV2BUjH84T1jivx9YSrVM-h0QjVbj0A" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt>
+  
+
+        <div class="base-aside-card__info self-center pl-0.5 flex flex-col flex-1">
+          <h3 class="base-aside-card__title font-sans text-md font-bold text-color-text relative">
+            
+        UDTECH LTD
+      
+<!---->          </h3>
+
+            <p class="base-aside-card__subtitle font-sans text-sm text-color-text leading-open mt-0.5 break-words">
+              
+        IT Services and IT Consulting
+      
+            </p>
+
+<!---->
+<!---->
+<!---->
+<!---->        </div>
+      
+    
+      </a>
+  
+  
+  
+  
+              </li>
+              <li>
+                
+
+    
+    
+    
+    
+      <a href="https://ua.linkedin.com/company/incode-group?trk=similar-pages" target="_self" data-tracking-control-name="similar-pages" data-tracking-will-navigate class="base-card relative w-full hover:no-underline focus:no-underline base-card--link base-aside-card flex my-1.5
+        
+        base-aside-card--link">
+        
+
+<!---->
+      
+<!---->
+            
+              
+      <img class="inline-block relative
+          
+          w-6 h-6
+          " data-delayed-url="https://media.licdn.com/dms/image/C4D0BAQGAJDy4bZZ00A/company-logo_100_100/0/1524639565942?e=2147483647&amp;v=beta&amp;t=a0gVtNWfHE7vvI4m2Idl_0X3QqDKU63FugV_lG22X-0" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt>
+  
+
+        <div class="base-aside-card__info self-center pl-0.5 flex flex-col flex-1">
+          <h3 class="base-aside-card__title font-sans text-md font-bold text-color-text relative">
+            
+        Incode Group
+      
+<!---->          </h3>
+
+            <p class="base-aside-card__subtitle font-sans text-sm text-color-text leading-open mt-0.5 break-words">
+              
+        IT Services and IT Consulting
+      
+            </p>
+
+            <p class="base-aside-card__second-subtitle font-sans text-sm leading-open text-color-text-low-emphasis">
+              
+         Dnipro, Ukraine
+      
+            </p>
+
+<!---->
+<!---->
+<!---->        </div>
+      
+    
+      </a>
+  
+  
+  
+  
+              </li>
+              <li>
+                
+
+    
+    
+    
+    
+      <a href="https://ua.linkedin.com/company/uinno?trk=similar-pages" target="_self" data-tracking-control-name="similar-pages" data-tracking-will-navigate class="base-card relative w-full hover:no-underline focus:no-underline base-card--link base-aside-card flex my-1.5
+        
+        base-aside-card--link">
+        
+
+<!---->
+      
+<!---->
+            
+              
+      <img class="inline-block relative
+          
+          w-6 h-6
+          " data-delayed-url="https://media.licdn.com/dms/image/D560BAQGWpQQB1Shhnw/company-logo_100_100/0/1684941682488?e=2147483647&amp;v=beta&amp;t=MlLm6g-8tcc4KsS7hjWgLEpu1pJq5dFY7oItdn-s9a0" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt>
+  
+
+        <div class="base-aside-card__info self-center pl-0.5 flex flex-col flex-1">
+          <h3 class="base-aside-card__title font-sans text-md font-bold text-color-text relative">
+            
+        Uinno
+      
+<!---->          </h3>
+
+            <p class="base-aside-card__subtitle font-sans text-sm text-color-text leading-open mt-0.5 break-words">
+              
+        IT Services and IT Consulting
+      
+            </p>
+
+            <p class="base-aside-card__second-subtitle font-sans text-sm leading-open text-color-text-low-emphasis">
+              
+        Zaporizhia, Zaporizhia
+      
+            </p>
+
+<!---->
+<!---->
+<!---->        </div>
+      
+    
+      </a>
+  
+  
+  
+  
+              </li>
+              <li>
+                
+
+    
+    
+    
+    
+      <a href="https://pl.linkedin.com/company/topdevs?trk=similar-pages" target="_self" data-tracking-control-name="similar-pages" data-tracking-will-navigate class="base-card relative w-full hover:no-underline focus:no-underline base-card--link base-aside-card flex my-1.5
+        
+        base-aside-card--link">
+        
+
+<!---->
+      
+<!---->
+            
+              
+      <img class="inline-block relative
+          
+          w-6 h-6
+          " data-delayed-url="https://media.licdn.com/dms/image/C4D0BAQEbpAwi7TodEw/company-logo_100_100/0/1647361521551?e=2147483647&amp;v=beta&amp;t=OWPViZ_xYBvmgxGA9ATH2LxvOyiWKJ5PQCa58OiA1VE" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt>
+  
+
+        <div class="base-aside-card__info self-center pl-0.5 flex flex-col flex-1">
+          <h3 class="base-aside-card__title font-sans text-md font-bold text-color-text relative">
+            
+        TopDevs Corp.
+      
+<!---->          </h3>
+
+            <p class="base-aside-card__subtitle font-sans text-sm text-color-text leading-open mt-0.5 break-words">
+              
+        IT Services and IT Consulting
+      
+            </p>
+
+<!---->
+<!---->
+<!---->
+<!---->        </div>
+      
+    
+      </a>
+  
+  
+  
+  
+              </li>
+              <li>
+                
+
+    
+    
+    
+    
+      <a href="https://in.linkedin.com/company/cubix-micro-systems-i-pvt-ltd?trk=similar-pages" target="_self" data-tracking-control-name="similar-pages" data-tracking-will-navigate class="base-card relative w-full hover:no-underline focus:no-underline base-card--link base-aside-card flex my-1.5
+        
+        base-aside-card--link">
+        
+
+<!---->
+      
+<!---->
+            
+              
+      <img class="inline-block relative
+          
+          w-6 h-6
+          " data-delayed-url="https://media.licdn.com/dms/image/C4D0BAQEWbGE5bGnzgA/company-logo_100_100/0/1661426735906?e=2147483647&amp;v=beta&amp;t=T3P2VN3aHsV8wF3yVEeeaSbdk-N1xfE-modsGZR7Bbs" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt>
+  
+
+        <div class="base-aside-card__info self-center pl-0.5 flex flex-col flex-1">
+          <h3 class="base-aside-card__title font-sans text-md font-bold text-color-text relative">
+            
+        Cubix Networks Pvt Ltd
+      
+<!---->          </h3>
+
+            <p class="base-aside-card__subtitle font-sans text-sm text-color-text leading-open mt-0.5 break-words">
+              
+        IT Services and IT Consulting
+      
+            </p>
+
+            <p class="base-aside-card__second-subtitle font-sans text-sm leading-open text-color-text-low-emphasis">
+              
+        Pune, Maharashtra
+      
+            </p>
+
+<!---->
+<!---->
+<!---->        </div>
+      
+    
+      </a>
+  
+  
+  
+  
+              </li>
+              <li>
+                
+
+    
+    
+    
+    
+      <a href="https://ua.linkedin.com/company/qwertysoftware?trk=similar-pages" target="_self" data-tracking-control-name="similar-pages" data-tracking-will-navigate class="base-card relative w-full hover:no-underline focus:no-underline base-card--link base-aside-card flex my-1.5
+        
+        base-aside-card--link">
+        
+
+<!---->
+      
+<!---->
+            
+              
+      <img class="inline-block relative
+          
+          w-6 h-6
+          " data-delayed-url="https://media.licdn.com/dms/image/C4D0BAQFosnrFfXDimg/company-logo_100_100/0/1617975581362?e=2147483647&amp;v=beta&amp;t=-aNtNQX3VZNSrJn0AHgoYblQIVHTNUQ3_RqYFG2p6LU" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt>
+  
+
+        <div class="base-aside-card__info self-center pl-0.5 flex flex-col flex-1">
+          <h3 class="base-aside-card__title font-sans text-md font-bold text-color-text relative">
+            
+        Qwerty.Software
+      
+<!---->          </h3>
+
+            <p class="base-aside-card__subtitle font-sans text-sm text-color-text leading-open mt-0.5 break-words">
+              
+        IT Services and IT Consulting
+      
+            </p>
+
+<!---->
+<!---->
+<!---->
+<!---->        </div>
+      
+    
+      </a>
+  
+  
+  
+  
+              </li>
+              <li>
+                
+
+    
+    
+    
+    
+      <a href="https://uk.linkedin.com/company/light-it?trk=similar-pages" target="_self" data-tracking-control-name="similar-pages" data-tracking-will-navigate class="base-card relative w-full hover:no-underline focus:no-underline base-card--link base-aside-card flex my-1.5
+        
+        base-aside-card--link">
+        
+
+<!---->
+      
+<!---->
+            
+              
+      <img class="inline-block relative
+          
+          w-6 h-6
+          " data-delayed-url="https://media.licdn.com/dms/image/C560BAQGqhnFDnAW4KA/company-logo_100_100/0/1652108386103?e=2147483647&amp;v=beta&amp;t=DwXq1EsWEBmIPnMC2AG-phq_rnsyT5q6jbaFuQXzxKQ" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt>
+  
+
+        <div class="base-aside-card__info self-center pl-0.5 flex flex-col flex-1">
+          <h3 class="base-aside-card__title font-sans text-md font-bold text-color-text relative">
+            
+        Light IT Global
+      
+<!---->          </h3>
+
+            <p class="base-aside-card__subtitle font-sans text-sm text-color-text leading-open mt-0.5 break-words">
+              
+        IT Services and IT Consulting
+      
+            </p>
+
+            <p class="base-aside-card__second-subtitle font-sans text-sm leading-open text-color-text-low-emphasis">
+              
+        Kensington, England
+      
+            </p>
+
+<!---->
+<!---->
+<!---->        </div>
+      
+    
+      </a>
+  
+  
+  
+  
+              </li>
+              <li>
+                
+
+    
+    
+    
+    
+      <a href="https://au.linkedin.com/company/hero-teams?trk=similar-pages" target="_self" data-tracking-control-name="similar-pages" data-tracking-will-navigate class="base-card relative w-full hover:no-underline focus:no-underline base-card--link base-aside-card flex my-1.5
+        
+        base-aside-card--link">
+        
+
+<!---->
+      
+<!---->
+            
+              
+      <img class="inline-block relative
+          
+          w-6 h-6
+          " data-delayed-url="https://media.licdn.com/dms/image/C560BAQEcMqnFjyj0sg/company-logo_100_100/0/1646176905126?e=2147483647&amp;v=beta&amp;t=rNlSYCKeJOArjFRhF_s3nwpquNGhnSspeZL19yyVoJo" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt>
+  
+
+        <div class="base-aside-card__info self-center pl-0.5 flex flex-col flex-1">
+          <h3 class="base-aside-card__title font-sans text-md font-bold text-color-text relative">
+            
+        Hero Teams 
+      
+<!---->          </h3>
+
+            <p class="base-aside-card__subtitle font-sans text-sm text-color-text leading-open mt-0.5 break-words">
+              
+        IT Services and IT Consulting
+      
+            </p>
+
+            <p class="base-aside-card__second-subtitle font-sans text-sm leading-open text-color-text-low-emphasis">
+              
+        Melbourne, Victoria
+      
+            </p>
+
+<!---->
+<!---->
+<!---->        </div>
+      
+    
+      </a>
+  
+  
+  
+  
+              </li>
+              <li>
+                
+
+    
+    
+    
+    
+      <a href="https://www.linkedin.com/company/computools?trk=similar-pages" target="_self" data-tracking-control-name="similar-pages" data-tracking-will-navigate class="base-card relative w-full hover:no-underline focus:no-underline base-card--link base-aside-card flex my-1.5
+        
+        base-aside-card--link">
+        
+
+<!---->
+      
+<!---->
+            
+              
+      <img class="inline-block relative
+          
+          w-6 h-6
+          " data-delayed-url="https://media.licdn.com/dms/image/C4E0BAQEw20LDURcaIQ/company-logo_100_100/0/1619181540100?e=2147483647&amp;v=beta&amp;t=AMkJUWRUQvQOLQUj879Y5UHvq7uQwl9w3gvprBur748" data-ghost-classes="bg-color-entity-ghost-background" data-ghost-url="https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f" alt>
+  
+
+        <div class="base-aside-card__info self-center pl-0.5 flex flex-col flex-1">
+          <h3 class="base-aside-card__title font-sans text-md font-bold text-color-text relative">
+            
+        Computools
+      
+<!---->          </h3>
+
+            <p class="base-aside-card__subtitle font-sans text-sm text-color-text leading-open mt-0.5 break-words">
+              
+        IT Services and IT Consulting
+      
+            </p>
+
+            <p class="base-aside-card__second-subtitle font-sans text-sm leading-open text-color-text-low-emphasis">
+              
+        New York, NY
+      
+            </p>
+
+<!---->
+<!---->
+<!---->        </div>
+      
+    
+      </a>
+  
+  
+  
+  
+              </li>
+          
+        </ul>
+
+            <button class="show-more-less__button show-more-less__more-button show-more-less-button
+                " aria-expanded="false" data-tracking-control-name="similar-pages_show_more">
+                
+            Show more similar pages
+          
+              <icon class="show-more-less__button--chevron show-more-less-button-icon" data-delayed-url="https://static.licdn.com/aero-v1/sc/h/cyolgscd0imw2ldqppkrb84vo"></icon>
+            </button>
+
+            <button class="show-more-less__button show-more-less__less-button show-more-less-button
+                show-more-less__button--hide" aria-expanded="false" data-tracking-control-name="similar-pages_show_more">
+                
+            Show fewer similar pages
+          
+              <icon class="show-more-less__button--chevron show-more-less-button-icon" data-delayed-url="https://static.licdn.com/aero-v1/sc/h/4chtt12k98xwnba1nimld2oyg"></icon>
+            </button>
+      </div>
+  
+      
+        </div>
+      </section>
+  
+  
+          
+      
+      </section>
+    </main>
+
+      <div class="pre-footer ">
+        
+        
+      
+      </div>
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+
+    <footer class="li-footer bg-transparent w-full ">
+      <ul class="li-footer__list flex flex-wrap flex-row items-start justify-start w-full h-auto min-h-[50px] my-[0px] mx-auto py-3 px-2 papabear:w-[1128px] papabear:p-0">
+        
+  <li class="li-footer__item font-sans text-xs text-color-text-low-emphasis flex flex-shrink-0 justify-start p-1 relative w-50% papabear:justify-center papabear:w-auto">
+        
+          <span class="sr-only">LinkedIn</span>
+          <icon class="li-footer__copy-logo text-color-logo-brand-alt inline-block self-center h-[14px] w-[56px] mr-1" data-delayed-url="https://static.licdn.com/aero-v1/sc/h/e12h2cd8ac580qen9qdd0qks8"></icon>
+          <span class="li-footer__copy-text flex items-center">&copy; 2023</span>
+        
+  </li>
+
+        
+  <li class="li-footer__item font-sans text-xs text-color-text-low-emphasis flex flex-shrink-0 justify-start p-1 relative w-50% papabear:justify-center papabear:w-auto">
+        <a class="li-footer__item-link flex items-center font-sans text-xs font-bold text-color-text-low-emphasis hover:text-color-link-hover focus:text-color-link-focus" href="https://about.linkedin.com?trk=d_org_guest_showcase_overview_footer-about" data-tracking-control-name="d_org_guest_showcase_overview_footer-about" data-tracking-will-navigate>
+          
+          About
+        
+        </a>
+  </li>
+
+        
+  <li class="li-footer__item font-sans text-xs text-color-text-low-emphasis flex flex-shrink-0 justify-start p-1 relative w-50% papabear:justify-center papabear:w-auto">
+        <a class="li-footer__item-link flex items-center font-sans text-xs font-bold text-color-text-low-emphasis hover:text-color-link-hover focus:text-color-link-focus" href="https://www.linkedin.com/accessibility?trk=d_org_guest_showcase_overview_footer-accessibility" data-tracking-control-name="d_org_guest_showcase_overview_footer-accessibility" data-tracking-will-navigate>
+          
+          Accessibility
+        
+        </a>
+  </li>
+
+        
+  <li class="li-footer__item font-sans text-xs text-color-text-low-emphasis flex flex-shrink-0 justify-start p-1 relative w-50% papabear:justify-center papabear:w-auto">
+        <a class="li-footer__item-link flex items-center font-sans text-xs font-bold text-color-text-low-emphasis hover:text-color-link-hover focus:text-color-link-focus" href="https://www.linkedin.com/legal/user-agreement?trk=d_org_guest_showcase_overview_footer-user-agreement" data-tracking-control-name="d_org_guest_showcase_overview_footer-user-agreement" data-tracking-will-navigate>
+          
+          User Agreement
+        
+        </a>
+  </li>
+
+        
+  <li class="li-footer__item font-sans text-xs text-color-text-low-emphasis flex flex-shrink-0 justify-start p-1 relative w-50% papabear:justify-center papabear:w-auto">
+        <a class="li-footer__item-link flex items-center font-sans text-xs font-bold text-color-text-low-emphasis hover:text-color-link-hover focus:text-color-link-focus" href="https://www.linkedin.com/legal/privacy-policy?trk=d_org_guest_showcase_overview_footer-privacy-policy" data-tracking-control-name="d_org_guest_showcase_overview_footer-privacy-policy" data-tracking-will-navigate>
+          
+          Privacy Policy
+        
+        </a>
+  </li>
+
+<!---->        
+  <li class="li-footer__item font-sans text-xs text-color-text-low-emphasis flex flex-shrink-0 justify-start p-1 relative w-50% papabear:justify-center papabear:w-auto">
+        <a class="li-footer__item-link flex items-center font-sans text-xs font-bold text-color-text-low-emphasis hover:text-color-link-hover focus:text-color-link-focus" href="https://www.linkedin.com/legal/cookie-policy?trk=d_org_guest_showcase_overview_footer-cookie-policy" data-tracking-control-name="d_org_guest_showcase_overview_footer-cookie-policy" data-tracking-will-navigate>
+          
+          Cookie Policy
+        
+        </a>
+  </li>
+
+        
+  <li class="li-footer__item font-sans text-xs text-color-text-low-emphasis flex flex-shrink-0 justify-start p-1 relative w-50% papabear:justify-center papabear:w-auto">
+        <a class="li-footer__item-link flex items-center font-sans text-xs font-bold text-color-text-low-emphasis hover:text-color-link-hover focus:text-color-link-focus" href="https://www.linkedin.com/legal/copyright-policy?trk=d_org_guest_showcase_overview_footer-copyright-policy" data-tracking-control-name="d_org_guest_showcase_overview_footer-copyright-policy" data-tracking-will-navigate>
+          
+          Copyright Policy
+        
+        </a>
+  </li>
+
+        
+  <li class="li-footer__item font-sans text-xs text-color-text-low-emphasis flex flex-shrink-0 justify-start p-1 relative w-50% papabear:justify-center papabear:w-auto">
+        <a class="li-footer__item-link flex items-center font-sans text-xs font-bold text-color-text-low-emphasis hover:text-color-link-hover focus:text-color-link-focus" href="https://brand.linkedin.com/policies?trk=d_org_guest_showcase_overview_footer-brand-policy" data-tracking-control-name="d_org_guest_showcase_overview_footer-brand-policy" data-tracking-will-navigate>
+          
+          Brand Policy
+        
+        </a>
+  </li>
+
+          
+  <li class="li-footer__item font-sans text-xs text-color-text-low-emphasis flex flex-shrink-0 justify-start p-1 relative w-50% papabear:justify-center papabear:w-auto">
+        <a class="li-footer__item-link flex items-center font-sans text-xs font-bold text-color-text-low-emphasis hover:text-color-link-hover focus:text-color-link-focus" href="https://www.linkedin.com/psettings/guest-controls?trk=d_org_guest_showcase_overview_footer-guest-controls" data-tracking-control-name="d_org_guest_showcase_overview_footer-guest-controls" data-tracking-will-navigate>
+          
+            Guest Controls
+          
+        </a>
+  </li>
+
+        
+  <li class="li-footer__item font-sans text-xs text-color-text-low-emphasis flex flex-shrink-0 justify-start p-1 relative w-50% papabear:justify-center papabear:w-auto">
+        <a class="li-footer__item-link flex items-center font-sans text-xs font-bold text-color-text-low-emphasis hover:text-color-link-hover focus:text-color-link-focus" href="https://www.linkedin.com/legal/professional-community-policies?trk=d_org_guest_showcase_overview_footer-community-guide" data-tracking-control-name="d_org_guest_showcase_overview_footer-community-guide" data-tracking-will-navigate>
+          
+          Community Guidelines
+        
+        </a>
+  </li>
+
+        
+<!---->
+          
+          
+  <li class="li-footer__item font-sans text-xs text-color-text-low-emphasis flex flex-shrink-0 justify-start p-1 relative w-50% papabear:justify-center papabear:w-auto">
+        
+              
+
+    
+    
+
+    
+
+    
+
+    <div class="collapsible-dropdown collapsible-dropdown--footer collapsible-dropdown--up flex items-center relative hyphens-auto language-selector z-2">
+<!---->
+        <ul class="collapsible-dropdown__list hidden container-raised absolute w-auto overflow-y-auto flex-col items-stretch z-1 bottom-[100%] top-auto" role="menu" tabindex="-1">
+          
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="العربية (Arabic)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-ar_AE" data-locale="ar_AE" role="menuitem" lang="ar_AE">
+                العربية (Arabic)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Čeština (Czech)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-cs_CZ" data-locale="cs_CZ" role="menuitem" lang="cs_CZ">
+                Čeština (Czech)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Dansk (Danish)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-da_DK" data-locale="da_DK" role="menuitem" lang="da_DK">
+                Dansk (Danish)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Deutsch (German)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-de_DE" data-locale="de_DE" role="menuitem" lang="de_DE">
+                Deutsch (German)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="English (English) selected" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link--selected" data-tracking-control-name="language-selector-en_US" data-locale="en_US" role="menuitem" lang="en_US">
+                <strong>English (English)</strong>
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Español (Spanish)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-es_ES" data-locale="es_ES" role="menuitem" lang="es_ES">
+                Español (Spanish)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Français (French)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-fr_FR" data-locale="fr_FR" role="menuitem" lang="fr_FR">
+                Français (French)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="हिंदी (Hindi)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-hi_IN" data-locale="hi_IN" role="menuitem" lang="hi_IN">
+                हिंदी (Hindi)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Bahasa Indonesia (Indonesian)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-in_ID" data-locale="in_ID" role="menuitem" lang="in_ID">
+                Bahasa Indonesia (Indonesian)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Italiano (Italian)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-it_IT" data-locale="it_IT" role="menuitem" lang="it_IT">
+                Italiano (Italian)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="日本語 (Japanese)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-ja_JP" data-locale="ja_JP" role="menuitem" lang="ja_JP">
+                日本語 (Japanese)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="한국어 (Korean)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-ko_KR" data-locale="ko_KR" role="menuitem" lang="ko_KR">
+                한국어 (Korean)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Bahasa Malaysia (Malay)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-ms_MY" data-locale="ms_MY" role="menuitem" lang="ms_MY">
+                Bahasa Malaysia (Malay)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Nederlands (Dutch)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-nl_NL" data-locale="nl_NL" role="menuitem" lang="nl_NL">
+                Nederlands (Dutch)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Norsk (Norwegian)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-no_NO" data-locale="no_NO" role="menuitem" lang="no_NO">
+                Norsk (Norwegian)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Polski (Polish)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-pl_PL" data-locale="pl_PL" role="menuitem" lang="pl_PL">
+                Polski (Polish)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Português (Portuguese)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-pt_BR" data-locale="pt_BR" role="menuitem" lang="pt_BR">
+                Português (Portuguese)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Română (Romanian)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-ro_RO" data-locale="ro_RO" role="menuitem" lang="ro_RO">
+                Română (Romanian)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Русский (Russian)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-ru_RU" data-locale="ru_RU" role="menuitem" lang="ru_RU">
+                Русский (Russian)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Svenska (Swedish)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-sv_SE" data-locale="sv_SE" role="menuitem" lang="sv_SE">
+                Svenska (Swedish)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="ภาษาไทย (Thai)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-th_TH" data-locale="th_TH" role="menuitem" lang="th_TH">
+                ภาษาไทย (Thai)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Tagalog (Tagalog)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-tl_PH" data-locale="tl_PH" role="menuitem" lang="tl_PH">
+                Tagalog (Tagalog)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Türkçe (Turkish)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-tr_TR" data-locale="tr_TR" role="menuitem" lang="tr_TR">
+                Türkçe (Turkish)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="Українська (Ukrainian)" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-uk_UA" data-locale="uk_UA" role="menuitem" lang="uk_UA">
+                Українська (Ukrainian)
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="简体中文 (Chinese (Simplified))" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-zh_CN" data-locale="zh_CN" role="menuitem" lang="zh_CN">
+                简体中文 (Chinese (Simplified))
+            </button>
+          </li>
+          <li class="language-selector__item" role="presentation">
+            <!-- Adding aria-label to both the li and the button because screen reader focus goes to button on desktop and li on mobile-->
+            <button aria-label="正體中文 (Chinese (Traditional))" class="font-sans text-xs link block py-[5px] px-2 w-full hover:cursor-pointer hover:bg-color-action hover:text-color-text-on-dark focus:bg-color-action focus:text-color-text-on-dark
+                language-selector__link !font-regular" data-tracking-control-name="language-selector-zh_TW" data-locale="zh_TW" role="menuitem" lang="zh_TW">
+                正體中文 (Chinese (Traditional))
+            </button>
+          </li>
+<!---->      
+        </ul>
+
+          
+        <button class="language-selector__button select-none relative pr-2 font-sans text-xs font-bold text-color-text-low-emphasis hover:text-color-link-hover hover:cursor-pointer focus:text-color-link-focus focus:outline-dotted focus:outline-1" aria-expanded="false" data-tracking-control-name="footer-lang-dropdown_trigger">
+          <span class="language-selector__label-text mr-0.5 break-words">
+            Language
+          </span>
+          <icon class="language-selector__label-chevron w-2 h-2 absolute top-0 right-0" data-delayed-url="https://static.licdn.com/aero-v1/sc/h/cyolgscd0imw2ldqppkrb84vo"></icon>
+        </button>
+      
+    </div>
+  
+  
+          
+  </li>
+
+      </ul>
+
+<!---->    </footer>
+  
+  
+  
+      
+
+            <script src="https://static.licdn.com/aero-v1/sc/h/ccdfn4lq61j24cif9evd6or3t" async></script>
+          
+        <script src="https://static.licdn.com/aero-v1/sc/h/b4niwa7w3wxiv9xjechaeudg9" async defer></script>
+        <script data-delayed-url="https://static.licdn.com/aero-v1/sc/h/7bdek891infrs26wxjppvbiex" data-module-id="media-player"></script>
+        
+<!---->  
+      
+      </body>
+    </html>
+  
+  
