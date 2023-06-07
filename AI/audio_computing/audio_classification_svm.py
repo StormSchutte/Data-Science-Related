@@ -11,6 +11,8 @@ from sklearn.svm import SVC
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import cross_val_score, GridSearchCV
 
+
+
 class AudioClassifier:
     """
     This class is used to classify audio files into cat and dog.
@@ -33,7 +35,7 @@ class AudioClassifier:
                 audio_array = audio_array[0:20765]
                 self.training_data.append([audio_array,class_num])
         self.lenofaudio = len(self.training_data)
-        print("Length of training data: ", self.lenofaudio)
+        print("Length of training dataset_sites: ", self.lenofaudio)
 
     def split_data(self):
         for categories, label in self.training_data:

@@ -16,7 +16,7 @@ MODEL_DIR="${OUTPUT_DIR}/model"
 LABELINDEX_DIR="${OUTPUT_DIR}/labelindex"
 PREDICTIONS_DIR="${OUTPUT_DIR}/predictions"
 
-# Convert training and testing data to SequenceFile format
+# Convert training and testing dataset_sites to SequenceFile format
 mahout seqdirectory \
    -i "${TRAINING_DATA_DIR}" \
    -o "${TRAINING_DATA_SEQ}" \
@@ -27,7 +27,7 @@ mahout seqdirectory \
    -o "${TESTING_DATA_SEQ}" \
    -c UTF-8 -ow
 
-# Create term frequency-vectors for training and testing data
+# Create term frequency-vectors for training and testing dataset_sites
 mahout seq2sparse \
    -i "${TRAINING_DATA_SEQ}" \
    -o "${TRAINING_DATA_VECTORS}" \

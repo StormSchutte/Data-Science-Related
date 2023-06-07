@@ -1,0 +1,2705 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="address=no">
+<link rel="preconnect" href="https://www.analyticsvidhya.com">
+<link rel="preconnect" href="https://www.analyticsvidhya.com/blog">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="preconnect" href="https://stackpath.bootstrapcdn.com">
+<link rel="preconnect" href="https://code.jquery.com/">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel='icon' id='favicon' type='image/x-icon' href='https://www.analyticsvidhya.com/wp-content/uploads/2015/02/logo_square_v2.jpg'>
+<link rel='apple-touch-icon' href='https://www.analyticsvidhya.com/wp-content/uploads/2015/02/logo_square_v2.jpg'>
+<link rel='apple-touch-icon' sizes='76x76' href='https://www.analyticsvidhya.com/wp-content/uploads/2015/02/logo_square_v2.jpg'>
+<link rel='apple-touch-icon' sizes='114x114' href='https://www.analyticsvidhya.com/wp-content/uploads/2015/02/logo_square_v2.jpg'>
+<link rel='apple-touch-icon' sizes='144x144' href='https://www.analyticsvidhya.com/wp-content/uploads/2015/02/logo_square_v2.jpg'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" />
+<link rel="alternate" type="application/rss+xml" href="https://www.analyticsvidhya.com/feed/">
+<link rel="alternate" type="application/rss+xml" href="https://www.analyticsvidhya.com/comments/feed/">
+
+<link rel=stylesheet type=text/css href=https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css>
+<link rel=stylesheet type=text/css href=https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css>
+
+<link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin=anonymous>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.analyticsvidhya.com/wp-content/themes/analytics-vidhya/css/main.min.css?v=2.0.0.6" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.11/css/intlTelInput.css">
+<link rel="stylesheet" href="https://www.analyticsvidhya.com/wp-content/themes/analytics-vidhya/simplified-login/loginpopup.css?ver=1.5">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<title>Role of Machine Learning in Natural Language Processing</title>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MPSM42V');</script>
+
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+<meta name="description" content="Machine Learning and Natural Language Processing are important subfields of AI that have gained prominence in recent times." />
+<link rel="canonical" href="https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Role of Machine Learning in Natural Language Processing" />
+<meta property="og:description" content="Machine Learning and Natural Language Processing are important subfields of AI that have gained prominence in recent times." />
+<meta property="og:url" content="https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/" />
+<meta property="og:site_name" content="Analytics Vidhya" />
+<meta property="article:publisher" content="https://www.facebook.com/AnalyticsVidhya/" />
+<meta property="article:published_time" content="2021-04-23T09:24:45+00:00" />
+<meta property="article:modified_time" content="2023-04-04T10:03:09+00:00" />
+<meta property="og:image" content="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/07/Distributed-Text-Categorization-using-Spark-NLP-on-AWS-EMR1.jpg" />
+<meta property="og:image:width" content="1050" />
+<meta property="og:image:height" content="520" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta name="author" content="Dr. Tatwadarshi P. N." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:creator" content="@analyticsvidhya" />
+<meta name="twitter:site" content="@analyticsvidhya" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Dr. Tatwadarshi P. N." />
+<meta name="twitter:label2" content="Est. reading time" />
+<meta name="twitter:data2" content="12 minutes" />
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/#article","isPartOf":{"@id":"https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/"},"author":{"name":"Dr. Tatwadarshi P. N.","@id":"https://www.analyticsvidhya.com/#/schema/person/6cd14063b8ac7f650383422cd2331330"},"headline":"Role of Machine Learning in Natural Language Processing","datePublished":"2021-04-23T09:24:45+00:00","dateModified":"2023-04-04T10:03:09+00:00","mainEntityOfPage":{"@id":"https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/"},"wordCount":2318,"commentCount":0,"publisher":{"@id":"https://www.analyticsvidhya.com/#organization"},"image":{"@id":"https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/#primaryimage"},"thumbnailUrl":"https://cdn.analyticsvidhya.com/wp-content/uploads/2020/07/Distributed-Text-Categorization-using-Spark-NLP-on-AWS-EMR1.jpg","keywords":["AI","blogathon","Natural language processing","NLP"],"articleSection":["Beginner","Deep Learning","NLP"],"inLanguage":"en-US","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/#respond"]}]},{"@type":"WebPage","@id":"https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/","url":"https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/","name":"Role of Machine Learning in Natural Language Processing","isPartOf":{"@id":"https://www.analyticsvidhya.com/#website"},"primaryImageOfPage":{"@id":"https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/#primaryimage"},"image":{"@id":"https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/#primaryimage"},"thumbnailUrl":"https://cdn.analyticsvidhya.com/wp-content/uploads/2020/07/Distributed-Text-Categorization-using-Spark-NLP-on-AWS-EMR1.jpg","datePublished":"2021-04-23T09:24:45+00:00","dateModified":"2023-04-04T10:03:09+00:00","description":"Machine Learning and Natural Language Processing are important subfields of AI that have gained prominence in recent times.","breadcrumb":{"@id":"https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/#primaryimage","url":"https://cdn.analyticsvidhya.com/wp-content/uploads/2020/07/Distributed-Text-Categorization-using-Spark-NLP-on-AWS-EMR1.jpg","contentUrl":"https://cdn.analyticsvidhya.com/wp-content/uploads/2020/07/Distributed-Text-Categorization-using-Spark-NLP-on-AWS-EMR1.jpg","width":1050,"height":520,"caption":"NLP"},{"@type":"BreadcrumbList","@id":"https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.analyticsvidhya.com/"},{"@type":"ListItem","position":2,"name":"Role of Machine Learning in Natural Language Processing"}]},{"@type":"WebSite","@id":"https://www.analyticsvidhya.com/#website","url":"https://www.analyticsvidhya.com/","name":"Analytics Vidhya","description":"Learn everything about Analytics","publisher":{"@id":"https://www.analyticsvidhya.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.analyticsvidhya.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://www.analyticsvidhya.com/#organization","name":"Analytics Vidhya","url":"https://www.analyticsvidhya.com/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.analyticsvidhya.com/#/schema/logo/image/","url":"https://cdn.analyticsvidhya.com/wp-content/uploads/2020/06/Av-logo-138x40-1.jpg","contentUrl":"https://cdn.analyticsvidhya.com/wp-content/uploads/2020/06/Av-logo-138x40-1.jpg","width":138,"height":39,"caption":"Analytics Vidhya"},"image":{"@id":"https://www.analyticsvidhya.com/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/AnalyticsVidhya/","https://twitter.com/analyticsvidhya","https://www.linkedin.com/company/analytics-vidhya"]},{"@type":"Person","@id":"https://www.analyticsvidhya.com/#/schema/person/6cd14063b8ac7f650383422cd2331330","name":"Dr. Tatwadarshi P. N.","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.analyticsvidhya.com/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/37d36796fefcf7302ba36107f1574379?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/37d36796fefcf7302ba36107f1574379?s=96&d=mm&r=g","caption":"Dr. Tatwadarshi P. N."},"url":"https://www.analyticsvidhya.com/blog/author/tatwadarshipn/"}]}</script>
+
+<link rel='dns-prefetch' href='//www.analyticsvidhya.com' />
+<link rel="alternate" type="application/rss+xml" title="Analytics Vidhya &raquo; Stories Feed" href="https://www.analyticsvidhya.com/web-stories/feed/"><script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.analyticsvidhya.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1.1"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='mediaelement-css' href='https://www.analyticsvidhya.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css' href='https://www.analyticsvidhya.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://www.analyticsvidhya.com/wp-includes/css/classic-themes.min.css?ver=1' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://www.analyticsvidhya.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.7.4' type='text/css' media='all' />
+<style id='contact-form-7-inline-css' type='text/css'>
+.wpcf7 .wpcf7-recaptcha iframe {margin-bottom: 0;}.wpcf7 .wpcf7-recaptcha[data-align="center"] > div {margin: 0 auto;}.wpcf7 .wpcf7-recaptcha[data-align="right"] > div {margin: 0 0 0 auto;}
+</style>
+<link rel='stylesheet' id='cookie-law-info-css' href='https://www.analyticsvidhya.com/wp-content/plugins/cookie-law-info/legacy/public/css/cookie-law-info-public.css?ver=3.0.8' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-gdpr-css' href='https://www.analyticsvidhya.com/wp-content/plugins/cookie-law-info/legacy/public/css/cookie-law-info-gdpr.css?ver=3.0.8' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css' href='https://www.analyticsvidhya.com/wp-content/plugins/jetpack/css/jetpack.css?ver=11.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wpss-style-css' href='https://www.analyticsvidhya.com/wp-content/plugins/wordpress-simple-survey/assets/build/css/wpss-pkg.min.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wpss-custom-db-style-css' href='https://www.analyticsvidhya.com/wp-content/plugins/wordpress-simple-survey/assets/css/custom-performance.css?ver=6.1.1' type='text/css' media='all' />
+<script type='text/javascript' id='jetpack_related-posts-js-extra'>
+/* <![CDATA[ */
+var related_posts_js_options = {"post_heading":"h4"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.analyticsvidhya.com/wp-content/plugins/jetpack/_inc/build/related-posts/related-posts.min.js?ver=20211209' id='jetpack_related-posts-js'></script>
+<script type='text/javascript' src='https://www.analyticsvidhya.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.analyticsvidhya.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' id='cookie-law-info-js-extra'>
+/* <![CDATA[ */
+var Cli_Data = {"nn_cookie_ids":[],"cookielist":[],"non_necessary_cookies":[],"ccpaEnabled":"","ccpaRegionBased":"","ccpaBarEnabled":"","strictlyEnabled":["necessary","obligatoire"],"ccpaType":"gdpr","js_blocking":"1","custom_integration":"","triggerDomRefresh":"","secure_cookies":""};
+var cli_cookiebar_settings = {"animate_speed_hide":"500","animate_speed_show":"500","background":"#f0f3f7","border":"#444","border_on":"","button_1_button_colour":"#000","button_1_button_hover":"#000000","button_1_link_colour":"#fff","button_1_as_button":"1","button_1_new_win":"","button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#444","button_2_as_button":"","button_2_hidebar":"","button_3_button_colour":"#000","button_3_button_hover":"#000000","button_3_link_colour":"#fff","button_3_as_button":"1","button_3_new_win":"","button_4_button_colour":"#000","button_4_button_hover":"#000000","button_4_link_colour":"#333333","button_4_as_button":"","button_7_button_colour":"#61a229","button_7_button_hover":"#4e8221","button_7_link_colour":"#fff","button_7_as_button":"1","button_7_new_win":"","font_family":"inherit","header_fix":"1","notify_animate_hide":"1","notify_animate_show":"","notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":"","scroll_close_reload":"","accept_close_reload":"","reject_close_reload":"","showagain_tab":"","showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#000","show_once_yn":"","show_once":"10000","logging_on":"","as_popup":"","popup_overlay":"1","bar_heading_text":"","cookie_bar_as":"banner","popup_showagain_position":"bottom-right","widget_position":"left"};
+var log_object = {"ajax_url":"https:\/\/www.analyticsvidhya.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.analyticsvidhya.com/wp-content/plugins/cookie-law-info/legacy/public/js/cookie-law-info-public.js?ver=3.0.8' id='cookie-law-info-js'></script>
+<script type='text/javascript' src='https://www.analyticsvidhya.com/wp-content/plugins/wordpress-simple-survey/assets/build/js/wpss-pkg.min.js?ver=3.0.0' id='wpss-pkg-js'></script>
+<link rel="https://api.w.org/" href="https://www.analyticsvidhya.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.analyticsvidhya.com/wp-json/wp/v2/posts/78087" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.analyticsvidhya.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.analyticsvidhya.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.1.1" />
+<link rel='shortlink' href='https://www.analyticsvidhya.com/?p=78087' />
+<link rel="alternate" type="application/json+oembed" href="https://www.analyticsvidhya.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.analyticsvidhya.com%2Fblog%2F2021%2F04%2Frole-of-machine-learning-in-natural-language-processing%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.analyticsvidhya.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.analyticsvidhya.com%2Fblog%2F2021%2F04%2Frole-of-machine-learning-in-natural-language-processing%2F&#038;format=xml" />
+<script type="text/javascript"><!--
+function powerpress_pinw(pinw_url){window.open(pinw_url, 'PowerPressPlayer','toolbar=0,status=0,resizable=1,width=460,height=320');	return false;}
+//-->
+</script>
+<script type="text/javascript">/* <![CDATA[ */ jQuery.post("https://www.analyticsvidhya.com/wp-admin/admin-ajax.php", { action: "wmp_update", id: 78087, token: "f7966b9298" }); /* ]]> */</script> <style>img#wpstats{display:none}</style>
+<link rel='canonical' href='https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/' />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/tokyo-night-dark.min.css" integrity="sha512-dSQLLtgaq2iGigmy9xowRshaMzUHeiIUTvJW/SkUpb1J+ImXOPNGAI7ZC8V5/PiN/XN83B8uIk4qET7AMhdC5Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script>
+$(document).ready(()=>{
+hljs.highlightAll();
+})
+</script>
+<script id='_webengage_script_tag' type='text/javascript'>
+var webengage;!function(w,e,b,n,g){function o(e,t){e[t[t.length-1]]=function(){r.__queue.push([t.join("."),
+arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z),a="feedback survey notification".split(z),c="options render clear abort".split(z),p="Open Close Submit Complete View Click".split(z),u="identify login logout setAttribute".split(z);if(!r||!r.__v){for(w[b]=r={__queue:[],__v:"6.0",user:{}},i=0;i < l.length;i++)o(r,[l[i]]);for(i=0;i < a.length;i++){for(r[a[i]]={},s=0;s < c.length;s++)o(r[a[i]],[a[i],c[s]]);for(s=0;s < p.length;s++)o(r[a[i]],[a[i],"on"+p[s]])}for(i=0;i < u.length;i++)o(r.user,["user",u[i]]);setTimeout(function(){var f=e.createElement("script"),d=e.getElementById("_webengage_script_tag");f.type="text/javascript",f.async=!0,f.src=("https:"==e.location.protocol?"https://ssl.widgets.webengage.com":"http://cdn.widgets.webengage.com")+"/js/webengage-min-v-6.0.js",d.parentNode.insertBefore(f,d)})}}(window,document,"webengage");webengage.init("82617822");
+</script>
+</head>
+<body class="av-detail-page">
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPSM42V"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+ <div class="blog-detail-page">
+<div class="overlay"></div>
+<header class="bg-white common-header">
+<div class="container">
+<div class="row">
+<nav class="navbar navbar-expand-lg w-100">
+<a class="navbar-brand" href="https://www.analyticsvidhya.com/blog/">
+<img src="https://av-public-assets.s3.ap-south-1.amazonaws.com/logos/av-logo-svg.svg" alt="Analytics Vidhya" />
+</a>
+
+<div id="AvSearchBox">
+<form method="GET" action="https://www.analyticsvidhya.com">
+<div class="col-auto p-0">
+<label class="sr-only" for="inlineFormSearch">search</label>
+<div class="input-group">
+<input name="s" type="text" class="form-control" id="inlineFormSearch" autocomplete="off" placeholder="Search" value="">
+<div class="input-group-prepend" id="CloseSearch">
+<div class="input-group-text">
+<i class="fas fa-times"></i>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<i class="mobile-menu-iocn"></i>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto">
+<li class="nav-item active megamenu-item">
+<a class="nav-link" href="javascript:void(0);">
+<i class="fas fa-bars mr-2"></i>
+Start Here
+</a>
+<div class="megamenu-row">
+<ul class="menu">
+<li>
+<a target="_blank" href="https://courses.analyticsvidhya.com/courses/Machine-Learning-Certification-Course-for-Beginners?utm_source=blog_navbar&utm_medium=start_here_button">Machine Learning</a>
+</li>
+<li>
+<a target="_blank" href="https://courses.analyticsvidhya.com/courses/getting-started-with-neural-networks?utm_source=blog_navbar&utm_medium=start_here_button">Deep Learning</a>
+</li>
+<li>
+<a target="_blank" href="https://courses.analyticsvidhya.com/courses/Intro-to-NLP?utm_source=blog_navbar&utm_medium=start_here_button">NLP</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="nav-item megamenu-item">
+<a class="nav-link" href="javascript:void(0);">Articles</a>
+<div class="megamenu-row">
+<ul class="menu">
+<li>
+<a href="https://www.analyticsvidhya.com/blog/category/guide/?utm_source=blog_navbar&utm_medium=machine_learning_button">Guides</a>
+</li>
+<li>
+<a href="https://www.analyticsvidhya.com/blog/category/machine-learning/?utm_source=blog_navbar&utm_medium=machine_learning_button">Machine Learning</a>
+</li>
+<li>
+<a href="https://www.analyticsvidhya.com/blog/category/deep-learning/?utm_source=blog_navbar&utm_medium=deep_learning_button">Deep Learning</a>
+</li>
+<li>
+<a href="https://www.analyticsvidhya.com/blog/category/nlp/?utm_source=blog_navbar&utm_medium=_button">NLP</a>
+</li>
+<li>
+<a href="https://www.analyticsvidhya.com/blog/category/computer-vision/?utm_source=blog_navbar&utm_medium=article_button">Computer Vision</a>
+</li>
+<li>
+<a href="https://www.analyticsvidhya.com/blog/category/data-visualization/?utm_source=blog_navbar&utm_medium=_button">Data Visualization</a>
+</li>
+<li>
+<a href="https://www.analyticsvidhya.com/blog/category/interview-questsions/?utm_source=blog_navbar&utm_medium=career_button">Interview Questions</a>
+</li>
+<li>
+<a href="javascript:void(0);">More</a>
+<div class="megadrop megadrop-item-link">
+ <a href="https://www.analyticsvidhya.com/blog/category/infographics/?utm-source=blog-navbar">Infographics</a>
+<a target="_blank" href="https://jobsnew.analyticsvidhya.com/?utm-source=blog-navbar">Jobs</a>
+<a href="https://www.analyticsvidhya.com/blog/category/podcast/?utm-source=blog-navbar">Podcasts</a>
+<a target="_blank" href="https://courses.analyticsvidhya.com/courses/ebook-machine-learning-simplified?utm_source=bolg-navbar&utm_medium=homepage&utm_campaign=ebook">E-Books</a>
+<a target="_blank" href="https://www.analyticsvidhya.com/corporate/?utm-source=blog-navbar">For Companies</a>
+<a target="_blank" href="https://www.analyticsvidhya.com/datahack-summit-2019/?utm-source=blog-navbar">Datahack Summit</a>
+<a target="_blank" href="https://dsat.analyticsvidhya.com/?utm-source=blog-navbar">DSAT</a>
+<a href="https://www.analyticsvidhya.com/glossary-of-common-statistics-and-machine-learning-terms/?utm-source=blog-navbar">Glossary</a>
+<a target="_blank" href="https://www.analyticsvidhya.com/blog-archive/?utm-source=blog-navbar">Archive</a>
+</div>
+</li>
+<a target="_blank" href="https://lekhak.analyticsvidhya.com/write/" class="btn btn-info text-white"> Write an Article</a>
+</ul>
+</div>
+</li>
+<li class="nav-item megamenu-item">
+<a class="nav-link" href="javascript:void(0);">Courses</a>
+<div class="megamenu-row">
+<ul class="menu">
+<li>
+<a target="_blank" href="https://blackbelt.analyticsvidhya.com/plus?utm_source=blog_navbar&utm_medium=blackbelt_button">Certified AI & ML BlackBelt Plus</a>
+</li>
+<li>
+<a target="_blank" href="https://bootcamp.analyticsvidhya.com/?utm_source=blog_navbar&utm_medium=bootcamp_button">Data Science Immersive Bootcamp</a>
+</li>
+<a target="_blank" href="https://courses.analyticsvidhya.com/collections?utm_source=blog_navbar&utm_medium=all_courses_button" class="btn btn-info text-white"> All Courses</a>
+</ul>
+</div>
+</li>
+<li class="nav-item">
+<a target="_blank" class="nav-link" href="https://datahack.analyticsvidhya.com/blogathon/?utm_source=blog&utm_medium=nav_bar">Blogathon</a>
+</li>
+<li class="nav-item">
+<a target="_blank" class="nav-link" href="https://www.analyticsvidhya.com/datahack-summit-2023/?utm_source=Blogs&utm_medium=Nav_Bar">Conference</a>
+</li>
+</ul>
+
+<div class="form-inline navbar-right">
+<ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="#" id="AvSearchBoxBtn">
+<i class="fas fa-search"></i>
+</a>
+</li>
+<li class="nav-item dropdown" style="cursor:pointer">
+<a class="nav-link tooltip-light dropdown-toggle" href="javascript:void(0);" id="dropdownWriteArticle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24">
+<path d="M5.51151515,0.0307070707 L14.5547475,0.0307070707 C17.0157576,0.0307070707 19.1119192,1.68 19.7967677,3.92565657 L18.0993939,5.62262626 L18.0993939,5.50868687 C18.0993939,3.55515152 16.5082828,1.9640404 14.5547475,1.9640404 L5.51151515,1.9640404 C3.56040404,1.9640404 1.96727273,3.55757576 1.96727273,5.50868687 L1.96727273,18.5175758 C1.96727273,20.4715152 3.5579798,22.0626263 5.51151515,22.0626263 L14.5547475,22.0626263 C16.5082828,22.0626263 18.0993939,20.4715152 18.0993939,18.5175758 L18.0993939,15.6529293 L20.0327273,13.719596 L20.0327273,18.5175758 C20.0327273,21.5272727 17.5640404,23.9955556 14.5547475,23.9955556 L5.51151515,23.9955556 C2.49979798,23.9955556 0.0335353535,21.5292929 0.0335353535,18.5175758 L0.0335353535,5.50868687 C0.0335353535,2.49454545 2.49737374,0.0307070707 5.51151515,0.0307070707 Z M23.2674747,4.78383838 L22.020202,3.53212121 L12.9688889,12.5777778 L11.6484848,17.0868687 L16.1583838,15.7672727 L25.2056566,6.7220202 L23.9579798,5.46989899 L16.6464646,12.7781818 L15.9547475,12.0913131 L23.2674747,4.78383838 Z M4.83919192,16.5030303 L10.4743434,16.5030303 L9.90868687,18.4367677 L4.83919192,18.4367677 L4.83919192,16.5030303 Z M4.83919192,11.0476768 L12.6723232,11.0476768 L11.8222222,11.8977778 L11.5050505,12.9810101 L4.83919192,12.9810101 L4.83919192,11.0476768 Z M4.83919192,5.59232323 L15.2246465,5.59232323 L15.2246465,7.52606061 L4.83919192,7.52606061 L4.83919192,5.59232323 Z" />
+</svg>
+</a>
+<div class="dropdown-menu dropdown-menu-right additional-dropdown" aria-labelledby="dropdownWriteArticle">
+<a class="dropdown-item" href="https://lekhak.analyticsvidhya.com/write/">Write an Article</a>
+<a class="dropdown-item" href="https://www.analyticsvidhya.com/creators-club/?utm-medium=blog-navbar&utm_source=creator_club_button">Creators Club</a>
+</div>
+</li>
+<li class="nav-item">
+<button type="button" class="btn btn-light px-4 py-2 header-sign-in simplified-login">Login/Signup</button>
+</li>
+
+<li class="nav-item dropdown header-logged-in" style="display: none;">
+<span class="avatar-placeholder dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<em class="login-short-name"></em>
+
+<img src="" class="login-header-user-image-dropdown-small rounded-circle d-none" alt="user.profilename" />
+</span>
+<div class="dropdown-menu shadow-sm user-info-dropdown py-0 border-0 dropdown-menu-right" aria-labelledby="navbarDropdown">
+<div class="card border-0">
+<div class="card-header border-0">
+<span class="avatar-placeholder">
+<em class="d-none login-short-name"></em>
+<img src="" alt="" class="login-header-user-image-dropdown" />
+</span>
+<h6 class="card-title text-center text-truncate login-header-user-name-dropdown"></h6>
+<small class="text-truncate d-block text-center login-header-user-email-dropdown"></small>
+</div>
+<div class="card-body">
+<a href="https://id.analyticsvidhya.com/accounts/profile/" class="btn btn-outline-light px-4">Manage your AV Account</a>
+<a class="dropdown-item" href="https://datahack.analyticsvidhya.com/user/?utm-source=blog-navbar">My Hackathons</a>
+<a class="dropdown-item" href="https://profile.analyticsvidhya.com/accounts/bookmarks/">My Bookmarks</a>
+<a class="dropdown-item" href="https://courses.analyticsvidhya.com/enrollments/?utm-source=blog-navbar">My Courses</a>
+<a class="dropdown-item" href="https://jobsnew.analyticsvidhya.com/jobs/myactive/?utm-source=blog-navbar">My Applied Jobs</a>
+</div>
+<div class="card-footer">
+<a href="#" id="logout-from-id">Sign Out</a>
+</div> </div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</div>
+</div>
+<div class="overlay-menu"></div>
+</header>
+<section id="avFlashSale" class="py-1 alert alert-warning alert-dismissible fade show m-0 rounded-0" style="display:none;" role="alert">
+<div class="container">
+<div class="row">
+<div class="av-sale-content w-100">
+<p></p>
+<a target="_blank" id="hrefId" class="btn btn-light ml-1"></a>
+<div id="clockdiv" style="display:none;">
+<span>
+<h4 class="days" id="day"></h4>
+<sup>D</sup>
+</span>
+<span>
+<h4 class="hours" id="hour"></h4>
+<sup>H</sup>
+</span>
+<span>
+<h4 class="minutes" id="minute"></h4>
+<sup>M</sup>
+</span>
+<span>
+<h4 class="seconds" id="second"></h4>
+<sup>S</sup>
+</span>
+</div>
+</div>
+<button type="button" class="close ml-auto py-1" data-dismiss="alert" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+</div>
+</section>
+<section class="breadcrumb-blog">
+<div class="container">
+<div class="row">
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb pl-0">
+<li class="breadcrumb-item"><a href="https://www.analyticsvidhya.com/blog/">Home</a></li>
+</ol>
+</nav>
+</div>
+</div>
+</section>
+<div class="overlay"></div>
+<header class="bg-white header-2">
+<div class="container">
+<div class="row">
+<nav class="navbar navbar-expand-lg w-100">
+<a class="navbar-brand" href="https://www.analyticsvidhya.com/blog/">
+<img src="https://av-public-assets.s3.ap-south-1.amazonaws.com/logos/av-logo-svg.svg" alt="Analytics Vidhya" />
+</a>
+
+<div id="AvSearchBox">
+<form method="GET" action="https://www.analyticsvidhya.com">
+<div class="col-auto p-0">
+<label class="sr-only" for="inlineFormSearch">search</label>
+<div class="input-group">
+<input name="s" type="text" class="form-control" id="inlineFormSearch" autocomplete="off" placeholder="Search" value="">
+<div class="input-group-prepend" id="CloseSearch">
+<div class="input-group-text">
+<i class="fas fa-times"></i>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<i class="mobile-menu-iocn"></i>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto">
+<li class="nav-item active megamenu-item">
+<a class="nav-link" href="javascript:void(0);">
+<i class="fas fa-bars mr-2"></i>
+Start Here
+</a>
+<div class="megamenu-row">
+<ul class="menu">
+<li>
+<a target="_blank" href="https://courses.analyticsvidhya.com/courses/Machine-Learning-Certification-Course-for-Beginners?utm_source=blog_navbar&utm_medium=start_here_button">Machine Learning</a>
+</li>
+<li>
+<a target="_blank" href="https://courses.analyticsvidhya.com/courses/getting-started-with-neural-networks?utm_source=blog_navbar&utm_medium=start_here_button">Deep Learning</a>
+</li>
+<li>
+<a target="_blank" href="https://courses.analyticsvidhya.com/courses/Intro-to-NLP?utm_source=blog_navbar&utm_medium=start_here_button">NLP</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="nav-item megamenu-item">
+<a class="nav-link" href="javascript:void(0);">Articles</a>
+<div class="megamenu-row">
+<ul class="menu">
+<li>
+<a href="https://www.analyticsvidhya.com/blog/category/guide/?utm_source=blog_navbar&utm_medium=machine_learning_button">Guides</a>
+</li>
+<li>
+<a href="https://www.analyticsvidhya.com/blog/category/machine-learning/?utm_source=blog_navbar&utm_medium=machine_learning_button">Machine Learning</a>
+</li>
+<li>
+<a href="https://www.analyticsvidhya.com/blog/category/deep-learning/?utm_source=blog_navbar&utm_medium=deep_learning_button">Deep Learning</a>
+</li>
+<li>
+<a href="https://www.analyticsvidhya.com/blog/category/nlp/?utm_source=blog_navbar&utm_medium=_button">NLP</a>
+</li>
+<li>
+<a href="https://www.analyticsvidhya.com/blog/category/computer-vision/?utm_source=blog_navbar&utm_medium=article_button">Computer Vision</a>
+</li>
+<li>
+<a href="https://www.analyticsvidhya.com/blog/category/data-visualization/?utm_source=blog_navbar&utm_medium=_button">Data Visualization</a>
+</li>
+<li>
+<a href="https://www.analyticsvidhya.com/blog/category/interview-questsions/?utm_source=blog_navbar&utm_medium=career_button">Interview Questions</a>
+</li>
+<li>
+<a href="javascript:void(0);">More</a>
+<div class="megadrop megadrop-item-link">
+<a href="https://www.analyticsvidhya.com/blog/category/infographics/?utm-source=blog-navbar">Infographics</a>
+<a target="_blank" href="https://jobsnew.analyticsvidhya.com/?utm-source=blog-navbar">Jobs</a>
+<a href="https://www.analyticsvidhya.com/blog/category/podcast/?utm-source=blog-navbar">Podcasts</a>
+<a target="_blank" href="https://courses.analyticsvidhya.com/courses/ebook-machine-learning-simplified?utm_source=bolg-navbar&utm_medium=homepage&utm_campaign=ebook">E-Books</a>
+<a target="_blank" href="https://www.analyticsvidhya.com/corporate/?utm-source=blog-navbar">For Companies</a>
+<a target="_blank" href="https://www.analyticsvidhya.com/datahack-summit-2019/?utm-source=blog-navbar">Datahack Summit</a>
+<a target="_blank" href="https://dsat.analyticsvidhya.com/?utm-source=blog-navbar">DSAT</a>
+<a href="https://www.analyticsvidhya.com/glossary-of-common-statistics-and-machine-learning-terms/?utm-source=blog-navbar">Glossary</a>
+<a target="_blank" href="https://www.analyticsvidhya.com/blog-archive/?utm-source=blog-navbar">Archive</a>
+</div>
+ </li>
+<a target="_blank" href="https://lekhak.analyticsvidhya.com/write/" class="btn btn-info text-white"> Write an Article</a>
+</ul>
+</div>
+</li>
+<li class="nav-item megamenu-item">
+<a class="nav-link" href="javascript:void(0);">Courses</a>
+<div class="megamenu-row">
+<ul class="menu">
+<li>
+<a target="_blank" href="https://blackbelt.analyticsvidhya.com/plus?utm_source=blog_navbar&utm_medium=blackbelt_button">Certified AI & ML BlackBelt Plus</a>
+</li>
+<li>
+<a target="_blank" href="https://bootcamp.analyticsvidhya.com/?utm_source=blog_navbar&utm_medium=bootcamp_button">Data Science Immersive Bootcamp</a>
+</li>
+<a target="_blank" href="https://courses.analyticsvidhya.com/collections?utm_source=blog_navbar&utm_medium=all_courses_button" class="btn btn-info text-white"> All Courses</a>
+</ul>
+</div>
+</li>
+<li class="nav-item">
+<a target="_blank" class="nav-link" href="https://datahack.analyticsvidhya.com/blogathon/?utm_source=blog&utm_medium=nav_bar">Blogathon</a>
+</li>
+<li class="nav-item">
+<a target="_blank" class="nav-link" href="https://www.analyticsvidhya.com/datahack-summit-2023/?utm_source=Blogs&utm_medium=Nav_Bar">Conference</a>
+</li>
+</ul>
+
+<div class="form-inline navbar-right">
+<ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="#" id="AvSearchBoxBtn">
+<i class="fas fa-search"></i>
+</a>
+</li>
+<li class="nav-item dropdown" style="cursor:pointer">
+<a class="nav-link tooltip-light dropdown-toggle" href="javascript:void(0);" id="dropdownWriteArticle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24">
+<path d="M5.51151515,0.0307070707 L14.5547475,0.0307070707 C17.0157576,0.0307070707 19.1119192,1.68 19.7967677,3.92565657 L18.0993939,5.62262626 L18.0993939,5.50868687 C18.0993939,3.55515152 16.5082828,1.9640404 14.5547475,1.9640404 L5.51151515,1.9640404 C3.56040404,1.9640404 1.96727273,3.55757576 1.96727273,5.50868687 L1.96727273,18.5175758 C1.96727273,20.4715152 3.5579798,22.0626263 5.51151515,22.0626263 L14.5547475,22.0626263 C16.5082828,22.0626263 18.0993939,20.4715152 18.0993939,18.5175758 L18.0993939,15.6529293 L20.0327273,13.719596 L20.0327273,18.5175758 C20.0327273,21.5272727 17.5640404,23.9955556 14.5547475,23.9955556 L5.51151515,23.9955556 C2.49979798,23.9955556 0.0335353535,21.5292929 0.0335353535,18.5175758 L0.0335353535,5.50868687 C0.0335353535,2.49454545 2.49737374,0.0307070707 5.51151515,0.0307070707 Z M23.2674747,4.78383838 L22.020202,3.53212121 L12.9688889,12.5777778 L11.6484848,17.0868687 L16.1583838,15.7672727 L25.2056566,6.7220202 L23.9579798,5.46989899 L16.6464646,12.7781818 L15.9547475,12.0913131 L23.2674747,4.78383838 Z M4.83919192,16.5030303 L10.4743434,16.5030303 L9.90868687,18.4367677 L4.83919192,18.4367677 L4.83919192,16.5030303 Z M4.83919192,11.0476768 L12.6723232,11.0476768 L11.8222222,11.8977778 L11.5050505,12.9810101 L4.83919192,12.9810101 L4.83919192,11.0476768 Z M4.83919192,5.59232323 L15.2246465,5.59232323 L15.2246465,7.52606061 L4.83919192,7.52606061 L4.83919192,5.59232323 Z" />
+</svg>
+ </a>
+<div class="dropdown-menu dropdown-menu-right additional-dropdown" aria-labelledby="dropdownWriteArticle">
+<a class="dropdown-item" href="https://lekhak.analyticsvidhya.com/write/">Write an Article</a>
+<a class="dropdown-item" href="https://www.analyticsvidhya.com/creators-club/?utm-medium=blog-navbar&utm_source=creator_club_button">Creators Club</a>
+</div>
+</li>
+<li class="nav-item">
+<button type="button" class="btn btn-light px-4 py-2 header-sign-in simplified-login">Login/Signup</button>
+</li>
+
+<li class="nav-item dropdown header-logged-in" style="display: none;">
+<span class="avatar-placeholder dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<em class="login-short-name"></em>
+
+<img src="" class="login-header-user-image-dropdown-small rounded-circle d-none" alt="user.profilename" />
+</span>
+<div class="dropdown-menu shadow-sm user-info-dropdown py-0 border-0 dropdown-menu-right" aria-labelledby="navbarDropdown">
+<div class="card border-0">
+<div class="card-header border-0">
+<span class="avatar-placeholder">
+<em class="d-none login-short-name"></em>
+<img src="" alt="" class="login-header-user-image-dropdown" />
+</span>
+<h6 class="card-title text-center text-truncate login-header-user-name-dropdown"></h6>
+<small class="text-truncate d-block text-center login-header-user-email-dropdown"></small>
+</div>
+<div class="card-body">
+<a href="https://id.analyticsvidhya.com/accounts/profile/" class="btn btn-outline-light px-4">Manage your AV Account</a>
+<a class="dropdown-item" href="https://datahack.analyticsvidhya.com/user/?utm-source=blog-navbar">My Hackathons</a>
+<a class="dropdown-item" href="https://profile.analyticsvidhya.com/accounts/bookmarks/">My Bookmarks</a>
+<a class="dropdown-item" href="https://courses.analyticsvidhya.com/enrollments/?utm-source=blog-navbar">My Courses</a>
+<a class="dropdown-item" href="https://jobsnew.analyticsvidhya.com/jobs/myactive/?utm-source=blog-navbar">My Applied Jobs</a>
+</div>
+<div class="card-footer">
+<a href="#" id="logout-from-id">Sign Out</a>
+</div> </div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</div>
+</div>
+<div class="overlay-menu"></div>
+</header>
+<section id="avFlashSale" class="py-1 alert alert-warning alert-dismissible fade show m-0 rounded-0" style="display:none;" role="alert">
+<div class="container">
+<div class="row">
+<div class="av-sale-content w-100">
+<p></p>
+<a target="_blank" id="hrefId" class="btn btn-light ml-1"></a>
+<div id="clockdiv" style="display:none;">
+<span>
+<h4 class="days" id="day"></h4>
+<sup>D</sup>
+</span>
+<span>
+<h4 class="hours" id="hour"></h4>
+<sup>H</sup>
+</span>
+<span>
+<h4 class="minutes" id="minute"></h4>
+<sup>M</sup>
+</span>
+<span>
+<h4 class="seconds" id="second"></h4>
+<sup>S</sup>
+</span>
+ </div>
+</div>
+<button type="button" class="close ml-auto py-1" data-dismiss="alert" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+</div>
+</section>
+<main class="w-100 float-left">
+
+<div class="page-header">
+<div class="reading-progress-container">
+<div class="progress-bar"></div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-9 pl-0">
+<h1>Role of Machine Learning in Natural Language Processing</h1>
+</div>
+<div class="display-content"></div>
+<div class="col-md-3">
+<div id="SocialShare">
+<button type="button">
+<img src="https://www.analyticsvidhya.com/wp-content/themes/analytics-vidhya/icon/pdf.svg" alt="download" class="download-pdf" title="Download PDF" />
+</button>
+<button type="button" class="bookmark bookmark-circle-title"><i class="far fa-bookmark" id="bookmark-article"></i></button>
+<div class="dropdown">
+<button type="button" data-toggle="dropdown" class="dropdown-toggle share" id="socialDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img src="https://www.analyticsvidhya.com/wp-content/themes/analytics-vidhya/icon/Share.svg" alt="Share" />
+</button>
+<ul class="dropdown-menu dropdown-menu-right border-0" aria-labelledby="socialDropdownMenu">
+<li>
+<a target="_blank" data-original-title="Facebook" rel="tooltip" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.analyticsvidhya.com%2Fblog%2F2021%2F04%2Frole-of-machine-learning-in-natural-language-processing%2F" class="btn" data-placement="left">
+<i class="fab fa-facebook-f btn btn-facebook"></i>
+<span>Facebook</span>
+</a>
+</li>
+<li>
+<a target="_blank" data-original-title="Twitter" rel="tooltip" href="http://twitter.com/share?text=Role of Machine Learning in Natural Language Processing&url=https%3A%2F%2Fwww.analyticsvidhya.com%2Fblog%2F2021%2F04%2Frole-of-machine-learning-in-natural-language-processing%2F" class="btn" data-placement="left">
+<i class="fab fa-twitter btn btn-twitter"></i>
+<span>Twitter</span>
+</a>
+</li>
+<li>
+<a target="_blank" data-original-title="LinkedIn" rel="tooltip" href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.analyticsvidhya.com%2Fblog%2F2021%2F04%2Frole-of-machine-learning-in-natural-language-processing%2F" class="btn" data-placement="left">
+<i class="fab fa-linkedin-in btn btn-linkedin"></i>
+<span>Linkedin</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="publish-info w-100">
+<a href="https://www.analyticsvidhya.com/blog/author/tatwadarshipn/">Dr. Tatwadarshi P. N.</a> —
+Published On April 23, 2021 and Last Modified On April 4th, 2023 </div>
+<div class="article-categories">
+<a href="https://www.analyticsvidhya.com/blog/category/beginner/">Beginner</a>
+<a href="https://www.analyticsvidhya.com/blog/category/deep-learning/">Deep Learning</a>
+<a href="https://www.analyticsvidhya.com/blog/category/nlp/">NLP</a>
+</div>
+<div class="col-lg-9 col-md-12 col-sm-12 pl-0 pr-0" id="article-start">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5229672700622157" crossorigin="anonymous"></script>
+
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-5229672700622157" data-ad-slot="9793167291"></ins>
+<script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+           </script>
+<section class="av-details-page target w-100" id="1">
+<h2>Introduction</h2>
+<p><span id="spancomment1073" class="comment-highlite" data-commentid="1073">Machine Learning and Natural Language Processing are important subfields of Artificial Intelligence that have gained prominence in recent times. Machine Learning and Natural Language Processing play a very important part in making an artificial agent into an artificial ‘intelligent’ agent. An Artificially Intelligent system can accept better information from the environment and can act on the environment in a user-friendly manner because of the advancement in Natural Language Processing. </span></p>
+<p><span id="spancomment1073" class="comment-highlite" data-commentid="1073">Similarly, an Artificially Intelligent System can process the received information and perform better predictions for its actions because of the adoption of Machine Learning techniques.</span></p>
+<p>Machine Learning gives the system the ability to learn from past experiences and examples. General algorithms perform a fixed set of executions according to what it has been programmed to do so and they do not possess the ability to solve unknown problems. And, in the real world, most of the problems faced contain many unknown variables which makes the traditional algorithms very less effective. This is where machine learning comes to the fore. With the help of past examples, a machine learning algorithm is far better equipped to handle such unknown problems.</p>
+<p>Some of the classic examples given include spam mail detection. To detect and classify if a mail is a legitimate one or spam includes many unknowns. There are many ways in which spam filters can be evaded. For a traditional algorithm to work, every feature and variable has to be hardcoded, which is extremely difficult, if at all possible. Whereas, a machine learning algorithm will be able to work in such an environment because of its ability to learn and form a general rule.</p>
+<p>Deep Learning is a specialization of machine learning algorithms, the Artificial Neural Network. In recent times it has been observed that deep learning techniques have been widely adopted and have produced good results as well. The flexibility provided by the deep learning techniques in deciding upon the architecture is one of the important reasons for the success of these techniques. Deep learning techniques have been at the forefront of machine learning techniques used for research in natural language processing.</p>
+<p>Natural Language Processing, on the other hand, is the ability of a system to understand and process human languages. A computer system only understands the language of 0’s and 1’s, it does not understand human languages like English or Hindi. Natural Language Processing gave the computing system the ability to understand English or the Hindi language.</p>
+<p>Natural Language Processing has seen large-scale adaptation in recent times because of the level of user-friendliness it brings to the table. From choosing your choice of music to controlling your electronic appliances like Air conditioners, and ovens, in fact even the ceiling fans and light bulbs, everything and anything can now be done using your voice, thus making these electronic items smart…!!. This is all possible because of Natural Language Processing.</p>
+<p>Even as NLP has made it easier for the users to interact with the complex electronics, on the other side there is a lot of processing happening behind the scenes which makes this interaction possible. Machine learning has played a very important role in this processing of the language.</p>
+<p>Apart from playing a role in the proper processing of natural language Machine Learning has played a very constructive role in important applications of natural language processing as well. Important NLP applications like Sentiment Analysis, Chatbot Systems, Question Answering Systems, Information Retrieval Systems, Machine Translation, and Email Classification, among others have all included machine learning techniques for better working.</p>
+<p><em>This article was published as a part of the <a href="https://datahack.analyticsvidhya.com/contest/data-science-blogathon-7/" target="_blank" rel="noopener">Data Science Blogathon</a>.</em></p>
+<h2><b>Role of Machine Learning in Natural Language </b><b>Processing</b></h2>
+<p>Processing of natural language so that the machine can understand the natural language involves many steps. These steps include Morphological Analysis, Syntactic Analysis, Semantic Analysis, Discourse Analysis, and Pragmatic Analysis, generally, these analysis tasks are applied serially. Machine Learning acts as important value addition in almost all these processes in some form or the other. Let us try to understand how.</p>
+<div class="medium-insert-images">
+<figure><img decoding="async" class="alignnone" src="https://editor.analyticsvidhya.com/uploads/11741NLP.jpg" alt="Role of Machine Learning in Natural Language Processing" width="577" height="343" /></figure>
+<p>&nbsp;</p>
+</div>
+<h4><!-- [if !supportLists]--><b>1. <!--[endif]-->Morphological Analysis:</b></h4>
+<p>As already mentioned the data received by the computing system is in the form of 0s and 1s. These 0s and 1s can be converted into alphabets using the ASCII code. So, it can be said that a machine receives a bunch of characters when a sentence or a paragraph has been provided to it. At the level of morphological analysis, the first task is to identify the words and the sentences. This identification is called tokenization. Many Different Machine Learning and Deep Learning algorithms have been employed for tokenization including Support Vector Machine and Recurrent Neural Network.</p>
+<p>Once the tokenization is complete the machine has with it a bunch of words and sentences. Most of the sentences which are formed contain affixes. These affixes complicate the matter for the machines as, having a word meaning dictionary containing all the words with all its possible affixes is almost impossible. So, the next task that the morphological analysis level is removing these affixes. These affixes can be removed either using stemming or lemmatization. Machine Learning algorithms like the random forest and decision tree have been quite successful in performing the task of stemming.</p>
+<p>&nbsp;</p>
+<h4><!-- [if !supportLists]--><b>2. <!--[endif]-->Syntactic Analysis </b></h4>
+<p>The next task in natural language processing is to check whether the given sentence follows the grammar rule of a language. To do this the words are first tagged with their part of speech. This helps the syntactic parsers in checking the grammar rules. Machine learning and Deep learning algorithms like the random forest and the recurrent neural network has been successfully used implemented for this task. Machine learning algorithms like K- nearest neighbor have been used for implementing syntactic parsers as well.</p>
+<p>&nbsp;</p>
+<h4><!-- [if !supportLists]--><b>3. <!--[endif]-->Semantic Analysis</b></h4>
+<p>At this level, the word meanings are identified using word-meaning dictionaries. The problem encountered here is, the same word might have different meanings according to the context of the sentence. For example, the word ‘Bank’ might mean a Blood Bank or a Financial Bank, or even a River Bank / Shore, this creates ambiguity. So, removing this ambiguity is one of the important tasks at this level of natural language processing called Word Sense Disambiguation.</p>
+<p>Word sense disambiguation is one of the classical classification problems which have been researched with different levels of success. Machine learning like the random forest, gradient boosting and decision trees have been successfully employed. But, in recent times it is the deep learning algorithms like the recurrent neural network, long short term memory based recurrent neural network, gated recurrent unit based recurrent neural network and convolution neural network have been researched and have produced very good results.</p>
+<p>&nbsp;</p>
+<h4><!-- [if !supportLists]--><b>4. <!--[endif]-->Discourse Analysis </b></h4>
+<p>There instances where pronouns are used or certain subjects/objects are referred to, which are outside of the current preview of the analysis. In such cases, the semantic analysis will not be able to give proper meaning to the sentence. This is another classical problem of reference resolution which has been tackled by machine learning and deep learning algorithms.</p>
+<p>&nbsp;</p>
+<h4><!-- [if !supportLists]--><b>5. <!--[endif]-->Pragmatic Analysis</b></h4>
+<p>Many a time sentences convey a deeper meaning than what the words can describe. That is, the machine has to discard the word meaning understood after semantic analysis and capture the intended or the implied meaning. It is easier said than done. For many years now this is of natural language process has intrigued researchers. One of the classic examples of pragmatic analysis is sarcasm detection.</p>
+<p>Many, in fact almost all the different machine learning and deep learning algorithms have been employed with varied success for performing sarcasm detection o for performing pragmatic analysis in general.</p>
+<p>&nbsp;</p>
+<h2><b>Role of Machine Learning in the applications of Natural Language processing</b></h2>
+<p>As with the processing task of the natural language machine learning and deep learning algorithms have played a very important role in almost all of the applications of natural language processing. In recent times there has been a renewed research interest in these fields because of the ease with which machine learning and deep learning algorithms can be implemented, and this is especially true for deep learning techniques.</p>
+<p>Hence, almost all the deep learning techniques including, Deep Neural Network, Autoencoders, Restricted Boltzmann Machine, Recurrent Neural Network, and Convolution Neural Network have been experimented with to get good accuracy in the different applications of Natural Language Processing.</p>
+<p>Recurrent Neural Network with its variants the Long Short Term Memory and Gated Recurrent Unit and Convolution Neural Network along with its variants Recurrent Convolution Neural Network, Regional Convolution Neural Network have been all been extensively researched to produce good results for these applications. Let us have a look at some of these applications of Natural Language Processing where the deep learning techniques have had a very positive role to play.</p>
+<p>&nbsp;</p>
+<h4><!-- [if !supportLists]--><b>1. <!--[endif]-->Sentiment Analysis</b></h4>
+<p>Sentiment Analysis strives to analyze the user opinions or sentiments on a certain product. Sentiment analysis has become a very important part of Customer Relationship Management. Even a single negative opinion can be disastrous for the product. Recent times have seen greater use of deep learning techniques for sentiment analysis. An interesting fact to note here is that new deep learning techniques have been quipped especially for analysis of sentiments that is the level of research that is being conducted for sentiment analysis using deep learning.</p>
+<div class="medium-insert-images">
+<figure><img decoding="async" loading="lazy" class="alignnone" src="https://editor.analyticsvidhya.com/uploads/56820SA.jpg" alt="Role of Machine Learning in the applications of Natural Language processing" width="576" height="204" /></figure>
+</div>
+<h4><!-- [if !supportLists]--><b>2. <!--[endif]-->Chatbot Systems</b></h4>
+<p>Chatbot systems are conversational agents or dialog systems that try to engage the user in a conversation. This conversation can be through voice or text. Personal assistants like Amazon’s Alexa and Google Assistant have popularised the chatbot systems and have also showcased the level of ease through which user interaction can be carried out.</p>
+<p>As easy as it may sound, the development of a true chatbot system that can replace a human agent is an extremely difficult task. Which requires Natural Language Understanding and also Natural Language Generation.</p>
+<p>Recent frameworks like Google’s DialogFlow, IBM’s Watson AI, and Amazon’s Alexa AI provide an easy way of developing a chatbot system. And, all these frameworks employ complex and proprietary deep learning architectures.</p>
+<div class="medium-insert-images">
+<figure><img decoding="async" loading="lazy" class="alignnone" src="https://editor.analyticsvidhya.com/uploads/40455Chatbot.jpg" alt="chatbots" width="576" height="205" />3. Question Answering Systems</figure>
+<p>&nbsp;</p>
+</div>
+<h4><!-- [if !supportLists]--><b>3. <!--[endif]-->Question Answering Systems</b></h4>
+<p>As the name suggests, a question answering system is a system that tries to answer user’s questions. Recent times have seen the thin line separating a dialog system and a question answering system getting blurred and most of the time a chatbot system performs the question answering task and it is true the other way round as well. So, the research works which pledge to develop a chatbot system will, in all probability, be developing a question answering system within it as well.</p>
+<p>A question answering system has three important components, Question Processing, Information Retrieval, and Answer Processing. Machine Learning and Deep Learning techniques have played a crucial role in all these three components. Especially, Question Processing has attracted quite a few research. The idea here is that understanding the question is extremely important for better answer retrieval. The question processing task is taken as a classification problem and many research works have experimented with deep learning techniques for better question classification.</p>
+<div class="medium-insert-images">
+<figure><img decoding="async" loading="lazy" class="alignnone" src="https://editor.analyticsvidhya.com/uploads/11177QA.jpg" alt="Question Answering Systems" width="576" height="212" /></figure>
+<p>&nbsp;</p>
+</div>
+<h4><!-- [if !supportLists]--><b>4. <!--[endif]-->Information Retrieval Systems</b></h4>
+<p>Information Retrieval is another important application of Natural Language Processing that tries to retrieve relevant information. Information retrieval systems act as the backbone of the systems like the chatbot systems and question answering systems.</p>
+<p>The most basic way of retrieving any information is using the frequency method where the frequency of keywords determines if a particular data is retrieved or not. But, smart systems process the required query as well as the present large data to retrieve only the relevant information. This process is carried out using deep learning techniques.</p>
+<div class="medium-insert-images">
+<figure><img decoding="async" loading="lazy" class="alignnone" src="https://editor.analyticsvidhya.com/uploads/52110IR.jpg" alt="Information Retrieval Systems" width="334" height="336" /></figure>
+</div>
+<h4><!-- [if !supportLists]--><b>5. <!--[endif]-->Machine Translation</b></h4>
+<p>A machine translation system is striving to translate a text from one language to another with minimum or no human intervention. Applications like Google Translate are one of the best examples of the machine translation system.</p>
+<p>Have a translation system that translates word to word is not enough as the construction of a sentence might vary from one language to another. For example, English follows the Subject-Verb-Object format whereas Hindi follows Subject -Object-Verb form for sentence construction. Apart from this, there are many different rules which need to be followed. All these things make the task of machine translation difficult.</p>
+<div class="medium-insert-images">
+<figure><img decoding="async" loading="lazy" class="alignnone" src="https://editor.analyticsvidhya.com/uploads/99303MT.jpg" alt="Machine Translation" width="576" height="208" /></figure>
+</div>
+<p>The Recurrent Neural Network Deep learning technique along with its variants, Long Short Term Memory and Gated Recurrent Unit, with their Bi-directional forms, have been extensively experimented with for better machine translation. The reason for this is the ability of these neural networks in holding on to the contextual information, which is very crucial in proper translation. Even, Convolution Neural networks have experimented with varied success.</p>
+<p>So, it can be observed that Machine Learning and Deep Learning techniques are being extensively researched for their employment in the field of Natural Language Processing. it can be seen that these learning techniques are playing an important role in almost all of the processing of natural language tasks as well as in almost all the applications of natural language processing.</p>
+<p>All the different processing of natural language tasks and the different applications of natural language processing are different fields of research by themselves. And currently, in all these fields of research Machine Learning and Deep Learning techniques are being researched extensively with an exceeding level of success. In conclusion, it can be said that Machine Learning and Deep Learning techniques have been playing a very positive role in Natural Language Processing and its applications.</p>
+<h2>References:</h2>
+<p><!-- [if !supportLists]-->1. <!--[endif]-->Tatwadarshi P. Nagarhalli, Dr. Vinod Vaze, and Dr. N. K. Rana, “Impact of Machine Learning in Natural Language Processing: A Review”, Third International Conference on Intelligent Communication Technologies and Virtual Mobile Networks (ICICV 2021), 2021.</p>
+<p><!-- [if !supportLists]-->2. <!--[endif]-->Aravind Pai, What is Tokenization in NLP? Here’s All You Need To Know. Available at: https://www.analyticsvidhya.com/blog/2020/05/what-is-tokenization-nlp/.</p>
+<div>
+<div>
+<div>
+<p><strong><em>The media shown in this article are not owned by Analytics Vidhya and is used at the Author’s discretion. </em></strong></p>
+</div>
+</div>
+</div>
+<div id='jp-relatedposts' class='jp-relatedposts'>
+<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div> </section>
+
+<div class="blog-tag-row">
+<a href="https://www.analyticsvidhya.com/blog/tag/ai/">AI</a><a href="https://www.analyticsvidhya.com/blog/tag/blogathon/">blogathon</a><a href="https://www.analyticsvidhya.com/blog/tag/natural-language-processing/">Natural language processing</a><a href="https://www.analyticsvidhya.com/blog/tag/nlp/">NLP</a> </div>
+</div>
+<div class="col-lg-3 col-md-12 col-sm-12">
+<div id="side-upper-banner" class="display-for-right mb-3 right-sidebar-1 d-none">
+<a class="utm_image_link" target="_blank" rel="noopener" href="https://www.analyticsvidhya.com/datahack-summit-2023/?utm_source=blog_india&utm_medium=side_banner&utm_campaign=27-Apr-2023||&utm_content=generativeAI"><img width="250" height="400" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2023/04/DATAHACK-SUMMIT-2.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://cdn.analyticsvidhya.com/wp-content/uploads/2023/04/DATAHACK-SUMMIT-2.png 250w, https://cdn.analyticsvidhya.com/wp-content/uploads/2023/04/DATAHACK-SUMMIT-2-188x300.png 188w, https://cdn.analyticsvidhya.com/wp-content/uploads/2023/04/DATAHACK-SUMMIT-2-150x240.png 150w" sizes="(max-width: 250px) 100vw, 250px" /></a>
+</div>
+<div id="side-upper-banner" class="display-for-right mb-3 right-sidebar-2 d-none">
+<a class="utm_image_link" target="_blank" rel="noopener" href="https://blackbelt.analyticsvidhya.com/plus?utm_source=blog_outside_india&utm_medium=side_banner&utm_campaign=24-Mar-2023||&utm_content=project#ReinforceProject"><img width="250" height="500" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2023/02/Add-a-subheading-8.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://cdn.analyticsvidhya.com/wp-content/uploads/2023/02/Add-a-subheading-8.png 250w, https://cdn.analyticsvidhya.com/wp-content/uploads/2023/02/Add-a-subheading-8-150x300.png 150w" sizes="(max-width: 250px) 100vw, 250px" /></a>
+</div>
+<script>
+$(document).ready(function(){
+  $.get("https://www.analyticsvidhya.com/back-channel/check-country.php", function(data){
+    if (data == "1")
+      $(".right-sidebar-1").removeClass("d-none");
+    else if (data == "0")
+      $(".right-sidebar-2").removeClass("d-none");
+  });
+});
+
+
+function notify_rl_ra_event(eventname)
+{
+  $.ajax({
+  method: "GET",
+  url: "https://www.analyticsvidhya.com//back-channel/notify-reading-list-related-article.php?eventname="+eventname+"&utm_source="+url.searchParams.get("utm_source")+"&utm_medium="+url.searchParams.get("utm_medium")+"&utm_campaign="+url.searchParams.get("utm_campaign")+"&url=https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/"
+})
+  .done(function( msg ) {
+    console.log ("Notified "+eventname+msg);
+  });
+}
+</script>
+<div class="detail-page-side-bar change-to-sticky " id="related-articles-sidebar">
+<aside id="relatedTarget">
+<h6>Recommended For You</h6>
+<ul class="nav navbar-nav">
+<li class="position-relative"><a href="https://blackbelt.analyticsvidhya.com/plus?utm_source=RelatedArticles&utm_medium=blog" target="_blank" class="text-primary" aria-label="Become a data scientist">Become a full stack data scientist</a></li>
+<li><a class="text-primary" href="https://www.analyticsvidhya.com/blog/2022/12/top-10-blogs-on-nlp-in-analytics-vidhya-2022/?utm_source=related_WP&utm_medium=https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/">Top 10 blogs on NLP in Analytics Vidhya 2022</a></li>
+<li><a class="text-primary" href="https://www.analyticsvidhya.com/blog/2022/01/master-natural-language-processing-in-2022-with-best-resources/?utm_source=related_WP&utm_medium=https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/">Master Natural Language Processing in 2022 with Best Resources</a></li>
+<li><a class="text-primary" href="https://www.analyticsvidhya.com/blog/2021/06/part-1-step-by-step-guide-to-master-natural-language-processing-nlp-in-python/?utm_source=related_WP&utm_medium=https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/">Part 1: Step by Step Guide to Master NLP &#8211; Introduction</a></li>
+<li><a class="text-primary" href="https://www.analyticsvidhya.com/blog/2022/07/the-evolution-of-nlp-from-1950-to-2022/?utm_source=related_WP&utm_medium=https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/">The Evolution of NLP from 1950 to 2022</a></li>
+<li><a class="text-primary" href="https://www.analyticsvidhya.com/blog/2023/04/from-turing-test-to-chatgpt-the-history-and-evolution-of-ai/?utm_source=related_WP&utm_medium=https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/">From Turing Test to ChatGPT: The Remarkable Journey of AI</a></li>
+<li><a class="text-primary" href="https://www.analyticsvidhya.com/blog/2020/08/people-to-follow-in-the-field-of-natural-language-processing-nlp/?utm_source=related_WP&utm_medium=https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/">People to Follow in the field of Natural Language Processing (NLP)</a></li>
+</ul>
+</aside>
+</div>
+<script>
+var is_reading_list_enabled = 0;
+if ($('#reading-list-sidebar').data("is-reading-list-enabled")=="1")
+{
+ is_reading_list_enabled = 1;
+}
+const url = new URL(window.location.href);
+utm_source = url.searchParams.get("utm_source");
+if (utm_source == "reading_list")
+{
+  $("#reading-list-sidebar").removeClass("d-none");
+  notify_rl_ra_event('reading_list');
+  //dataLayer.push({event:'reading_list'});
+}
+else if (utm_source == "related_WP")
+{
+  $("#related-articles-sidebar").removeClass("d-none");
+  notify_rl_ra_event('related_article');
+  //dataLayer.push({event:'related_article'});
+}
+else if (is_reading_list_enabled == 1) {
+ var article_exists_in_topic = 0;
+ var rand = (Math.floor(Math.random() * (2 - 1 + 1)) + 1);
+ if ((rand == 2) || (article_exists_in_topic==1))
+ {
+  $("#reading-list-sidebar").removeClass("d-none");
+  notify_rl_ra_event('reading_list');
+  //dataLayer.push({event:'reading_list'});
+ }
+ else if (rand == 1)
+ {
+   $("#related-articles-sidebar").removeClass("d-none");
+   notify_rl_ra_event('related_article');
+   //dataLayer.push({event:'related_article'});
+ }
+}
+else {
+  notify_rl_ra_event('related_article');
+  //dataLayer.push({event:'related_article'});
+}
+</script>
+</div>
+</div>
+</div>
+</main>
+<section class="bottom-page-cotainer w-100 float-left">
+<div class="container">
+<div class="row">
+<div class="col-lg-9 col-md-12 col-sm-12 flet-gap">
+
+<div class="author-row">
+<h3>About the Author</h3>
+<div class="avatar">
+<img class="img-fluid" src="https://secure.gravatar.com/avatar/37d36796fefcf7302ba36107f1574379?s=500" alt="Dr. Tatwadarshi P. N." />
+</div>
+<div class="avatar-info">
+<h6><a href="https://www.analyticsvidhya.com/blog/author/tatwadarshipn/">Dr. Tatwadarshi P. N.</a></h6>
+<p></p>
+</div>
+</div>
+
+<div class="top-author">
+<h3>Our Top Authors</h3>
+<ul>
+<li class="av-pop" tabindex="0" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content="<a href='https://www.analyticsvidhya.com/blog/author/rahul105/'>View Profile</a>" title="Rahul Shah">
+<div class="av-crown">
+<a href="https://www.analyticsvidhya.com/creators-club/" data-toggle="tooltip" data-placement="bottom" title="Analytics Vidhya Creators' Club Member" target="_blank">
+<img src="https://av-public-assets.s3.ap-south-1.amazonaws.com/others/av-crown.svg" alt="crown icon" />
+</a>
+</div>
+<a href="https://www.analyticsvidhya.com/blog/author/rahul105/"><img src="https://av-identity.s3.amazonaws.com/users/user/bGnsep7nT0GMWuLpkDl15Q.jpg" alt="Rahul Shah" /></a>
+</li>
+<li class="av-pop" tabindex="0" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content="<a href='https://www.analyticsvidhya.com/blog/author/sion/'>View Profile</a>" title="Sion Chakrabarti">
+<div class="av-crown">
+<a href="https://www.analyticsvidhya.com/creators-club/" data-toggle="tooltip" data-placement="bottom" title="Analytics Vidhya Creators' Club Member" target="_blank">
+<img src="https://av-public-assets.s3.ap-south-1.amazonaws.com/others/av-crown.svg" alt="crown icon" />
+</a>
+</div>
+<a href="https://www.analyticsvidhya.com/blog/author/sion/"><img src="https://av-identity.s3.amazonaws.com/users/user/R7HrsWl1QrGRiw_e9m4fDA.jpg" alt="Sion Chakrabarti" /></a>
+</li>
+<li class="av-pop" tabindex="0" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content="<a href='https://www.analyticsvidhya.com/blog/author/chirag676/'>View Profile</a>" title="CHIRAG GOYAL">
+<div class="av-crown">
+<a href="https://www.analyticsvidhya.com/creators-club/" data-toggle="tooltip" data-placement="bottom" title="Analytics Vidhya Creators' Club Member" target="_blank">
+<img src="https://av-public-assets.s3.ap-south-1.amazonaws.com/others/av-crown.svg" alt="crown icon" />
+</a>
+</div>
+<a href="https://www.analyticsvidhya.com/blog/author/chirag676/"><img src="https://av-identity.s3.amazonaws.com/users/user/ZcU4ALTFT96MVCzfiGuhsQ.jpeg" alt="CHIRAG GOYAL" /></a>
+</li>
+<li class="av-pop" tabindex="0" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content="<a href='https://www.analyticsvidhya.com/blog/author/barney6/'>View Profile</a>" title="Barney Darlington">
+<div class="av-crown">
+<a href="https://www.analyticsvidhya.com/creators-club/" data-toggle="tooltip" data-placement="bottom" title="Analytics Vidhya Creators' Club Member" target="_blank">
+<img src="https://av-public-assets.s3.ap-south-1.amazonaws.com/others/av-crown.svg" alt="crown icon" />
+</a>
+</div>
+<a href="https://www.analyticsvidhya.com/blog/author/barney6/"><img src="https://av-identity.s3.amazonaws.com/users/user/aM3WrxdNSTGLg7LoqX-q0w.png" alt="Barney Darlington" /></a>
+</li>
+<li class="av-pop" tabindex="0" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content="<a href='https://www.analyticsvidhya.com/blog/author/arnab1408/'>View Profile</a>" title="Arnab Mondal">
+<div class="av-crown">
+<a href="https://www.analyticsvidhya.com/creators-club/" data-toggle="tooltip" data-placement="bottom" title="Analytics Vidhya Creators' Club Member" target="_blank">
+<img src="https://av-public-assets.s3.ap-south-1.amazonaws.com/others/av-crown.svg" alt="crown icon" />
+</a>
+</div>
+<a href="https://www.analyticsvidhya.com/blog/author/arnab1408/"><img src="https://av-identity.s3.amazonaws.com/users/user/a4ByfUyoQRmdGzLpBzHVLw.jpeg" alt="Arnab Mondal" /></a>
+</li>
+<li class="av-pop" tabindex="0" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content="<a href='https://www.analyticsvidhya.com/blog/author/prateekmaj21/'>View Profile</a>" title="Prateek Majumder">
+<div class="av-crown">
+<a href="https://www.analyticsvidhya.com/creators-club/" data-toggle="tooltip" data-placement="bottom" title="Analytics Vidhya Creators' Club Member" target="_blank">
+<img src="https://av-public-assets.s3.ap-south-1.amazonaws.com/others/av-crown.svg" alt="crown icon" />
+</a>
+</div>
+<a href="https://www.analyticsvidhya.com/blog/author/prateekmaj21/"><img src="https://av-identity.s3.amazonaws.com/users/user/ZTsmKl-1Qvqn07FUzgaBNw.png" alt="Prateek Majumder" /></a>
+</li>
+<li class="av-pop" tabindex="0" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content="<a href='https://www.analyticsvidhya.com/blog/author/suvojit3/'>View Profile</a>" title="Suvojit Hore">
+<div class="av-crown">
+<a href="https://www.analyticsvidhya.com/creators-club/" data-toggle="tooltip" data-placement="bottom" title="Analytics Vidhya Creators' Club Member" target="_blank">
+<img src="https://av-public-assets.s3.ap-south-1.amazonaws.com/others/av-crown.svg" alt="crown icon" />
+</a>
+</div>
+<a href="https://www.analyticsvidhya.com/blog/author/suvojit3/"><img src="https://av-identity.s3.amazonaws.com/users/user/zy4FL_yyQlG4PkWcyGYvhw.jpg" alt="Suvojit Hore" /></a>
+</li>
+<li>
+<img src="https://www.analyticsvidhya.com/wp-content/themes/analytics-vidhya/remove-image/user4.png" alt="Analytics Vidhya" />
+<div class="overly-item">
+<a href="https://www.analyticsvidhya.com/blog/creators/?utm-medium=blog-footer&utm_source=top-authors" class="text-small">view more</a>
+</div>
+</li>
+</ul>
+</div>
+
+<div class="download-app">
+<div class="download-row">
+<h3>
+Download
+<span>Analytics Vidhya App for the Latest blog/Article</span>
+</h3>
+<div class="download-icon">
+<a rel="nofollow" href="https://play.google.com/store/apps/details?id=com.analyticsvidhya.android" target="_blank">
+<img src="https://www.analyticsvidhya.com/wp-content/themes/analytics-vidhya/images/play_store_icon.svg" alt='play store'>
+</a>
+<a rel="nofollow" href="https://apps.apple.com/us/app/analytics-vidhya/id1470025572" target="_blank">
+<img src="https://www.analyticsvidhya.com/wp-content/themes/analytics-vidhya/images/app_Store_icon.svg" alt='App Store'>
+</a>
+</div>
+</div>
+</div>
+
+<div class="blog-two-container">
+<div class="blog-two-row">
+<div class="col-md-6 float-left">
+<small>Previous Post</small>
+<a href="https://www.analyticsvidhya.com/blog/2021/04/25-probability-and-statistics-questions-to-ace-your-data-science-interviews/">
+<span>
+25 Probability and Statistics Questions to Ace your Data Science Interviews </span>
+</a>
+</div>
+<div class="col-md-6 float-left">
+<small>Next Post</small>
+<a href="https://www.analyticsvidhya.com/blog/2021/04/top-10-r-packages-for-data-science-you-must-know-in-2021/">
+<span>
+Top 10 R Packages for Data Science You Must Know in 2021 </span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-2 col-md-12 col-sm-12 float-left"></div>
+</div>
+</div>
+</section>
+<section id="blog-comments-section" class="w-100 float-left pt-4 pb-4">
+<div class="container">
+<div class="row">
+<section id="blog-comments-section" class="av-comment-section">
+<div class="container">
+<div class="row">
+<div id="respond" class="av-comment-respond">
+<div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small>Your email address will not be published. Required fields are marked *</small></h3> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/blog/2021/04/role-of-machine-learning-in-natural-language-processing/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://www.analyticsvidhya.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><div class="form-row"><div class="form-group col-sm-12"><textarea id="comment" name="comment" class="form-control" placeholder="Comment"></textarea></div><div class="form-group col-md-6"><input id="author" name="author" type="text" class="form-control" placeholder="Name*"></div>
+<div class="form-group col-md-6"><input id="email" name="email" type="email" class="form-control" placeholder="Email*"></div>
+<div class="form-group col-sm-12"><input id="url" name="url" type="text" class="form-control" placeholder="Website"></div>
+<p class="comment-subscription-form"><input type="checkbox" name="subscribe_comments" id="subscribe_comments" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" /> <label class="subscribe-label" id="subscribe-label" for="subscribe_comments">Notify me of follow-up comments by email.</label></p><p class="comment-subscription-form"><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" /> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog">Notify me of new posts by email.</label></p><p class="form-submit"></div><button type="submit" class="btn btn-blue px-2">Submit</button> <input type='hidden' name='comment_post_ID' value='78087' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="86415f4509" /></p><p style="display: none !important;"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="13" /><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form> </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="top-resources">
+<div class="container">
+<h2 class="heaidng-2 text-center w-100 mb-5">Top Resources</h2>
+<div class="row">
+<div class="col-md-6 col-lg-3 col-sm-12">
+<div class="card">
+<a href="https://www.analyticsvidhya.com/blog/2023/06/data-visualization-books/">
+<div class="image-card">
+<img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2023/06/Screen-Shot-2020-01-28-at-10.13.28-AM.png" class="card-img-top" alt="">
+</div>
+<div class="card-body">
+<p class="card-text">10 Data Visualization Books</p>
+</div>
+</a>
+<div class="card-footer">
+<span>
+<a href="https://www.analyticsvidhya.com/blog/author/avcontentteam/">
+avcontentteam - </span>
+</a>
+<span class="text-uppercase">Jun 02, 2023</span>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 col-sm-12">
+<div class="card">
+<a href="https://www.analyticsvidhya.com/blog/2023/05/build-a-chatgpt-for-pdfs-with-langchain/">
+<div class="image-card">
+<img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2023/05/chain-scaled.jpg" class="card-img-top" alt="">
+</div>
+<div class="card-body">
+<p class="card-text">Build a ChatGPT for PDFs with Langchain</p>
+</div>
+</a>
+<div class="card-footer">
+<span>
+<div class="av-crown">
+<a href="https://www.analyticsvidhya.com/creators-club/" data-toggle="tooltip" data-placement="bottom" title="Analytics Vidhya Creators' Club Member" target="_blank">
+<img src="https://av-public-assets.s3.ap-south-1.amazonaws.com/others/av-crown.svg" alt="crown icon" />
+</a>
+</div>
+<a href="https://www.analyticsvidhya.com/blog/author/sunil_kumar27/">
+Sunil Kumar Dash - </span>
+</a>
+<span class="text-uppercase">May 29, 2023</span>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 col-sm-12">
+<div class="card">
+<a href="https://www.analyticsvidhya.com/blog/2021/06/understanding-random-forest/">
+<div class="image-card">
+<img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2021/06/84303images-1.jpg" class="card-img-top" alt="">
+</div>
+<div class="card-body">
+<p class="card-text">Understand Random Forest Algorithms With Examples (Updated 2023)</p>
+</div>
+</a>
+<div class="card-footer">
+<span>
+<a href="https://www.analyticsvidhya.com/blog/author/sruthi94/">
+Sruthi E R - </span>
+</a>
+<span class="text-uppercase">Jun 17, 2021</span>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 col-sm-12">
+<div class="card">
+<a href="https://www.analyticsvidhya.com/blog/2023/05/draggan-google-researchers-unveil-ai-technique-for-magical-image-editing/">
+<div class="image-card">
+<img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2023/05/image-edit.jpg" class="card-img-top" alt="">
+</div>
+<div class="card-body">
+<p class="card-text">DragGAN: Google Researchers Unveil AI Technique for Magical Image Editing</p>
+</div>
+</a>
+<div class="card-footer">
+<span>
+<a href="https://www.analyticsvidhya.com/blog/author/yana_khare/">
+Yana Khare - </span>
+</a>
+<span class="text-uppercase">May 22, 2023</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="tab-content-modal">
+<div class="tab-header w-100 bg-light">
+<div class="container">
+<div class="row">
+<div class="card border-0 w-100">
+<div class="card-header border-0 w-100">
+<h2 class="card-title d-flex">
+<span id="headerHeading"></span>
+<button type="button" class="tabs-close btn px-2 ml-auto p-0 m-0">
+<span aria-hidden="true" class="close" aria-label="Close">&times;</span>
+</button>
+</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="tab-content w-100" id="nav-tabContent">
+<div class="tab-pane fade show active" id="interview-questions" role="tabpanel" aria-labelledby="interview-questions-tab">
+<div class="card w-100 border-0">
+<div id="interview-questions-display"></div>
+</div>
+</div>
+<div class="tab-pane fade" id="related-videos" role="tabpanel" aria-labelledby="related-videos-tab">
+<div class="card w-100 border-0 Videos-listing">
+<div id="related-videos-display"></div>
+</div>
+</div>
+<div class="tab-pane fade" id="related-articles" role="tabpanel" aria-labelledby="related-articles-tab">
+<div class="card w-100 border-0 ">
+<div id="related-articles-display"></div>
+</div>
+</div>
+<div class="tab-pane fade" id="free-courses" role="tabpanel" aria-labelledby="free-courses-tab">
+<div class="card w-100 border-0 Videos-listing">
+<div id="free-courses-display"></div>
+</div>
+</div>
+</section>
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-lg-4 col-md-4 col-sm-12">
+<a href="https://www.analyticsvidhya.com/">
+<img src="https://av-public-assets.s3.ap-south-1.amazonaws.com/logos/AV_logo_wite.png" alt='Analytics Vidhya' width="298" height="86">
+</a>
+<div class="download-av-app">
+<h6 class="d-flex align-items-center text-white">Download App</h6>
+<a rel="nofollow" href="https://play.google.com/store/apps/details?id=com.analyticsvidhya.android" target="_blank">
+<img src="https://www.analyticsvidhya.com/wp-content/themes/analytics-vidhya/images/play_store_icon.svg" alt='play store' width="50" height="50">
+</a>
+<a rel="nofollow" href="https://apps.apple.com/us/app/analytics-vidhya/id1470025572" target="_blank">
+<img src="https://www.analyticsvidhya.com/wp-content/themes/analytics-vidhya/images/app_Store_icon.svg" alt='App Store' width="50" height="50">
+</a>
+</div>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-12">
+<div class="av-links">
+<ul>
+<li>
+<h6 class="text-white">Analytics Vidhya</h6>
+<a href="https://www.analyticsvidhya.com/about/">About Us</a>
+<a href="https://www.analyticsvidhya.com/team/">Our Team</a>
+<a href="https://www.analyticsvidhya.com/careers/">Careers</a>
+<a href="https://www.analyticsvidhya.com/contact/">Contact us</a>
+</li>
+<li>
+<h6 class="text-white">Data Scientists</h6>
+<a href="https://www.analyticsvidhya.com/blog/">Blog</a>
+<a href="https://datahack.analyticsvidhya.com/">Hackathon</a>
+<a href="https://discuss.analyticsvidhya.com/">Discussions</a>
+<a href="https://jobsnew.analyticsvidhya.com/">Apply Jobs</a>
+</li>
+<li>
+<h6 class="text-white">Companies</h6>
+<a href="https://www.analyticsvidhya.com/corporate/">Post Jobs</a>
+<a href="https://courses.analyticsvidhya.com/">Trainings</a>
+<a href="https://datahack.analyticsvidhya.com/">Hiring Hackathons</a>
+<a href="https://www.analyticsvidhya.com/contact/">Advertising</a>
+</li>
+<li>
+<h6 class="text-white">Visit us</h6>
+<div class="av-get-social">
+<a rel="nofollow" href="https://www.facebook.com/AnalyticsVidhya/" target="_blank" class="social-visit fb mr-2">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a rel="nofollow" href="https://www.linkedin.com/company/analytics-vidhya/" target="_blank" class="social-visit in mr-2">
+<i class="fab fa-linkedin-in"></i>
+</a>
+<a rel="nofollow" href="https://www.youtube.com/channel/UCH6gDteHtH4hg3o2343iObA" target="_blank" class="social-visit utub mr-2">
+<i class="fab fa-youtube"></i>
+</a>
+<a rel="nofollow" href="https://twitter.com/analyticsvidhya" target="_blank" class="social-visit tw mr-2">
+<i class="fab fa-twitter"></i>
+</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer-link-bottom">
+<div class="container">
+<div class="row">
+<div class="mr-auto">
+<p>© Copyright 2013-2023 Analytics Vidhya.</p>
+</div>
+<div class="ml-auto">
+<a href="https://www.analyticsvidhya.com/privacy-policy/" target="_blank">Privacy Policy</a>
+<a href="https://www.analyticsvidhya.com/terms/" target="_blank">Terms of Use</a>
+<a href="https://www.analyticsvidhya.com/refund-policy/" target="_blank">Refund Policy</a>
+</div>
+</div>
+</div>
+</div>
+
+</footer>
+
+
+
+<div class="modal login-pop-up" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true" data-backdrop="static">
+<div class="modal-dialog modal-dialog-centered av-modal-dialog ">
+<div class="modal-content">
+<div style="z-index: 9;" class="spinner-border text-primary position-absolute top-50 left-50 d-none" role="status" id="spinnerLoader">
+<span class="invisible">Loading...</span>
+</div>
+<div class="modal-header mt-4 border-0">
+<img src="https://av-public-assets.s3.ap-south-1.amazonaws.com/logos/av-logo-svg.svg" class="mx-auto" alt="Analytics Vidhya">
+</div>
+<div class="modal-body text-center">
+<h6 class="small-text">
+To continue reading please login
+</h6>
+<div class="login-btn-group d-table mx-auto mt-5">
+<a href="#" id="googleBtn" class="btn btn-outline-secondary">
+ <svg class="mr-3" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>google-icon</title>
+<g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Login-with" transform="translate(-610.000000, -283.000000)" fill-rule="nonzero">
+<g id="google-icon" transform="translate(610.000000, 283.000000)">
+<path d="M23.4392061,12.2245191 C23.4392061,11.2412519 23.3594198,10.5237252 23.1867481,9.77963359 L11.9587786,9.77963359 L11.9587786,14.2176183 L18.5493435,14.2176183 C18.4165191,15.3205191 17.6989924,16.9814656 16.104458,18.0975573 L16.0821069,18.2461374 L19.6321832,20.9963359 L19.8781374,21.0208855 C22.1369771,18.9347176 23.4392061,15.8652824 23.4392061,12.2245191" id="Shape" fill="#4285F4"></path>
+<path d="M11.9587786,23.9175573 C15.1876031,23.9175573 17.898229,22.8545038 19.8781374,21.0208855 L16.104458,18.0975573 C15.094626,18.8018015 13.7392672,19.2934351 11.9587786,19.2934351 C8.79636641,19.2934351 6.11230534,17.2073588 5.15551145,14.3239695 L5.01526718,14.3358779 L1.32384733,17.1927023 L1.27557252,17.3269008 C3.24210687,21.2334046 7.28152672,23.9175573 11.9587786,23.9175573" id="Shape" fill="#34A853"></path>
+<path d="M5.15551145,14.3239695 C4.90305344,13.5798779 4.75694656,12.7825649 4.75694656,11.9587786 C4.75694656,11.1349008 4.90305344,10.3376794 5.14222901,9.59358779 L5.13554198,9.4351145 L1.3978626,6.53239695 L1.27557252,6.59056489 C0.465068702,8.21166412 0,10.0320916 0,11.9587786 C0,13.8854656 0.465068702,15.7058015 1.27557252,17.3269008 L5.15551145,14.3239695" id="Shape" fill="#FBBC05"></path>
+<path d="M11.9587786,4.62403053 C14.2043359,4.62403053 15.719084,5.59401527 16.5828092,6.40461069 L19.9578321,3.10928244 C17.8850382,1.18259542 15.1876031,0 11.9587786,0 C7.28152672,0 3.24210687,2.68406107 1.27557252,6.59056489 L5.14222901,9.59358779 C6.11230534,6.71019847 8.79636641,4.62403053 11.9587786,4.62403053" id="Shape" fill="#EB4335"></path>
+</g>
+</g>
+</g>
+</svg>
+Continue with Google
+</a>
+<a href="{% url 'linkedinlogin' %}" id="linkedinBtn" class="btn btn-outline-secondary">
+ <svg class="mr-3" width="17px" height="16px" viewBox="0 0 17 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>linkedin</title>
+<g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Login-with" transform="translate(-614.000000, -351.000000)" fill="#0976B4">
+<g id="Group-5" transform="translate(614.000000, 351.000000)">
+<path d="M2.01668762,3.68055006 C3.12986325,3.68055006 4.03229727,2.85757439 4.03229727,1.84126418 C4.03229727,0.824054746 3.12986325,0 2.01668762,0 C0.902434023,0 0,0.824054746 0,1.84126418 C0,2.85757439 0.902434023,3.68055006 2.01668762,3.68055006" id="Fill-182"></path>
+<polygon id="Fill-183" points="0.461983801 15.512355 4.07854699 15.512355 4.07854699 5.08182181 0.461983801 5.08182181"></polygon>
+<path d="M9.15444,9.71110073 C9.15444,8.51494444 9.72037016,7.34522553 11.073572,7.34522553 C12.4267739,7.34522553 12.7595049,8.51494444 12.7595049,9.6825052 L12.7595049,15.3791298 L16.3598987,15.3791298 L16.3598987,9.44960453 C16.3598987,5.33005018 13.9247821,4.61983801 12.4267739,4.61983801 C10.9300234,4.61983801 10.104484,5.12610473 9.15444,6.35283485 L9.15444,4.94859664 L5.54380561,4.94859664 L5.54380561,15.3791298 L9.15444,15.3791298 L9.15444,9.71110073 Z" id="Fill-184"></path>
+</g>
+</g>
+</g>
+</svg>
+Continue with Linkedin
+</a>
+<button type="button" class="btn btn-outline-secondary" id="loginWithEmailBtn" data-dismiss="modal" data-toggle="modal" data-target="#loginEmail">
+ <svg class="mr-3" width="21px" height="14px" viewBox="0 0 21 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>email</title>
+<g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Login-with" transform="translate(-610.000000, -416.000000)" fill-rule="nonzero">
+<g id="email" transform="translate(610.000000, 416.000000)">
+<path d="M0.629706116,13.4442569 L0.632257902,13.4466669 L0.636369039,13.4503527 C0.972634486,13.7504678 1.41635274,13.9329249 1.90277195,13.9329249 L18.318286,13.9329249 C18.8045237,13.9329249 19.2481186,13.7506166 19.5845437,13.450643 L19.5890802,13.4466734 L19.5917737,13.4441216 C19.9783542,13.0958037 20.221219,12.5914091 20.221219,12.0301562 L20.221219,1.90292506 C20.221219,0.851877788 19.3693412,0 18.3182939,0 L1.90277989,0 C0.851877788,0 0,0.851877788 0,1.90292506 L0,12.0301562 C0,12.5915543 0.242984593,13.095938 0.629590418,13.4442668 L0.629706116,13.4442569 Z" id="Path" fill="#424242"></path>
+<path d="M7.38905678,7.59074992 L2.39058501,12.5895846 L17.8313009,12.5895846 L12.8328291,7.59111284 L10.5628849,9.65462918 C10.3067155,9.88755006 9.91543894,9.88755006 9.6592913,9.65462918 L7.38949228,7.59111284 L7.38905678,7.59074992 Z" id="Path" fill="#FFFFFF"></path>
+<polygon id="Path" fill="#FFFFFF" points="13.8275878 6.68614013 18.8779569 11.7365092 18.8779569 2.09449961"></polygon>
+<polygon id="Path" fill="#FFFFFF" points="1.34356613 11.7365092 6.39393519 6.68614013 1.34356613 2.09486253"></polygon>
+<polygon id="Path" fill="#FFFFFF" points="17.7079087 1.34289611 2.51325135 1.34289611 10.11058 8.24959154"></polygon>
+</g>
+</g>
+</g>
+</svg>
+Continue with Email
+</button>
+</div>
+</div>
+<div class="modal-footer mt-4 border-0 p-0">
+<div class="form-check d-block">
+<input class="form-check-input checkbox-validator" type="checkbox" id="tnc" checked>
+<label class="form-check-label" for="tnc">
+<a href="https://www.analyticsvidhya.com/terms" target="_new">I accept the <u>Terms and Conditions</u></a>
+</label>
+</div>
+<small id="CheckboxAlert" class="alert alert-danger" style="display: none;">Please accept the TnC's to continue</small>
+<div class="form-check">
+<input class="form-check-input" type="checkbox" id="socialWhatsapp" checked>
+<label class="form-check-label whatsapp-text" for="whatsapp">
+Receive Updates on Whatsapp
+</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal login-pop-up" id="loginEmail" tabindex="-1" aria-labelledby="loginEmailLabel" aria-hidden="true" data-backdrop="static">
+<div class="modal-dialog modal-dialog-centered av-modal-dialog ">
+<div class="modal-content">
+<button type="button" class="close ml-auto mr-2 mt-1" data-dismiss="modal" aria-label="Close" id="signup-modal-skip">
+<span aria-hidden="true">&times;</span>
+</button>
+<div class="modal-header mt-4 border-0">
+<img src="https://av-public-assets.s3.ap-south-1.amazonaws.com/logos/av-logo-svg.svg" class="mx-auto" alt="Analytics Vidhya">
+</div>
+<div class="modal-body text-center">
+<h6 class="small-text position-realtive mb-4">
+<span class="back-btn pointer" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">
+ <svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>back</title>
+<g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Sign-in-with-email" transform="translate(-515.000000, -208.000000)" fill="#000000" fill-rule="nonzero">
+<path d="M534.241255,214.784092 L517.576799,214.784092 L522.999138,209.31117 C523.149094,209.170033 523.23519,208.974209 523.237836,208.768303 C523.240483,208.562597 523.159329,208.364478 523.013075,208.219656 C522.866822,208.074817 522.667998,207.995604 522.462305,208.000188 C522.256599,208.004775 522.061479,208.092634 521.921743,208.243823 L515.219468,215.009327 C515.07886,215.151344 515,215.343113 515,215.54298 C515,215.742847 515.07886,215.934634 515.219468,216.076633 L521.921743,222.842137 C522.06147,222.993331 522.25659,223.081187 522.462305,223.085771 C522.668012,223.090358 522.866836,223.011148 523.013075,222.866304 C523.159329,222.721464 523.240483,222.52334 523.237836,222.317656 C523.23519,222.111774 523.149099,221.915949 522.999138,221.77479 L517.576799,216.301868 L534.241255,216.301868 C534.512237,216.301868 534.762759,216.157205 534.89825,215.92239 C535.033917,215.687752 535.033917,215.398402 534.89825,215.163778 C534.762759,214.928963 534.512241,214.7843 534.241255,214.7843 L534.241255,214.784092 Z" id="back"></path>
+</g>
+</g>
+</svg>
+</span>
+Welcome Back :)
+</h6>
+<div class="form-container">
+<div class="d-none" id="showerror"> </div>
+<form id="popupLoginForm" action="">
+<div class="input-group mb-4">
+<span class="input-group-text border-right-0">
+ <svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>email 2</title>
+<g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Sign-in-with-email" transform="translate(-606.000000, -287.000000)" fill="#DFE2E6">
+<g id="email" transform="translate(606.000000, 287.000000)">
+<path d="M2,0 L18,0 C19.1046,0 20,0.8954 20,2 L20,14.00003 C20,15.10453 19.1046,16.00003 18,16.00003 L2,16.00003 C0.89543,16.00003 0,15.10453 0,14.00003 L0,2 C0,0.8954 0.89543,0 2,0 Z M10,7.00003 L18,2 L2,2 L10,7.00003 Z M2,14.00003 L18,14.00003 L18,4.37 L10,9.35863 L2,4.37 L2,14.00003 Z" id="ic_mail"></path>
+</g>
+</g>
+</g>
+</svg>
+</span>
+<input type="email" name="username" class="form-control form-control-lg border-left-0 av-ml-0" id="loginCredential" placeholder="Enter Email">
+</div>
+<div class="input-group mb-4 password-element">
+<span class="input-group-text border-right-0">
+ <svg width="22px" height="14px" viewBox="0 0 22 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>key-</title>
+<defs>
+<path d="M11.6491154,5.00103707 C10.6991154,2.31103707 7.8991154,0.50103707 4.7691154,1.12103707 C2.4791154,1.58103707 0.6191154,3.41103707 0.1391154,5.70103707 C-0.6808846,9.57103707 2.2591154,13.0010371 5.9991154,13.0010371 C8.6091154,13.0010371 10.8291154,11.3310371 11.6491154,9.00103707 L15.9991154,9.00103707 L15.9991154,11.0010371 C15.9991154,12.1010371 16.8991154,13.0010371 17.9991154,13.0010371 C19.0991154,13.0010371 19.9991154,12.1010371 19.9991154,11.0010371 L19.9991154,9.00103707 C21.0991154,9.00103707 21.9991154,8.10103707 21.9991154,7.00103707 C21.9991154,5.90103707 21.0991154,5.00103707 19.9991154,5.00103707 L11.6491154,5.00103707 Z M5.9991154,9.00103707 C4.8991154,9.00103707 3.9991154,8.10103707 3.9991154,7.00103707 C3.9991154,5.90103707 4.8991154,5.00103707 5.9991154,5.00103707 C7.0991154,5.00103707 7.9991154,5.90103707 7.9991154,7.00103707 C7.9991154,8.10103707 7.0991154,9.00103707 5.9991154,9.00103707 Z" id="path-1"></path>
+</defs>
+<g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Sign-in-with-email" transform="translate(-605.000000, -352.000000)">
+<g id="key-" transform="translate(605.000000, 352.000000)">
+<mask id="mask-2" fill="white">
+<use xlink:href="#path-1"></use>
+</mask>
+<use id="Key" fill="#DFE2E6" xlink:href="#path-1"></use>
+</g>
+</g>
+</g>
+</svg>
+</span>
+<input type="password" name="password" class="av-ml-0 form-control form-control-lg border-left-0 border-right-0" id="loginPassword" placeholder="Enter Password">
+<span class="input-group-text toggle-password pointer">
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<path d="M8.25,0 C4.5,0 1.2975,2.3325 0,5.625 C1.2975,8.9175 4.5,11.25 8.25,11.25 C12,11.25 15.2025,8.9175 16.5,5.625 C15.2025,2.3325 12,0 8.25,0 Z M8.25,9.375 C6.18,9.375 4.5,7.695 4.5,5.625 C4.5,3.555 6.18,1.875 8.25,1.875 C10.32,1.875 12,3.555 12,5.625 C12,7.695 10.32,9.375 8.25,9.375 Z M8.25,3.375 C7.005,3.375 6,4.38 6,5.625 C6,6.87 7.005,7.875 8.25,7.875 C9.495,7.875 10.5,6.87 10.5,5.625 C10.5,4.38 9.495,3.375 8.25,3.375 Z" id="path-voq6o69_uq-1"></path>
+</defs>
+<g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="create-password" transform="translate(-817.000000, -375.000000)">
+<g id="Group-6-Copy" transform="translate(595.000000, 359.000000)">
+<g id="view-copy" transform="translate(222.750000, 16.375000)">
+<mask id="mask-voq6o69_uq-2" fill="white">
+<use xlink:href="#path-voq6o69_uq-1"></use>
+ </mask>
+<use class="eye-copy" id="Eye-Copy" fill="#7D7D7D" xlink:href="#path-voq6o69_uq-1"></use>
+</g>
+</g>
+</g>
+</g>
+</svg>
+</span>
+</div>
+<a class="float-right av-small mt-1 mb-4 pointer text-primary" data-toggle="modal" data-target="#forgotEmail" data-dismiss="modal" onclick="resetForgot()">Forgot Password?</a>
+<div class="w-100 d-block mt-3" style="clear: both;">
+<button class="btn btn-primary btn btn-primary w-100 mt-3 py-2" id="loginFormBtn">Log In</button>
+<h6 class="register-text">Don't have an account yet?<span data-dismiss="modal" data-toggle="modal" class="text-primary pointer ml-1 font-weight-bold" data-target="#registerModal">Register here</span></h6>
+</div>
+</form>
+</div>
+</div>
+<div class="modal-footer mt-2 border-0 pb-4">
+<div class="form-check d-none">
+<input class="form-check-input checkbox-validator" type="checkbox" id="tnc" checked>
+<label class="form-check-label" for="tnc">
+<a href="https://www.analyticsvidhya.com/terms" target="_new">I accept the <u>Terms and Conditions</u></a>
+</label>
+</div>
+<small id="CheckboxAlert" class="alert alert-danger" style="display: none;">Please accept the TnC's to continue</small>
+<div class="form-check d-none">
+<input class="form-check-input" type="checkbox" id="whatsapp" checked>
+<label class="form-check-label whatsapp-text" for="whatsapp">
+Receive Updates on Whatsapp
+</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal login-pop-up" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true" data-backdrop="static">
+<div class="modal-dialog av-modal-dialog ">
+<div class="modal-content">
+<button type="button" class="close ml-auto mr-2 mt-1" data-dismiss="modal" aria-label="Close" id="signup-modal-skip">
+<span aria-hidden="true">&times;</span>
+</button>
+<div class="modal-header border-0">
+<img src="https://av-public-assets.s3.ap-south-1.amazonaws.com/logos/av-logo-svg.svg" class="mx-auto" alt="Analytics Vidhya">
+</div>
+<div class="modal-body text-center">
+
+<form id="popupSignupForm">
+<div id="signupContent">
+<h6 class="small-text position-realtive mb-4">
+<span class="back-btn pointer" data-dismiss="modal" data-toggle="modal" data-target="#loginEmail">
+ <svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>back</title>
+<g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Sign-in-with-email" transform="translate(-515.000000, -208.000000)" fill="#000000" fill-rule="nonzero">
+<path d="M534.241255,214.784092 L517.576799,214.784092 L522.999138,209.31117 C523.149094,209.170033 523.23519,208.974209 523.237836,208.768303 C523.240483,208.562597 523.159329,208.364478 523.013075,208.219656 C522.866822,208.074817 522.667998,207.995604 522.462305,208.000188 C522.256599,208.004775 522.061479,208.092634 521.921743,208.243823 L515.219468,215.009327 C515.07886,215.151344 515,215.343113 515,215.54298 C515,215.742847 515.07886,215.934634 515.219468,216.076633 L521.921743,222.842137 C522.06147,222.993331 522.25659,223.081187 522.462305,223.085771 C522.668012,223.090358 522.866836,223.011148 523.013075,222.866304 C523.159329,222.721464 523.240483,222.52334 523.237836,222.317656 C523.23519,222.111774 523.149099,221.915949 522.999138,221.77479 L517.576799,216.301868 L534.241255,216.301868 C534.512237,216.301868 534.762759,216.157205 534.89825,215.92239 C535.033917,215.687752 535.033917,215.398402 534.89825,215.163778 C534.762759,214.928963 534.512241,214.7843 534.241255,214.7843 L534.241255,214.784092 Z" id="back"></path>
+</g>
+</g>
+</svg>
+</span>
+Start your journey here!
+</h6>
+<div class="form-container">
+<div class="input-group mb-4">
+<span class="input-group-text border-right-0">
+ <svg width="16px" height="17px" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>user</title>
+<g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Register" transform="translate(-608.000000, -287.000000)" fill="#DFE2E6" fill-rule="nonzero">
+<g id="user" transform="translate(608.000000, 287.413634)">
+<path d="M7.3915493,12.056338 L6.91830986,13.9943662 L8.42816901,12.9126761 L8.22535211,12.056338 L8.85633803,11.3126761 C8.87887324,11.2901408 8.87887324,11.2450704 8.87887324,11.2225352 L8.47323944,10.2760563 C8.45070423,10.2535211 8.42816901,10.2309859 8.4056338,10.2309859 L7.18873239,10.2309859 C7.16619718,10.2309859 7.14366197,10.2535211 7.12112676,10.2760563 L6.73802817,11.2450704 C6.71549296,11.2676056 6.73802817,11.3126761 6.76056338,11.3352113 L7.3915493,12.056338 Z" id="Path"></path>
+<path d="M7.81971831,0 C5.4084507,0 3.44788732,1.96056338 3.44788732,4.37183099 C3.44788732,6.78309859 5.4084507,8.74366197 7.81971831,8.74366197 C10.2309859,8.74366197 12.1915493,6.78309859 12.1915493,4.37183099 C12.1690141,1.93802817 10.2309859,0 7.81971831,0 Z M7.81971831,7.72957746 C5.94929577,7.72957746 4.43943662,6.21971831 4.43943662,4.34929577 C4.43943662,4.05633803 4.48450704,3.78591549 4.55211268,3.51549296 C4.95774648,3.71830986 5.67887324,3.98873239 6.49014085,3.98873239 C7.07605634,3.98873239 7.72957746,3.85352113 8.33802817,3.42535211 C8.4056338,3.38028169 9.89295775,2.32112676 11.0873239,3.38028169 C11.1774648,3.69577465 11.2225352,4.01126761 11.2225352,4.34929577 C11.2,6.21971831 9.69014085,7.72957746 7.81971831,7.72957746 Z" id="Shape"></path>
+<polygon id="Path" points="9.17183099 16 8.96901408 15.0760563 7.66197183 16"></polygon>
+<polygon id="Path" points="6.73802817 16 8.83380282 14.5352113 8.58591549 13.4760563 6.73802817 14.7830986 6.44507042 16"></polygon>
+<path d="M15.6394366,16 L15.6394366,14.0169014 C15.6394366,11.9211268 13.9492958,10.2309859 11.8535211,10.2309859 L11.7408451,10.2309859 L9.98309859,16 L15.6394366,16 Z" id="Path"></path>
+<path d="M5.61126761,16 L3.94366197,10.2309859 L3.78591549,10.2309859 C1.69014085,10.2309859 0,11.9211268 0,14.0169014 L0,16 L5.61126761,16 Z" id="Path"></path>
+</g>
+</g>
+</g>
+</svg>
+</span>
+<input type="text" class="form-control form-control-lg border-left-0 av-ml-0" id="popupFullname" placeholder="Enter Full Name">
+</div>
+<div class="input-group mb-4">
+<span class="input-group-text">
+ <svg width="16px" height="17px" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>user</title>
+<g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Register" transform="translate(-608.000000, -287.000000)" fill="#DFE2E6" fill-rule="nonzero">
+<g id="user" transform="translate(608.000000, 287.413634)">
+ <path d="M7.3915493,12.056338 L6.91830986,13.9943662 L8.42816901,12.9126761 L8.22535211,12.056338 L8.85633803,11.3126761 C8.87887324,11.2901408 8.87887324,11.2450704 8.87887324,11.2225352 L8.47323944,10.2760563 C8.45070423,10.2535211 8.42816901,10.2309859 8.4056338,10.2309859 L7.18873239,10.2309859 C7.16619718,10.2309859 7.14366197,10.2535211 7.12112676,10.2760563 L6.73802817,11.2450704 C6.71549296,11.2676056 6.73802817,11.3126761 6.76056338,11.3352113 L7.3915493,12.056338 Z" id="Path"></path>
+<path d="M7.81971831,0 C5.4084507,0 3.44788732,1.96056338 3.44788732,4.37183099 C3.44788732,6.78309859 5.4084507,8.74366197 7.81971831,8.74366197 C10.2309859,8.74366197 12.1915493,6.78309859 12.1915493,4.37183099 C12.1690141,1.93802817 10.2309859,0 7.81971831,0 Z M7.81971831,7.72957746 C5.94929577,7.72957746 4.43943662,6.21971831 4.43943662,4.34929577 C4.43943662,4.05633803 4.48450704,3.78591549 4.55211268,3.51549296 C4.95774648,3.71830986 5.67887324,3.98873239 6.49014085,3.98873239 C7.07605634,3.98873239 7.72957746,3.85352113 8.33802817,3.42535211 C8.4056338,3.38028169 9.89295775,2.32112676 11.0873239,3.38028169 C11.1774648,3.69577465 11.2225352,4.01126761 11.2225352,4.34929577 C11.2,6.21971831 9.69014085,7.72957746 7.81971831,7.72957746 Z" id="Shape"></path>
+<polygon id="Path" points="9.17183099 16 8.96901408 15.0760563 7.66197183 16"></polygon>
+<polygon id="Path" points="6.73802817 16 8.83380282 14.5352113 8.58591549 13.4760563 6.73802817 14.7830986 6.44507042 16"></polygon>
+<path d="M15.6394366,16 L15.6394366,14.0169014 C15.6394366,11.9211268 13.9492958,10.2309859 11.8535211,10.2309859 L11.7408451,10.2309859 L9.98309859,16 L15.6394366,16 Z" id="Path"></path>
+<path d="M5.61126761,16 L3.94366197,10.2309859 L3.78591549,10.2309859 C1.69014085,10.2309859 0,11.9211268 0,14.0169014 L0,16 L5.61126761,16 Z" id="Path"></path>
+</g>
+</g>
+</g>
+</svg>
+</span>
+<input type="text" class="form-control form-control-lg border-left-0 av-ml-0" id="popupUsername" placeholder="Create User Name">
+</div>
+<div class="input-group mb-4">
+<input type="tel" class="form-control form-control-lg av-ml-0" id="popupMobile" placeholder="Enter Mobile Number">
+</div>
+<div class="input-group mb-4">
+<span class="input-group-text">
+ <svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>email 2</title>
+<g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Sign-in-with-email" transform="translate(-606.000000, -287.000000)" fill="#DFE2E6">
+<g id="email" transform="translate(606.000000, 287.000000)">
+<path d="M2,0 L18,0 C19.1046,0 20,0.8954 20,2 L20,14.00003 C20,15.10453 19.1046,16.00003 18,16.00003 L2,16.00003 C0.89543,16.00003 0,15.10453 0,14.00003 L0,2 C0,0.8954 0.89543,0 2,0 Z M10,7.00003 L18,2 L2,2 L10,7.00003 Z M2,14.00003 L18,14.00003 L18,4.37 L10,9.35863 L2,4.37 L2,14.00003 Z" id="ic_mail"></path>
+</g>
+</g>
+</g>
+</svg>
+</span>
+<input type="email" class="form-control form-control-lg border-left-0 av-ml-0" id="popupEmail" placeholder="Enter Valid Email">
+ </div>
+<div class="input-group mb-4 password-element">
+<span class="input-group-text">
+ <svg width="22px" height="14px" viewBox="0 0 22 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>key-</title>
+<defs>
+<path d="M11.6491154,5.00103707 C10.6991154,2.31103707 7.8991154,0.50103707 4.7691154,1.12103707 C2.4791154,1.58103707 0.6191154,3.41103707 0.1391154,5.70103707 C-0.6808846,9.57103707 2.2591154,13.0010371 5.9991154,13.0010371 C8.6091154,13.0010371 10.8291154,11.3310371 11.6491154,9.00103707 L15.9991154,9.00103707 L15.9991154,11.0010371 C15.9991154,12.1010371 16.8991154,13.0010371 17.9991154,13.0010371 C19.0991154,13.0010371 19.9991154,12.1010371 19.9991154,11.0010371 L19.9991154,9.00103707 C21.0991154,9.00103707 21.9991154,8.10103707 21.9991154,7.00103707 C21.9991154,5.90103707 21.0991154,5.00103707 19.9991154,5.00103707 L11.6491154,5.00103707 Z M5.9991154,9.00103707 C4.8991154,9.00103707 3.9991154,8.10103707 3.9991154,7.00103707 C3.9991154,5.90103707 4.8991154,5.00103707 5.9991154,5.00103707 C7.0991154,5.00103707 7.9991154,5.90103707 7.9991154,7.00103707 C7.9991154,8.10103707 7.0991154,9.00103707 5.9991154,9.00103707 Z" id="path-1"></path>
+</defs>
+<g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Sign-in-with-email" transform="translate(-605.000000, -352.000000)">
+<g id="key-" transform="translate(605.000000, 352.000000)">
+<mask id="mask-2" fill="white">
+<use xlink:href="#path-1"></use>
+</mask>
+<use id="Key" fill="#DFE2E6" xlink:href="#path-1"></use>
+</g>
+</g>
+</g>
+</svg>
+</span>
+<input type="password" class="form-control form-control-lg border-left-0 border-right-0 av-ml-0" id="popupPassword1" placeholder="Create a Strong Password">
+<span class="input-group-text toggle-password pointer">
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<path d="M8.25,0 C4.5,0 1.2975,2.3325 0,5.625 C1.2975,8.9175 4.5,11.25 8.25,11.25 C12,11.25 15.2025,8.9175 16.5,5.625 C15.2025,2.3325 12,0 8.25,0 Z M8.25,9.375 C6.18,9.375 4.5,7.695 4.5,5.625 C4.5,3.555 6.18,1.875 8.25,1.875 C10.32,1.875 12,3.555 12,5.625 C12,7.695 10.32,9.375 8.25,9.375 Z M8.25,3.375 C7.005,3.375 6,4.38 6,5.625 C6,6.87 7.005,7.875 8.25,7.875 C9.495,7.875 10.5,6.87 10.5,5.625 C10.5,4.38 9.495,3.375 8.25,3.375 Z" id="path-voq6o69_uq-1"></path>
+</defs>
+<g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="create-password" transform="translate(-817.000000, -375.000000)">
+<g id="Group-6-Copy" transform="translate(595.000000, 359.000000)">
+<g id="view-copy" transform="translate(222.750000, 16.375000)">
+<mask id="mask-voq6o69_uq-2" fill="white">
+<use xlink:href="#path-voq6o69_uq-1"></use>
+</mask>
+<use class="eye-copy" id="Eye-Copy" fill="#7D7D7D" xlink:href="#path-voq6o69_uq-1"></use>
+</g>
+</g>
+</g>
+</g>
+</svg>
+</span>
+</div>
+<div class="w-100 d-block mt-3" style="clear: both;">
+<button class="btn btn-primary btn btn-primary w-100 mt-3 py-2" id="registerFormBtn">Sign up</button>
+<h6 class="register-text mt-3">Already have an account<span data-dismiss="modal" data-toggle="modal" class="text-primary pointer font-weight-bold ml-1" data-target="#loginEmail">Login here</span></h6>
+</div>
+</div>
+</div>
+</form>
+</div>
+<div class="modal-footer mt-4 border-0 pb-4">
+<div class="form-check d-block">
+<input class="form-check-input checkbox-validator" type="checkbox" id="registertnc" checked>
+<label class="form-check-label" for="registertnc">
+<a href="https://www.analyticsvidhya.com/terms" target="_new">I accept the <u>Terms and Conditions</u></a>
+</label>
+</div>
+<small id="CheckboxAlert" class="alert alert-danger" style="display: none;">Please accept the TnC's to continue</small>
+<div class="form-check">
+<input class="form-check-input" type="checkbox" id="signuWhatsapp" checked>
+<label class="form-check-label whatsapp-text" for="whatsapp">
+Receive Updates on Whatsapp
+</label>
+</div>
+</div>
+<div id="successResponseDiv" class="d-none">
+<div class="modal-body text-center">
+<p id="successResponse" class="meaasge-text"> A verification link has been sent to your email id </p>
+<p class="pl-5 pm-5 meaasge-text"> If you have not recieved the link please goto
+<span id="shoRegister" class="text-primary pointer font-weight-bold ml-1" onclick="togglesignup()">Sign Up </span> page again
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal login-pop-up" id="signupOtp" tabindex="-1" aria-labelledby="signupOtpLabel" aria-hidden="true" data-backdrop="static">
+<div class="modal-dialog modal-dialog-centered av-modal-dialog ">
+<div class="modal-content">
+<div style="z-index: 9;" class="spinner-border text-primary position-absolute top-50 left-50 d-none" role="status" id="spinnerLoader">
+<span class=" invisible">Loading...</span>
+</div>
+<button type="button" class="close ml-auto mr-2 mt-1" data-dismiss="modal" aria-label="Close" id="signup-modal-skip">
+<span aria-hidden="true">&times;</span>
+</button>
+<div class="modal-header mt-4 border-0">
+<img src="https://av-public-assets.s3.ap-south-1.amazonaws.com/logos/av-logo-svg.svg" class="mx-auto" alt="Analytics Vidhya">
+</div>
+<div class="modal-body text-center">
+<h6 class="small-text position-realtive mb-4 mx-5">
+<span class="back-btn pointer" data-dismiss="modal" data-toggle="modal" data-target="#registerModal">
+ <svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>back</title>
+<g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Sign-in-with-email" transform="translate(-515.000000, -208.000000)" fill="#000000" fill-rule="nonzero">
+<path d="M534.241255,214.784092 L517.576799,214.784092 L522.999138,209.31117 C523.149094,209.170033 523.23519,208.974209 523.237836,208.768303 C523.240483,208.562597 523.159329,208.364478 523.013075,208.219656 C522.866822,208.074817 522.667998,207.995604 522.462305,208.000188 C522.256599,208.004775 522.061479,208.092634 521.921743,208.243823 L515.219468,215.009327 C515.07886,215.151344 515,215.343113 515,215.54298 C515,215.742847 515.07886,215.934634 515.219468,216.076633 L521.921743,222.842137 C522.06147,222.993331 522.25659,223.081187 522.462305,223.085771 C522.668012,223.090358 522.866836,223.011148 523.013075,222.866304 C523.159329,222.721464 523.240483,222.52334 523.237836,222.317656 C523.23519,222.111774 523.149099,221.915949 522.999138,221.77479 L517.576799,216.301868 L534.241255,216.301868 C534.512237,216.301868 534.762759,216.157205 534.89825,215.92239 C535.033917,215.687752 535.033917,215.398402 534.89825,215.163778 C534.762759,214.928963 534.512241,214.7843 534.241255,214.7843 L534.241255,214.784092 Z" id="back"></path>
+</g>
+</g>
+</svg>
+</span>
+Please enter the OTP that is sent to your registered email id
+</h6>
+<div class="form-container">
+<div class="d-none" id="signupOtpError"> </div>
+<form id="popupSignupOTPForm">
+<div class="input-group mb-5">
+<span class="input-group-text">
+ <svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>email 2</title>
+<g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Sign-in-with-email" transform="translate(-606.000000, -287.000000)" fill="#DFE2E6">
+<g id="email" transform="translate(606.000000, 287.000000)">
+<path d="M2,0 L18,0 C19.1046,0 20,0.8954 20,2 L20,14.00003 C20,15.10453 19.1046,16.00003 18,16.00003 L2,16.00003 C0.89543,16.00003 0,15.10453 0,14.00003 L0,2 C0,0.8954 0.89543,0 2,0 Z M10,7.00003 L18,2 L2,2 L10,7.00003 Z M2,14.00003 L18,14.00003 L18,4.37 L10,9.35863 L2,4.37 L2,14.00003 Z" id="ic_mail"></path>
+</g>
+</g>
+</g>
+</svg>
+</span>
+<input type="tel" class="form-control form-control-lg border-left-0" id="signupOtpInput" placeholder="Enter OTP">
+</div>
+<div class="nextbtn w-100 d-block mb-5" style="clear: both;">
+<button class="btn btn-primary btn btn-primary w-100 mt-3 py-2" id="signupotpNextBtn">Next</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal login-pop-up" id="loginOtp" tabindex="-1" aria-labelledby="loginOtpLabel" aria-hidden="true" data-backdrop="static">
+<div class="modal-dialog modal-dialog-centered av-modal-dialog ">
+<div class="modal-content">
+<div style="z-index: 9;" class="spinner-border text-primary position-absolute top-50 left-50 d-none" role="status" id="spinnerLoader">
+<span class=" invisible">Loading...</span>
+</div>
+<button type="button" class="close ml-auto mr-2 mt-1" data-dismiss="modal" aria-label="Close" id="signup-modal-skip">
+<span aria-hidden="true">&times;</span>
+</button>
+<div class="modal-header mt-4 border-0">
+<img src="https://av-public-assets.s3.ap-south-1.amazonaws.com/logos/av-logo-svg.svg" class="mx-auto" alt="Analytics Vidhya">
+</div>
+<div class="modal-body text-center">
+<h6 class="small-text position-realtive mb-4 mx-5">
+<span class="back-btn pointer" data-dismiss="modal" data-toggle="modal" data-target="#loginEmail">
+ <svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>back</title>
+<g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Sign-in-with-email" transform="translate(-515.000000, -208.000000)" fill="#000000" fill-rule="nonzero">
+<path d="M534.241255,214.784092 L517.576799,214.784092 L522.999138,209.31117 C523.149094,209.170033 523.23519,208.974209 523.237836,208.768303 C523.240483,208.562597 523.159329,208.364478 523.013075,208.219656 C522.866822,208.074817 522.667998,207.995604 522.462305,208.000188 C522.256599,208.004775 522.061479,208.092634 521.921743,208.243823 L515.219468,215.009327 C515.07886,215.151344 515,215.343113 515,215.54298 C515,215.742847 515.07886,215.934634 515.219468,216.076633 L521.921743,222.842137 C522.06147,222.993331 522.25659,223.081187 522.462305,223.085771 C522.668012,223.090358 522.866836,223.011148 523.013075,222.866304 C523.159329,222.721464 523.240483,222.52334 523.237836,222.317656 C523.23519,222.111774 523.149099,221.915949 522.999138,221.77479 L517.576799,216.301868 L534.241255,216.301868 C534.512237,216.301868 534.762759,216.157205 534.89825,215.92239 C535.033917,215.687752 535.033917,215.398402 534.89825,215.163778 C534.762759,214.928963 534.512241,214.7843 534.241255,214.7843 L534.241255,214.784092 Z" id="back"></path>
+</g>
+</g>
+</svg>
+</span>
+Please enter the OTP that is sent to your email id
+</h6>
+<div class="form-container">
+<div class="d-none" id="loginOtpError"> </div>
+<form id="popupLoginOTPForm">
+<div class="input-group mb-5">
+<span class="input-group-text">
+ <svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>email 2</title>
+<g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Sign-in-with-email" transform="translate(-606.000000, -287.000000)" fill="#DFE2E6">
+<g id="email" transform="translate(606.000000, 287.000000)">
+<path d="M2,0 L18,0 C19.1046,0 20,0.8954 20,2 L20,14.00003 C20,15.10453 19.1046,16.00003 18,16.00003 L2,16.00003 C0.89543,16.00003 0,15.10453 0,14.00003 L0,2 C0,0.8954 0.89543,0 2,0 Z M10,7.00003 L18,2 L2,2 L10,7.00003 Z M2,14.00003 L18,14.00003 L18,4.37 L10,9.35863 L2,4.37 L2,14.00003 Z" id="ic_mail"></path>
+</g>
+</g>
+</g>
+</svg>
+</span>
+<input type="tel" class="form-control form-control-lg border-left-0" id="loginOtpInput" placeholder="Enter OTP">
+</div>
+<div class="nextbtn w-100 d-block mb-5" style="clear: both;">
+<button class="btn btn-primary btn btn-primary w-100 mt-3 py-2" id="loginotpNextBtn">Next</button>
+</div>
+</form>
+</div>
+ </div>
+</div>
+</div>
+</div>
+<div class="modal login-pop-up" id="forgotEmail" tabindex="-1" aria-labelledby="forgotEmailLabel" aria-hidden="true" data-backdrop="static">
+<div class="modal-dialog modal-dialog-centered av-modal-dialog ">
+<div class="modal-content">
+<div style="z-index: 9;" class="spinner-border text-primary position-absolute top-50 left-50 d-none" role="status" id="spinnerLoader">
+<span class="invisible">Loading...</span>
+</div>
+<button type="button" class="close ml-auto mr-2 mt-1" data-dismiss="modal" aria-label="Close" id="signup-modal-skip">
+<span aria-hidden="true">&times;</span>
+</button>
+<div class="modal-header mt-4 border-0">
+<img src="https://av-public-assets.s3.ap-south-1.amazonaws.com/logos/av-logo-svg.svg" class="mx-auto" alt="Analytics Vidhya">
+</div>
+<div class="modal-body text-center">
+<h6 class="small-text position-realtive mb-4">
+<span class="back-btn pointer" data-toggle="modal" data-dismiss="modal" data-target="#loginEmail">
+ <svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>back</title>
+<g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Sign-in-with-email" transform="translate(-515.000000, -208.000000)" fill="#000000" fill-rule="nonzero">
+<path d="M534.241255,214.784092 L517.576799,214.784092 L522.999138,209.31117 C523.149094,209.170033 523.23519,208.974209 523.237836,208.768303 C523.240483,208.562597 523.159329,208.364478 523.013075,208.219656 C522.866822,208.074817 522.667998,207.995604 522.462305,208.000188 C522.256599,208.004775 522.061479,208.092634 521.921743,208.243823 L515.219468,215.009327 C515.07886,215.151344 515,215.343113 515,215.54298 C515,215.742847 515.07886,215.934634 515.219468,216.076633 L521.921743,222.842137 C522.06147,222.993331 522.25659,223.081187 522.462305,223.085771 C522.668012,223.090358 522.866836,223.011148 523.013075,222.866304 C523.159329,222.721464 523.240483,222.52334 523.237836,222.317656 C523.23519,222.111774 523.149099,221.915949 522.999138,221.77479 L517.576799,216.301868 L534.241255,216.301868 C534.512237,216.301868 534.762759,216.157205 534.89825,215.92239 C535.033917,215.687752 535.033917,215.398402 534.89825,215.163778 C534.762759,214.928963 534.512241,214.7843 534.241255,214.7843 L534.241255,214.784092 Z" id="back"></path>
+</g>
+</g>
+</svg>
+</span>
+Please enter your registered email id
+</h6>
+<div class="form-container">
+<div class="d-none" id="forgotEmailError"> </div>
+<form id="popupForgotEmailForm">
+<div class="input-group mb-5">
+<span class="input-group-text" id="forgotEmailIcon">
+ <svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>email 2</title>
+<g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Sign-in-with-email" transform="translate(-606.000000, -287.000000)" fill="#DFE2E6">
+<g id="email" transform="translate(606.000000, 287.000000)">
+<path d="M2,0 L18,0 C19.1046,0 20,0.8954 20,2 L20,14.00003 C20,15.10453 19.1046,16.00003 18,16.00003 L2,16.00003 C0.89543,16.00003 0,15.10453 0,14.00003 L0,2 C0,0.8954 0.89543,0 2,0 Z M10,7.00003 L18,2 L2,2 L10,7.00003 Z M2,14.00003 L18,14.00003 L18,4.37 L10,9.35863 L2,4.37 L2,14.00003 Z" id="ic_mail"></path>
+</g>
+</g>
+</g>
+</svg>
+</span>
+<input type="email" class="form-control form-control-lg border-left-0" id="forgotEmailInput" placeholder="Enter email">
+</div>
+<div class="nextbtn w-100 d-block mb-5" style="clear: both;">
+<button class="btn btn-primary btn btn-primary w-100 mt-3 py-2" id="forgotEmailNextBtn">Next</button>
+</div>
+</form>
+<div id="emailErrorDiv" class="pb-5 mb-5 small-text mx-1 font-weight-normal d-none">
+<p>This email id is not registered with us. Please enter your registered email id.</p>
+<h6 class="register-text mt-2">Don't have an account yet?<span data-toggle="modal" data-dismiss="modal" class="text-primary pointer font-weight-bold ms-1" data-target="#registerModal">Register here</span></h6>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal login-pop-up" id="forgotOtp" tabindex="-1" aria-labelledby="forgotOtpLabel" aria-hidden="true" data-backdrop="static">
+<div class="modal-dialog modal-dialog-centered av-modal-dialog ">
+<div class="modal-content">
+<div style="z-index: 9;" class="spinner-border text-primary position-absolute top-50 left-50 d-none" role="status" id="spinnerLoader">
+<span class="invisible">Loading...</span>
+</div>
+<button type="button" class="close ml-auto mr-2 mt-1" data-dismiss="modal" aria-label="Close" id="signup-modal-skip">
+<span aria-hidden="true">&times;</span>
+</button>
+<div class="modal-header mt-4 border-0">
+<img src="https://av-public-assets.s3.ap-south-1.amazonaws.com/logos/av-logo-svg.svg" class="mx-auto" alt="Analytics Vidhya">
+</div>
+<div class="modal-body text-center">
+<h6 class="small-text position-realtive mb-4 mx-5">
+<span class="back-btn pointer" data-toggle="modal" data-dismiss="modal" data-target="#forgotEmail">
+ <svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>back</title>
+<g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Sign-in-with-email" transform="translate(-515.000000, -208.000000)" fill="#000000" fill-rule="nonzero">
+<path d="M534.241255,214.784092 L517.576799,214.784092 L522.999138,209.31117 C523.149094,209.170033 523.23519,208.974209 523.237836,208.768303 C523.240483,208.562597 523.159329,208.364478 523.013075,208.219656 C522.866822,208.074817 522.667998,207.995604 522.462305,208.000188 C522.256599,208.004775 522.061479,208.092634 521.921743,208.243823 L515.219468,215.009327 C515.07886,215.151344 515,215.343113 515,215.54298 C515,215.742847 515.07886,215.934634 515.219468,216.076633 L521.921743,222.842137 C522.06147,222.993331 522.25659,223.081187 522.462305,223.085771 C522.668012,223.090358 522.866836,223.011148 523.013075,222.866304 C523.159329,222.721464 523.240483,222.52334 523.237836,222.317656 C523.23519,222.111774 523.149099,221.915949 522.999138,221.77479 L517.576799,216.301868 L534.241255,216.301868 C534.512237,216.301868 534.762759,216.157205 534.89825,215.92239 C535.033917,215.687752 535.033917,215.398402 534.89825,215.163778 C534.762759,214.928963 534.512241,214.7843 534.241255,214.7843 L534.241255,214.784092 Z" id="back"></path>
+</g>
+</g>
+</svg>
+</span>
+Please enter the OTP that is sent your registered email id
+</h6>
+<div class="form-container">
+<div class="d-none" id="forgotOtpError"> </div>
+<form id="popupForgotOTPForm">
+<div class="input-group mb-5">
+<span class="input-group-text">
+ <svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>email 2</title>
+<g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Sign-in-with-email" transform="translate(-606.000000, -287.000000)" fill="#DFE2E6">
+<g id="email" transform="translate(606.000000, 287.000000)">
+<path d="M2,0 L18,0 C19.1046,0 20,0.8954 20,2 L20,14.00003 C20,15.10453 19.1046,16.00003 18,16.00003 L2,16.00003 C0.89543,16.00003 0,15.10453 0,14.00003 L0,2 C0,0.8954 0.89543,0 2,0 Z M10,7.00003 L18,2 L2,2 L10,7.00003 Z M2,14.00003 L18,14.00003 L18,4.37 L10,9.35863 L2,4.37 L2,14.00003 Z" id="ic_mail"></path>
+</g>
+</g>
+</g>
+</svg>
+</span>
+<input type="tel" class="form-control form-control-lg border-left-0" id="forgotOtpInput" placeholder="Enter OTP">
+</div>
+<div class="nextbtn w-100 d-block mb-5" style="clear: both;">
+<button class="btn btn-primary btn btn-primary w-100 mt-3 py-2" id="otpNextBtn">Next</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal login-pop-up" id="createPassword" tabindex="-1" aria-labelledby="createPasswordLabel" aria-hidden="true" data-backdrop="static">
+<div class="modal-dialog modal-dialog-centered av-modal-dialog ">
+<div class="modal-content">
+<div style="z-index: 9;" class="spinner-border text-primary position-absolute top-50 left-50 d-none" role="status" id="spinnerLoader">
+<span class="invisible">Loading...</span>
+</div>
+<button type="button" class="close ml-auto mr-2 mt-1" data-dismiss="modal" aria-label="Close" id="signup-modal-skip">
+<span aria-hidden="true">&times;</span>
+</button>
+<div class="modal-header mt-4 border-0">
+<img src="https://av-public-assets.s3.ap-south-1.amazonaws.com/logos/av-logo-svg.svg" class="mx-auto" alt="Analytics Vidhya">
+</div>
+<div class="modal-body text-center">
+<h6 class="small-text position-realtive mb-4 mx-5">
+Please create the new password here
+</h6>
+<div class="form-container">
+<div class="d-none" id="forgotPasswordSuccess"> </div>
+<form id="popupForgotPasswordForm">
+<div class="input-group mb-4 mt-5 password-element">
+<span class="input-group-text">
+ <svg width="22px" height="14px" viewBox="0 0 22 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>key-</title>
+<defs>
+<path d="M11.6491154,5.00103707 C10.6991154,2.31103707 7.8991154,0.50103707 4.7691154,1.12103707 C2.4791154,1.58103707 0.6191154,3.41103707 0.1391154,5.70103707 C-0.6808846,9.57103707 2.2591154,13.0010371 5.9991154,13.0010371 C8.6091154,13.0010371 10.8291154,11.3310371 11.6491154,9.00103707 L15.9991154,9.00103707 L15.9991154,11.0010371 C15.9991154,12.1010371 16.8991154,13.0010371 17.9991154,13.0010371 C19.0991154,13.0010371 19.9991154,12.1010371 19.9991154,11.0010371 L19.9991154,9.00103707 C21.0991154,9.00103707 21.9991154,8.10103707 21.9991154,7.00103707 C21.9991154,5.90103707 21.0991154,5.00103707 19.9991154,5.00103707 L11.6491154,5.00103707 Z M5.9991154,9.00103707 C4.8991154,9.00103707 3.9991154,8.10103707 3.9991154,7.00103707 C3.9991154,5.90103707 4.8991154,5.00103707 5.9991154,5.00103707 C7.0991154,5.00103707 7.9991154,5.90103707 7.9991154,7.00103707 C7.9991154,8.10103707 7.0991154,9.00103707 5.9991154,9.00103707 Z" id="path-1"></path>
+</defs>
+<g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Sign-in-with-email" transform="translate(-605.000000, -352.000000)">
+<g id="key-" transform="translate(605.000000, 352.000000)">
+<mask id="mask-2" fill="white">
+<use xlink:href="#path-1"></use>
+</mask>
+<use id="Key" fill="#DFE2E6" xlink:href="#path-1"></use>
+</g>
+</g>
+</g>
+</svg>
+</span>
+<input type="password" class="form-control form-control-lg border-left-0 border-right-0" id="createPassword1" placeholder="Create Password">
+<span class="input-group-text toggle-password pointer">
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<path d="M8.25,0 C4.5,0 1.2975,2.3325 0,5.625 C1.2975,8.9175 4.5,11.25 8.25,11.25 C12,11.25 15.2025,8.9175 16.5,5.625 C15.2025,2.3325 12,0 8.25,0 Z M8.25,9.375 C6.18,9.375 4.5,7.695 4.5,5.625 C4.5,3.555 6.18,1.875 8.25,1.875 C10.32,1.875 12,3.555 12,5.625 C12,7.695 10.32,9.375 8.25,9.375 Z M8.25,3.375 C7.005,3.375 6,4.38 6,5.625 C6,6.87 7.005,7.875 8.25,7.875 C9.495,7.875 10.5,6.87 10.5,5.625 C10.5,4.38 9.495,3.375 8.25,3.375 Z" id="path-voq6o69_uq-1"></path>
+</defs>
+<g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="create-password" transform="translate(-817.000000, -375.000000)">
+<g id="Group-6-Copy" transform="translate(595.000000, 359.000000)">
+<g id="view-copy" transform="translate(222.750000, 16.375000)">
+<mask id="mask-voq6o69_uq-2" fill="white">
+<use xlink:href="#path-voq6o69_uq-1"></use>
+</mask>
+<use class="eye-copy" id="Eye-Copy" fill="#7D7D7D" xlink:href="#path-voq6o69_uq-1"></use>
+</g>
+</g>
+</g>
+</g>
+</svg>
+</span>
+ </div>
+<div class="input-group mb-4 password-element">
+<span class="input-group-text">
+ <svg width="22px" height="14px" viewBox="0 0 22 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>key-</title>
+<defs>
+<path d="M11.6491154,5.00103707 C10.6991154,2.31103707 7.8991154,0.50103707 4.7691154,1.12103707 C2.4791154,1.58103707 0.6191154,3.41103707 0.1391154,5.70103707 C-0.6808846,9.57103707 2.2591154,13.0010371 5.9991154,13.0010371 C8.6091154,13.0010371 10.8291154,11.3310371 11.6491154,9.00103707 L15.9991154,9.00103707 L15.9991154,11.0010371 C15.9991154,12.1010371 16.8991154,13.0010371 17.9991154,13.0010371 C19.0991154,13.0010371 19.9991154,12.1010371 19.9991154,11.0010371 L19.9991154,9.00103707 C21.0991154,9.00103707 21.9991154,8.10103707 21.9991154,7.00103707 C21.9991154,5.90103707 21.0991154,5.00103707 19.9991154,5.00103707 L11.6491154,5.00103707 Z M5.9991154,9.00103707 C4.8991154,9.00103707 3.9991154,8.10103707 3.9991154,7.00103707 C3.9991154,5.90103707 4.8991154,5.00103707 5.9991154,5.00103707 C7.0991154,5.00103707 7.9991154,5.90103707 7.9991154,7.00103707 C7.9991154,8.10103707 7.0991154,9.00103707 5.9991154,9.00103707 Z" id="path-1"></path>
+</defs>
+<g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="Sign-in-with-email" transform="translate(-605.000000, -352.000000)">
+<g id="key-" transform="translate(605.000000, 352.000000)">
+<mask id="mask-2" fill="white">
+<use xlink:href="#path-1"></use>
+</mask>
+<use id="Key" fill="#DFE2E6" xlink:href="#path-1"></use>
+</g>
+</g>
+</g>
+</svg>
+</span>
+<input type="password" class="form-control form-control-lg border-left-0 border-right-0" id="createPassword2" placeholder="Confirm Password">
+<span class="input-group-text toggle-password pointer">
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<path d="M8.25,0 C4.5,0 1.2975,2.3325 0,5.625 C1.2975,8.9175 4.5,11.25 8.25,11.25 C12,11.25 15.2025,8.9175 16.5,5.625 C15.2025,2.3325 12,0 8.25,0 Z M8.25,9.375 C6.18,9.375 4.5,7.695 4.5,5.625 C4.5,3.555 6.18,1.875 8.25,1.875 C10.32,1.875 12,3.555 12,5.625 C12,7.695 10.32,9.375 8.25,9.375 Z M8.25,3.375 C7.005,3.375 6,4.38 6,5.625 C6,6.87 7.005,7.875 8.25,7.875 C9.495,7.875 10.5,6.87 10.5,5.625 C10.5,4.38 9.495,3.375 8.25,3.375 Z" id="path-voq6o69_uq-1"></path>
+</defs>
+<g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="create-password" transform="translate(-817.000000, -375.000000)">
+<g id="Group-6-Copy" transform="translate(595.000000, 359.000000)">
+<g id="view-copy" transform="translate(222.750000, 16.375000)">
+<mask id="mask-voq6o69_uq-2" fill="white">
+<use xlink:href="#path-voq6o69_uq-1"></use>
+ </mask>
+<use class="eye-copy" id="Eye-Copy" fill="#7D7D7D" xlink:href="#path-voq6o69_uq-1"></use>
+</g>
+</g>
+</g>
+</g>
+</svg>
+</span>
+</div>
+<div class="nextbtn w-100 d-block my-5" style="clear: both;">
+<button class="btn btn-primary btn btn-primary w-100 mt-3 py-2" id="forgotPasswordSubmitBtn">Submit</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!--googleoff: all--><div id="cookie-law-info-bar" data-nosnippet="true"><span>We use cookies on Analytics Vidhya websites to deliver our services, analyze web traffic, and improve your experience on the site. By using Analytics Vidhya, you agree to our <a href="https://www.analyticsvidhya.com/privacy-policy/">Privacy Policy</a> and <a href="https://www.analyticsvidhya.com/terms/">Terms of Use</a>.<a role='button' data-cli_action="accept" id="cookie_action_close_header" class="medium cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button wt-cli-accept-btn">Accept</a></span></div><div id="cookie-law-info-again" data-nosnippet="true"><span id="cookie_hdr_showagain">Privacy &amp; Cookies Policy</span></div><div class="cli-modal" data-nosnippet="true" id="cliSettingsPopup" tabindex="-1" role="dialog" aria-labelledby="cliSettingsPopup" aria-hidden="true">
+<div class="cli-modal-dialog" role="document">
+<div class="cli-modal-content cli-bar-popup">
+<button type="button" class="cli-modal-close" id="cliModalClose">
+<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"></path><path d="M0 0h24v24h-24z" fill="none"></path></svg>
+<span class="wt-cli-sr-only">Close</span>
+</button>
+<div class="cli-modal-body">
+<div class="cli-container-fluid cli-tab-container">
+<div class="cli-row">
+<div class="cli-col-12 cli-align-items-stretch cli-px-0">
+<div class="cli-privacy-overview">
+<h4>Privacy Overview</h4> <div class="cli-privacy-content">
+<div class="cli-privacy-content-text">This website uses cookies to improve your experience while you navigate through the website. Out of these, the cookies that are categorized as necessary are stored on your browser as they are essential for the working of basic functionalities of the website. We also use third-party cookies that help us analyze and understand how you use this website. These cookies will be stored in your browser only with your consent. You also have the option to opt-out of these cookies. But opting out of some of these cookies may affect your browsing experience.</div>
+</div>
+<a class="cli-privacy-readmore" aria-label="Show more" role="button" data-readmore-text="Show more" data-readless-text="Show less"></a> </div>
+</div>
+<div class="cli-col-12 cli-align-items-stretch cli-px-0 cli-tab-section-container">
+<div class="cli-tab-section">
+<div class="cli-tab-header">
+<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="necessary" data-toggle="cli-toggle-tab">
+Necessary </a>
+<div class="wt-cli-necessary-checkbox">
+<input type="checkbox" class="cli-user-preference-checkbox" id="wt-cli-checkbox-necessary" data-id="checkbox-necessary" checked="checked" />
+<label class="form-check-label" for="wt-cli-checkbox-necessary">Necessary</label>
+</div>
+<span class="cli-necessary-caption">Always Enabled</span>
+</div>
+<div class="cli-tab-content">
+<div class="cli-tab-pane cli-fade" data-id="necessary">
+<div class="wt-cli-cookie-description">
+Necessary cookies are absolutely essential for the website to function properly. This category only includes cookies that ensures basic functionalities and security features of the website. These cookies do not store any personal information. </div>
+</div>
+</div>
+</div>
+<div class="cli-tab-section">
+<div class="cli-tab-header">
+<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="non-necessary" data-toggle="cli-toggle-tab">
+Non-necessary </a>
+<div class="cli-switch">
+<input type="checkbox" id="wt-cli-checkbox-non-necessary" class="cli-user-preference-checkbox" data-id="checkbox-non-necessary" checked='checked' />
+<label for="wt-cli-checkbox-non-necessary" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">Non-necessary</span></label>
+</div>
+</div>
+<div class="cli-tab-content">
+<div class="cli-tab-pane cli-fade" data-id="non-necessary">
+<div class="wt-cli-cookie-description">
+Any cookies that may not be particularly necessary for the website to function and is used specifically to collect user personal data via analytics, ads, other embedded contents are termed as non-necessary cookies. It is mandatory to procure user consent prior to running these cookies on your website. </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cli-modal-footer">
+<div class="wt-cli-element cli-container-fluid cli-tab-container">
+<div class="cli-row">
+<div class="cli-col-12 cli-align-items-stretch cli-px-0">
+<div class="cli-tab-footer wt-cli-privacy-overview-actions">
+<a id="wt-cli-privacy-save-btn" role="button" tabindex="0" data-cli-action="accept" class="wt-cli-privacy-btn cli_setting_save_button wt-cli-privacy-accept-btn cli-btn">SAVE &amp; ACCEPT</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
+<div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
+<!--googleon: all--> <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+<script type="text/javascript">
+     jQuery(document).ready(function($) {
+        $('#commentform').validate({
+            rules: {
+                author: {
+                    required: true,
+                    minlength: 2
+                },
+
+                email: {
+                    required: true,
+                    email: true
+                },
+
+                comment: {
+                    required: true,
+                    minlength: 20
+                }
+            },
+
+            messages: {
+                author: "Please provide a name",
+                email: "Please enter a valid email address.",
+                comment: "Please fill the required field"
+            },
+
+            errorElement: "div",
+            errorPlacement: function(error, element) {
+                element.after(error);
+            }
+
+        });
+    });
+    </script>
+<script type='text/javascript' src='https://www.analyticsvidhya.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.7.4' id='swv-js'></script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/www.analyticsvidhya.com\/wp-json\/","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.analyticsvidhya.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.7.4' id='contact-form-7-js'></script>
+<script type='text/javascript' id='q2w3_fixed_widget-js-extra'>
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"use_sticky_position":false,"margin_top":55,"margin_bottom":800,"stop_elements_selectors":"","screen_max_width":0,"screen_max_height":0,"widgets":[]}];
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.analyticsvidhya.com/wp-content/plugins/q2w3-fixed-widget/js/frontend.min.js?ver=6.2.3' id='q2w3_fixed_widget-js'></script>
+<script defer type='text/javascript' src='https://www.analyticsvidhya.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1679241403' id='akismet-frontend-js'></script>
+<script src='https://stats.wp.com/e-202323.js' defer></script>
+<script>
+		_stq = window._stq || [];
+		_stq.push([ 'view', {v:'ext',blog:'180026056',post:'78087',tz:'5.5',srv:'www.analyticsvidhya.com',j:'1:11.9.1'} ]);
+		_stq.push([ 'clickTrackerInit', '180026056', '78087' ]);
+	</script> <script>
+  webengage.track('Page Load' , {
+      'Page URL' : "https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/",
+  });
+  </script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://www.analyticsvidhya.com/wp-content/themes/analytics-vidhya/js/init.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput-jquery.min.js"></script>
+<script src="https://apis.google.com/js/api:client.js"></script>
+<script src="https://www.analyticsvidhya.com/wp-content/themes/analytics-vidhya/simplified-login/buttonid-v2.js"></script>
+<script src="https://www.analyticsvidhya.com/wp-content/themes/analytics-vidhya/simplified-login/env-v2.js"></script>
+<script src="https://www.analyticsvidhya.com/wp-content/themes/analytics-vidhya/simplified-login/authentication-v2.js"></script>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"></script>
+<script defer type="text/javascript" src="https://automation.analyticsvidhya.com/static/js/getFlashDetailsNew.js" defer></script>
+<script>
+    $.getScript( "https://brahma.analyticsvidhya.com/static/js/events.js" )
+				  .done(function( script, textStatus ) {
+				  })
+				  .fail(function( jqxhr, settings, exception ) {
+				});
+    </script>
+
+<script>
+    
+    var other_clicks = 0;
+    // Side banner clicks
+    $('#sticky1').click(function() {
+        other_clicks = 1;
+        banner_target_url = $(this).find('a').attr('href');
+    	  dataLayer.push({ event : 'datalayer_click', "blog_id" : "","blog_page_visit" : "https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/" ,"banner_click": "stickybanner1","banner_link_click_href": banner_target_url, "blog_user_id" : uid ,"blog_user_email" : uemail ,"blog_user_full_name" : ufullname,"blog_user_preferred_name" : upname,"blog_utm_source" : '', "blog_utm_medium" : '' , "blog_utm_campaign" : ''});
+    });
+    $('#sticky2 a').click(function() {
+        other_clicks = 2
+    	  banner_target_url = $(this).find('a').attr('href');
+    	  dataLayer.push({ event : 'datalayer_click',"blog_id" : "", "blog_page_visit" : "https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/" ,"banner_click": "stickybanner2","banner_link_click_href": banner_target_url, "blog_user_id" : uid ,"blog_user_email" : uemail ,"blog_user_full_name" : ufullname,"blog_user_preferred_name" : upname,"blog_utm_source" : '', "blog_utm_medium" : '' , "blog_utm_campaign" : ''});
+    });
+
+    function datalayer_download_pdf_click() {
+    	dataLayer.push({ event : 'datalayer_click', "blog_id" : "","blog_page_visit" : "https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/" ,"pdf_click": "true", "blog_user_id" : uid ,"blog_user_email" : uemail ,"blog_user_full_name" : ufullname,"blog_user_preferred_name" : upname ,"blog_utm_source" : '', "blog_utm_medium" : '' , "blog_utm_campaign" : ''});
+    	other_clicks = 3;
+    }
+
+    // Bookmark Click
+    function datalayer_bookmark_click()
+    {
+        dataLayer.push({ event : 'datalayer_click', "blog_id" : "","blog_page_visit" : "https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/" ,"bookmark_click": "true", "blog_user_id" : uid ,"blog_user_email" : uemail ,"blog_user_full_name" : ufullname,"blog_user_preferred_name" : upname ,"blog_utm_source" : '', "blog_utm_medium" : '' , "blog_utm_campaign" : ''});
+    }
+    // All Other Clicks
+    $("a").click(function() {
+    	if (other_clicks == 0) {
+    	dataLayer.push({ event : 'datalayer_click', "blog_id" : "","blog_page_visit" : "https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/" , "blog_user_id" : uid ,"blog_user_email" : uemail ,"blog_user_full_name" : ufullname,"blog_user_preferred_name" : upname , "blog_link_click_anchor_text": $(this).text(), "blog_link_click_href": $(this).attr('href')});
+    	}
+    	else {
+    		other_clicks = 0;
+    	}
+    });
+    // Internal Page Visit & Page Categories
+        $(document).ready(function(){
+    var post_categories = 'Beginner,Deep Learning,NLP';
+    dataLayer.push({ event : 'datalayer_click', "blog_page_visit" : "https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/" , "blog_user_id" : uid ,"blog_user_email" : uemail ,"blog_user_full_name" : ufullname,"blog_user_preferred_name" : upname , "blog_post_categories": post_categories,"blog_utm_source" : '', "blog_utm_medium" : '' , "blog_utm_campaign" : '' });
+    });
+        // User Login Data Layer
+    function datalayer_user_login()
+    {
+        dataLayer.push({ event : 'datalayer_click', "user_logged_in": "true","blog_page_visit" : "https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/" ,"blog_user_id" : uid ,"blog_user_email" : uemail ,"blog_user_full_name" : ufullname,"blog_user_preferred_name" : upname,"blog_utm_source" : '', "blog_utm_medium" : '' , "blog_utm_campaign" : ''});
+    }
+    </script>
+
+
+<script type="text/javascript" src="https://www.analyticsvidhya.com/wp-content/themes/analytics-vidhya/js/oidc-client.js"></script>
+<script>
+var redirect_uri = 'https://www.analyticsvidhya.com/';
+var authority_id = 'https://id.analyticsvidhya.com/openid';
+var client_o_id = '516577';
+var av_is_signed_in = false;
+</script>
+<script type="text/javascript" src="https://www.analyticsvidhya.com/wp-content/themes/analytics-vidhya/js/id-connect-v2.js"></script>
+<script src="https://accounts.google.com/gsi/client"></script>
+<script>
+var img_path = "https://www.analyticsvidhya.com/wp-content/themes/analytics-vidhya";
+var bookmark_post_id = "78087";
+var is_bookmarked = false;
+var uid = "";
+var uemail = "";
+var upname = "";
+var ufullname = "";
+var av_is_signed_in = false;
+var id_login_url = 'https://id.analyticsvidhya.com/auth/login/?next='+$(location).attr('href');
+var id_signup_url = 'https://id.analyticsvidhya.com/auth/signup/?next='+$(location).attr('href');
+
+
+$(document).ready(function(){
+
+//var img_path = "https://www.analyticsvidhya.com/wp-content/themes/analytics-vidhya";
+google.accounts.id.initialize({
+					client_id: '429311339129-v51ip59f2utl09dvqd2nfunv44el44nj.apps.googleusercontent.com',
+					callback: handleCredentialResponse
+				});
+mgr.getUser().then(function(user) {
+    // If user was already logged in
+    if (user!==null){
+        mgr.querySessionStatus().then(function(res) {
+        //console.log('Ohhh, its you again');
+        av_is_signed_in = true;
+        // Log the user in
+        user_logged_in(user);
+
+        }).catch(function(err){
+					// Check If User logged in With Google Signon
+            // If user logged out from OP
+            av_is_signed_in = false;
+            //user_logged_out();
+            mgr.removeUser();
+        });
+
+    } // End check if the user is not null
+    else{
+        mgr.signinRedirectCallback().then(function(user) {
+            // If user just logged in and redirected to this page
+            //console.log(user.profile.given_name, ' bro, how was login experience?');
+            av_is_signed_in = true;
+            // Call user_logged_in_functions
+            user_logged_in(user);
+        }).catch(function(err) {
+            // If user is NOT logged in
+            //console.log('Logged out');
+						// Logout User in case of auth faluire
+						if (av_is_signed_in==false) {
+						user_logged_out();
+						// Enable Login Popup
+				/*		if (get_cookie('avsignup')===false)
+                         {
+    						setTimeout(function() { $('#loginModal').modal();}, 5000);
+                         }*/
+                        }
+            //user_logged_out();
+            google.accounts.id.prompt();
+            mgr.signinSilent().then(function(user) {
+                av_is_signed_in = true;
+                //console.log("silent signed in", user);
+                user_logged_in(user);
+            }).catch(function(err) {
+
+				// Check If User logged in With Google Signon
+				av_is_signed_in = false;
+                //user_logged_out();
+                google.accounts.id.prompt();
+                console.log("Silentsignin Err");
+								                if (get_cookie('avsignup')===false)
+                    {
+										// Display Login Modal
+										setGoogleUrl(BLOG_AUTO_POPUP_BUTTON_ID, window.location.href);
+										setLinkedinUrl(BLOG_AUTO_POPUP_BUTTON_ID, window.location.href);
+    				    		setTimeout(function() { $('#loginModal').modal();}, 10000);
+                    }
+							                //console.log(err);
+				 });
+        });
+    }
+}).catch(function(err){
+    //console.log('Couldnt get user');
+    //user_logged_out();
+		// Logout User in case of auth faluire
+		if (av_is_signed_in==false) {
+		user_logged_out();
+		//setTimeout(function() { $('#loginModal').modal();}, 5000);
+		}
+    });
+
+    // Modal Skip
+    $('#signup-modal-skip').click(function(){
+        document.cookie = "avsignup=yes; expires=Tue, 06 Jun 2023 01:06:16 UTC; path=/";
+    });
+
+
+
+}); // document.ready
+
+// For Google Sign On
+function handleCredentialResponse(callback_data){
+            // get credentials from google and send it for login
+            callback_data['source_platform']='blogs-prod';
+            callback_data['redirect_url'] = window.location.href;//'https://www.analyticsvidhya.com/';
+            callback_data['url'] = window.location.href;
+            callback_data['button_id'] = 1113;
+            $.ajax({
+              url:"https://id.analyticsvidhya.com/automation/google/onetap/blog/login",
+              data: callback_data,
+              method:'post',
+              success: function(response){
+                //console.log(response)
+                payload = JSON.parse(response)
+                av_is_signed_in = true;
+              //  console.log(payload);
+            //    console.log(payload.identityid);
+                 $.ajax({
+  url: "https://www.analyticsvidhya.com/back-channel/check-session.php",
+  method: "POST",
+  data: { "session_key" : payload.identityid },
+  success : function(r){
+  	//console.log(r)
+  }
+});
+    user_logged_in(payload);
+              },
+              error: function(){
+                console.log("error")
+              }
+            })
+          }
+
+// User Login
+function user_logged_in(user)
+{
+    $.ajaxSetup({
+            beforeSend: function (xhr){
+                xhr.setRequestHeader("Authorization","Bearer "+user.access_token);
+             }
+    });//ajaxsetup
+
+   uid = user.profile.sub;
+	 uemail = user.profile.email;
+	 upname = user.profile.preferred_username;
+	 ufullname = user.profile.name;
+    //console.log (user.profile);
+    //Display Username on Header
+    //$(".header-join-now").html("<a href='https://id.analyticsvidhya.com/accounts/profile/' target='_blank'>" + user.profile.preferred_username + "</a>");
+    //$(".header-join-now").html(user.profile.preferred_username);
+    $(".header-join-now").hide();
+    $(".header-sign-in").hide();
+    $(".header-logged-in").show();
+		if (user.profile.picture == undefined)
+		{
+			$(".login-short-name").removeClass("d-none");
+    	$(".login-short-name").html(user.profile.preferred_username.charAt(0).toUpperCase());
+			$(".login-header-user-image-dropdown").addClass("d-none");
+		}
+		else
+		{
+				$(".login-short-name").addClass("d-none");
+				$(".login-header-user-image-dropdown").attr('src',user.profile.picture);
+				$(".login-header-user-image-dropdown-small").attr('src',user.profile.picture);
+				$(".login-header-user-image-dropdown-small").removeClass("d-none");
+		}
+		$(".login-header-user-name-dropdown").html(user.profile.preferred_username);
+    $(".login-header-user-email-dropdown").html(user.profile.email);
+		datalayer_user_login();
+
+		if ($('.coding-window-no-show').length >= 0) {
+      $(".coding-window-no-show").hide();
+      initCodingWindow();
+      $(".coding-window").show();
+    }
+    if ($('.video-show-no-show').length >= 0) {
+        $(".video-show-no-show").hide();
+				$(".video-show").show();
+    }
+
+    if ($('#typing-tutor').length > 0) {
+        $("#typing-tutor").html("<a href='https://typingtutor.analyticsvidhya.com/'>https://typingtutor.analyticsvidhya.com/</a>");
+    }
+
+								     //  setTimeout(function() { $('#loginModal').modal("hide");}, 5050);
+				setGoogleUrl(BLOG_AUTO_POPUP_BUTTON_ID, window.location.href);
+    setLinkedinUrl(BLOG_AUTO_POPUP_BUTTON_ID, window.location.href);
+		setTimeout(function() { $('#loginModal').modal("hide");}, 7005);
+
+    // Check if the article is already bookmarked
+  $.ajax({
+     type:"GET",
+     url:"https://id.analyticsvidhya.com/api/v1/resources/external_save_check?resource_ids=78087",
+     contentType: 'application/json',
+     success: function(data) {
+         if(data.results[0] && data.results[0].is_bookmarked==true)
+            {
+        $("#bookmark-article").removeClass("far").addClass("fas active").attr("title","Remove Bookmark");
+				$(".bookmark-circle-title").addClass("active").attr("title","Remove Bookmark");
+				is_bookmarked = true;
+		    }
+		  else
+		  {
+		    $("#bookmark-article").removeClass("fas").addClass("far").attr("title","Bookmark this story to read later");
+				$(".bookmark-circle-title").removeClass("active").attr("title","Bookmark this story to read later");
+		  }
+     },
+        error: function(data) {
+        data =  JSON.stringify(data);
+//        $(".save-for-later").html(data);
+       }
+    });
+   // End Check if article already Bookmarked
+	 // Interview Questsions
+	 $(".interview-login-banner").hide();
+	 $(".interview-answers").show();
+	 setTimeout(function() { $(".interview-login-banner").hide(); }, 6000);
+	 setTimeout(function() { $(".interview-answers").show(); }, 6000);
+
+
+
+ 	// If user is logged in give option to bookmark article
+    /*
+        $(".save-for-later").html('<a id="bookmark-article" href="#"><img src="'+img_path+'/custom-design/images/do-bookmark.svg" width="18px" alt="Bookmark this story to read later" title="Bookmark this story to read later" data-toggle="tooltip"></a>');
+				$("#top-av-users-signup").hide();
+				$("#top-av-users-show").show();
+				$("#is_logged_in_brchr").val("1");
+				$(".coding-window-no-show").hide();
+				initCodingWindow();
+				$(".coding-window").show();
+				$(".video-show-no-show").hide();
+				$(".video-show").show();
+				$("#typing-tutor").html("<a href='https://typingtutor.analyticsvidhya.com/'>https://typingtutor.analyticsvidhya.com/</a>");
+				$(".qa-login-req-no-show").hide();
+				$(".qa-login-req").show();
+				$('.qa-login-req').css('visibility','visible');
+				$(".fluffycourse-hide").hide();
+				$(".fluffycourse").show();
+				$(".lock-icon").hide();
+				*/
+                //datalayer_user_login();
+
+			//	quizInit(uid);
+				// Popup Logged in
+			//	$("#popup_logged_in").val("1");
+				//console.log ("H:"+uid);
+			/*	$.getScript( "https://brahma.analyticsvidhya.com/static/js/events.js" )
+				  .done(function( script, textStatus ) {
+				    console.log( "Brahma Loaded" );
+				  })
+				  .fail(function( jqxhr, settings, exception ) {
+						console.log( "Brahma Failed" );
+				});*/
+				//$("#signup").hide();
+				//$("#dwn-brchr").show();
+	// End If user is logged in give option to bookmark article
+			//	console.log (user.profile);
+}
+
+function show_login_links()
+{
+    $(".header-sign-in").attr('href',id_login_url);
+    $(".header-join-now").attr('href',id_signup_url);
+
+}
+
+
+function user_logged_out()
+{
+    //console.log("logged out");
+		// Show Signup Popup
+		//setTimeout(function() { $('#loginModal').modal();}, 5000);
+
+    $(".header-join-now").show();
+    //show_login_links();
+    if ($(".coding-window-no-show").length == 0)
+		{
+			$(".coding-window").before("<a href='https://id.analyticsvidhya.com/auth/login/?next="+$(location).attr('href')+ "?&utm_source=coding-window-blog&source=coding-window-blog'><img src='https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2019/08/coding-window-noshow.jpg' class='coding-window-no-show'></a>");
+		}
+		$(".coding-window").hide();
+		if ($(".video-show-no-show").length == 0)
+		{
+			$(".video-show").before("<a href='https://id.analyticsvidhya.com/auth/login/?next="+$(location).attr('href')+ "?&utm_source=video-show-blog&source=video-show-blog'><img src='https://cdn.analyticsvidhya.com/wp-content/uploads/2021/02/video-noshow.jpg' class='video-show-no-show'></a>");
+		}
+		$(".video-show").hide();
+
+        if ($('#typing-tutor').length > 0) {
+        $("#typing-tutor").html("<a href='https://id.analyticsvidhya.com/auth/login/?next="+$(location).attr('href')+ "' target='_blank'> <img style='height: 40px;' src='https://cdn.analyticsvidhya.com/wp-content/uploads/2020/12/images.png'/></a>");
+        }
+
+				    //   setTimeout(function() { $('#loginModal').modal();}, 5000);
+
+
+}
+
+// Bokmark Article
+$('.bookmark').click(function(){
+	if (av_is_signed_in)
+		bookmark_post();
+    else
+			startAuthProcess(BLOG_BOOKMARK_BTN_ID, window.location.href); // Call Simplified Reg
+			//window.location = id_login_url;
+});
+
+$(".download-pdf").click(function(){
+	if (av_is_signed_in)
+	{
+		datalayer_download_pdf_click();
+		window.location = "https://www.analyticsvidhya.com/back-channel/download-pdf.php?pid=78087&next="+$(location).attr('href');
+	}
+	else
+			startAuthProcess(BLOG_PDF_DOWNLOAD_BTN_ID, window.location.href); // Call Simplified Reg
+		  //window.location = id_login_url;
+});
+
+
+function bookmark_post()
+{
+	event.preventDefault();
+	datalayer_bookmark_click();
+	var bookmark_data = {resource_id:"78087", resource_type:"article",resource_permalink:"",resource_title:"",resource_medium: "blog"};
+ if (is_bookmarked==false) {
+ $.ajax({
+	type:"POST",
+	//dataType:"json",
+	url:"https://id.analyticsvidhya.com/api/v1/resources/external_save",
+	data:JSON.stringify(bookmark_data),
+ contentType: 'application/json',
+	success: function(data) {
+			data =JSON.stringify(data);
+          $("#bookmark-article").addClass("fas").attr("title","Remove Bookmark");
+        	$(".bookmark-circle-title").addClass("active").attr("title","Remove Bookmark");
+        	is_bookmarked=true;
+	},
+		 error: function(data) {
+		 data =  JSON.stringify(data);
+            $("#bookmark-article").removeClass("fas").attr("title","Failed to Bookmark Article");
+            $(".bookmark-circle-title").removeClass("active").attr("title","Failed to Bookmark Article");
+    	}
+ });
+} // end if
+else if (is_bookmarked==true){
+ $.ajax({
+	type:"DELETE",
+	dataType:"json",
+	url:"https://id.analyticsvidhya.com/api/v1/resources/external_save",
+	data:JSON.stringify(bookmark_data),
+ contentType: 'application/json',
+	success: function(data) {
+			data =JSON.stringify(data);
+			$("#bookmark-article").removeClass("fas").attr("title","Bookmark this story to read later");
+			$(".bookmark-circle-title").removeClass("active").attr("title","Bookmark this story to read later");
+			 is_bookmarked=false;
+	},
+		 error: function(data) {
+		 data =  JSON.stringify(data);
+		 $("#bookmark-article").attr("title","Failed to Remove Bookmark");
+		 $(".bookmark-circle-title").attr("title","Failed to Remove Bookmark");
+		}
+ });
+} //end elseif
+}
+
+
+// Top Header Menus Interview Questions / Related Videos / Articles etc
+$(document).ready(function(){
+
+	$('#free-courses-tab').click(function(){
+			 $('#headerHeading').html('Courses');
+		 });
+		 $('#related-articles-tab').click(function(){
+			 $('#headerHeading').html('Articles');
+		 });
+		 $('#related-videos-tab').click(function(){
+			 $('#headerHeading').html('Videos');
+		 });
+		 $('#interview-questions-tab').click(function(){
+			 $('#headerHeading').html('Interview Questions');
+		 });
+
+		 	/*	if (av_is_signed_in==false) {
+		 setTimeout(function() { $('#loginModal').modal();}, 9000);
+	 	}
+		else if (av_is_signed_in==true)
+		{
+			setTimeout(function() { $('#loginModal').modal("hide");}, 9005);
+		}*/
+		     $(".login-required").click(function(){
+	   	if (av_is_signed_in==false)
+	   	{
+	   	event.preventDefault();
+	    $(this).removeClass("active");
+			if (this.id == "interview-questions-tab")
+	    {
+	        startAuthProcess(BLOG_INTERVIEW_QUESTIONS_BTN_ID, window.location.href);  //1122
+	    }
+	    if (this.id == "related-videos-tab")
+	    {
+	       startAuthProcess(BLOG_RELATED_VIDEO_BTN_ID, window.location.href);  //1122
+	    }
+	    if (this.id == "related-articles-tab")
+	    {
+            startAuthProcess(BLOG_RELATED_ARTICLE_BTN_ID, window.location.href);  //1122
+	    }
+	    if (this.id == "free-courses-tab")
+	    {
+             startAuthProcess(BLOG_FREE_COURSES_BTN_ID, window.location.href);  //1122
+	    }
+			//window.location = "https://id.analyticsvidhya.com/auth/login/?next="+$(location).attr('href');
+	   	}
+	   	else if (av_is_signed_in==true)
+	   	{
+	   	    $('#interview-questions-display').html('<iframe src="https://dsat.analyticsvidhya.com/blog/create/assessment/78087" height="500" width="100%" frameborder="0">');
+ 	   	    $('#related-videos-display').load('https://www.analyticsvidhya.com/wp-content/themes/analytics-vidhya/top-header-related-videos.php');
+          $('#related-articles-display').load('https://www.analyticsvidhya.com/wp-content/themes/analytics-vidhya/top-header-related-articles.php?cat=5385,3761,3952&exclude=78087');
+	   	    $('#free-courses-display').load('https://www.analyticsvidhya.com/wp-content/themes/analytics-vidhya/top-header-free-courses.php');
+			}
+
+	});
+});
+
+
+function initCodingWindow() {
+	$('.coding-window iframe').each(function() {
+		var src = $(this).data('src');
+		if (!src) {
+			return;
+		}
+		this.src = src;
+	})
+}
+
+
+$('#loginModal').on('show.bs.modal', function (event) {
+	if (av_is_signed_in)
+		$('#loginModal').modal("hide");
+});
+
+$('#loginModal').on('shown.bs.modal', function (event) {
+	if (av_is_signed_in)
+		$('#loginModal').modal("hide");
+});
+
+
+function get_cookie(cookiename) {
+    var cookielist = document.cookie.split(";");
+    for(var i = 0; i < cookielist.length; i++) {
+        var cookiedata = cookielist[i].split("=");
+        if(cookiename == cookiedata[0].trim()) {
+            return decodeURIComponent(cookiedata[1]);
+        }
+    }
+    return false;
+}
+
+// Add Utm Campaign as Page Url
+$(document).ready(function(){
+    $('.utm_image_link').each(function() {
+  var href = $(this).attr('href');
+    if (href) {
+        var url = new URL(href);
+        url.searchParams.delete("utm_campaign");
+                url.searchParams.set("utm_campaign", "https://www.analyticsvidhya.com/blog/2021/04/role-of-machine-learning-in-natural-language-processing/");
+        $(this).attr('href', url.href);
+    }
+});
+// Old Login
+$(".header-sign-in").click(()=>{
+			//window.location = id_login_url;
+    });
+
+$(".simplified-login").click(()=>{
+        startAuthProcess(BLOG_SIGN_IN_BTN_ID, window.location.href);
+    });
+
+ $(".simplified-login-join-now").click(()=>{
+        startAuthProcess(BLOG_SIGN_IN_BTN_ID, window.location.href);
+    });
+
+// Logout from ID
+  $("#logout-from-id").click(()=>{
+        logout();
+    });
+
+});
+</script> 
+<div class="modal fade av-video-modal" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-body">
+<div class="embed-responsive embed-responsive-16by9">
+<iframe id="related-videos-modal-iframe" class="embed-responsive-item" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+         $(function() {
+                       $("#article-start p:nth-of-type(6)").after('<div class="banner-section-for-display"><div class="display-for-right mb-3"><div class="display-img"><img width="260" height="130" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2023/02/smallbanner-1-1-1-3.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://cdn.analyticsvidhya.com/wp-content/uploads/2023/02/smallbanner-1-1-1-3.png 260w, https://cdn.analyticsvidhya.com/wp-content/uploads/2023/02/smallbanner-1-1-1-3-150x75.png 150w" sizes="(max-width: 260px) 100vw, 260px" /></div><div class="display-content"><h5>Become a Full Stack Data Scientist</h5><div>Transform into an expert and significantly impact the world of data science.</div><div></div><div></div><a href="https://blackbelt.analyticsvidhya.com/plus?utm_source=blog_india&utm_medium=banner_between_articles&utm_campaign=24-Mar-2023&utm_content=brochure" class="utm_image_link btn btn-info" onclick="return utm_image_link();" target="_blank">Download Brochure</a></div></div></div>');
+       });
+       </script>
+<script>
+        $(function() {
+             $('#videoModal').on('show.bs.modal', function (e) {
+                  $("#related-videos-modal-iframe").attr('src','https://player.vimeo.com/video/'+$(e.relatedTarget).data('video')+'?autoplay=1');
+                });
+                $('#videoModal').on('hide.bs.modal', function (e) {
+                  $("#related-videos-modal-iframe").attr('src','');
+                });
+         });
+    </script>
+<script>
+    $(function() {
+
+      // Pre Check Comments Form Subscribe Checkboxes
+      $("#subscribe_comments,#subscribe_blog").prop("checked",true);
+      // sidebar Reading progress activatore
+      $(window).on('scroll',function(){
+        var WindowTop = $(window).scrollTop();
+        $('.av-details-page .target').each(function(i){
+          if(WindowTop > $(this).offset().top - 190 &&
+              WindowTop < $(this).offset().top + $(this).outerHeight(true)
+            ){
+              if ($(this).data('tocid'))
+             {
+              $(".h2_toc").removeClass('active');
+              $("#"+$(this).data('tocid')).addClass('active');
+             }
+          }
+        });
+      });
+
+    var i=0;
+    /* data-tocid to H2s for Table of Content
+    // Add
+
+    $(".av-details-page").find('h2').each(function() {
+    i=i+1;
+    var item = $(this);
+    var h2id = 'h2_'+i;
+    var h2_toc_id = 'h2_toc_'+i;
+    item.attr('id', h2id);
+    item.attr('data-tocid', h2_toc_id);
+    $(this).addClass("target");
+    var li = $('<li/>');
+   // var a = $('<a/>', {text: item.text(), href: '#' + h2id, title: item.text(),class: 'h2_toc',id:h2_toc_id });
+    var a = $('<a/>', {text: item.text(), href: '#' + h2id, class: 'h2_toc',id:h2_toc_id });
+    a.appendTo(li);
+    $('.toc').append(li);
+  });
+*/
+  $(".h2_toc").click(function() {
+    $(".h2_toc").removeClass('active');
+    $(this).addClass('active');
+    h2_href = $(this).attr('href');
+    $('html, body').animate({
+        scrollTop: $(h2_href).offset().top-190
+    }, 2000);
+  });
+});
+</script>
+<script>
+        $(document).ready(function(){
+          // Article related navigation link fix
+          var fixmeTop = $('.display-content').offset().top;
+          $(window).scroll(function() {
+            var currentScroll = $(window).scrollTop();
+            if (currentScroll >= fixmeTop) {
+              $('.header-2').addClass('header-2-fixed-top');
+              $('.page-header').addClass('margin-top-fix');
+            } else {
+              $('.header-2').removeClass('header-2-fixed-top');
+              $('.page-header').removeClass('margin-top-fix');
+            }
+          });
+          // Main heading and tabel content of right side fix
+          $(window).scroll(function(){
+            if ($(window).scrollTop() >=320) {
+              $('.page-header').addClass('active');
+              $('.change-to-sticky').addClass('active');
+            }
+            else if($(window).scrollTop() < 320){
+              $('.page-header').removeClass('active');
+              $('.change-to-sticky').removeClass  ('active');
+            }
+          });
+          // Add class for navTab tabsbar content active
+            $( "#nav-tab" ).click(function() {
+            $('.tab-content-modal').addClass('active');
+            $('body').addClass('active');
+          });
+          // Remove class for navTab tabsbar content active
+          $( ".tabs-close" ).click(function() {
+            $('.tab-content-modal').removeClass('active');
+            $('.header-2 .nav-link.active ').removeClass('active');
+            $('body').removeClass('active');
+          });
+
+        });
+      </script>
+<script>
+        // User Reding Progressbar fix
+        $(window).bind('scroll', () => {
+          const scrollHeight = $(document).height() - 100;
+          const scrollPosition = $(window).height() + $(window).scrollTop();
+          let percentageScrolled = Math.round((scrollPosition / scrollHeight) * 100);
+          if (percentageScrolled > 100) percentageScrolled = 100;
+          if ($(window).scrollTop() > 320) {
+            $('.reading-progress-container').addClass('show');
+          }
+        else {
+          $('.reading-progress-container').removeClass('show')
+        }
+          $('.reading-progress-container .progress-bar').css('width', `${percentageScrolled}%`);
+        });
+      </script>
+<script type="text/javascript">
+      // Our Top Author popover on mouse hover
+          $(".av-pop").popover({
+            trigger: "manual",
+            html: true,
+            animation: false
+          })
+        .on("mouseenter", function() {
+          var _this = this;
+          $(this).popover("show");
+          $(".popover").on("mouseleave", function() {
+            $(_this).popover('hide');
+          });
+        }).on("mouseleave", function() {
+          var _this = this;
+          setTimeout(function() {
+            if (!$(".popover:hover").length) {
+              $(_this).popover("hide");
+            }
+          }, 100);
+        });
+      </script>
+</div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7d2483082bad8351","version":"2023.4.0","b":1,"token":"6dc69ea2ec65420db26006e7a2ffc709","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

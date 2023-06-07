@@ -1,0 +1,2976 @@
+<!doctype html><html><head>
+    <meta charset="utf-8">
+    <title>Natural Language Processing (NLP) for Machine Learning | Encora</title>
+    
+    
+    
+    <meta name="description" content="NLP is a machine learning field that provides voice automation, text analysis and improved customer service. Learn how NLP make our life easier.">
+    
+    
+    <meta property="og:description" content="NLP is a machine learning field that provides voice automation, text analysis and improved customer service. Learn how NLP make our life easier.">
+    <meta property="og:title" content="Natural Language Processing (NLP) for Machine Learning | Encora">
+    <meta name="twitter:description" content="NLP is a machine learning field that provides voice automation, text analysis and improved customer service. Learn how NLP make our life easier.">
+    <meta name="twitter:title" content="Natural Language Processing (NLP) for Machine Learning | Encora">
+
+    
+
+    
+
+    <style>
+a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;vertical-align:middle}.hs-breadcrumb-menu{list-style-type:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px}.hs-breadcrumb-menu-item{float:left;padding:10px 0px 10px 10px}.hs-breadcrumb-menu-divider:before{content:'›';padding-left:10px}.hs-featured-image-link{border:0}.hs-featured-image{float:right;margin:0 0 20px 20px;max-width:50%}@media (max-width: 568px){.hs-featured-image{float:none;margin:0;width:100%;max-width:100%}}.hs-screen-reader-text{clip:rect(1px, 1px, 1px, 1px);height:1px;overflow:hidden;position:absolute !important;width:1px}
+</style>
+
+<link rel="stylesheet" href="https://www.encora.com/hs-fs/hub/7958737/hub_generated/module_assets/34030854984/1598305845617/module_34030854984_Progress_Bar.min.css">
+
+<style>
+ 
+</style>
+
+<link rel="stylesheet" href="/hs/hsstatic/cos-LanguageSwitcher/static-1.11/sass/LanguageSwitcher.css">
+<link rel="stylesheet" href="https://www.encora.com/hs-fs/hub/7958737/hub_generated/module_assets/116608097846/1684778747199/module_116608097846_New_Editable_Hero_Single.min.css">
+<link rel="stylesheet" href="https://www.encora.com/hs-fs/hub/7958737/hub_generated/module_assets/32331921881/1681240046671/module_32331921881_Final_Footer.min.css">
+
+    <script type="application/ld+json">
+{
+  "mainEntityOfPage" : {
+    "@type" : "WebPage",
+    "@id" : "https://www.encora.com/insights/natural-language-processing-and-machine-learning"
+  },
+  "author" : {
+    "name" : "Ximena Bolaños",
+    "url" : "https://www.encora.com/insights/author/ximena-bolaños",
+    "@type" : "Person"
+  },
+  "headline" : "Natural Language Processing (NLP) for Machine Learning | Encora",
+  "datePublished" : "2021-09-29T17:54:00.000Z",
+  "dateModified" : "2023-05-22T19:36:23.911Z",
+  "publisher" : {
+    "name" : "Encora",
+    "logo" : {
+      "url" : "https://www.encora.com/hubfs/encora%20(3).png",
+      "@type" : "ImageObject"
+    },
+    "@type" : "Organization"
+  },
+  "@context" : "https://schema.org",
+  "@type" : "BlogPosting",
+  "image" : [ "https://www.encora.com/hubfs/Alexa.png" ]
+}
+</script>
+
+
+
+    
+<!--  Added by GoogleAnalytics integration -->
+<script>
+var _hsp = window._hsp = window._hsp || [];
+_hsp.push(['addPrivacyConsentListener', function(consent) { if (consent.allowed || (consent.categories && consent.categories.analytics)) {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create','UA-175076292-1','auto');
+  ga('send','pageview');
+}}]);
+</script>
+
+<!-- /Added by GoogleAnalytics integration -->
+
+<!--  Added by GoogleTagManager integration -->
+<script>
+var _hsp = window._hsp = window._hsp || [];
+
+var hsLoadGtm = function loadGtm() {
+    if(window._hsGtmLoadOnce) {
+      return;
+    }
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PVRNPF8');
+
+    window._hsGtmLoadOnce = true;
+};
+
+var useGoogleConsentMode = false;
+
+if (!useGoogleConsentMode){
+    _hsp.push(['addPrivacyConsentListener', function(consent){
+      if(consent.allowed || (consent.categories && consent.categories.analytics)){
+        hsLoadGtm();
+      }
+  }]);
+} else{
+    if(!window._hsGoogleConsentRunOnce){
+      window._hsGoogleConsentRunOnce=true;
+
+      window.dataLayer=window.dataLayer||[];
+      function gtag(){dataLayer.push(arguments);}
+
+      gtag('consent','default',{
+        'ad_storage':'denied',
+        'analytics_storage':'denied'
+      });
+
+      gtag('set','developer_id.dZTQ1Zm',true);
+
+      _hsp.push(['addPrivacyConsentListener',function(consent){
+      var hasAnalyticsConsent=consent&&(consent.allowed||(consent.categories&&consent.categories.analytics));
+      var hasAdsConsent=consent&&(consent.allowed||(consent.categories&&consent.categories.advertisement));
+
+      gtag('consent','update',{
+        'ad_storage':hasAdsConsent?'granted':'denied',
+        'analytics_storage':hasAnalyticsConsent?'granted':'denied'
+      });
+    }]);
+  }
+
+  hsLoadGtm();
+}
+</script>
+
+<!-- /Added by GoogleTagManager integration -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Encora">
+
+<meta property="twitter:site" content="Encora">
+<meta property="twitter:creator" content="Encora">
+<meta name="google-site-verification" content="KH34DdDnt-VR-50picrqm-Zgdp0yciqZdaU5awzioYE">
+<meta name="facebook-domain-verification" content="nk5g6w0dt0h4kis5n8amiuy59y939c">
+<link rel="preload" as="style" type="text/css" href="https://flamboyant-hugle-b0c62a.netlify.app/css/main.min.css">
+<link rel="stylesheet" type="text/css" href="https://flamboyant-hugle-b0c62a.netlify.app/css/main.min.css">
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<!--script async src="https://www.googletagmanager.com/gtag/js?id=UA-175076292-1"></script -->
+<!-- Global site tag (gtag.js) - Google Ads: 603920444 --> 
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-603920444"></script> 
+<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-603920444'); </script>
+<!-- Clarity install code -->
+<script type="text/javascript"> (function(c,l,a,r,i,t,y){ c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)}; t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i; y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+                                                        })(window, document, "clarity", "script", "6rwyoaf40n"); </script> 
+<script type="application/ld+json">
+ {
+     "@context": "http://schema.org",
+
+     
+ "@type": "Corporation",
+     
+     "mainEntityOfPage":{
+          "@type":"WebPage",
+          "@id":"https://www.encora.com/insights/natural-language-processing-and-machine-learning",
+          "description": "NLP is a machine learning field that provides voice automation, text analysis and improved customer service. Learn how NLP make our life easier."
+     },
+     "url": "https://www.encora.com/insights/natural-language-processing-and-machine-learning",
+     "logo": "https://www.encora.com/hubfs/Website_Assets/brand/encora-logo.svg",
+     "image": "https://www.encora.com/hubfs/OG%20-%20Featured%20Img/Encora%20OG%20FB.png",
+     "name": "Encora",
+      "description": "NLP is a machine learning field that provides voice automation, text analysis and improved customer service. Learn how NLP make our life easier.",
+     "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "8800 E Raintree Dr, Suite #200, ",
+          "addressLocality": "Scottsdale,",
+          "addressRegion": "AZ",
+          "addressCountry": "",
+          "postalCode": "85260"
+     }, 
+     "geo": {
+     	"@type": "GeoCoordinates",
+     	"latitude": "33.6190097179532,",
+     	"longitude": "-111.89016528699369"
+     },
+    "hasMap": "https://www.google.com/maps/place/8800+E+Raintree+Dr+%23200,+Scottsdale,+AZ+85260,+USA/@33.618974,-111.8923969,17z/data=!3m1!4b1!4m5!3m4!1s0x872b75baf8ffffff:0xbfa437f5ce13ce08!8m2!3d33.618974!4d-111.8902082",
+   	"openingHours": "Mo 09:00-19:00 Tu 09:00-19:00 We 09:00-19:00 Th 09:00-19:00 Fr 09:00-19:00"
+	},
+     "telephone": "",
+     "speakable":
+     {
+      "@type": "SpeakableSpecification",
+      "xpath": [
+        "/html/head/title",
+        "/html/head/meta[@name=\'description\']/@content"
+        ]
+      }
+}
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PVRNPF8');</script>
+<!-- End Google Tag Manager -->
+<!-- End Schema -->
+<meta property="og:image" content="https://www.encora.com/hubfs/Alexa.png#keepProtocol">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="353">
+<meta property="og:image:alt" content="Natural Language Processing">
+<meta name="twitter:image" content="https://www.encora.com/hubfs/Alexa.png#keepProtocol">
+<meta name="twitter:image:alt" content="Natural Language Processing">
+
+<meta property="og:url" content="https://www.encora.com/insights/natural-language-processing-and-machine-learning">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="canonical" href="https://www.encora.com/insights/natural-language-processing-and-machine-learning">
+<link rel="stylesheet" href="https://www.encora.com/hubfs/Website_Assets/javascript/Prism/prism.css">
+<script type="application/ld+json">
+  {
+     "@context": "http://schema.org",
+     "@type": "BlogPosting",
+     "mainEntityOfPage":{
+        "@type":"WebPage",
+        "@id":"https://www.encora.com/insights/natural-language-processing-and-machine-learning"
+     },
+     "headline": "Natural Language Processing and Machine Learning",
+     "image": {
+          "@type": "ImageObject",
+          "url": "https://www.encora.com/hubfs/Alexa.png"
+     },
+     "datePublished": "2021-09-29 17:54:00",
+     "dateModified": "May 22, 2023, 7:36:23 PM",
+     "author": {
+         "@type": "company",
+         "name": "Ximena Bolaños"
+     },
+     "publisher": {
+         "@type": "Organization",
+         "name": "Encora",
+         "logo": {
+             "@type": "ImageObject",
+             "url": "https://www.encora.com/hubfs/Website_Assets/brand/encora-logo.svg"
+         }
+     },
+     "description": "NLP is a machine learning field that provides voice automation, text analysis and improved customer service. Learn how NLP make our life easier.",
+      "articleBody": "Natural Language Processing (NLP) is part of everyday life and it is essential to our lives at home and at work. Without giving it much thought, we send voice commands to our virtual home assistants, our smartphones, and even our vehicles. Voice-enabled applications such as Alexa, Siri, and Google Assistant use NLP and Machine Learning (ML) to answer our questions, add activities to our calendars and call the contacts that we state in our voice commands. NLP is not only making our lives easier, but revolutionizing the way we work, live, and play. Work with us! Let&#39;s talk! Differences between Natural Language Processing and Machine Learning Although Natural Language Processing, Machine Learning, and Artificial Intelligence are sometimes used interchangeably, they have different definitions. AI is an umbrella term for machines that can simulate human intelligence, while NLP and ML are both subsets of AI. Artificial Intelligence is a part of the greater field of Computer Science that enables computers to solve problems previously handled by biological systems. AI has many applications in today&#39;s society. NLP and ML are both parts of AI. Natural Language Processing is a form of AI that gives machines the ability to not just read, but to understand and interpret human language. With NLP, machines can make sense of written or spoken text and perform tasks including speech recognition, sentiment analysis, and automatic text summarization. Machine Learning is an application of AI that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. Machine Learning can be used to help solve AI problems and to improve NLP by automating processes and delivering accurate responses. As   we can see in Figure 1, NLP and ML are part of AI and both subsets share techniques, algorithms, and knowledge. How Natural Language Processing can be applied Some NLP-based solutions include translation, speech recognition, sentiment analysis, question/answer systems, chatbots, automatic text summarization, market intelligence, automatic text classification, and automatic grammar checking. These technologies help organizations to analyze data, discover insights, automate time-consuming processes and/or gain competitive advantages. Translation Translating languages is more complex than a simple word-to-word replacement method. Since each language has grammar rules, the challenge of translating a text is to do so without changing its meaning and style. Since computers do not understand grammar, they need a process in which they can deconstruct a sentence, then reconstruct it in another language in a way that makes sense. Google Translate is one of the most well-known online translation tools. Google Translate once used Phrase-Based Machine Translation (PBMT), which looks for similar phrases between different languages. At present, Google uses Google Neural Machine Translation (GNMT) instead, which uses ML with NLP to look for patterns in languages. Speech recognition Speech recognition is a machine’s ability to identify and interpret phrases and words from spoken language and convert them into a machine-readable format. It uses NLP to allow computers to simulate human interaction, and ML to respond in a way that mimics human responses. Google Now, Alexa, and Siri are some of the most popular examples of speech recognition. Simply by saying ‘call Jane’, a mobile device recognizes what that command means and will now make a call to the contact saved as Jane. Sentiment Analysis Sentiment analysis uses NLP and ML to interpret and analyze emotions in subjective data like news articles and tweets. Positive, negative, and neutral opinions can be identified to determine a customer’s sentiment towards a brand, product, or service. Sentiment analysis is used to gauge public opinion, monitor brand reputation, and better understand customer experiences. The stock market is a sensitive field that can be heavily influenced by human emotion. Negative sentiment can lead stock prices to drop, while positive sentiment may trigger people to buy more of the company’s stock, causing stock prices to increase. Chatbots Chatbots are programs used to provide automated answers to common customer queries. They have pattern recognition systems with heuristic responses, which are used to hold conversations with humans. Initially, chatbots were used to answer basic questions to alleviate heavy volume call centers and offer quick customer support services. But AI-powered chatbots are designed to handle more complicated requests making conversational experiences increasingly intuitive. Chatbots in healthcare, for example, can collect intake data, help patients assess their symptoms, and determine next steps. These chatbots can set up appointments with the right doctor and even recommend treatments. Question-Answer Systems Question-answer systems are intelligent systems that are used to provide answers to customer queries. Other than chatbots, question-answer systems have a huge array of knowledge and good language understanding rather than canned answers. They can answer questions like “When was Abraham Lincoln assassinated?” or “How do I get to the airport?” and can be created to deal with textual data, audio, images and videos.  Question-answer systems can be found in social media chats and tools such as Siri and IBM’s Watson. In 2011, IBM’ Watson computer competed on Jeopardy, a game show during which answers are given first, and the contestants supply the questions. The computer competed against the show’s two biggest all-time champions and astounded the tech industry when it won first place.  Automatic text summarization Automatic text summarization is the task of condensing a piece of text to a shorter version, by extracting its main ideas and preserving the meaning of content. This application of NLP is used in news headlines, result snippets in web search, and bulletins of market reports.  Market Intelligence Market Intelligence is the gathering of valuable insights surrounding trends, consumers, products and competitors to extract actionable information that can be used for strategic decision-making. Market Intelligence can analyze topics, sentiment, keywords, and intent in unstructured data and is less time consuming than traditional desk research. Using Market Intelligence, organizations can pick up on search queries and add contextually relevant synonyms to search results. It can also help organizations decide which products or services to discontinue or what customers to target. Automatic text classification Automatic text classification is another fundamental solution of NLP. It is the process of assigning tags to text according to its content and semantics which allows for rapid, easy retrieval of information in the search phase. This NLP application can differentiate spam from non-spam based on its content.  Automatic grammar checking Automatic grammar checking, the task of detecting and correcting grammatical errors and spelling mistakes in text depending on context, is another major part of NLP. Automatic Grammar Checking will alert you to a possible error by underlining the word in red.  Advantages and Disadvantages of Natural Language Processing Like many other forms of Artificial Intelligence, the use of Natural Language Processing comes with advantages as well as disadvantages. Advantages of NLP include: Once implemented, using NLP is less expensive and more time-efficient than employing a person. NLP can also help businesses offer faster customer service response times. No matter the time of day or day of the week, customers receive immediate answers to their questions. Pre-trained machine learning models are widely available for developers to facilitate different applications of NLP, making them easy to implement.   Advances in NLP are promising, but there are some disadvantages to NLP as well. Disadvantages of NLP include: Training can be time-consuming. If a new model needs to be developed without the use of a pre-trained model, it can take weeks before achieving a high level of performance. Another disadvantage of NLP is that ML is not 100 percent reliable. There is always a possibility of errors in predictions and results that need to be taken into account. Adding NLP and ML to your Product The number one reason to add Natural Language Processing and Machine Learning to your software product is to gain a competitive advantage. Your users can receive an immediate and 24/7 response to customer service queries with chatbots.  The speed at what risk assessment can be done with ML algorithms can add value to your enterprise.  To learn more talk to an Encora expert.  Conclusion Natural Language Processing is the practice of teaching machines to understand and interpret conversational inputs from humans. NLP based on Machine Learning can be used to establish communication channels between humans and machines. Although continuously evolving, NLP has already proven useful in multiple fields. The different implementations of NLP can help businesses and individuals save time, improve efficiency and increase customer satisfaction. Key takeaways Natural Language Processing (NLP) is a form of Artificial Intelligence that gives machines the ability to read and interpret human language. With NLP, machines can make sense of written or spoken text. NLP is constantly evolving, but existing NLP-based solutions include translation, speech recognition, sentiment analysis, question/answer systems, automatic text summarization, chatbots, market intelligence, automatic text classification, and automatic grammar checking. The use of Natural Language Processing comes with advantages as well as disadvantages. Businesses can save costs, reduce client wait times, and increase customer satisfaction when implementing NLP. But training can take time and ML is never 100% reliable. Feel free to contact us to learn more about how NLP can help your business grow. About Encora Encora accelerates business outcomes for clients through leading-edge digital product innovation. We provide innovative services and software engineering solutions across a wide range of leading-edge technologies, including Big Data, analytics, machine learning, IoT, mobile, cloud, UI/UX, and test automation. Click here to learn more about our services. Let&#39;s discuss how we can help your business.  "
+
+ }
+
+</script>
+<meta property="og:type" content="article">
+<link rel="alternate" type="application/rss+xml" href="https://www.encora.com/insights/rss.xml">
+<meta name="twitter:domain" content="www.encora.com">
+<script src="//platform.linkedin.com/in.js" type="text/javascript">
+    lang: en_US
+</script>
+
+<meta http-equiv="content-language" content="en">
+<link rel="alternate" hreflang="en" href="https://www.encora.com/insights/natural-language-processing-and-machine-learning">
+<link rel="alternate" hreflang="es" href="https://www.encora.com/es/blog/natural-language-processing-and-machine-learning">
+
+
+
+
+
+<link rel="canonical" href="https://www.encora.com/insights/natural-language-processing-and-machine-learning">
+  <meta name="generator" content="HubSpot"></head>
+  <body class="">
+<!--  Added by GoogleTagManager integration -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVRNPF8" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- /Added by GoogleTagManager integration -->
+
+    <style>
+      section.hero.bg-top{
+        background-position:top;
+        background-repeat: no-repeat;
+        background-color: #FF504B 
+      } 
+
+      .banner-image-position{
+        background-image:url('https://www.encora.com/hubfs/Technology%20Trends/2023/Above%20the%20fold%20%281%29.png');
+        background-position:center bottom;
+        background-size:cover
+      }
+
+      .hero-text-tech-trends{
+        font-size: 3rem;
+        font-weight: bold;
+        letter-spacing: 0.2em;
+      }
+      .stroke-font{
+        color: transparent;
+      }
+
+      .white-stroke{
+        -webkit-text-stroke: 2px #fff; /* width and color */
+      }
+      .font-larger{
+        font-size: 3.5rem;
+      }
+      .shadow-white{
+        box-shadow: 0px 0px 18px 2px #fff;
+      }
+      .negative-mt-6{
+        margin-top: -8rem;
+      }
+
+      .my-6 {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+      }
+
+      .slide-form.default-form label:not(.hs-error-msg):not(.file-input-label):not(.slide-form.default-form .legal-consent-container label) span,
+      .slide-form.default-form.purple .legal-consent-container p{
+        color:#44197E;
+      }
+
+      .slide-form.default-form .legal-consent-container input[type=checkbox]{
+        border-color:#44197E;
+      }
+
+      .default-form.field-borders-purple select:not(:focus), .default-form.field-borders textarea:not(:focus), .default-form.field-borders input:not([type=submit]):not([type=checkbox]):not(:focus),
+       .trends .full-width, .default-form input:not([type=submit]):not(.file-box):not([type=checkbox]), .default-form select:not([type=submit]):not(.file-box):not([type=checkbox]), .default-form textarea{
+        border: 2px solid #44197E;
+        color:#262429;
+        border-radius:10px;
+      }
+      
+      
+      .trends .slide-form.default-form label:not(.hs-error-msg):not(.file-input-label):not(.slide-form.default-form .legal-consent-container label) span,
+      .slide-form.default-form.purple .legal-consent-container p{
+        color: #fff !important;;
+      }
+
+      .trends .slide-form.default-form .legal-consent-container input[type=checkbox]{
+        border-color: #fff !important;;
+      }
+
+      .trends  .default-form.field-borders-purple select:not(:focus), .default-form.field-borders textarea:not(:focus), .default-form.field-borders input:not([type=submit]):not([type=checkbox]):not(:focus),
+       .trends .full-width, .default-form input:not([type=submit]):not(.file-box):not([type=checkbox]), .default-form select:not([type=submit]):not(.file-box):not([type=checkbox]), .default-form textarea{
+        border: 2px solid #fff !important;
+        color: #fff !important;
+        border-radius:10px;
+      }
+      
+      
+      .trends .default-form textarea{
+        color: #262429 !important;
+        border-radius:10px;
+      }
+      
+      .default-form-search input:not([type=submit]):not(.file-box):not([type=checkbox]){
+         border: 2px solid #44197E !important;
+        color: #262429 !important;
+        border-radius:10px;
+        padding: 15px 24px;
+      }
+      
+      .trends .default-form .hs-fieldtype-booleancheckbox input[type=checkbox]{
+        background-color: unset !important;
+      }
+      
+      .bg-body{
+        background-image: url('https://www.encora.com/hubfs/Technology%20Trends/2023/Main%20Page.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+    
+    
+
+    <div id="hs_cos_wrapper_progress" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+  <div class="progress-container" style="background: rgba(204, 204, 204,0.0);height: 4px;">
+    <div id="45fc868d2afd34d815beecad460b9e3cprogressBar" style="background: rgba(255, 86, 77,1.0);height: 4px;" class="progress-bar"></div>
+  </div>
+
+
+</div>
+    <!-- ------------------------------------------ HERO - NAV ------------------------------------------ -->
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+
+    <div class="rounded-bottom-right ">
+      <section class="hero hero-loading hero-new bg-black text-white bg-topography">
+        
+        <!-- Begin partial -->
+
+<style>
+
+  .lang_switcher_class li {
+    margin-bottom: 0;
+  }
+  .lang_list_class li,
+  .lang_list_class li:first-child,
+  .lang_list_class li:last-child,
+  .lang_list_class::before {
+    border: 0;
+  }
+  .lang_list_class {
+    box-shadow: 0px 14px 10px 0 rgba(0,0,0,.2);
+  }
+  .globe_class {
+    background-image: url(https://www.encora.com/hubfs/Website_Assets/globe.svg)!important;
+    filter: invert(1);
+    margin-top: 2px;
+  }
+  .globe_class .lang_list_class {
+    transition: all .3s;
+    position: relative;
+    top:-20px;
+    opacity: 0;
+  }
+  .globe_class:hover .lang_list_class {
+    transition: all .3s;
+    position: absolute;
+    top: 20px;
+    opacity: 1;
+  }
+  .nav-item.context-menu ul.second-level-menu{
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    z-index:1;
+
+  }
+
+  .nav-item.context-menu ul.second-level-menu{
+    background: rgba(138,132,148,0.7);
+  }
+
+  #mainNav{
+    transition: top 0.3s;
+  }
+
+  .nav {
+    position: relative ;
+    top: 0;
+    width:100%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-image:linear-gradient(180deg,rgba(0,0,0,.75),transparent);
+    padding-bottom: 2rem;
+    /*transition: .3s linear all;*/
+  }
+
+  .nav-current, .nav-item:hover {
+    box-shadow: 0 2px 0 #ff564d;
+  }
+
+  .relative{
+    position:relative !important;
+  }
+
+  .fixed{
+    position:fixed !important;
+  }
+
+  #upperNav{
+    filter:none;
+    border-bottom:1px solid #F2F1F3;
+  }
+  .font-size-base-1{
+    font-size:1rem !important;
+  }
+
+  nav.upper-nav .container{
+    justify-content:end;
+  }
+
+  .nav-logo.letter{
+    fill: #303030;
+    transition: .1s ease-in all;
+  }
+
+  .box-shadow-none{
+    box-shadow:none!important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+  }
+
+
+  .nav-scrolled { 
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    background-color:white; 
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-image:none;
+  }
+
+  .z-index-6{
+    z-index:6;
+  }
+
+  .upper-nav{
+    z-index:7;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.07));
+  }
+
+
+
+
+  /*  This to main stylesheet  */
+  @media (min-width: 1001px){
+    nav.nav .nav-link {
+      font-size: 0.9rem;
+      line-height: 1.5em;
+    }
+  }
+
+  @media(max-width: 1200px){
+    .nav-scrolled .nav-logo .letter
+    {
+      fill: #303030;
+      transition: .1s ease-in all; 
+    }
+
+    .nav-open::before{
+      background: #262429;
+      color: #262429;
+      transition: .1s ease-in all;
+    }
+  }
+
+  @media(max-width:1200px){
+    .upper-nav{
+      display:none;
+    }
+  }
+
+  @media (min-width: 1200px){
+    .nav-first {
+      display: none !important;
+    }
+
+    .nav-scrolled .nav-logo .letter {
+      fill: #303030;
+      transition: .1s ease-in all; 
+    }
+
+    .nav-scrolled .container .nav-list .nav-item .nav-link {
+      color: black;
+    }
+
+    .nav-scrolled .container .nav-list .nav-item .nav-search-button{
+      background-image: url(https://www.encora.com/hubfs/Website_Assets/icons/search-icon.svg);
+    }
+
+    .globe_class_invert{
+      filter: invert(1);
+      margin-top: 2px;
+    }
+
+    .nav-scrolled .container .nav-list .nav-item.context-menu a.nav-link:after {
+      border: 2px solid #000;
+      border-top: none;
+      border-right: none;
+    }
+  }
+
+  .nav-item .button {
+    padding: 5px 10px;
+    text-transform: none;
+  }
+
+  .nav-link.button{
+    color: white !important;
+  }
+
+  .nav-search-black {
+    background-image: url(https://www.encora.com/hubfs/Website_Assets/icons/search-icon.svg);
+  }
+
+  @supports (-moz-appearance:none) {
+    .nav-item.context-menu ul.second-level-menu{
+      background: rgba(138,132,148,.97);
+    }
+  }
+
+</style>
+
+
+
+<nav id="upperNav" class="nav upper-nav nav-scrolled nav-opaque p-0">
+  <div class="container">
+    <a href="#" class="nav-open">Menu
+      </a><ul class="nav-list"><a href="#" class="nav-open">
+        <li class="nav-item desktop-hide">
+          <span id="hs_cos_wrapper_module_16207843045272_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_language_switcher" style="" data-hs-cos-general-type="widget" data-hs-cos-type="language_switcher"><div class="lang_switcher_class">
+   <div class="globe_class" onclick="">
+       <ul class="lang_list_class">
+           <li>
+               <a class="lang_switcher_link" data-language="en" lang="en" href="https://www.encora.com/insights/natural-language-processing-and-machine-learning">English</a>
+           </li>
+           <li>
+               <a class="lang_switcher_link" data-language="es" lang="es" href="https://www.encora.com/es/blog/natural-language-processing-and-machine-learning">Español</a>
+           </li>
+       </ul>
+   </div>
+</div></span>
+        </li></a>
+              
+        
+        <li class="nav-item  nav-first ">
+          <a href="https://www.encora.com" class="nav-link font-size-base-1 ">Home</a>
+          
+        </li>
+        
+        <li class="nav-item  context-menu">
+          <a href="https://www.encora.com/about" class="nav-link font-size-base-1 ">About</a>
+          
+          <ul class="second-level-menu">
+            
+            <li>
+              <a class="font-secondary text-white" href="https://www.encora.com/news">News</a>
+            </li>
+            
+            <li>
+              <a class="font-secondary text-white" href="https://www.encora.com/about#leadership">Leadership</a>
+            </li>
+            
+            <li>
+              <a class="font-secondary text-white" href="https://www.encora.com/awards">Awards &amp; Recognitions</a>
+            </li>
+            
+            <li>
+              <a class="font-secondary text-white" href="https://www.encora.com/about#whoweare">Who We Are</a>
+            </li>
+            
+          </ul>
+          
+        </li>
+        
+        <li class="nav-item  ">
+          <a href="https://www.encora.com/careers" class="nav-link font-size-base-1 ">Careers <span class="arrow-1"></span></a>
+          
+        </li>
+        
+        
+        <li><a href="#" class="nav-close">Close Menu</a></li>
+      </ul>
+    
+  </div>
+</nav>
+
+<nav id="mainNav" class="nav nav-opaque nav-scrolled z-index-6 main-nav relative">
+  <div class="container">
+    <a class="d-flex align-items-center" href="/" aria-label="Encora">
+      <svg class="nav-logo" style="height:2rem;" width="902" height="182" viewbox="0 0 902 182" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M221.585 52.5509C229.68 60.3044 233.814 72.0209 233.814 87.3557V146.11C233.814 147.316 232.78 148.35 231.575 148.35H211.079C209.873 148.35 208.84 147.316 208.84 146.11V90.6294C208.84 81.3252 206.601 74.2608 202.295 69.6087C197.989 64.9565 191.616 62.5444 183.522 62.5444C174.393 62.5444 167.159 65.3012 161.82 70.8148C156.481 76.3284 153.897 84.2543 153.897 94.5923V146.11C153.897 147.316 152.864 148.35 151.658 148.35H131.335C130.129 148.35 129.096 147.316 129.096 146.11V49.1049C129.096 43.2466 136.157 40.1452 140.463 44.1081L152.864 55.6523C156.998 50.6556 162.165 47.0373 168.365 44.4528C174.565 41.8682 181.627 40.6621 189.55 40.6621C202.639 40.8344 213.49 44.625 221.585 52.5509Z" fill="none" class="letter" />
+        <path d="M281.523 142.664C272.739 138.012 265.85 131.465 261.027 123.194C256.032 114.924 253.621 105.447 253.621 94.9369C253.621 84.4266 256.032 75.1223 261.027 66.8519C266.022 58.5814 272.739 52.2063 281.351 47.5542C289.962 42.902 299.952 40.6621 311.147 40.6621C321.653 40.6621 330.782 42.7297 338.704 47.0373C345.938 51.0002 351.622 56.3415 355.583 63.4059C356.1 64.4397 355.756 65.818 354.722 66.335L339.221 75.2946C338.188 75.8115 336.982 75.6392 336.293 74.6054C333.365 70.4702 329.921 67.3687 325.959 65.3011C321.309 62.8889 316.314 61.6829 310.975 61.6829C301.674 61.6829 293.924 64.7843 287.896 70.8148C281.867 76.8453 278.767 84.9435 278.767 94.9369C278.767 105.103 281.867 113.029 287.896 119.059C293.924 125.09 301.674 128.191 311.147 128.191C316.659 128.191 321.653 126.985 326.131 124.573C330.093 122.333 333.537 119.231 336.465 115.268C337.154 114.407 338.36 114.062 339.393 114.579L354.722 123.539C355.756 124.228 356.1 125.434 355.583 126.64C351.45 133.705 345.938 139.218 338.532 143.181C330.609 147.489 321.481 149.729 311.147 149.729C300.124 149.729 290.307 147.316 281.523 142.664Z" fill="none" class="letter" />
+        <path d="M395.713 142.664C387.102 138.012 380.384 131.465 375.562 123.194C370.739 114.924 368.328 105.447 368.328 94.937C368.328 84.4266 370.739 75.1224 375.562 66.8519C380.384 58.5814 387.102 52.2063 395.713 47.5542C404.325 42.902 413.97 40.6621 424.821 40.6621C435.671 40.6621 445.489 42.902 454.1 47.5542C462.712 52.2063 469.429 58.5814 474.252 66.8519C479.074 75.1224 481.486 84.4266 481.486 94.937C481.486 105.447 479.074 114.752 474.252 123.194C469.429 131.465 462.712 138.012 454.1 142.664C445.489 147.317 435.671 149.556 424.821 149.556C413.97 149.729 404.325 147.317 395.713 142.664ZM447.383 119.231C453.412 113.201 456.339 105.103 456.339 95.1093C456.339 85.1158 453.412 77.19 447.383 70.9871C441.355 64.9566 433.777 61.8551 424.649 61.8551C415.52 61.8551 407.942 64.9566 402.086 70.9871C396.23 77.0177 393.302 85.1158 393.302 95.1093C393.302 105.103 396.23 113.029 402.086 119.231C407.942 125.262 415.52 128.363 424.649 128.363C433.949 128.363 441.527 125.262 447.383 119.231Z" fill="none" class="letter" />
+        <path d="M524.027 148.351C525.232 148.351 526.266 147.317 526.266 146.111V86.1501V84.5994C526.266 77.1904 528.505 72.0214 532.983 68.0585C537.461 64.0956 542.973 62.028 551.756 62.028C551.756 62.028 555.89 62.028 560.368 62.5449C561.746 62.7172 562.779 61.6833 562.779 60.3049V44.281C562.779 43.2472 561.918 42.2133 560.885 42.041C556.751 41.3518 551.756 40.835 547.278 40.835C532.122 40.835 521.96 44.6256 513.693 52.0345C505.426 59.6158 501.292 70.8153 501.292 85.9778V146.111C501.292 147.317 502.325 148.351 503.531 148.351H524.027Z" fill="none" class="letter" />
+        <path d="M102.228 67.0247C97.5772 58.7542 91.2046 52.2068 83.1096 47.727C75.0146 43.0749 65.714 40.835 55.38 40.835C44.8738 40.835 35.4009 43.0749 27.1337 47.727C18.6943 52.3791 12.3216 58.9265 7.49909 67.197C2.84878 75.4674 0.4375 84.7717 0.4375 95.1098C0.4375 105.62 2.84878 114.924 7.67132 123.367C12.4939 131.638 19.3832 138.185 28.3393 142.837C37.2955 147.489 47.4573 149.729 59.1692 149.729C68.2975 149.729 76.5647 148.351 83.7986 145.422C90.5157 142.837 96.0271 138.874 100.677 133.878C101.366 133.016 101.366 131.81 100.677 130.948L90.1712 118.887C89.31 118.026 87.9321 117.853 87.071 118.715C79.8372 125.435 70.7088 128.708 59.8581 128.708C50.7297 128.708 42.9792 126.469 36.951 121.816C30.7506 117.164 26.9615 110.961 25.5836 103.208H105.672C107.567 103.208 109.117 101.83 109.117 99.9342C109.289 98.2112 109.289 97.0051 109.289 95.799C109.117 84.7717 106.878 75.2951 102.228 67.0247ZM35.2287 67.7139C40.7402 63.0618 47.4573 60.6496 55.38 60.6496C63.475 60.6496 70.1921 63.0618 75.7036 67.8862C80.5261 72.0214 83.6263 77.3628 85.0042 83.7379H25.5836C27.1337 77.1905 30.2339 71.8492 35.2287 67.7139Z" fill="none" class="letter" />
+        <path d="M645.452 148.351H663.881C665.087 148.351 666.12 147.317 666.12 146.111V85.9781C666.12 70.8156 661.986 59.4438 653.719 52.0349C645.452 44.4536 631.329 40.3184 615.656 40.3184C605.666 40.3184 599.293 41.0076 592.404 42.0414C591.371 42.2137 590.51 43.2475 590.51 44.2813V60.133C590.51 61.5114 591.715 62.5452 593.093 62.3729C602.738 60.9945 624.267 58.41 634.601 67.3696C639.079 71.3326 641.318 77.0185 641.318 84.4274V85.9781H613.761C598.432 85.9781 587.237 88.9072 580.176 94.5932C573.114 100.451 569.497 108.033 569.497 117.682C569.497 123.712 571.047 129.226 574.32 134.05C577.592 138.875 582.242 142.665 588.098 145.422C594.126 148.179 601.016 149.557 608.939 149.557C618.928 149.557 633.396 145.767 642.869 136.118V145.939C643.213 147.317 644.246 148.351 645.452 148.351ZM641.318 119.232C636.668 126.469 623.751 131.638 614.45 131.638C608.077 131.638 603.083 130.26 599.466 127.675C595.849 125.09 594.126 121.472 594.126 116.992C594.126 107.516 601.36 102.864 615.656 102.864H641.318V119.232Z" fill="none" class="letter" />
+        <path d="M838.699 3.10083L822.164 65.1292C818.719 78.0517 826.47 91.4912 839.387 94.9372L901.219 111.478C902.942 104.758 899.841 97.694 893.641 94.5926L860.228 78.0517C851.444 73.9165 846.277 64.7845 847.138 55.308L849.721 18.6079C850.238 11.3713 845.588 4.82384 838.699 3.10083Z" fill="#F5BC18" />
+        <path d="M856.266 65.129C858.505 69.092 862.122 72.021 866.083 73.3994C867.117 73.744 868.322 73.744 869.356 73.0548L886.407 63.2337C892.952 59.4431 895.191 50.8281 891.057 44.2806C887.096 38.0778 878.829 36.3548 872.628 40.1454L855.922 49.7942C854.888 50.3111 854.199 51.3449 854.027 52.5511C853.166 56.6863 853.855 61.1661 856.266 65.129Z" fill="#F5BC18" />
+        <path d="M723.302 63.5786L785.306 80.1195C798.223 83.5655 811.658 75.812 815.102 62.8894L831.637 1.03336C824.92 -0.689652 817.858 2.41176 814.758 8.61459L798.223 42.041C794.09 50.8283 784.961 55.9974 775.489 55.1359L738.803 52.5513C731.569 52.2067 725.024 56.6865 723.302 63.5786Z" fill="#40C1EF" />
+        <path d="M785.306 46.176C789.267 43.9361 792.195 40.3178 793.573 36.3549C793.917 35.3211 793.917 34.115 793.228 33.0811L783.411 16.0234C779.622 9.47592 771.01 7.23598 764.465 11.3712C758.265 15.3341 756.543 23.6046 760.332 29.8074L769.977 46.5206C770.494 47.5544 771.527 48.2436 772.733 48.4159C776.866 49.1051 781.344 48.416 785.306 46.176Z" fill="#40C1EF" />
+        <path d="M783.928 178.503L800.462 116.475C803.907 103.553 796.157 90.1131 783.239 86.6671L721.407 70.1262C719.685 76.846 722.785 83.9103 728.986 87.0117L762.399 103.553C771.183 107.688 776.35 116.82 775.489 126.296L772.905 162.996C772.388 170.233 777.039 176.78 783.928 178.503Z" fill="#8FC640" />
+        <path d="M766.36 116.475C764.121 112.512 760.504 109.583 756.543 108.205C755.51 107.86 754.304 107.86 753.271 108.549L736.219 118.371C729.675 122.161 727.436 130.776 731.569 137.324C735.531 143.527 743.798 145.25 749.998 141.459L766.705 131.81C767.738 131.293 768.427 130.259 768.599 129.053C769.461 124.918 768.772 120.438 766.36 116.475Z" fill="#8FC640" />
+        <path d="M899.324 118.026L837.32 101.485C824.403 98.0387 810.968 105.792 807.524 118.715L790.989 180.571C797.706 182.294 804.768 179.192 807.868 172.99L824.403 139.563C828.536 130.776 837.665 125.607 847.137 126.468L883.823 129.053C891.057 129.397 897.602 124.918 899.324 118.026Z" fill="#F15A52" />
+        <path d="M837.32 135.428C833.358 137.668 830.43 141.286 829.052 145.249C828.708 146.283 828.708 147.489 829.397 148.523L839.214 165.58C843.003 172.128 851.615 174.368 858.16 170.233C864.36 166.27 866.083 157.999 862.294 151.796L852.648 135.083C852.132 134.049 851.098 133.36 849.893 133.188C845.759 132.499 841.281 133.188 837.32 135.428Z" fill="#F15A52" />
+      </svg>
+    </a>
+    <a href="#" class="nav-open">Menu</a>
+    <ul id="main_nav_list" class="nav-list">
+      <li class="nav-item desktop-hide">
+        <span id="hs_cos_wrapper_module_16207843045272_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_language_switcher" style="" data-hs-cos-general-type="widget" data-hs-cos-type="language_switcher"><div class="lang_switcher_class">
+   <div class="globe_class" onclick="">
+       <ul class="lang_list_class">
+           <li>
+               <a class="lang_switcher_link" data-language="en" lang="en" href="https://www.encora.com/insights/natural-language-processing-and-machine-learning">English</a>
+           </li>
+           <li>
+               <a class="lang_switcher_link" data-language="es" lang="es" href="https://www.encora.com/es/blog/natural-language-processing-and-machine-learning">Español</a>
+           </li>
+       </ul>
+   </div>
+</div></span>
+      </li>
+            
+      
+      <li class="nav-item  nav-first ">
+        <a href="https://www.encora.com" class="nav-link font-size-base-1 ">Home</a>
+        
+      </li>
+      
+      <li class="nav-item  context-menu">
+        <a href="https://www.encora.com/services" class="nav-link font-size-base-1 ">Our Services</a>
+        
+        <ul class="second-level-menu">
+          
+          <li>
+            <a class="font-secondary text-white" href="https://www.encora.com/services/envision">Envision Strategy</a>
+          </li>
+          
+          <li>
+            <a class="font-secondary text-white" href="https://www.encora.com/services/enable">Enable Infrastructure</a>
+          </li>
+          
+          <li>
+            <a class="font-secondary text-white" href="https://www.encora.com/services/engineer">Engineer Software</a>
+          </li>
+          
+          <li>
+            <a class="font-secondary text-white" href="https://www.encora.com/services/engage">Engage The Market</a>
+          </li>
+          
+          <li>
+            <a class="font-secondary text-white" href="https://www.encora.com/technology-practices">Technology Practices</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li class="nav-item  context-menu">
+        <a href="https://www.encora.com/our-work" class="nav-link font-size-base-1 ">Our Work</a>
+        
+        <ul class="second-level-menu">
+          
+          <li>
+            <a class="font-secondary text-white" href="https://www.encora.com/our-work#industries">Focus Industries</a>
+          </li>
+          
+          <li>
+            <a class="font-secondary text-white" href="https://www.encora.com/success">Client Success Stories</a>
+          </li>
+          
+          <li>
+            <a class="font-secondary text-white" href="https://www.encora.com/innovation-accelerators">Innovation Accelerators</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li class="nav-item  ">
+        <a href="https://nearshore.encora.com" class="nav-link font-size-base-1 ">Nearshore</a>
+        
+      </li>
+      
+      <li class="nav-item  context-menu">
+        <a href="https://www.encora.com/partners" class="nav-link font-size-base-1 ">Partners</a>
+        
+        <ul class="second-level-menu">
+          
+          <li>
+            <a class="font-secondary text-white" href="https://www.encora.com/partnerships">Partner Ecosystem</a>
+          </li>
+          
+          <li>
+            <a class="font-secondary text-white" href="https://www.encora.com/aws-partnership">AWS</a>
+          </li>
+          
+          <li>
+            <a class="font-secondary text-white" href="https://www.encora.com/microsoft-azure-partnership">Azure</a>
+          </li>
+          
+          <li>
+            <a class="font-secondary text-white" href="https://www.encora.com/partnership-and-snowflake">Snowflake</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li class="nav-item  context-menu">
+        <a href="https://www.encora.com/insights" class="nav-link font-size-base-1 ">Insights</a>
+        
+        <ul class="second-level-menu">
+          
+          <li>
+            <a class="font-secondary text-white" href="https://www.encora.com/insights">Featured Insights</a>
+          </li>
+          
+          <li>
+            <a class="font-secondary text-white" href="https://www.encora.com/insights/all">Latest Articles</a>
+          </li>
+          
+          <li>
+            <a class="font-secondary text-white" href="https://www.encora.com/insights/tag/technical-blog">Technical Blogs</a>
+          </li>
+          
+          <li>
+            <a class="font-secondary text-white" href="https://www.encora.com/insights/tag/dojo">Video Blogs</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li class="nav-item  context-menu">
+        <a href="https://www.encora.com/about" class="nav-link font-size-base-1 ">About</a>
+        
+        <ul class="second-level-menu">
+          
+          <li>
+            <a class="font-secondary text-white" href="https://www.encora.com/news">News</a>
+          </li>
+          
+          <li>
+            <a class="font-secondary text-white" href="https://www.encora.com/about#leadership">Leadership</a>
+          </li>
+          
+          <li>
+            <a class="font-secondary text-white" href="https://www.encora.com/awards">Awards &amp; Recognitions</a>
+          </li>
+          
+          <li>
+            <a class="font-secondary text-white" href="https://www.encora.com/about#whoweare">Who We Are</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li class="nav-item  ">
+        <a href="https://www.encora.com/careers" class="nav-link font-size-base-1 ">Careers</a>
+        
+      </li>
+      
+      <li class="nav-item  ">
+        <a href="https://www.encora.com/contact" class="nav-link font-size-base-1 button button-purple">Contact Us</a>
+        
+      </li>
+      
+      <li class="nav-item nav-search">        
+        <form action="/hs-search-results">      
+          <input tabindex="-1" aria-hidden="true" type="text" class="hs-search-field__input nav-search-field" name="term" autocomplete="off" aria-label="Search" placeholder="Search">
+          <input tabindex="-1" aria-hidden="true" type="hidden" name="type" value="SITE_PAGE">
+          <input tabindex="-1" aria-hidden="true" type="hidden" name="type" value="LANDING_PAGE">
+          <input tabindex="-1" aria-hidden="true" type="hidden" name="type" value="BLOG_POST">
+          <input tabindex="-1" aria-hidden="true" type="hidden" name="type" value="LISTING_PAGE">
+          <button type="submit" class="nav-search-button">
+            Search
+          </button>
+          <a tabindex="-1" aria-hidden="true" href="#" class="nav-search-close">Close</a>
+        </form>  
+      </li>
+      <li class="nav-item mobile-hide">
+        <span id="hs_cos_wrapper_module_16207843045271_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_language_switcher" style="" data-hs-cos-general-type="widget" data-hs-cos-type="language_switcher"><div class="lang_switcher_class">
+   <div class="globe_class" onclick="">
+       <ul class="lang_list_class">
+           <li>
+               <a class="lang_switcher_link" data-language="en" lang="en" href="https://www.encora.com/insights/natural-language-processing-and-machine-learning">English</a>
+           </li>
+           <li>
+               <a class="lang_switcher_link" data-language="es" lang="es" href="https://www.encora.com/es/blog/natural-language-processing-and-machine-learning">Español</a>
+           </li>
+       </ul>
+   </div>
+</div></span>
+      </li>
+      <li><a href="#" class="nav-close">Close Menu</a></li>
+    </ul>
+  </div>
+</nav>
+<div id="under_nav" class="mb-0">
+
+</div>
+
+<script>
+  // ---------------- Hide About and Careers <li> based on windows size----------------
+  let setLiDisplay = (list_to_hide, display_type) => {
+    let ul = document.getElementById("main_nav_list");
+    let items = [...ul.getElementsByTagName("li")];
+    items.map(item => {
+      if(list_to_hide.includes(item.innerText.trim().split('\n')[0])){
+        item.style.display = display_type;
+      }
+    });
+  };
+
+  let checkWindowSize = function(){
+    if (window.innerWidth > 1200) {
+      setLiDisplay(["About","Careers","Nosotros","Empleos"],"none");
+    } else {
+      setLiDisplay(["About","Careers","Nosotros","Empleos"],"list-item");
+    }
+  }
+  checkWindowSize();
+  window.addEventListener('resize',checkWindowSize);
+
+
+  // ---------------- Hide box shadow of contact button----------------
+
+  let removeLiShadow = function(list_to_hide){
+    let ul = document.getElementById("main_nav_list");
+    let items = [...ul.getElementsByTagName("li")];
+    items.map(item => {
+      if("Contact Us".includes(item.innerText.trim().split('\n')[0]) || "Contacto".includes(item.innerText.trim().split('\n')[0]) ){
+        item.style.boxShadow  = "none";
+      }
+    });
+  }
+  removeLiShadow();
+  // -------------------------------------------------------------------------------
+  // 
+  // ---------------- Control fixed nav behaviour ----------------
+  function setFixedNav(){
+    var mainNav = document.getElementById("mainNav");
+    var initialPos = mainNav.getBoundingClientRect().top;
+    var nav = document.querySelector("nav.nav.main-nav");
+    var underNav=document.getElementById("under_nav");
+    window.addEventListener("scroll", function() {
+      if(window.pageYOffset > initialPos) {
+        nav.classList.replace("relative", "fixed");
+        underNav.classList.replace("mb-0", "mb-0");
+      }
+      else {
+        nav.classList.replace("fixed", "relative");
+        underNav.classList.replace("mb-0", "mb-0");
+      }
+    });
+  }
+  setFixedNav()
+  // -------------------------------------------------------------------------------
+
+</script>
+
+<!-- End partial -->
+        <div class="container">
+  <div class="columns equal-2 relative mt-4 pb-4">
+    <div class="hero-carousel-cont overflow-hidden">
+      <div class="d-flex-column justify-content-center" style="height:100%;">
+        <div class=" left-border border-white">
+          
+            <h1 class="hero-headline h1">
+                Insights
+            </h1>
+          
+          
+          <div class="lead subheadline">
+            Encora shares perspectives on emerging insights, challenges, and trends across the industries in which we work
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
+    <div class="mobile-hide d-flex-column justify-content-around">
+      
+    </div>
+  </div>
+        
+      </div></section>
+    </div>
+    
+    
+    
+    <div class="bg-grey rounded-bottom-left">
+      <section class="bg-white">
+        <div class="container">
+          <div class="columns one-quarter-inverse">
+            <div style="max-width: 40vw; min-width: 100%;">
+              <section class="pb-0">
+                <div>
+                  <h1 class="text-brand-black mb-1">
+                    <span id="hs_cos_wrapper_name" class="hs_cos_wrapper hs_cos_wrapper_meta_field hs_cos_wrapper_type_text" style="" data-hs-cos-general-type="meta_field" data-hs-cos-type="text">Natural Language Processing and Machine Learning</span>
+                  </h1>
+                  <!--            Has real author        -->
+                  <!--            Has no a real author        -->
+                  <p class="text-grey-dark my-0">
+                    
+                    Ximena Bolaños 
+                    
+                    <!--          Colab Author            -->
+                    
+                    <!--   END       Colab Author            -->
+                    | September 29, 2021
+                  </p>
+                  
+
+                </div>
+              </section>
+              <div class=" bg-white rounded-bottom-right">
+                <section class=" block bg-white pt-2">
+                  <div class="text-grey-dark post-body-container font-size-base ">
+                    <span id="hs_cos_wrapper_post_body" class="hs_cos_wrapper hs_cos_wrapper_meta_field hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="meta_field" data-hs-cos-type="rich_text"><p style="text-align: left;">Natural Language Processing (NLP) is part of everyday life and it is essential to our lives at home and at work. Without giving it much thought, we send voice commands to our virtual home assistants, our smartphones, and even our vehicles. Voice-enabled applications such as Alexa, Siri, and Google Assistant use NLP and <a href="/services/artificial-intelligence-machine-learning" rel="noopener">Machine Learning (ML)</a> to answer our questions, add activities to our calendars and call the contacts that we state in our voice commands. NLP is not only making our lives easier, but revolutionizing the way we work, live, and play.</p>
+<p style="text-align: left;">Work with us! <a href="/contact" rel="noopener">Let's talk!</a></p>
+<!--more-->
+<p style="text-align: left;"><span><img src="https://www.encora.com/hs-fs/hubfs/Alexa.png?width=800&amp;name=Alexa.png" alt="Alexa by Amazon at home" width="800" style="width: 800px;" srcset="https://www.encora.com/hs-fs/hubfs/Alexa.png?width=400&amp;name=Alexa.png 400w, https://www.encora.com/hs-fs/hubfs/Alexa.png?width=800&amp;name=Alexa.png 800w, https://www.encora.com/hs-fs/hubfs/Alexa.png?width=1200&amp;name=Alexa.png 1200w, https://www.encora.com/hs-fs/hubfs/Alexa.png?width=1600&amp;name=Alexa.png 1600w, https://www.encora.com/hs-fs/hubfs/Alexa.png?width=2000&amp;name=Alexa.png 2000w, https://www.encora.com/hs-fs/hubfs/Alexa.png?width=2400&amp;name=Alexa.png 2400w" sizes="(max-width: 800px) 100vw, 800px"></span></p>
+<h2 style="text-align: left; font-size: 36px;"><span>Differences between Natural Language Processing and Machine Learning</span></h2>
+<p>Although Natural Language Processing, <a href="/machine-learning" rel="noopener">Machine Learning</a>, and Artificial Intelligence are sometimes used interchangeably, they have different definitions. AI is an umbrella term for machines that can simulate human intelligence, while NLP and ML are both subsets of AI. <br><br><a href="/services/artificial-intelligence-machine-learning" rel="noopener"><span style="font-weight: bold;">Artificial Intelligence</span></a> is a part of the greater field of Computer Science that enables computers to solve problems previously handled by biological systems. AI has many applications in today's society. NLP and ML are both parts of AI. <br><br><span style="font-weight: bold;">Natural Language Processing</span> is a form of AI that gives machines the ability to not just read, but to understand and interpret human language. With NLP, machines can make sense of written or spoken text and perform tasks including speech recognition, sentiment analysis, and automatic text summarization. <br><br><a href="/services/artificial-intelligence-machine-learning" rel="noopener"><span style="font-weight: bold;">Machine Learning</span></a> is an application of AI that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. Machine Learning can be used to help solve AI problems and to improve NLP by automating processes and delivering accurate responses.</p>
+<p style="text-align: left;"><span><img src="https://www.encora.com/hs-fs/hubfs/Blog-EncoraML.png?width=800&amp;name=Blog-EncoraML.png" alt="Circular graphic with Aritifical Intelligence, Machine Learning, Language Processing and Deep Learning relationship" width="800" style="width: 800px;" srcset="https://www.encora.com/hs-fs/hubfs/Blog-EncoraML.png?width=400&amp;name=Blog-EncoraML.png 400w, https://www.encora.com/hs-fs/hubfs/Blog-EncoraML.png?width=800&amp;name=Blog-EncoraML.png 800w, https://www.encora.com/hs-fs/hubfs/Blog-EncoraML.png?width=1200&amp;name=Blog-EncoraML.png 1200w, https://www.encora.com/hs-fs/hubfs/Blog-EncoraML.png?width=1600&amp;name=Blog-EncoraML.png 1600w, https://www.encora.com/hs-fs/hubfs/Blog-EncoraML.png?width=2000&amp;name=Blog-EncoraML.png 2000w, https://www.encora.com/hs-fs/hubfs/Blog-EncoraML.png?width=2400&amp;name=Blog-EncoraML.png 2400w" sizes="(max-width: 800px) 100vw, 800px"></span></p>
+<p style="text-align: left;"><span>As</span><span>&nbsp;</span><span>&nbsp; we can see in Figure 1, NLP and ML are part of AI and both subsets share techniques, algorithms, and knowledge.</span></p>
+<h2 style="text-align: left; font-size: 36px;"><span>How Natural Language Processing can be applied</span></h2>
+<p style="text-align: left;">Some NLP-based solutions include translation, speech recognition, sentiment analysis, question/answer systems, chatbots, automatic text summarization, market intelligence, automatic text classification, and automatic grammar checking. These technologies help organizations to analyze data, discover insights, automate time-consuming processes and/or gain competitive advantages.</p>
+<h3 style="text-align: left;"><span>Translation</span></h3>
+<p style="text-align: left;">Translating languages is more complex than a simple word-to-word replacement method. Since each language has grammar rules, the challenge of translating a text is to do so without changing its meaning and style. Since computers do not understand grammar, they need a process in which they can deconstruct a sentence, then reconstruct it in another language in a way that makes sense. <br><br>Google Translate is one of the most well-known online translation tools. Google Translate once used Phrase-Based Machine Translation (PBMT), which looks for similar phrases between different languages. At present, Google uses Google Neural Machine Translation (GNMT) instead, which uses ML with NLP to look for patterns in languages.</p>
+<h3 style="text-align: left;"><span>Speech recognition </span></h3>
+<p style="text-align: left;">Speech recognition is a machine’s ability to identify and interpret phrases and words from spoken language and convert them into a machine-readable format. It uses NLP to allow computers to simulate human interaction, and <a href="/services/artificial-intelligence-machine-learning" rel="noopener">ML </a>to respond in a way that mimics human responses. <br><br>Google Now, Alexa, and Siri are some of the most popular examples of speech recognition. Simply by saying ‘call Jane’, a mobile device recognizes what that command means and will now make a call to the contact saved as Jane.</p>
+<h3 style="text-align: left;"><span>Sentiment Analysis</span></h3>
+<p style="text-align: left;">Sentiment analysis uses NLP and <a href="/services/artificial-intelligence-machine-learning" rel="noopener">ML</a> to interpret and analyze emotions in subjective data like news articles and tweets. Positive, negative, and neutral opinions can be identified to determine a customer’s sentiment towards a brand, product, or service. Sentiment analysis is used to gauge public opinion, monitor brand reputation, and better understand customer experiences. <br><br>The stock market is a sensitive field that can be heavily influenced by human emotion. Negative sentiment can lead stock prices to drop, while positive sentiment may trigger people to buy more of the company’s stock, causing stock prices to increase.</p>
+<h3 style="text-align: left;"><span>Chatbots</span></h3>
+<p style="text-align: left;">Chatbots are programs used to provide automated answers to common customer queries. They have pattern recognition systems with heuristic responses, which are used to hold conversations with humans. Initially, chatbots were used to answer basic questions to alleviate heavy volume call centers and offer quick customer support services.<br><br>But AI-powered chatbots are designed to handle more complicated requests making conversational experiences increasingly intuitive. Chatbots in healthcare, for example, can collect intake data, help patients assess their symptoms, and determine next steps. These chatbots can set up appointments with the right doctor and even recommend treatments.</p>
+<h3 style="text-align: left;"><span>Question-Answer Systems</span></h3>
+<p><span data-contrast="none">Question-answer systems are intelligent systems that are used to provide answers to customer queries. Other than chatbots, question-answer systems have a huge array of knowledge and good language understanding rather than canned answers. They can answer questions like “When was Abraham Lincoln assassinated?” or “How do I get to the airport?” and can be created to deal with textual data, audio, images and videos.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:1,&quot;335551620&quot;:1,&quot;335559739&quot;:160,&quot;335559740&quot;:259}">&nbsp;</span></p>
+<p><span data-contrast="none">Question-answer systems can be found in social media chats and tools such as Siri and IBM’s Watson. In 2011, IBM’ Watson computer competed on Jeopardy, a game show during which answers are given first, and the contestants supply the questions. The computer competed against the show’s two biggest all-time champions and astounded the tech industry when it won first place.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:1,&quot;335551620&quot;:1,&quot;335559739&quot;:160,&quot;335559740&quot;:259}">&nbsp;</span></p>
+<h3 style="text-align: left;"><span>Automatic text summarization</span></h3>
+<p style="text-align: left;"><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span>Automatic text summarization is the task of condensing a piece of text to a shorter version, by extracting its main ideas and preserving the meaning of content. This application of NLP is used in news headlines, result snippets in web search, and bulletins of market reports.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:1,&quot;335551620&quot;:1,&quot;335559739&quot;:160,&quot;335559740&quot;:259}">&nbsp;</span></p>
+<h3 style="text-align: left;"><span>Market Intelligence</span></h3>
+<p style="text-align: left;">Market Intelligence is the gathering of valuable insights surrounding trends, consumers, products and competitors to extract actionable information that can be used for strategic decision-making. Market Intelligence can analyze topics, sentiment, keywords, and intent in unstructured data and is less time consuming than traditional desk research. <br><br>Using Market Intelligence, organizations can pick up on search queries and add contextually relevant synonyms to search results. It can also help organizations decide which products or services to discontinue or what customers to target.</p>
+<h3 style="text-align: left;"><span>Automatic text classification</span></h3>
+<p style="text-align: left;"><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span>Automatic text classification is another fundamental solution of NLP. It is the process of assigning tags to text according to its content and semantics which allows for rapid, easy retrieval of information in the search phase. This NLP application can differentiate spam from non-spam based on its content.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:1,&quot;335551620&quot;:1,&quot;335559739&quot;:160,&quot;335559740&quot;:259}">&nbsp;</span></p>
+<h3 style="text-align: left;"><span>Automatic grammar checking</span></h3>
+<p><span><span data-contrast="none" xml:lang="EN-US" lang="EN-US">Automatic grammar checking, the task of detecting and correcting grammatical errors and spelling mistakes in text depending on context, is another major part of NLP. Automatic Grammar Checking will alert you to a possible error by underlining the word in red.</span>&nbsp;</span></p>
+<h2 style="text-align: left; font-size: 36px;"><span>Advantages and Disadvantages of Natural Language Processing</span></h2>
+<p style="text-align: left;"><span>Like many other forms of <a href="/services/artificial-intelligence-machine-learning" rel="noopener">Artificial Intelligence</a>, the use of Natural Language Processing comes with advantages as well as disadvantages. </span></p>
+<h3 style="text-align: left;"><span>Advantages of NLP include:</span></h3>
+<ol style="text-align: left;">
+<li><span>Once implemented, using NLP is <strong>less expensive</strong> and more time-efficient than employing a person.</span></li>
+<li><span>NLP can also help businesses offer <strong>faster customer service response times</strong>. No matter the time of day or day of the week, customers receive immediate answers to their questions.</span></li>
+<li><span>Pre-trained machine learning models are widely available for developers to facilitate different applications of NLP, making them <strong>easy to implement</strong>.</span></li>
+</ol>
+<p style="text-align: left;"><span>&nbsp;</span></p>
+<p style="text-align: left;"><span>Advances in NLP are promising, but there are some disadvantages to NLP as well.</span></p>
+<h3 style="text-align: left;"><span>Disadvantages of NLP include:</span></h3>
+<ul style="text-align: left;">
+<li style="text-align: justify;"><span> </span><strong><span>Training can be time-consuming.</span></strong><span> If a new model needs to be developed without the use of a pre-trained model, it can take weeks before achieving a high level of performance.</span></li>
+<li style="text-align: justify;"><span> </span><span>Another disadvantage of NLP is that ML is <strong>not 100 percent reliable</strong>. There is always a possibility of errors in predictions and results that need to be taken into account. </span></li>
+</ul>
+<h2 style="text-align: left; font-size: 36px;"><span>Adding NLP and <a href="/services/artificial-intelligence-machine-learning" rel="noopener">ML</a> to your Product</span></h2>
+<p><span data-contrast="none">The number one reason to add <a href="/services/artificial-intelligence-machine-learning" rel="noopener">Natural Language Processing&nbsp;and Machine Learning</a>&nbsp;to your&nbsp;software product is to gain a competitive advantage.&nbsp;Your users can receive an immediate and 24/7 response&nbsp;to customer service queries with chatbots.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559739&quot;:160,&quot;335559740&quot;:259}">&nbsp;</span></p>
+<p><span data-contrast="none">The speed at what risk&nbsp;assessment&nbsp;can be done with ML algorithms can add value to your enterprise.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:6,&quot;335551620&quot;:6,&quot;335559739&quot;:160,&quot;335559740&quot;:259}">&nbsp;</span></p>
+<p><span data-contrast="none">To learn more talk to an&nbsp;Encora&nbsp;expert.&nbsp;</span></p>
+<p><span data-contrast="none"><!--HubSpot Call-to-Action Code --><span class="hs-cta-wrapper" id="hs-cta-wrapper-7ee55d50-07e4-4a46-8520-d9c33cb774b7"><span class="hs-cta-node hs-cta-7ee55d50-07e4-4a46-8520-d9c33cb774b7" id="hs-cta-7ee55d50-07e4-4a46-8520-d9c33cb774b7"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a href="https://cta-redirect.hubspot.com/cta/redirect/7958737/7ee55d50-07e4-4a46-8520-d9c33cb774b7"><img class="hs-cta-img" id="hs-cta-img-7ee55d50-07e4-4a46-8520-d9c33cb774b7" style="border-width:0px;" src="https://no-cache.hubspot.com/cta/default/7958737/7ee55d50-07e4-4a46-8520-d9c33cb774b7.png" alt="Contact Us"></a></span><script charset="utf-8" src="/hs/cta/cta/current.js"></script><script type="text/javascript"> hbspt.cta._relativeUrls=true;hbspt.cta.load(7958737, '7ee55d50-07e4-4a46-8520-d9c33cb774b7', {"useNewLoader":"true","region":"na1"}); </script></span><!-- end HubSpot Call-to-Action Code --></span></p>
+<h2 style="text-align: left; font-size: 36px;"><span>Conclusion</span></h2>
+<p style="text-align: left;"><span>Natural Language Processing is the practice of teaching machines to understand and interpret conversational inputs from humans. NLP based on Machine Learning can be used to establish communication channels between humans and machines. Although continuously evolving, NLP has already proven useful in multiple fields. The different implementations of NLP can help businesses and individuals save time, improve efficiency and increase customer satisfaction.</span></p>
+<h2 style="text-align: left; font-size: 36px;"><span>Key takeaways</span></h2>
+<ul style="text-align: left;">
+<li style="text-align: justify;"><span> </span><span>Natural Language Processing (NLP) is a form of Artificial Intelligence that gives machines the ability to read and interpret human language. With NLP, machines can make sense of written or spoken text.</span></li>
+<li style="text-align: justify;"><span> </span><span>NLP is constantly evolving, but existing NLP-based solutions include translation, speech recognition, sentiment analysis, question/answer systems, automatic text summarization, chatbots, market intelligence, automatic text classification, and automatic grammar checking.</span></li>
+<li style="text-align: justify;"><span> </span><span>The use of Natural Language Processing comes with advantages as well as disadvantages. Businesses can save costs, reduce client wait times, and increase customer satisfaction when implementing NLP. But training can take time and ML is never 100% reliable.</span></li>
+</ul>
+<p style="text-align: left;"><span>Feel free to <a href="/contact" rel="noopener"><u>contact us</u></a> to learn more about how NLP can help your business grow.</span></p>
+<h2 style="text-align: left;"><span>A<span style="font-size: 36px;">bout Encora</span></span></h2>
+<p style="text-align: left;"><span>Encora accelerates business outcomes for clients through leading-edge digital product innovation. We provide innovative services and software engineering solutions across a wide range of leading-edge technologies, including <a href="/services/enable" rel="noopener">Big Data, analytics,</a> machine learning, IoT, mobile, cloud, <a href="/services/engage" rel="noopener">UI/UX,</a> and <a href="/services/engineer" rel="noopener">test automation</a>. <a href="/services/engineer" rel="noopener"><u>Click here</u></a> to learn more about our services. Let's&nbsp;discuss how we can help your business.</span></p>
+<p style="text-align: left;"><span><!--HubSpot Call-to-Action Code --><span class="hs-cta-wrapper" id="hs-cta-wrapper-7ee55d50-07e4-4a46-8520-d9c33cb774b7"><span class="hs-cta-node hs-cta-7ee55d50-07e4-4a46-8520-d9c33cb774b7" id="hs-cta-7ee55d50-07e4-4a46-8520-d9c33cb774b7"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a href="https://cta-redirect.hubspot.com/cta/redirect/7958737/7ee55d50-07e4-4a46-8520-d9c33cb774b7"><img class="hs-cta-img" id="hs-cta-img-7ee55d50-07e4-4a46-8520-d9c33cb774b7" style="border-width:0px;float: left; margin-right: 20px" src="https://no-cache.hubspot.com/cta/default/7958737/7ee55d50-07e4-4a46-8520-d9c33cb774b7.png" alt="Contact Us" align="left"></a></span><script charset="utf-8" src="/hs/cta/cta/current.js"></script><script type="text/javascript"> hbspt.cta._relativeUrls=true;hbspt.cta.load(7958737, '7ee55d50-07e4-4a46-8520-d9c33cb774b7', {"useNewLoader":"true","region":"na1"}); </script></span><!-- end HubSpot Call-to-Action Code --></span></p>
+<p style="border: none;">&nbsp;</p></span>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div>
+              <section class="pb-0">
+                <div>
+                  <div class="default-form-search mb-2">
+                    <form action="https://www.encora.com/insights">
+                      <input class="text-grey-dark post-search-input search-bg-input" type="text" name="search" placeholder="Search Keyword" aria-label="Search Encora blog...">
+                    </form>
+                  </div>
+                </div>
+                <div class="contents-list">
+                  <h2 class="font-size-base weight-bold text-purple">
+                    Insight Content
+                  </h2>
+                  <div>
+                    <ul class="px-1 mb-2" id="contents">
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <h2 class="font-size-base weight-bold text-purple">
+                    Categories
+                  </h2>
+                  <div>
+                    <ul class="list-unstyled mb-2">
+                      
+                      <li class="m-0 mt-1 recent-links">
+                        <a class="trending-topic-button mb-1 mx-0 my-0" href="https://www.encora.com/insights/tag/hitech">HiTech</a><br>
+                      </li>
+                      
+                      <li class="m-0 mt-1 recent-links">
+                        <a class="trending-topic-button mb-1 mx-0 my-0" href="https://www.encora.com/insights/tag/technical-blog">Technical Blog</a><br>
+                      </li>
+                      
+                      <li class="m-0 mt-1 recent-links">
+                        <a class="trending-topic-button mb-1 mx-0 my-0" href="https://www.encora.com/insights/tag/data-science-engineering">Data Science &amp; Engineering</a><br>
+                      </li>
+                      
+                      <li class="m-0 mt-1 recent-links">
+                        <a class="trending-topic-button mb-1 mx-0 my-0" href="https://www.encora.com/insights/tag/ai-machine-learning">AI &amp; Machine Learning</a><br>
+                      </li>
+                      
+                      <li class="m-0 mt-1 recent-links">
+                        <a class="trending-topic-button mb-1 mx-0 my-0" href="https://www.encora.com/insights/tag/artificial-intelligence-machine-learning">Artificial Intelligence &amp; Machine Learning</a><br>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  
+                  <h2 class="font-size-base weight-bold text-purple">
+                    Recent Posts
+                  </h2>
+                  
+                  <div>
+                    
+                    
+                    <p class="m-0 mt-1 recent-links">
+                      <img src="https://www.encora.com/hs-fs/hubfs/API%20Testing-3.jpg?width=120&amp;name=API%20Testing-3.jpg" alt="Time Travel in Snowflake" width="120" class="mobile-hide desktop-hide" srcset="https://www.encora.com/hs-fs/hubfs/API%20Testing-3.jpg?width=60&amp;name=API%20Testing-3.jpg 60w, https://www.encora.com/hs-fs/hubfs/API%20Testing-3.jpg?width=120&amp;name=API%20Testing-3.jpg 120w, https://www.encora.com/hs-fs/hubfs/API%20Testing-3.jpg?width=180&amp;name=API%20Testing-3.jpg 180w, https://www.encora.com/hs-fs/hubfs/API%20Testing-3.jpg?width=240&amp;name=API%20Testing-3.jpg 240w, https://www.encora.com/hs-fs/hubfs/API%20Testing-3.jpg?width=300&amp;name=API%20Testing-3.jpg 300w, https://www.encora.com/hs-fs/hubfs/API%20Testing-3.jpg?width=360&amp;name=API%20Testing-3.jpg 360w" sizes="(max-width: 120px) 100vw, 120px">
+                      <a class="hover-link" href="https://www.encora.com/insights/time-travel-in-snowflake">Time Travel in Snowflake</a><br>
+                    </p>
+                    
+                    <p class="m-0 mt-1 recent-links">
+                      <img src="https://www.encora.com/hs-fs/hubfs/Software%20Telemetry.jpg?width=120&amp;name=Software%20Telemetry.jpg" alt="Complete Guide to Software Telemetry" width="120" class="mobile-hide desktop-hide" srcset="https://www.encora.com/hs-fs/hubfs/Software%20Telemetry.jpg?width=60&amp;name=Software%20Telemetry.jpg 60w, https://www.encora.com/hs-fs/hubfs/Software%20Telemetry.jpg?width=120&amp;name=Software%20Telemetry.jpg 120w, https://www.encora.com/hs-fs/hubfs/Software%20Telemetry.jpg?width=180&amp;name=Software%20Telemetry.jpg 180w, https://www.encora.com/hs-fs/hubfs/Software%20Telemetry.jpg?width=240&amp;name=Software%20Telemetry.jpg 240w, https://www.encora.com/hs-fs/hubfs/Software%20Telemetry.jpg?width=300&amp;name=Software%20Telemetry.jpg 300w, https://www.encora.com/hs-fs/hubfs/Software%20Telemetry.jpg?width=360&amp;name=Software%20Telemetry.jpg 360w" sizes="(max-width: 120px) 100vw, 120px">
+                      <a class="hover-link" href="https://www.encora.com/insights/software-telemetry-how-it-works-and-why-it-is-important">Complete Guide to Software Telemetry</a><br>
+                    </p>
+                    
+                    <p class="m-0 mt-1 recent-links">
+                      <img src="https://www.encora.com/hs-fs/hubfs/What%20are%20Cognitive%20Services.jpg?width=120&amp;name=What%20are%20Cognitive%20Services.jpg" alt="What are Cognitive Services?" width="120" class="mobile-hide desktop-hide" srcset="https://www.encora.com/hs-fs/hubfs/What%20are%20Cognitive%20Services.jpg?width=60&amp;name=What%20are%20Cognitive%20Services.jpg 60w, https://www.encora.com/hs-fs/hubfs/What%20are%20Cognitive%20Services.jpg?width=120&amp;name=What%20are%20Cognitive%20Services.jpg 120w, https://www.encora.com/hs-fs/hubfs/What%20are%20Cognitive%20Services.jpg?width=180&amp;name=What%20are%20Cognitive%20Services.jpg 180w, https://www.encora.com/hs-fs/hubfs/What%20are%20Cognitive%20Services.jpg?width=240&amp;name=What%20are%20Cognitive%20Services.jpg 240w, https://www.encora.com/hs-fs/hubfs/What%20are%20Cognitive%20Services.jpg?width=300&amp;name=What%20are%20Cognitive%20Services.jpg 300w, https://www.encora.com/hs-fs/hubfs/What%20are%20Cognitive%20Services.jpg?width=360&amp;name=What%20are%20Cognitive%20Services.jpg 360w" sizes="(max-width: 120px) 100vw, 120px">
+                      <a class="hover-link" href="https://www.encora.com/insights/guide-to-azure-cognitive-services-by-microsoft">What are Cognitive Services?</a><br>
+                    </p>
+                    
+                    
+                  </div>
+                </div>
+                <div class="mt-2">
+                  <h2 class="font-size-base weight-bold text-purple">
+                    Share this Post
+                  </h2>
+                  <div>
+
+                    <a class="mr-1 text-center" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.encora.com/insights/natural-language-processing-and-machine-learning" alt="Share on linkedin"><img loading="lazy" width="28" height="28" src="https://www.encora.com/hs-fs/hubfs/Website_Assets/icons/linkedin.png?width=28&amp;height=28&amp;name=linkedin.png" srcset="https://www.encora.com/hs-fs/hubfs/Website_Assets/icons/linkedin.png?width=14&amp;height=14&amp;name=linkedin.png 14w, https://www.encora.com/hs-fs/hubfs/Website_Assets/icons/linkedin.png?width=28&amp;height=28&amp;name=linkedin.png 28w, https://www.encora.com/hs-fs/hubfs/Website_Assets/icons/linkedin.png?width=42&amp;height=42&amp;name=linkedin.png 42w, https://www.encora.com/hs-fs/hubfs/Website_Assets/icons/linkedin.png?width=56&amp;height=56&amp;name=linkedin.png 56w, https://www.encora.com/hs-fs/hubfs/Website_Assets/icons/linkedin.png?width=70&amp;height=70&amp;name=linkedin.png 70w, https://www.encora.com/hs-fs/hubfs/Website_Assets/icons/linkedin.png?width=84&amp;height=84&amp;name=linkedin.png 84w" sizes="(max-width: 28px) 100vw, 28px"></a>
+                    <a class="mr-1 text-center" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.encora.com/insights/natural-language-processing-and-machine-learning" alt="Share on facebook"><img loading="lazy" width="28" height="28" src="https://www.encora.com/hs-fs/hubfs/Website_Assets/icons/facebook.png?width=28&amp;height=28&amp;name=facebook.png" srcset="https://www.encora.com/hs-fs/hubfs/Website_Assets/icons/facebook.png?width=14&amp;height=14&amp;name=facebook.png 14w, https://www.encora.com/hs-fs/hubfs/Website_Assets/icons/facebook.png?width=28&amp;height=28&amp;name=facebook.png 28w, https://www.encora.com/hs-fs/hubfs/Website_Assets/icons/facebook.png?width=42&amp;height=42&amp;name=facebook.png 42w, https://www.encora.com/hs-fs/hubfs/Website_Assets/icons/facebook.png?width=56&amp;height=56&amp;name=facebook.png 56w, https://www.encora.com/hs-fs/hubfs/Website_Assets/icons/facebook.png?width=70&amp;height=70&amp;name=facebook.png 70w, https://www.encora.com/hs-fs/hubfs/Website_Assets/icons/facebook.png?width=84&amp;height=84&amp;name=facebook.png 84w" sizes="(max-width: 28px) 100vw, 28px"></a>
+                    <a class="mr-1 text-center" target="_blank" href="https://twitter.com/intent/tweet?url=https://www.encora.com/insights/natural-language-processing-and-machine-learning&amp;text=NLP%20is%20a%20machine%20learning%20field%20that%20provides%20voice%20automation,%20text%20analysis%20and%20improved%20customer%20service.%20Learn%20how%20NLP%20make%20our%20life%20easier." alt="Share on Twitter"><img loading="lazy" width="28" height="28" src="https://www.encora.com/hs-fs/hubfs/Website_Assets/icons/twitter.png?width=28&amp;height=28&amp;name=twitter.png" srcset="https://www.encora.com/hs-fs/hubfs/Website_Assets/icons/twitter.png?width=14&amp;height=14&amp;name=twitter.png 14w, https://www.encora.com/hs-fs/hubfs/Website_Assets/icons/twitter.png?width=28&amp;height=28&amp;name=twitter.png 28w, https://www.encora.com/hs-fs/hubfs/Website_Assets/icons/twitter.png?width=42&amp;height=42&amp;name=twitter.png 42w, https://www.encora.com/hs-fs/hubfs/Website_Assets/icons/twitter.png?width=56&amp;height=56&amp;name=twitter.png 56w, https://www.encora.com/hs-fs/hubfs/Website_Assets/icons/twitter.png?width=70&amp;height=70&amp;name=twitter.png 70w, https://www.encora.com/hs-fs/hubfs/Website_Assets/icons/twitter.png?width=84&amp;height=84&amp;name=twitter.png 84w" sizes="(max-width: 28px) 100vw, 28px"></a>
+                    <a class="m-0 text-center" target="_blank" href="mailto:info@example.com?&amp;subject=Natural%20Language%20Processing%20and%20Machine%20Learning&amp;cc=&amp;bcc=&amp;body=%20NLP%20is%20a%20machine%20learning%20field%20that%20provides%20voice%20automation,%20text%20analysis%20and%20improved%20customer%20service.%20Learn%20how%20NLP%20make%20our%20life%20easier.%20https://www.encora.com/insights/natural-language-processing-and-machine-learning." alt="Share by Mail"><img loading="lazy" width="28" height="28" src="https://www.encora.com/hs-fs/hubfs/Website_Assets/icons/mail.png?width=28&amp;height=28&amp;name=mail.png" srcset="https://www.encora.com/hs-fs/hubfs/Website_Assets/icons/mail.png?width=14&amp;height=14&amp;name=mail.png 14w, https://www.encora.com/hs-fs/hubfs/Website_Assets/icons/mail.png?width=28&amp;height=28&amp;name=mail.png 28w, https://www.encora.com/hs-fs/hubfs/Website_Assets/icons/mail.png?width=42&amp;height=42&amp;name=mail.png 42w, https://www.encora.com/hs-fs/hubfs/Website_Assets/icons/mail.png?width=56&amp;height=56&amp;name=mail.png 56w, https://www.encora.com/hs-fs/hubfs/Website_Assets/icons/mail.png?width=70&amp;height=70&amp;name=mail.png 70w, https://www.encora.com/hs-fs/hubfs/Website_Assets/icons/mail.png?width=84&amp;height=84&amp;name=mail.png 84w" sizes="(max-width: 28px) 100vw, 28px"></a>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+
+
+    <!-- Featured Insights -->
+    <div class="rounded-bottom-right rounded-top-right bg-white">
+      <section class="block  bg-grey">
+        
+        
+        <div class="block-header">
+  <h2 class="block-heading  ">
+    Featured Insights
+  </h2>
+  
+</div>
+        
+        
+        <div class="container">
+          
+          <div class="columns equal-4 mb-2">
+            
+
+            
+
+<a class="card featured card-transparent card-stealth" href="https://www.encora.com/insights/what-is-postman-api-test" aria-label="Read more about What is Postman API Test">
+  
+    
+    <span class="featured-label ">FEATURED</span>
+    
+    
+    <div class="card-image-container ">
+      <img loading="lazy" src="https://www.encora.com/hs-fs/hubfs/API%20Testing.jpg?noresize&amp;width=350&amp;height=207&amp;name=API%20Testing.jpg" alt="What is Postman API Test" class="card-image card-image" width="350" height="207">
+    </div>
+    
+    
+    
+    <h3 class="card-title text-black">What is Postman API Test</h3>
+    
+    
+    <p class="text-grey-darker">Postman is an application used for API testing. It is an HTTP client that tests HTTP requests, ...</p>
+    
+    
+    <span class="not-visible tag">HiTech</span>
+    
+    
+  
+  <p class="card-link-container"><span class="card-link arrow-right">Learn More</span></p>
+  
+</a>
+
+
+            
+
+            
+
+<a class="card featured card-transparent card-stealth" href="https://www.encora.com/insights/natural-language-processing-and-machine-learning" aria-label="Read more about Natural Language Processing and Machine Learning">
+  
+    
+    <span class="featured-label ">FEATURED</span>
+    
+    
+    <div class="card-image-container ">
+      <img loading="lazy" src="https://www.encora.com/hs-fs/hubfs/Alexa.png?noresize&amp;width=350&amp;height=207&amp;name=Alexa.png" alt="Natural Language Processing and Machine Learning" class="card-image card-image" width="350" height="207">
+    </div>
+    
+    
+    
+    <h3 class="card-title text-black">Natural Language Processing and Machine Learning</h3>
+    
+    
+    <p class="text-grey-darker">Natural Language Processing (NLP) is part of everyday life and it is essential to our lives at home ...</p>
+    
+    
+    <span class="not-visible tag">HiTech</span>
+    
+    
+  
+  <p class="card-link-container"><span class="card-link arrow-right">Learn More</span></p>
+  
+</a>
+
+
+            
+
+            
+
+<a class="card featured card-transparent card-stealth" href="https://www.encora.com/insights/5-axioms-to-improve-your-team-communication-and-collaboration" aria-label="Read more about 5 Axioms to Improve Your Team Communication and Collaboration">
+  
+    
+    <span class="featured-label ">FEATURED</span>
+    
+    
+    <div class="card-image-container ">
+      <img loading="lazy" src="//www.encora.com/hs-fs/hubfs/Alejandro3.png?noresize&amp;width=350&amp;height=207&amp;name=Alejandro3.png" alt="5 Axioms to Improve Your Team Communication and Collaboration" class="card-image card-image" width="350" height="207">
+    </div>
+    
+    
+    
+    <h3 class="card-title text-black">5 Axioms to Improve Your Team Communication and Collaboration</h3>
+    
+    
+    <p class="text-grey-darker">Good communication within a team is key to keeping everyone on the right track. But it can be ...</p>
+    
+    
+    <span class="not-visible tag">Digital Learning</span>
+    
+    
+  
+  <p class="card-link-container"><span class="card-link arrow-right">Learn More</span></p>
+  
+</a>
+
+
+            
+
+            
+
+<a class="card featured card-transparent card-stealth" href="https://www.encora.com/insights/exponential-smoothing-methods-for-time-series-forecasting" aria-label="Read more about Exponential Smoothing Methods for Time Series Forecasting">
+  
+    
+    <span class="featured-label ">FEATURED</span>
+    
+    
+    <div class="card-image-container ">
+      <img loading="lazy" src="https://www.encora.com/hs-fs/hubfs/Picture9-Jun-15-2022-08-56-49-19-PM.png?noresize&amp;width=350&amp;height=207&amp;name=Picture9-Jun-15-2022-08-56-49-19-PM.png" alt="Exponential Smoothing Methods for Time Series Forecasting" class="card-image card-image" width="350" height="207">
+    </div>
+    
+    
+    
+    <h3 class="card-title text-black">Exponential Smoothing Methods for Time Series Forecasting</h3>
+    
+    
+    <p class="text-grey-darker">Recently, we covered basic concepts of time series data and decomposition analysis. We started ...</p>
+    
+    
+    <span class="not-visible tag">Technical Blog</span>
+    
+    
+  
+  <p class="card-link-container"><span class="card-link arrow-right">Learn More</span></p>
+  
+</a>
+
+
+            
+          </div> 
+        </div>
+
+      </section>
+    </div>
+
+    <!-- Careers CTA for non trends and Pop Up suggestions for trends -->
+    
+    <div class="bg-white">
+      <div class="container">
+        <section class="block">
+          <div class="banner-large">
+  <img src="https://www.encora.com/hs-fs/hubfs/Encora%20Homepage%20Revamp%202023/Rectangle%20106%20(1).png?width=600&amp;height=300&amp;name=Rectangle%20106%20(1).png" alt="" class="banner-large-image sharp-corners" loading="lazy" width="600" height="300" srcset="https://www.encora.com/hs-fs/hubfs/Encora%20Homepage%20Revamp%202023/Rectangle%20106%20(1).png?width=300&amp;height=150&amp;name=Rectangle%20106%20(1).png 300w, https://www.encora.com/hs-fs/hubfs/Encora%20Homepage%20Revamp%202023/Rectangle%20106%20(1).png?width=600&amp;height=300&amp;name=Rectangle%20106%20(1).png 600w, https://www.encora.com/hs-fs/hubfs/Encora%20Homepage%20Revamp%202023/Rectangle%20106%20(1).png?width=900&amp;height=450&amp;name=Rectangle%20106%20(1).png 900w, https://www.encora.com/hs-fs/hubfs/Encora%20Homepage%20Revamp%202023/Rectangle%20106%20(1).png?width=1200&amp;height=600&amp;name=Rectangle%20106%20(1).png 1200w, https://www.encora.com/hs-fs/hubfs/Encora%20Homepage%20Revamp%202023/Rectangle%20106%20(1).png?width=1500&amp;height=750&amp;name=Rectangle%20106%20(1).png 1500w, https://www.encora.com/hs-fs/hubfs/Encora%20Homepage%20Revamp%202023/Rectangle%20106%20(1).png?width=1800&amp;height=900&amp;name=Rectangle%20106%20(1).png 1800w" sizes="(max-width: 600px) 100vw, 600px">
+  <div class="banner-large-text">
+    <h2 class="banner-large-title">Join us!</h2>
+    <p class="text-grey-500 font-size-h5">Explore our Careers portal to get connected with career opportunities in your area!</p>
+    <p>
+      <a href="https://www.encora.com/careers" class="button mt-1">Explore Careers</a></p>
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+    	
+
+    <!-- ----------------------------------------------------FOOTER ------------------------------------------- -->
+    
+<div class="rounded-top-left bg-white">
+  <section class="footer text-white pb-0">
+    <div class="container">
+      <div class="footer-nav">
+        <div class="footer-brand text-grey-darker">
+          <a href="/">
+            <img class="footer-nav-logo" src="https://www.encora.com/hubfs/Website_Assets/brand/encora-logo.svg" alt="Encora" width="450" height="90">
+          </a>
+        </div>
+        <ul class="footer-nav-list">
+          
+          
+            
+          <li class=" hide">    
+            <a href="https://www.encora.com" class="nav-link">Home</a>
+          </li>
+          
+            
+          <li class=" footer-nav-item">    
+            <a href="https://www.encora.com/services" class="nav-link">Our Services</a>
+          </li>
+          
+            
+          <li class=" footer-nav-item">    
+            <a href="https://www.encora.com/our-work" class="nav-link">Our Work</a>
+          </li>
+          
+            
+          <li class=" footer-nav-item">    
+            <a href="https://nearshore.encora.com" class="nav-link">Nearshore</a>
+          </li>
+          
+            
+          <li class=" footer-nav-item">    
+            <a href="https://www.encora.com/partners" class="nav-link">Partners</a>
+          </li>
+          
+            
+          <li class=" footer-nav-item">    
+            <a href="https://www.encora.com/insights" class="nav-link">Insights</a>
+          </li>
+          
+            
+          <li class=" footer-nav-item">    
+            <a href="https://www.encora.com/about" class="nav-link">About</a>
+          </li>
+          
+            
+          <li class=" footer-nav-item">    
+            <a href="https://www.encora.com/careers" class="nav-link">Careers</a>
+          </li>
+          
+            
+          <li class=" footer-nav-item">    
+            <a href="https://www.encora.com/contact" class="nav-link">Contact Us</a>
+          </li>
+          
+        </ul>
+      </div>
+      <div class="footer-text">
+        <p class="">Innovation Acceleration<br>
+          Headquarters - Scottsdale, AZ 85260<br>
+        © Encora Digital LLC<br>
+          <span><a class="text-mail-to" href="mailto:letstalk@encora.com">letstalk@encora.com</a></span>
+          
+        </p>
+        
+      </div>
+    </div>
+    <div class="footer-extra">
+      <div class="container">
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/encorainc" class="social linkedin" aria-label="Likedin">
+            <svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="28" height="28" rx="14" fill="white" class="bg-color" />
+            <path d="M6.18039 11.32H9.50039V22H6.18039V11.32ZM7.82039 6C8.90039 6 9.74039 6.88 9.74039 7.92C9.74039 9 8.86039 9.84 7.82039 9.84C6.74039 9.84 5.90039 8.96 5.90039 7.92C5.90039 6.88 6.74039 6 7.82039 6Z" fill="#262429" class="color" />
+            <path d="M11.58 11.32H14.74V12.76H14.78C15.22 11.92 16.3 11.04 17.9 11.04C21.26 11.04 21.86 13.24 21.86 16.12V22H18.54V16.8C18.54 15.56 18.5 13.96 16.82 13.96C15.1 13.96 14.82 15.32 14.82 16.72V22H11.5V11.32H11.58Z" fill="#262429" class="color" />
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/encorainc" class="social facebook" aria-label="Facebook">
+            <svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="28" height="28" rx="14" fill="white" class="bg-color" />
+            <path d="M14.8403 23.9899V15.3333H17.4933L17.8895 11.9495H14.8403V9.79798C14.8403 8.81818 15.089 8.15151 16.3695 8.15151H18V5.13131C17.7144 5.09091 16.7472 5 15.6233 5C13.2651 5 11.6622 6.57576 11.6622 9.46465V11.9495H9V15.3333H11.6622V24L14.8403 23.9899Z" fill="#262429" class="color" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/encorainc" class="social instagram" aria-label="Instagram">
+            <svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="28" height="28" rx="14" fill="white" class="bg-color" />
+            <path d="M14 6.62159C11.5967 6.62159 11.3123 6.63088 10.3631 6.67411C9.48565 6.71412 9.00907 6.8606 8.69182 6.98385C8.27169 7.14712 7.97195 7.34218 7.65685 7.65692C7.34175 7.97202 7.14668 8.27176 6.98377 8.6919C6.86052 9.00914 6.71404 9.48572 6.67403 10.3631C6.6308 11.312 6.62151 11.5968 6.62151 14C6.62151 16.4033 6.6308 16.6877 6.67403 17.6369C6.71404 18.5143 6.86052 18.9909 6.98377 19.3082C7.14704 19.7283 7.3421 20.028 7.65685 20.3431C7.97195 20.6582 8.27169 20.8533 8.69182 21.0162C9.00907 21.1395 9.48565 21.2859 10.3631 21.3259C11.312 21.3692 11.5967 21.3785 14 21.3785C16.4032 21.3785 16.688 21.3692 17.6368 21.3259C18.5143 21.2859 18.9909 21.1395 19.3081 21.0162C19.7282 20.8529 20.028 20.6579 20.3431 20.3431C20.6582 20.028 20.8532 19.7283 21.0161 19.3082C21.1394 18.9909 21.2859 18.5143 21.3259 17.6369C21.3691 16.688 21.3784 16.4033 21.3784 14C21.3784 11.5968 21.3691 11.3124 21.3259 10.3631C21.2859 9.48572 21.1394 9.00914 21.0161 8.6919C20.8529 8.27176 20.6578 7.97202 20.3431 7.65692C20.028 7.34182 19.7282 7.14676 19.3081 6.98385C18.9909 6.8606 18.5143 6.71412 17.6368 6.67411C16.6876 6.63088 16.4032 6.62159 14 6.62159ZM14 5C16.4443 5 16.7508 5.01036 17.7108 5.0543C18.6686 5.09789 19.3227 5.25008 19.8954 5.47265C20.4874 5.70273 20.9894 6.01032 21.4895 6.51084C21.9897 7.011 22.2976 7.51295 22.5273 8.10457C22.7499 8.67725 22.9021 9.33139 22.9457 10.2892C22.9896 11.2491 23 11.5557 23 14C23 16.4444 22.9896 16.7509 22.9457 17.7109C22.9021 18.6687 22.7499 19.3228 22.5273 19.8955C22.2973 20.4875 21.9897 20.9894 21.4892 21.4896C20.9886 21.9901 20.487 22.2977 19.8951 22.5278C19.3227 22.7503 18.6682 22.9025 17.7104 22.9461C16.7505 22.99 16.444 23.0004 13.9996 23.0004C11.5552 23.0004 11.2487 22.99 10.2888 22.9461C9.33096 22.9025 8.67646 22.7503 8.10413 22.5278C7.51216 22.2977 7.01021 21.9901 6.51005 21.4896C6.00953 20.9891 5.70193 20.4875 5.47186 19.8955C5.24929 19.3232 5.0971 18.6687 5.05351 17.7109C5.00957 16.7509 4.99921 16.4444 4.99921 14C4.99921 11.5557 5.00957 11.2491 5.05351 10.2892C5.0971 9.33139 5.24929 8.67689 5.47186 8.10457C5.70193 7.51259 6.00953 7.01064 6.51005 6.51048C7.01057 6.00997 7.51216 5.70237 8.10413 5.47229C8.67718 5.25008 9.33131 5.09789 10.2891 5.0543C11.2491 5.01036 11.5556 5 14 5Z" fill="#262429" class="color" />
+            <path d="M13.9996 9.37793C16.5522 9.37793 18.6211 11.4472 18.6211 13.9994C18.6211 16.5517 16.5519 18.6209 13.9996 18.6209C11.4474 18.6209 9.37812 16.5517 9.37812 13.9994C9.37812 11.4472 11.447 9.37793 13.9996 9.37793ZM13.9996 16.9993C15.6566 16.9993 16.9995 15.656 16.9995 13.9994C16.9995 12.3425 15.6562 10.9995 13.9996 10.9995C12.343 10.9995 10.9997 12.3428 10.9997 13.9994C10.9997 15.6564 12.3426 16.9993 13.9996 16.9993Z" fill="#262429" class="color" />
+            <path d="M9.1954 10.2752C8.59894 10.2752 8.11541 9.79168 8.11541 9.19522C8.11541 8.59876 8.59894 8.11523 9.1954 8.11523C9.79186 8.11523 10.2754 8.59876 10.2754 9.19522C10.2754 9.79168 9.79186 10.2752 9.1954 10.2752Z" fill="#262429" class="color" />
+            </svg>
+          </a>
+          <a href="https://www.twitter.com/encorainc" class="social twitter" aria-label="Twitter">
+            <svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="28" height="28" rx="14" fill="white" class="bg-color" />
+            <path d="M12.0317 21C18.0694 21 21.3718 15.9991 21.3718 11.6624C21.3718 11.5203 21.3686 11.3789 21.3622 11.2382C22.0029 10.7749 22.5603 10.1972 23 9.53878C22.4118 9.79983 21.7789 9.97579 21.1146 10.0551C21.7923 9.64883 22.3126 9.00581 22.5578 8.23994C21.9235 8.61615 21.2208 8.88936 20.4733 9.03652C19.8749 8.39925 19.0218 8 18.0778 8C16.2646 8 14.7946 9.46968 14.7946 11.2817C14.7946 11.5395 14.8234 11.7897 14.8797 12.0296C12.152 11.8927 9.73216 10.5868 8.1136 8.6008C7.83136 9.08579 7.6688 9.64947 7.6688 10.2503C7.6688 11.3892 8.24864 12.3937 9.12928 12.9817C8.59104 12.9651 8.0848 12.8173 7.64256 12.5709C7.64192 12.5844 7.64192 12.5984 7.64192 12.6125C7.64192 14.2018 8.77344 15.5288 10.2755 15.8296C9.99968 15.9044 9.70976 15.9447 9.41024 15.9447C9.19904 15.9447 8.99296 15.9236 8.79328 15.8852C9.2112 17.1892 10.4227 18.1381 11.8602 18.1643C10.7363 19.0447 9.32128 19.5693 7.78336 19.5693C7.5184 19.5693 7.25728 19.554 7 19.5239C8.4528 20.4568 10.1776 21 12.0317 21Z" fill="#262429" class="color" />
+            </svg>
+
+          </a>
+        </div>
+        <p class="footer-legal mb-0">
+          <a class="text-mail-to" href="mailto:letstalk@encora.com">letstalk@encora.com</a>
+          <a href="/terms-of-use">Terms of Use</a>
+          <a href="/privacy-policy" class="ml-1">Privacy Policy</a>
+          <a href="/cookie-disclosure-policy" class="ml-1">Cookie Disclosure Policy</a>
+          <a href="/disclaimer" class="ml-1">Disclaimer</a>
+          <a href="/sitemap" class="ml-1">Sitemap</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+    <!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+    <script src="/hs/hsstatic/jquery-libs/static-1.4/jquery/jquery-1.11.2.js"></script>
+<script>hsjQuery = window['jQuery'];</script>
+<!-- HubSpot performance collection script -->
+<script defer src="https://static.hsappstatic.net/content-cwv-embed/static-1.240/embed.js"></script>
+<script>
+var hsVars = hsVars || {}; hsVars['language'] = 'en';
+</script>
+
+<script src="/hs/hsstatic/cos-i18n/static-1.53/bundles/project.js"></script>
+<script src="https://www.encora.com/hs-fs/hub/7958737/hub_generated/module_assets/34030854984/1598305845531/module_34030854984_Progress_Bar.min.js"></script>
+
+<script>
+$(window).scroll(function(){
+  myFunction45fc868d2afd34d815beecad460b9e3c();
+})
+
+function myFunction45fc868d2afd34d815beecad460b9e3c() {
+  
+  var maxwidth  = $('#45fc868d2afd34d815beecad460b9e3cprogressBar').closest('.progress-container').parent().width();
+  $('#45fc868d2afd34d815beecad460b9e3cprogressBar').closest('.progress-container').css('max-width',maxwidth);
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("45fc868d2afd34d815beecad460b9e3cprogressBar").style.width = scrolled + "%";
+}
+</script>
+
+
+
+<!-- Start of HubSpot Analytics Code -->
+<script type="text/javascript">
+var _hsq = _hsq || [];
+_hsq.push(["setContentType", "blog-post"]);
+_hsq.push(["setCanonicalUrl", "https:\/\/www.encora.com\/insights\/natural-language-processing-and-machine-learning"]);
+_hsq.push(["setPageId", "38557830995"]);
+_hsq.push(["setContentMetadata", {
+    "contentPageId": 38557830995,
+    "legacyPageId": "38557830995",
+    "contentFolderId": null,
+    "contentGroupId": 32449418859,
+    "abTestId": null,
+    "languageVariantId": 38557830995,
+    "languageCode": "en",
+    
+}]);
+</script>
+
+<script type="text/javascript" id="hs-script-loader" async defer src="/hs/scriptloader/7958737.js?businessUnitId=0"></script>
+<!-- End of HubSpot Analytics Code -->
+
+
+<script type="text/javascript">
+var hsVars = {
+    render_id: "6f1ab3f0-485a-4fb5-a821-6a41ba06fe15",
+    ticks: 1685839954845,
+    page_id: 38557830995,
+    
+    content_group_id: 32449418859,
+    portal_id: 7958737,
+    app_hs_base_url: "https://app.hubspot.com",
+    cp_hs_base_url: "https://cp.hubspot.com",
+    language: "en",
+    analytics_page_type: "blog-post",
+    analytics_page_id: "38557830995",
+    category_id: 3,
+    folder_id: 0,
+    is_hubspot_user: false
+}
+</script>
+
+
+<script defer src="/hs/hsstatic/HubspotToolsMenu/static-1.191/js/index.js"></script>
+
+
+<script>
+  $("html").attr("lang","en-US");
+  let requestPath = '/insights/natural-language-processing-and-machine-learning';
+  var lityScript = true; 
+  var slickScript = true;
+  var navScript = true;
+</script>
+
+<link rel="preload" as="style" type="text/css" href="https://flamboyant-hugle-b0c62a.netlify.app/css/sec.min.css">
+<link rel="stylesheet" type="text/css" href="https://flamboyant-hugle-b0c62a.netlify.app/css/sec.min.css">
+<link rel="preload" as="script" href="https://www.encora.com/hubfs/Website_Assets/javascript/bundle.min.js">
+
+<link rel="preload" as="script" href="https://www.encora.com/hubfs/Website_Assets/javascript/slick.min.js">
+<link rel="preload" as="script" href="https://www.encora.com/hubfs/Website_Assets/javascript/slick-calls.min.js">
+
+
+<link rel="preload" as="script" href="https://www.encora.com/hubfs/Website_Assets/javascript/lity.min.js">
+
+<script src="https://www.encora.com/hubfs/Website_Assets/javascript/bundle.min.js"></script>
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7958737.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+<!-- Linkedin Tag -->
+<script type="text/javascript">
+  _linkedin_partner_id = "2521394";
+  window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+  window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+  (function(){var s = document.getElementsByTagName("script")[0];
+              var b = document.createElement("script");
+              b.type = "text/javascript";b.async = true;
+              b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+              s.parentNode.insertBefore(b, s);})();
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=2521394&amp;fmt=gif">
+</noscript>
+<!-- End Linkedin Tag -->
+
+
+
+
+
+
+<script>
+  $(document).on('lity:open', function(event, instance) {
+    setTimeout(function() {
+      if( $(".centered-modal").parents(".lity-container").length > 0){
+        $(".centered-modal").parents(".lity-container").addClass("centered-modal");
+        $(".centered-modal.lity-container").css("right","auto");
+        $(".centered-modal.lity-container").css("position","relative");
+        $(".centered-modal.lity-container").css("width","auto");
+      }
+    }, 500);
+  });
+  $(window).load(function(){
+
+    if($("#aine-modal").length==1){
+      lity("#aine-modal");
+    }
+    if($("#dine-modal").length==1){
+      lity("#dine-modal");
+    }
+    if($("#nine-modal").length==1){
+      lity("#nine-modal");
+    }
+
+
+  });
+
+</script>
+<script type="text/javascript">
+  _linkedin_partner_id = "2521394";
+  window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+  window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+  (function(l) {
+    if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+            window.lintrk.q=[]}
+    var s = document.getElementsByTagName("script")[0];
+    var b = document.createElement("script");
+    b.type = "text/javascript";b.async = true;
+    b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+    s.parentNode.insertBefore(b, s);})(window.lintrk);
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=2521394&amp;fmt=gif">
+</noscript>
+<!-- Start of HubSpot code snippet -->
+<!--button type="button" id="hs_show_banner_button"
+  style="background-color: #44197E; border: 1px solid #44197E;
+         border-radius: 3px; padding: 10px 16px; text-decoration: none; color: #fff;
+         font-family: inherit; font-size: inherit; font-weight: normal; line-height: inherit;
+         text-align: left; text-shadow: none;"
+  onClick="(function(){
+    var _hsp = window._hsp = window._hsp || [];
+    _hsp.push(['showBanner']);
+  })()"
+>
+  Cookie Settings
+</button-->
+
+<!-- End of HubSpot code snippet -->
+<script src="https://www.encora.com/hubfs/Website_Assets/javascript/Prism/prism.js"></script>
+<div id="fb-root"></div>
+ <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&status=0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+ 
+
+
+    
+    
+   
+
+    
+    
+     
+
+  
+</body></html>

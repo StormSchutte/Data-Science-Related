@@ -5,7 +5,7 @@ algorithms in Data Science
 
 
 """
-Linear Regression: A statistical algorithm used in machine learning and data
+Linear Regression: A statistical algorithm used in machine learning and dataset_sites
 science for predictive analysis.
 """
 
@@ -83,7 +83,7 @@ predictions = model.predict(X)
 
 """
 Principal Component Analysis (PCA): A dimensionality-reduction algorithm used
-in exploratory data analysis and for making predictive models.
+in exploratory dataset_sites analysis and for making predictive models.
 """
 
 from sklearn.decomposition import PCA

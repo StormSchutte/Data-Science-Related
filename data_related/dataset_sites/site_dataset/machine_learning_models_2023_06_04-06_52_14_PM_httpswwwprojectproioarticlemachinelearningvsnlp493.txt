@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!-- HEAD SECTION -->
+	<!-- IE Edge Meta Tag -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="facebook-domain-verification" content="ixp5hs2fzkudi7mavl63rbd2wnwt1i" />
+
+	<!-- Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Machine Learning (ML) vs NLP - What's the Difference?</title><meta name="description" content="Machine Learning vs NLP - Understand what is the difference between machine learning and NLP and how they relate to each other. " />
+<meta name="title" content="Machine Learning (ML) vs NLP - What's the Difference?" />
+<meta name="keywords" content="machine learning vs NLP, NLP vs machine learning, natural language processing machine learning , NLP machine learning example, what is the difference between machine learning and NLP" />
+<meta property="og:title" content="Machine Learning (ML) vs NLP - What's the Difference?" />
+<meta property="og:site_name" content="ProjectPro" />
+<meta property="og:description" content="Machine Learning vs NLP - Understand what is the difference between machine learning and NLP and how they relate to each other. " />
+<meta property="og:image" content="https://daxg39y63pxwu.cloudfront.net/images/blog/machine-learning-vs-nlp/Machine_Learning_vs_NLP.png" />	<!-- Initializing preconnects -->
+	<link rel="preconnect" href="https://daxg39y63pxwu.cloudfront.net/" crossorigin/>
+	
+	<link rel="dns-prefetch" href="//www.google-analytics.com">
+	<link rel="dns-prefetch" href="//v2.zopim.com">
+	<link rel="dns-prefetch" href="//my.hellobar.com">
+	 
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-QENFQCRBS5"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-QENFQCRBS5');
+	</script>
+
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-PM3NN4G');</script>
+	<!-- End Google Tag Manager -->
+	
+
+	<script type="text/javascript">
+			window.GUMLET_CONFIG = {
+			hosts: [{
+			current: "dezyre.com",
+			gumlet: "dezyre.gumlet.io"
+			},
+			{
+			current: "s3.amazonaws.com",
+			gumlet: "dezyre.gumlet.io"
+			},
+			{
+			current: "daxg39y63pxwu.cloudfront.net",
+			gumlet: "dezyre.gumlet.io"
+			}],
+			lazy_load: true
+			};
+			(function(){d=document;s=d.createElement("script");s.src="https://cdn.gumlet.com/gumlet.js/2.0/gumlet.min.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+	</script>
+
+		<link rel="canonical" href="https://www.projectpro.io/article/machine-learning-vs-nlp/493" />
+	<link rel="alternate" href="https://www.projectpro.io/article/machine-learning-vs-nlp/493" hreflang="x-default" />
+	
+		<!-- 
+	<link rel="canonical" href="<?php// echo Zend_Registry::getInstance()->configuration->secure->url.$url;?>" />
+	
+	<link rel="alternate" href="<?php// echo Zend_Registry::getInstance()->configuration->secure->url.$url; ?>" hreflang="x-default" />
+	 -->
+	 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="publisher" href="https://plus.google.com/112833548823362671038"/>
+	
+	<!-- 
+	<link rel="icon" href="//daxg39y63pxwu.cloudfront.net/dezyre/images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="//daxg39y63pxwu.cloudfront.net/dezyre/images/favicon.ico" type="image/x-icon"/>
+	 -->
+	<link rel="apple-touch-icon" sizes="180x180" href="//daxg39y63pxwu.cloudfront.net/dezyre/images/favicon_io/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://daxg39y63pxwu.cloudfront.net/dezyre/images/favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://daxg39y63pxwu.cloudfront.net/dezyre/images/favicon_io/favicon-16x16.png">
+	<link rel="manifest" href="https://s3.amazonaws.com/files.dezyre.com/dezyre/images/favicon_io/site.webmanifest" crossorigin="use-credentials" >
+	
+	<!-- Font Awesome 
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  	-->
+  	
+  	<!-- This is required for the mail and phone logo to show up in the pop up -->
+  	<!-- <link rel="preload" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" as="style" onload="this.onload=null;this.rel='stylesheet'">  --> 
+<!-- 	<noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"></noscript> -->
+  	
+  	 
+  	<!--  this is required for the CSL shift - without this -the layout is off for a second and then comes back in shape --> 
+<!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
+	 
+<!-- 	 critical css -->
+	 <style>
+	 	:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange:#fd7e14;--yellow:#ffc107;--green:#28a745;--teal:#20c997;--cyan:#17a2b8;--white:#fff;--gray:#6c757d;--gray-dark:#343a40;--primary:#007bff;--secondary:#6c757d;--success:#28a745;--info:#17a2b8;--warning:#ffc107;--danger:#dc3545;--light:#f8f9fa;--dark:#343a40;--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:992px;--breakpoint-xl:1200px;--font-family-sans-serif:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}*,::after,::before{box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}article,aside,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}.img-fluid{max-width:100%;height:auto}a{color:#006ee5;text-decoration:none;background-color:transparent}dl,h1,h2,h3,h4,h5,h6,ol,p,ul{margin-top:0}dl,ol,p,ul{margin-bottom:1rem}b,strong{font-weight:bolder}a:hover{color:#0056b3;text-decoration:underline}img,svg{vertical-align:middle}img{border-style:none}svg{overflow:hidden}table{border-collapse:collapse}button{border-radius:0}button:focus{outline:dotted 1px;outline:-webkit-focus-ring-color auto 5px}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer}.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{margin-bottom:.5rem;font-weight:500;line-height:1.2}.h1,h1{font-size:2.5rem}.h3,h3{font-size:1.75rem}.h4,h4{font-size:1.5rem}.h6,h6{font-size:1rem}.display-1{font-size:6rem;font-weight:300;line-height:1.2}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.pt-sm-4,.py-sm-4{padding-top:1.5rem!important}.pb-sm-4,.py-sm-4{padding-bottom:1.5rem!important}.container{max-width:540px}.pl-sm-5,.px-sm-5{padding-left:3rem!important}.pr-sm-5,.px-sm-5{padding-right:3rem!important}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}.col-lg-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}}@media (min-width:1200px){.container{max-width:1140px}}.container-fluid,.container-lg,.container-md,.container-sm,.container-xl{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container,.container-sm{max-width:540px}}@media (min-width:768px){.container,.container-md,.container-sm{max-width:720px}}@media (min-width:992px){.container,.container-lg,.container-md,.container-sm{max-width:960px}}@media (min-width:1200px){.container,.container-lg,.container-md,.container-sm,.container-xl{max-width:1140px}}.row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col,.col-1,.col-10,.col-11,.col-12,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-auto,.col-lg,.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-auto,.col-md,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-auto,.col-sm,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-auto,.col-xl,.col-xl-1,.col-xl-10,.col-xl-11,.col-xl-12,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-auto{position:relative;width:100%;padding-right:15px;padding-left:15px}.col,.col-12{max-width:100%}.col{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;min-width:0}.col-12{-ms-flex:0 0 100%;flex:0 0 100%}.order-first{-ms-flex-order:-1;order:-1}@media (min-width:576px){.col-sm-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-sm-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-sm-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.order-sm-last{-ms-flex-order:13;order:13}}@media (min-width:768px){.col-md-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-md-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-md-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-md-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.offset-md-1{margin-left:8.333333%}}@media (min-width:992px){.offset-lg-1{margin-left:8.333333%}.offset-lg-7{margin-left:58.333333%}.col-lg-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-lg-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-lg-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-lg-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}}.collapse:not(.show){display:none}.collapsing{position:relative;height:0;overflow:hidden;transition:height .35s}.nav-link{display:block;padding:.5rem 1rem}.navbar{position:relative;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between;padding:.5rem 1rem}.navbar-brand{display:inline-block;padding-top:.3125rem;padding-bottom:.3125rem;margin-right:1rem;font-size:1.25rem;line-height:inherit;white-space:nowrap}.navbar-nav{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;padding-left:0;margin-bottom:0;list-style:none}.navbar-nav .nav-link{padding-right:0;padding-left:0}.navbar-collapse{-ms-flex-preferred-size:100%;flex-basis:100%;-ms-flex-positive:1;flex-grow:1;-ms-flex-align:center;align-items:center}.navbar-toggler{padding:.25rem .75rem;font-size:1.25rem;line-height:1;background-color:transparent;border:1px solid transparent;border-radius:.25rem}.navbar-toggler:focus,.navbar-toggler:hover{text-decoration:none}.navbar-toggler-icon{display:inline-block;width:1.5em;height:1.5em;vertical-align:middle;content:"";background:center center/100% 100% no-repeat}@media (min-width:576px){.navbar-expand-sm{-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-pack:start;justify-content:flex-start}.navbar-expand-sm .navbar-nav{-ms-flex-direction:row;flex-direction:row}.navbar-expand-sm .navbar-nav .nav-link{padding-right:.5rem;padding-left:.5rem}.navbar-expand-sm .navbar-collapse{display:-ms-flexbox!important;display:flex!important;-ms-flex-preferred-size:auto;flex-basis:auto}.navbar-expand-sm .navbar-toggler{display:none}}.navbar-light .navbar-brand{color:rgba(0,0,0,.9)}.navbar-light .navbar-nav .nav-link{color:rgba(0,0,0,.5)}.navbar-light .navbar-toggler{color:rgba(0,0,0,.5);border-color:rgba(0,0,0,.1)}.navbar-light .navbar-toggler-icon{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")}.navbar-dark .navbar-toggler-icon{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")}.mb-4,.my-4{margin-bottom:1.5rem!important}.mb-5,.my-5{margin-bottom:3rem!important}.card{position:relative;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;min-width:0;word-wrap:break-word;background-color:#fff;background-clip:border-box;border:1px solid rgba(0,0,0,.125);border-radius:.25rem}.card-body{-ms-flex:1 1 auto;flex:1 1 auto;min-height:1px;padding:1.25rem}.card-header{padding:.75rem 1.25rem;margin-bottom:0;background-color:rgba(0,0,0,.03);border-bottom:1px solid rgba(0,0,0,.125)}.card-header:first-child{border-radius:calc(.25rem - 1px) calc(.25rem - 1px) 0 0}.border-bottom{border-bottom:1px solid #dee2e6!important}.dropdown-toggle{white-space:nowrap}.dropdown-toggle::after{display:inline-block;margin-left:.255em;vertical-align:.255em;content:"";border-top:.3em solid;border-right:.3em solid transparent;border-bottom:0;border-left:.3em solid transparent}.dropdown-menu{position:absolute;top:100%;left:0;z-index:1000;display:none;float:left;min-width:10rem;padding:.5rem 0;margin:.125rem 0 0;font-size:1rem;color:#212529;text-align:left;list-style:none;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0,0,0,.15);border-radius:.25rem}.dropdown-divider{height:0;margin:.5rem 0;overflow:hidden;border-top:1px solid #e9ecef}.dropdown-item{display:block;width:100%;padding:.25rem 1.5rem;clear:both;font-weight:400;color:#212529;text-align:inherit;white-space:nowrap;background-color:transparent;border:0}.dropdown-menu.show{display:block}.dropdown-header{display:block;padding:.5rem 1.5rem;margin-bottom:0;font-size:.875rem;color:#6c757d;white-space:nowrap}.d-none{display:none!important}.d-block{display:block!important}.flex-grow-0{-ms-flex-positive:0!important;flex-grow:0!important}.mt-0,.my-0{margin-top:0!important}.mt-2,.my-2{margin-top:.5rem!important}.mt-3,.my-3{margin-top:1rem!important}.mt-4,.my-4{margin-top:1.5rem!important}.mr-2,.mx-2{margin-right:.5rem!important}.ml-2,.mx-2{margin-left:.5rem!important}.mr-4,.mx-4{margin-right:1.5rem!important}.mt-5,.my-5{margin-top:3rem!important}@media (max-width:767.98px){.navbar-expand-md>.container,.navbar-expand-md>.container-fluid,.navbar-expand-md>.container-lg,.navbar-expand-md>.container-md,.navbar-expand-md>.container-sm,.navbar-expand-md>.container-xl{padding-right:0;padding-left:0}}.p-0{padding:0!important}.pt-0,.py-0{padding-top:0!important}.pt-1,.py-1{padding-top:.25rem!important}.p-2{padding:.5rem!important}.pb-2,.py-2{padding-bottom:.5rem!important}.mr-5,.mx-5{margin-right:3rem!important}.ml-0,.mx-0{margin-left:0!important}.mr-0,.mx-0{margin-right:0!important}.pl-4,.px-4{padding-left:1.5rem!important}.pr-4,.px-4{padding-right:1.5rem!important}.pt-4,.py-4{padding-top:1.5rem!important}.pb-5,.py-5{padding-bottom:3rem!important}.pt-5,.py-5{padding-top:3rem!important}.p-3{padding:1rem!important}.pt-3,.py-3{padding-top:1rem!important}.p-4{padding:1.5rem!important}.ml-auto,.mx-auto{margin-left:auto!important}@media (min-width:576px){.d-sm-none{display:none!important}.d-sm-block{display:block!important}.mt-sm-0,.my-sm-0{margin-top:0!important}.mr-sm-5,.mx-sm-5{margin-right:3rem!important}.p-sm-5{padding:3rem!important}.pr-sm-5,.px-sm-5{padding-right:3rem!important}.pl-sm-5,.px-sm-5{padding-left:3rem!important}}@media (min-width:768px){.navbar-expand-md{-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-pack:start;justify-content:flex-start}.navbar-expand-md .navbar-nav{-ms-flex-direction:row;flex-direction:row}.navbar-expand-md .navbar-nav .dropdown-menu{position:absolute}.navbar-expand-md .navbar-nav .nav-link{padding-right:.5rem;padding-left:.5rem}.navbar-expand-md>.container,.navbar-expand-md>.container-fluid,.navbar-expand-md>.container-lg,.navbar-expand-md>.container-md,.navbar-expand-md>.container-sm,.navbar-expand-md>.container-xl{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.navbar-expand-md .navbar-collapse{display:-ms-flexbox!important;display:flex!important;-ms-flex-preferred-size:auto;flex-basis:auto}.navbar-expand-md .navbar-toggler{display:none}.pt-md-3,.py-md-3{padding-top:1rem!important}.pb-md-3,.py-md-3{padding-bottom:1rem!important}.pr-md-5,.px-md-5{padding-right:3rem!important}.pl-md-5,.px-md-5{padding-left:3rem!important}}.text-center{text-align:center!important}.text-left{text-align:left!important}@media (min-width:992px){.pr-lg-5,.px-lg-5{padding-right:3rem!important}.pl-lg-5,.px-lg-5{padding-left:3rem!important}}.badge{display:inline-block;padding:.25em .4em;font-size:75%;font-weight:700;line-height:1;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;border:1px solid #000}@media (prefers-reduced-motion:reduce){.badge{transition:none}}.badge-primary{color:#fff;background-color:#007bff}
+		label {
+			display: inline-block;
+			margin-bottom: 0.5rem;
+		}
+	 </style>
+	 <!-- 
+	<link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"></noscript>
+	 -->
+	
+	<!-- is required for the email popup to show  -->
+  	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  	
+  	<!--  
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
+  	 -->
+  	 <!-- 
+  	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"></noscript>
+	 -->
+	<!--  
+	<link rel="stylesheet" href="/css/mdb.css">
+	 -->
+	  
+	<!-- This is required for the green button  -->  
+	<!-- <link rel="preload" href="https://dezyre.gumlet.io/css/mdb.css" as="style" onload="this.onload=null;this.rel='stylesheet'">   -->    
+	<noscript><link rel="stylesheet" href="https://dezyre.gumlet.io/css/mdb.css"></noscript>
+	
+	<style>
+		/* 	inline mdb css */
+		@keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}to{opacity:1;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}@keyframes fadeInUp{0%{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}to{opacity:1;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}.img-fluid,.modal-dialog.cascading-modal.modal-avatar .modal-header,.video-fluid{max-width:100%;height:auto}.bg-light{background-color:#f8fafe!important}.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}.fadeInDown{-webkit-animation-name:fadeInDown;animation-name:fadeInDown}.fadeInUp{-webkit-animation-name:fadeInUp;animation-name:fadeInUp}.btn{margin:.375rem;color:inherit;text-transform:uppercase;word-wrap:break-word;white-space:normal;cursor:pointer;border:0;border-radius:.125rem;-webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);-webkit-transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;padding:.84rem 2.14rem;font-size:1.01rem}.btn-default{color:#fff;background-color:#2bbbad!important}.navbar.navbar-light .navbar-toggler{color:#000}.navbar.navbar-light .navbar-toggler-icon{cursor:pointer;background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")}.navbar.navbar-light .breadcrumb .nav-item .nav-link,.navbar.navbar-light .navbar-nav .nav-item .nav-link{color:#000;-webkit-transition:.35s;transition:.35s}@media (max-width:992px){.navbar .nav-item .nav-link{padding-right:6px;padding-left:6px}}.navbar .nav-item .nav-link{display:block}.navbar .navbar-toggler{border-width:0;outline:0}.navbar{font-weight:400;-webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12)}.modal{padding-right:0!important}.modal-dialog .modal-content{border:0;border-radius:.125rem;-webkit-box-shadow:0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);box-shadow:0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15)}.modal-dialog .modal-content .modal-header{border-top-left-radius:.125rem;border-top-right-radius:.125rem}.md-form{position:relative;margin-top:1.5rem;margin-bottom:1.5rem}.md-form input:not([type]),.md-form input[type=date]:not(.browser-default),.md-form input[type=datetime-local]:not(.browser-default),.md-form input[type=datetime]:not(.browser-default),.md-form input[type=email]:not(.browser-default),.md-form input[type=number]:not(.browser-default),.md-form input[type=password]:not(.browser-default),.md-form input[type=phone]:not(.browser-default),.md-form input[type=search-md],.md-form input[type=search]:not(.browser-default),.md-form input[type=tel]:not(.browser-default),.md-form input[type=text]:not(.browser-default),.md-form input[type=time]:not(.browser-default),.md-form input[type=url]:not(.browser-default),.md-form textarea.md-textarea{-webkit-box-sizing:content-box;box-sizing:content-box;background-color:transparent;border:0;border-bottom:1px solid #ced4da;border-radius:0;outline:0;-webkit-box-shadow:none;box-shadow:none;-webkit-transition:border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out}.md-form .form-control{height:auto;padding:.6rem 0 .4rem;margin:0 0 .5rem;background-color:transparent;border-radius:0;-webkit-box-sizing:border-box!important;box-sizing:border-box!important}.md-form .validate{margin-bottom:2.5rem}table td{font-size:.9rem;font-weight:400}
+	</style> 
+	
+	    
+    <style>
+
+	.emailinput{line-height:1.25;letter-spacing:normal;border:1px solid #bbc0c4;border-radius:4px;background:#fff;font-size:1.25em;width:70%;height:3em;padding:1.15rem 1rem}.subbutton{background-color:#ffc844;border-radius:4px;width:180px;border:0;color:#000;padding:13px 20px;text-align:center;text-decoration:none;display:inline-block;font-size:18px;font-weight:400;margin:5px 7px;cursor:pointer;-webkit-transition-duration:.4s;transition-duration:.4s}.subbutton1{box-shadow:0 8px 16px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)}.subbutton2:hover{box-shadow:0 12px 16px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19)}
+	.sprite {
+		background: url(//daxg39y63pxwu.cloudfront.net/dezyre/sprite-images/mini-project-ideogram-50.png) no-repeat top left;
+		width: 50px;
+		height: 50px;
+	}
+	.ds-questions-card:hover{
+		cursor: pointer;
+	}	
+	.header_top_dc {
+		background: #05192d!important;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(268deg, #05192d, #05192d)!important;  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(268deg,#05192d , #05192d)!important;
+		box-shadow:none!important;
+	}
+	.header_bg {
+		color:#fff !important;
+		padding-top:10px;
+		padding-bottom:60px!important;
+		max-width: 100%;
+		background: #05192d;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(268deg, #05192d, #05192d);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(268deg, #05192d, #05192d);
+	}
+	.button2{border:1px solid #fff;border-radius:4px}.button2,.header_link{color:#fff!important;padding:1px 17px;display:inline-block;line-height:32px}@media (max-width:479px){.logo{height:36px;margin-right:5px}}.h1,.h2{font-family:"Work sans","Helvetica Neue",Helvetica,Arial,sans-serif!important}.h3{color:#3d4251}.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{font-family:"Work sans","Helvetica Neue",Helvetica,Arial,sans-serif!important}h1,h3{font-weight:400;line-height:56px}.h1,h1{font-size:36px;color:#3d4251;letter-spacing:0}.h2,h2{font-size:26px;color:#3d4251;font-weight:400;line-height:40px}.h4,h4{font-size:22px;color:#3d4251!important;line-height:33px}h3{font-size:24px;color:#000}.h5,.h6,h5,h6{font-size:19px;color:#3d4251;line-height:33px;letter-spacing:1px;font-weight:300}.h6,h6{font-size:16px;color:#fff;font-weight:400}.mbtn-large{font-size:18px;line-height:27px;border-radius:4.8px;padding:12px 50px}
+	.mbtn-primary {
+		color: #000;
+		background-color: #ffc844;
+		border-color: #ffc844;
+	}
+	.card,.mbtn{font-size:15px}.mbtn{display:inline-block;font-weight:500;text-align:center;white-space:nowrap;vertical-align:middle;font-family:"Work sans","Helvetica Neue",Helvetica,Arial,sans-serif!important;user-select:none;border:1px solid transparent;padding:12px 35px;line-height:20px;border-radius:4.8px;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.card{border:1px solid #ebf4f7;color:#4d5356;font-weight:400;padding:0;line-height:28px}.card-header{border-bottom:0}.card-body,.card-footer,.card-header{text-align:center;background-color:#fff}.card-footer{background-color:#ebf4f7;border-top:0}
+	/* blog start project experiment css */
+	@-webkit-keyframes Gradient{0%,to{background-position:0 50%}50%{background-position:100% 50%}}@-moz-keyframes Gradient{0%,to{background-position:0 50%}50%{background-position:100% 50%}}@keyframes Gradient{0%,to{background-position:0 50%}50%{background-position:100% 50%}}.ds-questions-card{cursor:initial!important}.blogStartProject-h-2{font-size:2rem;font-weight:400;color:#fff;text-shadow:1px 1px 1px #1a1a1a}.blogStartProject-h-3{line-height:1;margin-bottom:20px;font-weight:300;font-size:1.4rem;color:#fff}.blogStartProject-btn{padding:9px 29px;text-transform:uppercase;color:#fff;border:1px;border-radius:3px;background:linear-gradient(325deg,#ffbb25,#ff5643)!important;animation:Gradient 10s ease infinite;font-weight:500}.blogStartProject-inp{padding-top:1.3rem!important;padding-bottom:1.3rem!important;padding-left:1.2rem}.blogStartProject-select{height:43px;padding-right:10px}.ds-questions-card{background:linear-gradient(310deg,#0d1381,#067bc0)}.form-control{display:block;width:100%;height:calc(1.5em + .75rem + 2px);padding:.375rem .75rem;font-size:1rem;font-weight:400;line-height:1.5;color:#495057;background-color:#fff;background-clip:padding-box;border:1px solid #ced4da;border-radius:.25rem;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out}@media (prefers-reduced-motion:reduce){.form-control{transition:none}}.form-control::-ms-expand{background-color:transparent;border:0}.form-control:-moz-focusring{color:transparent;text-shadow:0 0 0#495057}.form-control:focus{color:#495057;background-color:#fff;border-color:#80bdff;outline:0;box-shadow:0 0 0 .2rem rgba(0,123,255,.25)}.form-control::-webkit-input-placeholder{color:#6c757d;opacity:1}.form-control::-moz-placeholder{color:#6c757d;opacity:1}.form-control:-ms-input-placeholder{color:#6c757d;opacity:1}.form-control::-ms-input-placeholder{color:#6c757d;opacity:1}.form-control::placeholder{color:#6c757d;opacity:1}.form-control:disabled,.form-control[readonly]{background-color:#e9ecef;opacity:1}select.form-control:focus::-ms-value{color:#495057;background-color:#fff}select.form-control[multiple],select.form-control[size]{height:auto}.pl-3,.px-3{padding-left:1rem!important}.pr-3,.px-3{padding-right:1rem!important}.shadow-sm{box-shadow:0 .125rem .25rem rgba(0,0,0,.075)!important}.shadow{box-shadow:0 .5rem 1rem rgba(0,0,0,.15)!important}.pt-3,.py-3{padding-top:1rem!important}.pb-3,.py-3{padding-bottom:1rem!important}.pl-5,.px-5{padding-left:3rem!important}.pb-2,.py-2{padding-bottom:.5rem!important}.pt-2,.py-2{padding-top:.5rem!important}.p-5{padding:3rem!important}
+	.course-block__technology{background-position:0 0;background-repeat:no-repeat;background-size:45px 42px;display:block;height:42px;margin-left:auto;margin-right:auto;margin-top:-18px;width:45px}.display-1{font-size:3rem}.display-2{font-size:1.8rem;font-weight:400;line-height:1.4}.display-4{font-size:1.5rem}.dropdown-item,.dropdown-menu{line-height:30px}.dropdown-menu{min-width:200px;left:-650px;max-height:500px;overflow-y:scroll}.dropdown-menu.columns-2{min-width:600px}.dropdown-menu.columns-3{min-width:900px}.dropdown-menu.columns-4{min-width:1200px}.dropdown-menu a:hover{text-decoration:none;background-color:#ebf4f7}.learning-path-dropdown{position:absolute;left:0}a:hover{text-decoration:none}.flex-gap-20{gap:17px}@media (max-width:767px){.dropdown-menu.multi-column{min-width:240px!important;overflow-x:hidden}.flex-gap-20{gap:5px!important}}@media (min-width:768px){.d-md-block{display:block!important}}:target::before{content:"";display:block;height:80px;margin-top:-50px}
+
+	</style>
+<!-- START Rakuten Marketing Tracking -->
+  <script type="text/javascript">
+    (function (url) {
+      /*Tracking Bootstrap Set Up DataLayer objects/properties here*/
+      if(!window.DataLayer){
+        window.DataLayer = {};
+      }
+      if(!DataLayer.events){
+        DataLayer.events = {};
+      }
+      DataLayer.events.SPIVersion = DataLayer.events.SPIVersion || "3.4.1";
+      DataLayer.events.SiteSection = "1";
+
+      var loc, ct = document.createElement("script");
+      ct.type = "text/javascript";
+      ct.async = true; ct.src = url; loc = document.getElementsByTagName('script')[0];
+      loc.parentNode.insertBefore(ct, loc);
+      }(document.location.protocol + "//tag.rmp.rakuten.com/124265.ct.js"));
+  </script>
+<!-- END Rakuten Marketing Tracking -->
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PM3NN4G"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<!-- 
+<nav class="navbar fixed-top navbar-expand-sm header_top_dc navbar-light pl-md-5 pr-md-5 pl-lg-5 pr-lg-5 pt-md-3 pb-md-3">
+ -->
+<nav class="navbar navbar-expand-md header_top_dc navbar-light px-md-5 px-lg-5 py-md-3">
+        <a title="ProjectPro" class="navbar-brand" href="/">
+		<img class="logo" width="180" height="36" src="https://daxg39y63pxwu.cloudfront.net/dezyre2.0/images/project_pro_logo_white.png" alt="ProjectPro">
+	</a>
+		<button aria-label="mobile_menu" class="navbar-dark navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span style="opacity:0.70;"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></span>
+    </button>
+    
+    <div class="flex-grow-0 ml-auto mr-sm-5 collapse navbar-collapse" id="navbarSupportedContent">
+    
+	    <ul class="text-left navbar-nav flex-gap-20"> 
+	    
+
+			<li class="nav-item  dropdown">
+        		<a title="Projects" style="position:relative;" role="button" class="nav-link header_link position-relative text-nowrap dropdown-toggle" id="dropdownProjects" data-toggle="dropdown"  href="#">Projects</a>
+
+				<div class="dropdown-menu learning-path-dropdown" aria-labelledby="dropdownProjects">
+					<a class="dropdown-item" title="Data Science" href="/projects/data-science-projects">Data Science</a>
+					<a class="dropdown-item" title="Big Data" href="/projects/big-data-projects">Big Data</a>
+					<a class="dropdown-item" title="Fast Projects" href="/projects/real-world-data-science-projects-with-solutions">Fast Projects</a>
+					<a class="dropdown-item" title="All Projects" href="/projects/">All Projects</a>
+				</div>
+			</li> 
+      		
+      		<li class="nav-item">
+        		<a title="Customer Testimonials" class="nav-link header_link" href="/dezyre-projectpro-reviews">Testimonials</a>
+      		</li>
+
+			<li class="nav-item  dropdown">
+        		<a title="custom project path" style="position:relative;" role="button" class="nav-link header_link position-relative text-nowrap dropdown-toggle" id="dropdownLearningPath" data-toggle="dropdown"  href="#">Custom Project Path <span style="position:absolute; top:-10px; right:-10px;" class="badge badge-primary new-badge">New</span> </a>
+
+				<div class="dropdown-menu learning-path-dropdown" aria-labelledby="dropdownLearningPath">
+					<a title="Data Science Project Path" class="dropdown-item" href="/user/customised-learning-path">Data Science Project Path</a>
+					<a title="Big Data Project Path" class="dropdown-item" href="/user/customised-bd-learning-path">Big Data Project Path</a>
+				</div>
+			</li> 
+
+
+			<li class="nav-item  dropdown">
+        		<a title="Resources" style="position:relative;" role="button" class="nav-link header_link position-relative text-nowrap dropdown-toggle" id="dropdownResources" data-toggle="dropdown"  href="#">Resources</a>
+
+				<div class="dropdown-menu learning-path-dropdown" aria-labelledby="dropdownResources">
+					<a class="dropdown-item" title="Blog" href="/blog">Blog</a>
+					<a class="dropdown-item" title="Free Recipes" href="/recipes">Free Recipes</a>
+					<a class="dropdown-item" title="Tutorials" href="/tutorial">Tutorials</a>
+					<a class="dropdown-item" title="Ebooks & Guides" href="/free-learning-resources">Ebooks & Guides</a>
+					<a class="dropdown-item" title="Partner with us" href="/partnerships/individual">Partner with us</a>
+				</div>
+			</li> 
+      		
+
+	    </ul>
+    </div>
+    
+    <!-- 
+    <a href="/projects/big-data-projects/apache-hadoop-projects" class="d-none d-sm-block">
+		<button type="button" class="mbtn mbtn-primary mbtn-large" onclick="gtag('event', 'click', {'event_category' : 'blog', 'event_label' : 'learn-button'});">
+			Learn NLP Projects Projects&nbsp;&nbsp;<span class="oi oi-arrow-thick-right" title="check" aria-hidden="true"></span>
+		</button>	   				
+	</a>
+     -->
+    
+	<!-- 
+    		<a href="/user/login" class="button2 d-none d-sm-block">Sign In</a>
+	     --> 
+    <a title="End to End Projects" href="/projects" class="button2 d-none d-md-block">End to End Projects</a> 
+    
+     
+</nav>
+	
+<div class="p-2 pt-3 mt-0 px-sm-5 blog-parent-bg-div bg-light">	
+	
+
+
+
+
+	<style>
+		@keyframes slide-form{0%{right:0!important}to{right:60px!important}}h3{color:#252525;line-height:35px}.mce-toc>ul li{padding-top:10px;padding-bottom:10px}.button-center{position:relative;left:50%;transform:translateX(-50%);width:fit-content}@media (max-width:1150px){.d-responsive-flex{display:flex!important;flex-wrap:wrap!important;justify-content:center!important}.write-for-projectpor-float-div{transform:unset!important;height:291px!important;margin-top:2.68rem!important}}@media (max-width:635px){.emailINP{width:100%!important}#blogAccessProjectFloat{margin-right:-113px!important}}@media (max-width:526px){.write-for-projectpor-float-div{margin-top:0!important}}.tsc-1{transform:scale(1.1);transform:translateX(5px)}.overflow-hidden{overflow:hidden}.img-border{border:1px solid silver;border-radius:2px}.write-for-projectpor-float-div{transform:translateY(-24px);width:282px!important;overflow:hidden}.write-for-projectpro-float{transform:scale(1.2)!important;margin-left:30px}footer{position:relative;z-index:2}.card-border{border-top-left-radius:8px;border-top-right-radius:8px}.body-font-size{font-size:1rem}@media (min-width:1351px){.main-blog-head-container{padding-right:250px}}@media (min-width:1900px){.button-action-parent-div,.main-blog-head-container{padding-left:0!important}}.inline-block{display:inline-block}.blog-author-text{font-size:24px}.blog-author-link{font-weight:500;color:#4277ff}.blog-author-link:hover{text-decoration:underline}.author-circular-img{border:1px solid gray}.bg-black{background:#000}.left-icon,.right-icon{height:50px;width:50px;padding:10px 14px!important;line-height:1}.px-10{padding-left:2.5rem;padding-right:2.5rem}.side-form-with-animation-parent{position:relative}.blog-parent-bg-div{background:#fff!important;padding:0!important}.gray-bg-div{background:#f5f5f5;width:70%}.half-banner-img{position:absolute;left:0;margin-top:4rem;z-index:1;max-width:600px!important}.blog-title{color:#222!important;font-size:39px;line-height:1.2em}.button-action-parent-div{display:flex}.button-action-1,.button-action-2{border:1.5px solid #007bff;border-radius:4px}.button-action-2:hover{background:0 0}.side-form-with-animation{position:fixed;top:0!important;right:60px!important;display:block;z-index:2;background:0 0!important}.slide-animate{animation-name:slide-form;animation-duration:2s;animation-iteration-count:1}.side-form-with-animation:not(.active){display:none}#blogAccessProjectFloat{display:block;height:unset;width:unset;right:60px!important;top:-27px!important;position:relative;z-index:0}.fade:not(.show){opacity:1}button.close{display:none}.modal-dialog{max-width:300px;margin-right:20px}.modal-content{background:#262f36;color:#fff;box-shadow:unset!important}.modal-title{font-size:1.2rem;font-weight:500!important;text-align:initial;color:#fff!important}.modal-body{margin:0!important;padding-top:5px}.modal-header{border-bottom:0;padding:12px 16px 5px}.modal-footer{border-top:0;padding:0 12px 10px}.email-valid-message,.number-valid-message{width:100%;display:none}.number-valid-message{right:0!important}.email-valid-message{right:-4%!important}#email-blogAccessProjectFloat,#phone-blogAccessProjectFloat{margin-bottom:15px!important;color:#fff;background:#fff;padding-left:15px;border-radius:4px;font-size:.95rem}.feather-mail,.feather-phone{display:none}.rightPaneSubmit{background:linear-gradient(45deg,#2595ff,#43baff)!important;color:#fff!important}[placeholder]{colot:#fff!important}@media (max-width:1270px){.half-banner-img-parent{-ms-flex-order:2;order:2}.half-banner-img{top:20px;left:unset;position:relative;transform:translateY(-50%)}.gray-bg-div{flex:unset;max-width:unset;width:100%}.gray-bg-div .container{padding-left:30px!important;padding-right:unset!important}.button-action-parent-div{flex-wrap:wrap;margin-bottom:50px!important}.modal{position:relative!important}.side-form-with-animation:not(.active){display:flex;justify-content:center}.modal-dialog{margin-bottom:0}#blogAccessProjectFloat{position:relative}.side-form-with-animation{position:relative!important;order:0;display:flex;justify-content:center}.side-form-with-animation-parent{display:flex;flex-direction:column-reverse}footer{order:-1}}@media (max-width:600px){.half-banner-img{padding-left:10px!important;width:-webkit-fill-available!important}@-moz-document url-prefix(){.half-banner-img{width:-moz-available!important}}.blog-title{font-size:30px}.button-action-2{margin-left:0!important}.button-action-parent-div{padding-left:20px!important}}@media (max-width:500px){.button-action-parent-div{display:grid}.button-action-1,.button-action-2{width:100%}}.mr-5,.mx-5{margin-right:3rem!important}.btn-primary{color:#fff;background-color:#006ee5;border-color:#006ee5}.d-u-blog{opacity:.7;display:block;font-size:15px}@media only screen and (max-width:1024px){.half-banner-img{display:none}}@media only screen and (max-width:1270px) and (min-width:1024px){.remaining-content{margin-top:-120px}}@media (min-width:576px){.col-sm-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}.col-sm-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}}.border{border:1px solid #dee2e6!important}@media (min-width:576px){.col-sm-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}.col-sm-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}}
+	</style>
+
+
+	<div class="parent-modal-form-article">
+
+		<div class="side-form-with-animation-parent">
+			<div class="px-4 text-white side-form-with-animation bg-dark">
+				<div class="modal d-responsive-flex fade" id="blogAccessProjectFloat" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document" style="margin-top:5.75rem;">
+						<div class="modal-content" style="background: linear-gradient(310deg,#0d1381,#067bc0);padding:10px 20px;">
+							<div class="text-center" style="padding: 5px 16px;">
+								<p class="modal-title w-100 font-weight-bold" style="font-size:1.3rem;">Start Your First Project</p>
+								<p class="text-white mb-0">Learn By Doing</p>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="m-3 modal-body" style="padding:5px;">
+								
+								<div class="m-0 md-form d-flex">
+									<input required minlength="10" placeholder="Your phone" type="text" id="phone-blogAccessProjectFloat" class="form-control text-dark validate" data-email-validation="true">
+								</div>
+								<div class="p-0 m-0 text-center number-valid-message-div" style="line-height:0;">
+									<span class="number-valid-message"></span>
+								</div>
+								
+								<div class="p-0 m-0 mt-1 md-form d-flex">
+									<input required placeholder="Your email" type="email" id="email-blogAccessProjectFloat" class="form-control text-dark validate" data-email-validation="true">
+								</div>
+								<div class="p-0 m-0 text-center email-valid-message-div" style="line-height:0;">
+									<span class="email-valid-message"></span>
+								</div>
+								<input type="hidden" value="utm_source=493&utm_medium=rightpanebutton&utm_campaign=mobstac" class="query-blogAccessProjectFloat" />
+							</div>
+							<div class="modal-footer d-flex justify-content-center">
+								<button style="background: linear-gradient(325deg,#ffbb25,#ff5643)!important;padding:10px 20px;font-size:0.89rem;" data-button="blogAccessProjectFloat" class="btn btn-default rightPaneSubmit">START PROJECT</button>
+								<button id="continue-blogAccessProjectFloat" class="btn btn-default" style="display:none">CONTINUE</button>
+							</div>
+						</div>
+					</div>
+					<!--
+											<div class="mt-0 img-border write-for-projectpor-float-div">
+							<a target="_blank" href="https://jobs.projectpro.io/jobs/Careers/61447000000225001/Technical-Content-Writer-Data-Engineering?source=CareerSite"><img height="400" width="350" class="write-for-projectpro-float" src="https://daxg39y63pxwu.cloudfront.net/images/blog/write-for-projectpro-ad.webp?v=1" alt="write for projectpro" /></a>
+						</div>
+										-->
+				</div>	
+			</div>
+		<div>
+
+		<div class="row container-fluid">
+			<div class="col-sm-12">
+					<div class="row mt-0">
+						<div class="offset-lg-7"></div>
+						<div class="col-lg-5 half-banner-img-parent">
+							<img fetchpriority="high" class="pl-5 half-banner-img img-responsive img-fluid"  alt="Machine Learning (ML) vs NLP - What's the Difference?" data-src="https://daxg39y63pxwu.cloudfront.net/images/blog/machine-learning-vs-nlp/Machine_Learning_vs_NLP.png" />
+						</div>
+						<div class="py-3 col-lg-9 gray-bg-div pl-4">
+							<div class="container main-blog-head-container py-5">
+								<h1 class="blog-title text-dark"><b>Machine Learning (ML) vs NLP - What's the Difference?</b></h1>
+								<p class="py-3 mt-4">
+									Machine Learning vs NLP - Understand what is the difference between machine learning and NLP and how they relate to each other. 									<br/>
+									<i class="pt-4 d-u-blog"><time itemprop="datePublished dateModified" class="py-2" content="2023-05-01"> Last Updated: 01 May 2023</time></i>
+								</p>
+							</div>
+							<div class="pb-5 button-action-parent-div container">
+								<a title="Get access to ALL NLP Projects" role="button" href="/project/project-demo?source=blogGetAccessMobstac&utm_source=blog493&utm_medium=leadformbutton&utm_campaign=mobstac" class="px-4 mx-0 mr-5 text-white btn btn-primary button-action-1">Get access to ALL NLP Projects</a>  
+								<a title="View all NLP Projects" role="button" href="/projects/data-science-projects/nlp-projects?utm_source=blog493&utm_medium=projectpagebutton&utm_campaign=mobstac" class="px-4 mx-0 btn btn-outline-primary button-action-2 text-primary" >View all NLP Projects</a>
+							</div>
+						</div>
+					</div>
+					<div class="offset-lg-2"></div>
+					<div class="remaining-content col-lg-8">
+					<br/>
+
+										
+					<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "image": 
+    [
+        "https://daxg39y63pxwu.cloudfront.net/images/blog/machine-learning-vs-nlp/Machine_Learning_vs_NLP.png",
+        "https://daxg39y63pxwu.cloudfront.net/images/blog/machine-learning-vs-nlp/image_11582201861632915710906.png",
+        "https://daxg39y63pxwu.cloudfront.net/images/blog/machine-learning-vs-nlp/image_88569217531632915694017.png",
+        "https://daxg39y63pxwu.cloudfront.net/images/blog/machine-learning-vs-nlp/image_49664868121632915693911.png",
+        "https://daxg39y63pxwu.cloudfront.net/images/blog/machine-learning-vs-nlp/image_24942141651632915708514.png",
+        "https://daxg39y63pxwu.cloudfront.net/images/blog/machine-learning-use-cases/Machine_Learning_Use_Cases.png",
+        "https://daxg39y63pxwu.cloudfront.net/images/blog/bert-nlp-model-explained/image_840863273131643968723649.png",
+        "https://daxg39y63pxwu.cloudfront.net/images/blog/bert-nlp-model-explained/image_346375259111643968723635.png"
+    ],
+    "@id": "https://www.projectpro.io/article/machine-learning-vs-NLP/493#image"
+}
+</script></p>
+<p>The term artificial intelligence is always synonymously used Awith complex terms like Machine learning, Natural Language Processing, and Deep Learning that are intricately woven with each other. One of the trending debates is that of the differences between natural language processing and machine learning. This post attempts to explain two of the crucial sub-domains of artificial intelligence - Machine Learning vs. NLP and how they fit together.</p>
+<div id="top_project" data-pid="363"><html><head><style>
+.blog-project-card{width:100%;margin:0 auto;color:#252525}.rated-badge{background:#f3ca8c!important;font-size:14px;color:#252525}.dot::before{content:" &acirc;&#128;&cent;"}@media (max-width:1100px){.blog-project-title-1{font-size:19px!important}}@media (max-width:987px){.blog-project-card{width:100%;margin:0 auto}.r-img-fluid{max-width:100%!important}.mt-screen{margin-top:20px}}.explore-project-btn{cursor:pointer;padding:10px 20px;background:#ffc844;border:0;border-radius:3px;font-size:.9rem;font-weight:500;background:#252525!important;color:#fff!important;text-transform:none}.r-img-fluid{width:100%}.text-white{color:#fff!important;}
+</style></head><body><br><div style="background: #f7f9fa;" class="py-5  blog-project-card my-4 row align-items-center">
+	<div class="col-lg-6 py-2 px-4">
+		<a href="/project-use-case/spacy-python-nlp-example?utm_source=493&amp;utm_medium=fold1" target="_blank">
+			<img height="200" width="400" class="r-img-fluid img-fluid img-responsive" alt="data_science_project " data-src="https://s3.amazonaws.com/files.dezyre.com/images/blog/data_science_project.webp"></a>
+	</div>
+	<div class="col-lg-6 py-2 mt-screen px-sm-0 px-4">
+		<h4 class="pl-md-3 blog-project-title-1" style="line-height: 1.2; font-size:22px;"><b>NLP Project to Build a Resume Parser in Python using Spacy </b></h4>
+		<div class="ml-md-3">
+			<p style="line-height:1.25;" class="mt-lg-2 mt-3"> Downloadable solution code | Explanatory videos | Tech Support </p>
+			<a href="/project-use-case/spacy-python-nlp-example?utm_source=493&amp;utm_medium=fold1" class="mr-3 ml-0 btn explore-project-btn text-white inline-block shadow mt-5">Start Project</a>
+		</div>
+	</div>
+</div>
+<br></body></html></div>
+<div style="background: #eee; border: 1px solid #ccc; padding: 5px 10px;">
+<div class="mce-toc">
+<h2>Table of Contents</h2>
+<ul><li><a href="#mcetoc_1fgolus0h1s">AI vs. Machine Learning vs. NLP</a>
+<ul><li><a href="#mcetoc_1fgolus0h1t">What is Artificial Intelligence?</a></li>
+<li><a href="#mcetoc_1fgolus0h1u">What is Natural Language Processing?</a></li>
+<li><a href="#mcetoc_1fgolus0h1v">What is Machine learning?</a></li>
+<li><a href="#mcetoc_1fgolus0h20">Is NLP considered Machine Learning?</a></li>
+<li><a href="#mcetoc_1fgolus0h21">Can I learn NLP without machine learning?</a></li>
+<li><a href="#mcetoc_1fgolus0h22">Is NLP a part of deep learning?</a></li>
+<li><a href="#mcetoc_1fgolus0h24">Applications of Natural Language Processing</a></li>
+<li><a href="#mcetoc_1fgolus0h27">How to Start with NLP using Python?</a></li>
+</ul></li>
+</ul></div>
+</div>
+<p>&nbsp;</p>
+<p><a title="ProjectPro Free Projects on Big Data and Data Science" href="https://www.projectpro.io/project/project-demo?utm_source=Blog493&amp;utm_medium=ProductValue" target="_blank" rel="noopener"><img class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" title="ProjectPro Free Projects on Big Data and Data Science" alt="ProjectPro Free Projects on Big Data and Data Science" width="619" height="371" data-src="https://daxg39y63pxwu.cloudfront.net/images/blog/100-data-science-in-python-interview-questions-and-answers-for-2021/ProjectPro_Free_Projects_on_Big_Data_and_Data_Science.png"></a></p>
+<h2 id="mcetoc_1fgolus0h1s">AI vs. Machine Learning vs. NLP</h2>
+<p style="text-align: center;"><img class="img-fluid" title="machine learning vs NLP" alt="machine learning vs NLP" width="500" height="300" data-src="https://daxg39y63pxwu.cloudfront.net/images/blog/machine-learning-vs-nlp/Machine_Learning_vs_NLP.png"></p>
+<p>While machine learning and natural language processing both fall under the Artificial intelligence universe, they have a stark difference. Without further ado, let&rsquo;s dive in and take a detailed look at what is the difference between machine learning and NLP.</p>
+<p style="text-align: center;"><span data-sheets-userformat="{" data-sheets-value="{">Evolution of <a title="Machine Learning Applications in Finance" href="https://www.projectpro.io/article/projects-on-machine-learning-applications-in-finance/510" target="_blank" rel="noopener">Machine Learning Applications in Finance</a> : From Theory to Practice </span></p>
+<div id="new_projects"><html><head><script defer src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script><link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" as="style" onload="this.rel='stylesheet'"><link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" as="style" onload="this.rel='stylesheet'"><style>
+.blog-new-project-card-title{color:#1c1d1f;font-weight:700;height:135px;font-size:1.05rem;margin-bottom:6px;line-height:1.3;display:block!important;white-space:normal;margin-top:9px}.black-btn{cursor:pointer;padding:10px 20px;background:#ffc844;border:0;border-radius:3px;font-size:.9rem;font-weight:500;background:#252525!important;color:#fff!important;text-transform:none}.feather{vertical-align:unset;margin-right:unset}.owl-next>span,.owl-prev>span{font-size:2.3rem;margin:0 20px}.owl-next,.owl-prev{background:#fff!important;color:#252525!important}.owl-nav .owl-next,.owl-nav .owl-prev{background:#f3f8ff!important;color:#252525!important}.owl-carousel .owl-stage-outer{height:calc(100% + 30px);margin:-20px -10px;padding:40px 30px 40px 8px;width:calc(100% + 13px)}.left-icon,.right-icon{font-size:2rem!important;position:absolute;top:50%;transform:translateY(-50%);opacity:.7;color:#fff;padding:5px 8px;border-radius:50%}.left-icon{left:-3%;background:#252525!important}.right-icon{right:-3%;background:#000!important}.owl-theme .owl-nav{margin-top:0!important}.text-white{color:#fff!important;}.text-dark{color:#000!important;}
+</style></head><body><br><div style="background: #f7f9fa;" class="my-2 py-5 pb-10 px-5">
+	<p class="text-dark text-center" style="font-size:2.1em;"><b> New Projects </b></p>
+	<div class="owl-carousel owl-theme" id="owl-carousel-new-projects">
+					<div class="blog-new-project-card card-border card shadow mx-2">
+				<!-- <a href="/project-use-case/multilabel-classification-project-example"><img class="img-fluid"  data-src="https://placekitten.com/640/360" /></a> -->
+				<div>
+					<a title="Multilabel Classification Project for Predicting Shipment Modes" href="/project-use-case/multilabel-classification-project-example?utm_source=493&amp;utm_medium=fold2" class="blog-new-project-card-title text-dark px-2">Multilabel Classification Project for Predicting Shipment Modes</a>
+					<!-- <p class="px-2 pb-2" style="opacity:0.8; line-height:1.3;"></p> -->
+<!-- 					<span class="badge  px-3 py-2 mb-3 bg-warning rated-badge text-dark"> Highest Rated </span> -->
+					<a role="button" href="/project-use-case/multilabel-classification-project-example?utm_source=493&amp;utm_medium=fold2" class="m-0 mt-2 px-3 py-2 btn btn-block inline-block w-full text-white" style="background: #1283da; border:0; border-radius:0px;font-size:0.9rem; text-transform:none;">View Project</a>
+				</div>
+			</div>
+					<div class="blog-new-project-card card-border card shadow mx-2">
+				<!-- <a href="/project-use-case/a-b-testing-for-machine-learning-in-production"><img class="img-fluid"  data-src="https://placekitten.com/640/360" /></a> -->
+				<div>
+					<a title="Mastering A/B Testing: A Practical Guide for Production" href="/project-use-case/a-b-testing-for-machine-learning-in-production?utm_source=493&amp;utm_medium=fold2" class="blog-new-project-card-title text-dark px-2">Mastering A/B Testing: A Practical Guide for Production</a>
+					<!-- <p class="px-2 pb-2" style="opacity:0.8; line-height:1.3;"></p> -->
+<!-- 					<span class="badge  px-3 py-2 mb-3 bg-warning rated-badge text-dark"> Highest Rated </span> -->
+					<a role="button" href="/project-use-case/a-b-testing-for-machine-learning-in-production?utm_source=493&amp;utm_medium=fold2" class="m-0 mt-2 px-3 py-2 btn btn-block inline-block w-full text-white" style="background: #1283da; border:0; border-radius:0px;font-size:0.9rem; text-transform:none;">View Project</a>
+				</div>
+			</div>
+					<div class="blog-new-project-card card-border card shadow mx-2">
+				<!-- <a href="/project-use-case/spark-streaming-aws-using-scala"><img class="img-fluid"  data-src="https://placekitten.com/640/360" /></a> -->
+				<div>
+					<a title="Build a Real-Time Spark Streaming Pipeline on AWS using Scala" href="/project-use-case/spark-streaming-aws-using-scala?utm_source=493&amp;utm_medium=fold2" class="blog-new-project-card-title text-dark px-2">Build a Real-Time Spark Streaming Pipeline on AWS using Scala</a>
+					<!-- <p class="px-2 pb-2" style="opacity:0.8; line-height:1.3;"></p> -->
+<!-- 					<span class="badge  px-3 py-2 mb-3 bg-warning rated-badge text-dark"> Highest Rated </span> -->
+					<a role="button" href="/project-use-case/spark-streaming-aws-using-scala?utm_source=493&amp;utm_medium=fold2" class="m-0 mt-2 px-3 py-2 btn btn-block inline-block w-full text-white" style="background: #1283da; border:0; border-radius:0px;font-size:0.9rem; text-transform:none;">View Project</a>
+				</div>
+			</div>
+					<div class="blog-new-project-card card-border card shadow mx-2">
+				<!-- <a href="/project-use-case/emr-serverless-example-to-build-a-search-engine"><img class="img-fluid"  data-src="https://placekitten.com/640/360" /></a> -->
+				<div>
+					<a title="EMR Serverless Example to Build a Search Engine for COVID19" href="/project-use-case/emr-serverless-example-to-build-a-search-engine?utm_source=493&amp;utm_medium=fold2" class="blog-new-project-card-title text-dark px-2">EMR Serverless Example to Build a Search Engine for COVID19</a>
+					<!-- <p class="px-2 pb-2" style="opacity:0.8; line-height:1.3;"></p> -->
+<!-- 					<span class="badge  px-3 py-2 mb-3 bg-warning rated-badge text-dark"> Highest Rated </span> -->
+					<a role="button" href="/project-use-case/emr-serverless-example-to-build-a-search-engine?utm_source=493&amp;utm_medium=fold2" class="m-0 mt-2 px-3 py-2 btn btn-block inline-block w-full text-white" style="background: #1283da; border:0; border-radius:0px;font-size:0.9rem; text-transform:none;">View Project</a>
+				</div>
+			</div>
+					<div class="blog-new-project-card card-border card shadow mx-2">
+				<!-- <a href="/project-use-case/etl-pipeline-with-snowflake-dbt-airflow-example"><img class="img-fluid"  data-src="https://placekitten.com/640/360" /></a> -->
+				<div>
+					<a title="Build an ETL Pipeline with DBT, Snowflake  and Airflow" href="/project-use-case/etl-pipeline-with-snowflake-dbt-airflow-example?utm_source=493&amp;utm_medium=fold2" class="blog-new-project-card-title text-dark px-2">Build an ETL Pipeline with DBT, Snowflake  and Airflow</a>
+					<!-- <p class="px-2 pb-2" style="opacity:0.8; line-height:1.3;"></p> -->
+<!-- 					<span class="badge  px-3 py-2 mb-3 bg-warning rated-badge text-dark"> Highest Rated </span> -->
+					<a role="button" href="/project-use-case/etl-pipeline-with-snowflake-dbt-airflow-example?utm_source=493&amp;utm_medium=fold2" class="m-0 mt-2 px-3 py-2 btn btn-block inline-block w-full text-white" style="background: #1283da; border:0; border-radius:0px;font-size:0.9rem; text-transform:none;">View Project</a>
+				</div>
+			</div>
+					<div class="blog-new-project-card card-border card shadow mx-2">
+				<!-- <a href="/project-use-case/snowflake-healthcare-analytics-project"><img class="img-fluid"  data-src="https://placekitten.com/640/360" /></a> -->
+				<div>
+					<a title="End-to-End Snowflake Healthcare Analytics Project on AWS-1" href="/project-use-case/snowflake-healthcare-analytics-project?utm_source=493&amp;utm_medium=fold2" class="blog-new-project-card-title text-dark px-2">End-to-End Snowflake Healthcare Analytics Project on AWS-1</a>
+					<!-- <p class="px-2 pb-2" style="opacity:0.8; line-height:1.3;"></p> -->
+<!-- 					<span class="badge  px-3 py-2 mb-3 bg-warning rated-badge text-dark"> Highest Rated </span> -->
+					<a role="button" href="/project-use-case/snowflake-healthcare-analytics-project?utm_source=493&amp;utm_medium=fold2" class="m-0 mt-2 px-3 py-2 btn btn-block inline-block w-full text-white" style="background: #1283da; border:0; border-radius:0px;font-size:0.9rem; text-transform:none;">View Project</a>
+				</div>
+			</div>
+					<div class="blog-new-project-card card-border card shadow mx-2">
+				<!-- <a href="/project-use-case/aws-cdk-project-example-for-building-real-time-iot-infrastructure"><img class="img-fluid"  data-src="https://placekitten.com/640/360" /></a> -->
+				<div>
+					<a title="AWS CDK Project for Building Real-Time IoT Infrastructure" href="/project-use-case/aws-cdk-project-example-for-building-real-time-iot-infrastructure?utm_source=493&amp;utm_medium=fold2" class="blog-new-project-card-title text-dark px-2">AWS CDK Project for Building Real-Time IoT Infrastructure</a>
+					<!-- <p class="px-2 pb-2" style="opacity:0.8; line-height:1.3;"></p> -->
+<!-- 					<span class="badge  px-3 py-2 mb-3 bg-warning rated-badge text-dark"> Highest Rated </span> -->
+					<a role="button" href="/project-use-case/aws-cdk-project-example-for-building-real-time-iot-infrastructure?utm_source=493&amp;utm_medium=fold2" class="m-0 mt-2 px-3 py-2 btn btn-block inline-block w-full text-white" style="background: #1283da; border:0; border-radius:0px;font-size:0.9rem; text-transform:none;">View Project</a>
+				</div>
+			</div>
+					<div class="blog-new-project-card card-border card shadow mx-2">
+				<!-- <a href="/project-use-case/etl-pipeline-project-on-aws-emr-using-cdk-and-powerbi"><img class="img-fluid"  data-src="https://placekitten.com/640/360" /></a> -->
+				<div>
+					<a title="Build an ETL Pipeline on EMR using AWS CDK and Power BI" href="/project-use-case/etl-pipeline-project-on-aws-emr-using-cdk-and-powerbi?utm_source=493&amp;utm_medium=fold2" class="blog-new-project-card-title text-dark px-2">Build an ETL Pipeline on EMR using AWS CDK and Power BI</a>
+					<!-- <p class="px-2 pb-2" style="opacity:0.8; line-height:1.3;"></p> -->
+<!-- 					<span class="badge  px-3 py-2 mb-3 bg-warning rated-badge text-dark"> Highest Rated </span> -->
+					<a role="button" href="/project-use-case/etl-pipeline-project-on-aws-emr-using-cdk-and-powerbi?utm_source=493&amp;utm_medium=fold2" class="m-0 mt-2 px-3 py-2 btn btn-block inline-block w-full text-white" style="background: #1283da; border:0; border-radius:0px;font-size:0.9rem; text-transform:none;">View Project</a>
+				</div>
+			</div>
+					<div class="blog-new-project-card card-border card shadow mx-2">
+				<!-- <a href="/project-use-case/python-and-mongodb-project-for-beginners-with-source-code"><img class="img-fluid"  data-src="https://placekitten.com/640/360" /></a> -->
+				<div>
+					<a title="Python and MongoDB Project for Beginners with Source Code" href="/project-use-case/python-and-mongodb-project-for-beginners-with-source-code?utm_source=493&amp;utm_medium=fold2" class="blog-new-project-card-title text-dark px-2">Python and MongoDB Project for Beginners with Source Code</a>
+					<!-- <p class="px-2 pb-2" style="opacity:0.8; line-height:1.3;"></p> -->
+<!-- 					<span class="badge  px-3 py-2 mb-3 bg-warning rated-badge text-dark"> Highest Rated </span> -->
+					<a role="button" href="/project-use-case/python-and-mongodb-project-for-beginners-with-source-code?utm_source=493&amp;utm_medium=fold2" class="m-0 mt-2 px-3 py-2 btn btn-block inline-block w-full text-white" style="background: #1283da; border:0; border-radius:0px;font-size:0.9rem; text-transform:none;">View Project</a>
+				</div>
+			</div>
+					<div class="blog-new-project-card card-border card shadow mx-2">
+				<!-- <a href="/project-use-case/etl-pipeline-with-talend-for-exporting-data-from-cloud"><img class="img-fluid"  data-src="https://placekitten.com/640/360" /></a> -->
+				<div>
+					<a title="Build an ETL Pipeline with Talend for Export of Data from Cloud" href="/project-use-case/etl-pipeline-with-talend-for-exporting-data-from-cloud?utm_source=493&amp;utm_medium=fold2" class="blog-new-project-card-title text-dark px-2">Build an ETL Pipeline with Talend for Export of Data from Cloud</a>
+					<!-- <p class="px-2 pb-2" style="opacity:0.8; line-height:1.3;"></p> -->
+<!-- 					<span class="badge  px-3 py-2 mb-3 bg-warning rated-badge text-dark"> Highest Rated </span> -->
+					<a role="button" href="/project-use-case/etl-pipeline-with-talend-for-exporting-data-from-cloud?utm_source=493&amp;utm_medium=fold2" class="m-0 mt-2 px-3 py-2 btn btn-block inline-block w-full text-white" style="background: #1283da; border:0; border-radius:0px;font-size:0.9rem; text-transform:none;">View Project</a>
+				</div>
+			</div>
+		 
+	</div>
+	<p class="text-center"><a style="position:relative;z-index:4000;" class="bg-black text-white px-10 inline-block mt-5 py-3" role="button" href="/projects?utm_source=493&amp;utm_medium=fold2">View all New Projects</a></p>
+	
+</div>
+<br></body></html></div>
+<h3 id="mcetoc_1fgolus0h1t">What is Artificial Intelligence?</h3>
+<p><a title="Artificial intelligence" href="https://www.projectpro.io/article/artificial-intelligence-project-ideas/461" target="_blank" rel="noopener">Artificial intelligence</a> or AI is a broad term used to refer to any technology that can make machines think and learn from tasks and solve problems like humans. Anything that makes a machine smart is referred to as artificial intelligence. The application of this technology encompasses everything from advanced web search engines like Google, the recommendations systems used by Amazon, Netflix, Youtube, virtual assistants like Alexa or Siri, the self-driving Tesla cars, and so on.</p>
+<h3 id="mcetoc_1fgolus0h1u">What is Natural Language Processing?</h3>
+<p>Natural language processing, or <a title="NLP" href="https://www.projectpro.io/article/nlp-interview-questions-and-answers/439" target="_blank" rel="noopener">NLP</a> as it is commonly abbreviated, refers to an area of AI that takes raw, written text( in natural human languages) and interprets and transforms it into a form that the computer can understand. NLP can perform an intelligent analysis of large amounts of plain written text and generate insights from it. This advancement in technology has opened up the communication lines between humans and machines( computers), resulting in the development of applications like sentiment analyzers, <a title="text classifiers" href="https://www.projectpro.io/article/7-types-of-classification-algorithms-in-machine-learning/435" target="_blank" rel="noopener">text classifiers</a>, chatbots, and virtual assistants. The most famous examples of NLP in our daily lives are virtual assistants like Siri and Alexa.</p>
+<p style="text-align: center;"><img class="img-fluid" title="NLP machine learning example" alt="NLP machine learning example" width="623" height="346" data-src="https://daxg39y63pxwu.cloudfront.net/images/blog/machine-learning-vs-nlp/image_11582201861632915710906.png"></p>
+<p style="text-align: center;">Image Credit: quickmeme.com</p>
+<div style="background: #eee; border: 1px solid #ccc; padding: 5px 10px;">
+<p dir="ltr" style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"><strong id="docs-internal-guid-7bd73c31-7fff-b551-9888-5b36fbd97102">Get Closer To Your Dream of Becoming a Data Scientist with 70+ Solved<a title="Machine Learning Projects" href="https://www.projectpro.io/projects?utm_source=TXTCTA1&amp;utm_medium=ConvertLink&amp;utm_campaign=Blg493" target="_blank" rel="noopener"> <span style="color: #0000cd;">End-to-End ML Projects</span></a></strong></span></p>
+</div>
+<h3 id="mcetoc_1fgolus0h1v">What is Machine learning?</h3>
+<p><a title="Machine learning" href="https://www.projectpro.io/article/what-is-machine-learning-and-how-it-is-remaking-our-world/191" target="_blank" rel="noopener">Machine learning</a> or ML is a sub-field of artificial intelligence that uses statistical techniques to solve large amounts of data without any human intervention. Machine learning helps solve problems similar to how humans would but using large-scale data and automated processes. Machine learning has algorithms that are used in natural language processing, <a title="Computer Vision Tutorial" href="https://www.projectpro.io/computer%20vision%20tutorial%20for%20beginners-tutorial/computer-vision-tutorial-for-beginners" target="_blank" rel="noopener">computer vision</a>, robotics more efficiently. Machine learning is a way to solve real-world AI problems. <a title="Machine learning uses" href="https://www.projectpro.io/article/why-you-should-learn-machine-learning/362" target="_blank" rel="noopener">Machine learning uses</a> algorithms that teach machines to learn and improve with data without explicit programming automatically.</p>
+<p style="text-align: center;"><img class="img-fluid" title="What is Machine learning?" alt="What is Machine learning?" width="396" height="237" data-src="https://daxg39y63pxwu.cloudfront.net/images/blog/machine-learning-vs-nlp/image_88569217531632915694017.png"></p>
+<p style="text-align: center;">&nbsp;Image Credit: Twitter</p>
+<div style="background: #eee; border: 1px solid #ccc; padding: 5px 10px;">
+<p dir="ltr" style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"><strong id="docs-internal-guid-068eada7-7fff-c11e-e1a3-eef1fe587be9">Get FREE Access to<a title="Data Science and Machine Learning Python Example Codes" href="https://www.projectpro.io/recipes?utm_source=TXTCTA2&amp;utm_medium=RcpLink&amp;utm_campaign=blg493" target="_blank" rel="noopener"> <span style="color: #0000cd;">Machine Learning Example Codes</span></a> for Data Cleaning, Data Munging, and Data Visualization</strong></span></p>
+</div>
+<h3 id="mcetoc_1fgolus0h20">Is NLP considered Machine Learning?</h3>
+<p>As shown in the figure below, we can see that natural language processing and Machine learning overlap. Machine learning is often used as a tool for Natural language processing. There are also multiple preprocessing techniques used in <a title="NLP" href="https://www.projectpro.io/article/10-nlp-techniques-every-data-scientist-should-know/415" target="_blank" rel="noopener">NLP</a> like :</p>
+<ul><li>
+<p><strong>Tokenization</strong>: It is used to identify essential components of a sentence or words.</p>
+</li>
+<li>
+<p><strong>POS-Tagging</strong>: Also called Parts of Speech Tagging, is an ML technique that tags parts of speech like nouns, verbs, etc., which are then used for entity extraction</p>
+</li>
+<li>
+<p><strong>Entity Extraction</strong>: This <a title="Machine Learning technique" href="https://www.projectpro.io/article/10-awesome-machine-learning-applications-of-today/364" target="_blank" rel="noopener">Machine Learning technique</a> is used for the extraction of entities from text data.</p>
+</li>
+<li>
+<p><strong>Lemmatization &amp; <a title="stemming" href="https://www.projectpro.io/article/stemming-in-nlp/780" target="_blank" rel="noopener">stemming</a></strong>: This reduces words to their base form, making it easier to analyze them.</p>
+</li>
+<li>
+<p><strong>Stop-word removal</strong>: This technique removes frequently occurring words that don&rsquo;t add any semantic value to our analysis, such as I, they, have, etc.</p>
+</li>
+</ul><p style="text-align: center;"><img class="img-fluid" title="NLP vs machine learning" alt="NLP vs machine learning" width="526" height="324" data-src="https://daxg39y63pxwu.cloudfront.net/images/blog/machine-learning-vs-nlp/image_49664868121632915693911.png">\&nbsp;</p>
+<p>NLP requires understanding how we humans use language, which involves understanding sarcasm, humor, and bias in text data, which can differ for different genres like research, blogs, and tweets based on the user. This is further encoded into <a title="machine learning algorithms" href="https://www.projectpro.io/article/common-machine-learning-algorithms-for-beginners/202" target="_blank" rel="noopener">machine learning algorithms</a> which can automate the process of discovering patterns in text.</p>
+<p>Applying Machine learning techniques to NLP problems would require converting unstructured text data into structured data ( usually tabular format). Machine learning for NLP involves using statistical methods for identifying parts of speech, sentiments, entities, etc. These techniques are formulated as a model and then applied to other text datasets. This is called supervised learning. We can also use a set of algorithms on large datasets to extract patterns and for decision making. This is known as unsupervised learning.</p>
+<div id="tags"><html><head><style>
+.tags-project-card{width:100%;margin:0 auto}.b-topic{padding:8px 11px;font-size:.9rem;background:0 0!important;border:1px solid #000;cursor:pointer;color:#5624d0;margin:5px}.b-topic:hover{color:#fff;background:#5624d0!important}@media (max-width:600px){.tags-project-card{width:100%;margin:0 auto}}
+</style></head><body><hr class="mt-10"><div class="tags-project-card text-center pb-10 my-10">
+	<p class="text-center text-dark my-3" style="font-size:2.1em;"><b> Explore Categories</b></p>
+			<a title="Data Science Projects in Python" href="/projects/data-science-projects/data-science-projects-in-python?utm_source=493&amp;utm_medium=fold3"><span class="badge b-topic rounded-pill bg-primary">Data Science Projects in Python</span></a>
+			<a title="Deep Learning Projects" href="/projects/data-science-projects/deep-learning-projects?utm_source=493&amp;utm_medium=fold3"><span class="badge b-topic rounded-pill bg-primary">Deep Learning Projects</span></a>
+			<a title="Neural Network Projects" href="/projects/data-science-projects/neural-network-projects?utm_source=493&amp;utm_medium=fold3"><span class="badge b-topic rounded-pill bg-primary">Neural Network Projects</span></a>
+			<a title="Tensorflow Projects" href="/projects/data-science-projects/tensorflow-projects?utm_source=493&amp;utm_medium=fold3"><span class="badge b-topic rounded-pill bg-primary">Tensorflow Projects</span></a>
+			<a title="H2O R Projects" href="/projects/data-science-projects/h2o-r-projects?utm_source=493&amp;utm_medium=fold3"><span class="badge b-topic rounded-pill bg-primary">H2O R Projects</span></a>
+			<a title="IoT Projects" href="/projects/data-science-projects/iot-projects?utm_source=493&amp;utm_medium=fold3"><span class="badge b-topic rounded-pill bg-primary">IoT Projects</span></a>
+			<a title="Keras Deep Learning Projects" href="/projects/data-science-projects/keras-deep-learning-projects?utm_source=493&amp;utm_medium=fold3"><span class="badge b-topic rounded-pill bg-primary">Keras Deep Learning Projects</span></a>
+			<a title="NLP Projects" href="/projects/data-science-projects/nlp-projects?utm_source=493&amp;utm_medium=fold3"><span class="badge b-topic rounded-pill bg-primary">NLP Projects</span></a>
+			<a title="Pytorch" href="/projects/data-science-projects/pytorch?utm_source=493&amp;utm_medium=fold3"><span class="badge b-topic rounded-pill bg-primary">Pytorch</span></a>
+			<a title="Data Science Projects in Banking and Finance" href="/projects/data-science-projects/data-science-in-finance?utm_source=493&amp;utm_medium=fold3"><span class="badge b-topic rounded-pill bg-primary">Data Science Projects in Banking and Finance</span></a>
+			<a title="Data Science Projects in Retail &amp; Ecommerce" href="/projects/data-science-projects/machine-learning-in-retail-and-ecommerce?utm_source=493&amp;utm_medium=fold3"><span class="badge b-topic rounded-pill bg-primary">Data Science Projects in Retail &amp; Ecommerce</span></a>
+			<a title="Data Science Projects in Entertainment &amp; Media" href="/projects/data-science-projects/machine-learning-in-media-and-entertainment?utm_source=493&amp;utm_medium=fold3"><span class="badge b-topic rounded-pill bg-primary">Data Science Projects in Entertainment &amp; Media</span></a>
+			<a title="Data Science Projects in Telecommunications" href="/projects/data-science-projects/machine-learning-in-telecommunications-industry?utm_source=493&amp;utm_medium=fold3"><span class="badge b-topic rounded-pill bg-primary">Data Science Projects in Telecommunications</span></a>
+	
+</div>
+<hr class="mb-10"></body></html></div>
+<h3 id="mcetoc_1fgolus0h21">Can I learn NLP without machine learning?</h3>
+<p>Just like the need for math in physics, Machine learning is a necessity for Natural language processing. We use Mathematics to represent problems in physics as equations and use mathematical techniques like calculus to solve them. Similarly, we formulate NLP problems using Machine learning techniques. Machine learning is considered a prerequisite for NLP as we used techniques like POS tagging, Bag of words (BoW), TF-IDF, Word to Vector for structuring text data.</p>
+<p><strong>Recommended Reading:&nbsp;</strong></p>
+<ul><li><strong><a title="How to Become an MLOps Engineer?" href="https://www.projectpro.io/article/how-to-become-an-mlops-engineer/478" target="_blank" rel="noopener">How to Become an MLOps Engineer?</a> </strong></li>
+<li><strong><a title="Best NLP Books- What Data Scientists Must Read?" href="https://www.projectpro.io/article/best-nlp-books/505" target="_blank" rel="noopener">Best NLP Books- What Data Scientists Must Read?</a></strong></li>
+</ul><h3 id="mcetoc_1fgolus0h22">Is NLP a part of deep learning?</h3>
+<p>The image below shows how Artificial intelligence, Machine learning, <a title="Natural language processing" href="https://www.projectpro.io/projects/data-science-projects/nlp-projects" target="_blank" rel="noopener">Natural language processing</a>, and Deep learning are interrelated.</p>
+<p style="text-align: center;"><img class="img-fluid" title="natural language processing machine learning" alt="natural language processing machine learning" width="527" height="307" data-src="https://daxg39y63pxwu.cloudfront.net/images/blog/machine-learning-vs-nlp/image_24942141651632915708514.png"></p>
+<p><a title="Deep learning" href="https://www.projectpro.io/projects/data-science-projects/deep-learning-projects" target="_blank" rel="noopener">Deep learning</a> is a sub-field of machine learning that uses ANNs or artificial <a title="neural networks" href="https://www.projectpro.io/article/neural-network-projects/440" target="_blank" rel="noopener">neural networks</a> and large datasets to mimic the functionality of a human neural system (the brain) and recognize patterns that can then be used for decision making. NLP aims to open communication between humans and machines, making human languages accessible to computers in real-time scenarios.</p>
+<p>Natural language processing and deep learning are both parts of artificial intelligence. While we are using NLP to redefine how machines understand human languages and behavior, Deep learning is enriching <a title="NLP applications" href="https://www.projectpro.io/article/nlp-projects-ideas-/452" target="_blank" rel="noopener">NLP applications</a>. Deep learning and vector-mapping make natural language processing more accurate without the need for much human intervention. Given the vast amount of data available deep learning can be used for unsupervised learning for NLP.</p>
+<div style="background: #eee; border: 1px solid #ccc; padding: 5px 10px;">
+<p style="text-align: center;"><strong>Explore More&nbsp;<a title="Data Science Projects" href="https://www.projectpro.io/projects/data-science-projects?utm_source=TXTCTA1&amp;utm_medium=ConvertLink&amp;utm_campaign=Blg493" target="_blank" rel="noopener" data-saferedirecturl="https://www.google.com/url?q=http://www.dezyre.com/projects/data-science-projects?utm_source%3Dblog%26utm_medium%3DBlg421%26utm_content%3Dtext_link&amp;source=gmail&amp;ust=1628220857230000&amp;usg=AFQjCNEfKvEgh0yos1jxzrstTswZS_hN-Q">Data Science and Machine Learning Projects</a> for Practice. Fast-Track Your Career Transition with ProjectPro</strong></p>
+</div>
+<h3 id="mcetoc_1fgolus0h23"></h3>
+<h3 id="mcetoc_1fgolus0h24">Applications of Natural Language Processing</h3>
+<p>Here are a few applications of NLP, that are used in our day-to-day lives.</p>
+<ul><li>
+<p id="mcetoc_1fgolus0h25" role="presentation">Search Autocorrect and Autocomplete</p>
+</li>
+<li>
+<p id="mcetoc_1fgolus0h26" role="presentation">Language Translation</p>
+</li>
+<li>
+<p>Text <a title="classification" href="https://www.projectpro.io/article/machine-learning-classification-projects-ideas/500" target="_blank" rel="noopener">classification</a></p>
+</li>
+<li>
+<p>Sentiment analysis</p>
+</li>
+<li>
+<p>Spell check</p>
+</li>
+<li>
+<p>Speech recognition</p>
+</li>
+<li>
+<p>Social media monitoring</p>
+</li>
+</ul><div id="demo_banner"><html><head><style>
+.b-txt{width:60%}.banner-title-head{width:90%;margin:0 auto}@media (max-width:1000px){.b-txt{width:60%}}@media (max-width:600px){.b-txt{width:90%}}.blog-project-demo{background:#252525!important;color:#fff!important;text-transform:none}
+</style></head><body><div style="background:#5624d0!important;" class="my-5 pt-5 text-center">
+	<p style="font-size:2.12rem;" class="text-white banner-title-head"><b> Get confident to build end-to-end projects. </b></p>
+	<p class="b-txt my-2 text-white mx-auto text-center" style="font-size:1.15rem;">Access to a curated library of 250+ end-to-end industry projects with solution code, videos and tech support.</p>
+	<a title="Request a demo" target="_blank" role="button" href="/project/project-demo?utm_source=493&amp;utm_medium=fold4" class="btn text-white blog-project-demo px-10 inline-block py-3 my-5"><b> Request a demo </b></a> 
+</div></body></html></div>
+<h3 id="mcetoc_1fgolus0h27">How to Start with NLP using Python?</h3>
+<p><a title="NLTK" href="https://www.projectpro.io/recipes/download-nltk-library" target="_blank" rel="noopener">NLTK</a> or the Natural language toolkit is a popular library used for natural language processing. This library is entirely coded in python programming language and very easy to learn.</p>
+<p>Get started by installing the <em>nltk</em> library on your system!</p>
+<p>To summarize NLP or natural language processing helps machines interact with human languages. NLP is the force behind tools like chatbots, spell checkers, and language translators that we use in our daily lives. Combining NLP with machine learning and deep learning algorithms helps build tools that are more accurate and can enhance NLP applications, which in turn can help build better technology for humans.</p>
+<table style="width: 100%;" width="100%"><tbody><tr style="background-color: #fff; border: 0;"><td style="width: 63.9076%;">
+<p style="text-align: left;"><a class="button alt" title="15 OpenCV Projects Ideas for Beginners to Practice in 2021" href="https://www.projectpro.io/article/opencv-projects-ideas-/492" target="_blank" rel="noopener">PREVIOUS</a></p>
+</td>
+<td style="width: 36.0924%;">
+<p style="text-align: right;"><a title="The Ultimate Guide to Statistics for Machine Learning Beginners" href="https://www.projectpro.io/article/probability-and-statistics-for-machine-learning/494" target="_blank" rel="noopener">NEXT</a></p>
+</td>
+</tr></tbody></table><p style="text-align: center;"><em><a title="Access Solved Big Data and Data Projects" href="https://mailchi.mp/8bbcf6551987/b3t6i1rtzf" target="_blank" rel="noopener"><img style="width: 100%; height: 100%;" title="Access Solved Big Data and Data Projects" alt="Access Solved Big Data and Data Projects" data-src="https://daxg39y63pxwu.cloudfront.net/images/ProjectPro_CTA/Access+Solved+Big+Data+and+Data+Science+Projects_new.png"></a></em></p></body></html>
+					</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<script>
+
+	/** script to give top border color to cards */
+	let browserURL=window.location.href,colorsOnBlogView=["#02B3E4","#FFAE0C","#15C26B","#A951ED"],cardsOnBlogView=document.querySelectorAll(".card-border");const arrOnBlogView=[];cardsOnBlogView.forEach(e=>{let r=Math.round(3*Math.random());arrOnBlogView.push(r)});let newArrOnBlogView=[];function check(){let e=new Set(arrOnBlogView);if((newArrOnBlogView=[...e].splice(0,3)).length<3){let r=Math.round(Math.random()*newArrOnBlogView.length);arrOnBlogView.push(r),check()}else newArrOnBlogView=[...e].splice(0,3)}check();let index=0;cardsOnBlogView.forEach(e=>{e.style.borderTop=`4px solid ${colorsOnBlogView[newArrOnBlogView[index]]}`,4==++index&&(index=0,e.style.borderTop=`4px solid ${colorsOnBlogView[newArrOnBlogView[index]]}`,index++)});
+
+	var a=document.getElementsByClassName("side-form-with-animation")[0];
+window.addEventListener("scroll",function(){600<=window.scrollY?(a.classList.add("active"),a.classList.add("slide-animate"),document.getElementsByClassName("rightPaneSubmit")[0].addEventListener("click",function(){document.getElementsByClassName("email-valid-message")[0].innerText&&(document.getElementById("phone-blogAccessProjectFloat").style.borderBottom="1.5px solid #DC3444");document.getElementsByClassName("number-valid-message")[0].innerText?document.getElementById("email-blogAccessProjectFloat").style.borderBottom=
+"1.5px solid #DC3444":(document.getElementById("phone-blogAccessProjectFloat").style.borderBottom="1.5px solid #fff",document.getElementById("email-blogAccessProjectFloat").style.borderBottom="1.5px solid #fff")})):(a.classList.remove("active"),a.classList.remove("slide-animate"))});
+
+
+	</script>
+
+
+
+	<script type="application/ld+json">
+	{
+	"@context": "https://schema.org",
+	"@type": "BlogPosting",
+	"@id" : "https://www.projectpro.io/article/machine-learning-vs-nlp/493#image",
+	"mainEntityOfPage": {
+		"@type": "WebPage",
+		"@id": "https://www.projectpro.io/article/machine-learning-vs-nlp/493"
+	},
+	"headline": "Machine Learning (ML) vs NLP - What's the Difference?",
+	"description": "Machine Learning vs NLP - Understand what is the difference between machine learning and NLP and how they relate to each other. ",
+			"author": {
+			"@type": "Organization",
+			"name": "ProjectPro",
+			"url" : "https://www.projectpro.io/blog/author/projectpro"
+		},
+		"publisher": {
+		"@type": "Organization",
+		"name": "ProjectPro",
+		"logo": {
+		"@type": "ImageObject",
+		"url": "https://dezyre.gumlet.io/images/homepage/ProjectPro_Logo.webp"
+		}
+	},
+	"datePublished": "2021-09-29",
+	"dateModified": "2023-05-01"
+	}
+	</script>
+</div>
+	
+	<!--Start of Zopim Live Chat Script-->
+	
+		
+<!--  below	new script for zopim - live chat only activates on user interaction with screen  -->
+	<script>
+
+	var ua = navigator.userAgent.toLowerCase(), platform = navigator.platform.toLowerCase();
+	platformName = ua.match(/ip(?:ad|od|hone)/) ? 'ios' : (ua.match(/(?:webos|android)/) || platform.match(/mac|win|linux/) || ['other'])[0],
+	isMobile = /ios|android|webos/.test(platformName);
+
+	if (!isMobile) {
+
+        document.addEventListener('scroll', zopimlaunch);
+        document.addEventListener('mousedown', zopimlaunch);
+        document.addEventListener('mousemove', zopimlaunch);
+        document.addEventListener('touchstart', zopimlaunch);
+        document.addEventListener('keydown', zopimlaunch);
+
+        function zopimlaunch () {
+            window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set._.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+            $.src='//v2.zopim.com/?dhdFs6MCD07fnrlHhjeO8kjolQy1Yn9u';z.t=+new Date;$.type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+
+            document.removeEventListener('scroll', zopimlaunch);
+            document.removeEventListener('mousedown', zopimlaunch);
+            document.removeEventListener('mousemove', zopimlaunch);
+            document.removeEventListener('touchstart', zopimlaunch);
+            document.removeEventListener('keydown', zopimlaunch);
+        }
+
+
+		// 	hellobar smart script   	
+		// 	console.log('hellobar for mobile')
+        document.addEventListener('scroll', hellobarlaunch);
+        document.addEventListener('mousedown', hellobarlaunch);
+        document.addEventListener('mousemove', hellobarlaunch);
+        document.addEventListener('touchstart', hellobarlaunch);
+        document.addEventListener('keydown', hellobarlaunch);
+
+        function hellobarlaunch () {
+            window.$zopim1||(function(d,s){var z1=$zopim1=function(c){z1._.push(c)},$=z1.s=d.createElement(s),e=d.getElementsByTagName(s)[0];z1.set=function(o){z1.set._.push(o)};z1._=[];z1.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+            $.src='https://my.hellobar.com/ac4e38aef266bceec9777ebfc01087bd97ace101.js';z1.t=+new Date;$.type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+
+            document.removeEventListener('scroll', hellobarlaunch);
+            document.removeEventListener('mousedown', hellobarlaunch);
+            document.removeEventListener('mousemove', hellobarlaunch);
+            document.removeEventListener('touchstart', hellobarlaunch);
+            document.removeEventListener('keydown', hellobarlaunch);
+        }
+		
+        
+	}
+
+	</script>
+	
+	
+	    	
+
+
+<!-- BOOTSTRAP FOOTER -->
+
+<style>
+		.header_top_dc {
+			background: #05192d!important;  /* fallback for old browsers */
+			background: -webkit-linear-gradient(268deg, #05192d, #05192d)!important;  /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(268deg,#05192d , #05192d)!important;
+			box-shadow:none!important;
+		}
+		.show-more-footer-items, .show-less-footer-link{ color: #fff; }
+		.footer_header{font-size:20px;font-weight:700}.footer-list>li,.hidden-footer-links>li{margin-top:20px}.custom-footer-text-size{font-size:11.5px}.show-less-footer-link,.show-more-footer-items{text-decoration:underline;cursor:pointer}.footer-row{display:flex;flex-wrap:wrap}.footer-row>div{width:220px}.second-block-links{text-align:center}@media (min-width:1350px){.footer-row{display:grid;grid-template-columns:repeat(5,1fr);grid-gap:20px}.footer-row>div{padding:1em;width:100%}}@media only screen and (max-width:766px){.second-block-links{display:block!important;text-align:left}.second-block-links p a{font-size:1.2rem}.custom-footer-text-size{font-size:13.5px}}@media only screen and (min-width:767px){.second-block-links{display:flex;justify-content:flex-end}.iconic-inc-left{white-space:nowrap!important}}.blue-links,.footer-list>li>a,.hidden-footer-links>li>a{color:#fff}.blue-links:hover,.footer-list>li>a:hover,.hidden-footer-links>li>a:hover{color:#3b6cff}.svg{color:#081a2d;background:#fff;border-radius:50%}
+</style>        
+        
+<footer class="p-4 mt-5 header_top_dc" style="color:#fff">
+	<div class="footer-top">
+		<div class="container-fluid ">
+			<div class="pt-3 footer-row row ml-sm-4 custom-footer-text-size">
+				<div class="mx-3 my-4 my-sm-0 footer-about" style="visibility: visible; ">
+					<p class="text-white footer_header">Trending Project Categories</p>
+					<ul class="list-unstyled footer-list">
+						<li><a href="/projects/data-science-projects/machine-learning-projects-in-python" title="Machine Learning Projects">Machine Learning Projects</a></li>
+						<li><a href="/projects/data-science-projects" title="Data Science Projects">Data Science Projects</a></li>
+						<li><a href="/projects/data-science-projects/deep-learning-projects" title="Deep Learning Projects">Deep Learning Projects</a></li>
+						<li><a href="/projects/big-data-projects" title="Big Data Projects">Big Data Projects</a></li>
+						<li><a href="/projects/big-data-projects/apache-hadoop-projects" title="Apache Hadoop Projects">Apache Hadoop Projects</a></li>
+						<li><a href="/projects/big-data-projects/apache-spark-projects" title="Apache Spark Projects">Apache Spark Projects</a></li>
+						<li class="show-more-footer-items">Show more</li>
+						<div class="hidden-footer-links">
+							<li><a href="/projects/data-science-projects/nlp-projects" title="NLP Projects">NLP Projects</a></li>
+							<li><a href="/projects/data-science-projects/iot-projects" title="IoT Projects">IoT Projects</a></li>
+							<li><a href="/projects/data-science-projects/neural-network-projects" title="Neural Network Projects">Neural Network Projects</a></li>
+							<li><a href="/projects/data-science-projects/tensorflow-projects" title="Tensorflow Projects">Tensorflow Projects</a></li>
+							<li><a href="/projects/big-data-projects/pyspark-projects" title="PySpark Projects">PySpark Projects</a></li>
+							<li><a href="/projects/big-data-projects/spark-streaming-projects" title="Spark Streaming Projects">Spark Streaming Projects</a></li>
+							<li><a href="/projects/data-science-projects/data-science-projects-in-python/" title="Python Projects for Data Science">Python Projects for Data Science</a></li>
+							<li><a href="/projects/big-data-projects/microsoft-azure-projects" title="Microsoft Azure Projects">Microsoft Azure Projects</a></li>
+							<li><a href="/projects/big-data-projects/google-cloud-projects-gcp" title="GCP Projects">GCP Projects</a></li>
+							<li><a href="/projects/big-data-projects/aws-projects" title="AWS Projects">AWS Projects</a></li>
+							<li class="show-less-footer-link">Show less</li>
+						</div>
+					</ul>
+					
+					</div>
+					<div class="mx-3 my-4 my-sm-0 footer-contact wow " style="visibility: visible; ">
+					<p class="text-white footer_header">Trending Projects</p>
+					<ul class="list-unstyled footer-list">
+													
+						<li><a href="/project-use-case/walmart" title="Walmart Sales Forecasting Data Science Project">Walmart Sales Forecasting Data Science Project</a></li>
+						<li><a href="/project-use-case/predict-big-mart-sales" title="BigMart Sales Prediction ML Project">BigMart Sales Prediction ML Project</a></li>
+						<li><a href="/project-use-case/music-recommendation-challenge" title="Music Recommender System Project">Music Recommender System Project</a></li>
+						<li><a href="/project-use-case/credit-card-fraud-detection-classification-problem" title="Credit Card Fraud Detection Using Machine Learning">Credit Card Fraud Detection Using Machine Learning</a></li>
+						<li><a href="/project-use-case/spacy-python-nlp-example" title="Resume Parser Python Project for Data Science">Resume Parser Python Project for Data Science</a></li>
+						<li><a href="/project-use-case/time-series-forecasting-1" title="Time Series Forecasting Projects">Time Series Forecasting Projects</a></li>
+						<li class="show-more-footer-items">Show more</li>
+						<div class="hidden-footer-links">
+							<li><a href="/project-use-case/live-twitter-sentiments-analysis-spark" title="Twitter Sentiment Analysis Project">Twitter Sentiment Analysis Project</a></li>
+							<li><a href="/project-use-case/credit-score" title="Credit Score Prediction Machine Learning">Credit Score Prediction Machine Learning</a></li>
+							<li><a href="/project-use-case/retail-price-optimization" title="Retail Price Optimization Algorithm Machine Learning">Retail Price Optimization Algorithm Machine Learning</a></li>
+							<li><a href="/project-use-case/store-item-demand-forecasting" title="Store Item Demand Forecasting Deep Learning Project">Store Item Demand Forecasting Deep Learning Project</a></li>
+							<li><a href="/project-use-case/human-activity-recognition" title="Human Activity Recognition ML Project">Human Activity Recognition ML Project</a></li>
+							<li><a href="/project-use-case/analyze-website-clickstream-data" title="Visualize Website Clickstream Data">Visualize Website Clickstream Data</a></li>
+							<li><a href="/project-use-case/digit-recognizer-part-2" title="Handwritten Digit Recognition Code Project">Handwritten Digit Recognition Code Project</a></li>
+							<li><a href="/project-use-case/anomaly-detection-using-deep-learning-and-autoencoders" title="Anomaly Detection Projects">Anomaly Detection Projects</a></li>
+							<li><a href="/project-use-case/build-a-data-pipeline-based-on-messaging-using-spark-and-hive" title="PySpark Data Pipeline Project">PySpark Data Pipeline Project</a></li>
+							<li class="show-less-footer-link">Show less</li>
+						</div>       				
+					</ul>
+					
+					</div>
+					<div class="mx-3 my-4 my-sm-0 footer-contact wow " style="visibility: visible; ">
+					<p class="text-white footer_header">Trending Blogs</p>
+					<ul class="list-unstyled footer-list">
+						
+					<li><a href="/article/top-10-machine-learning-projects-for-beginners-in-2021/397" title="Machine Learning Projects for Beginners with Source Code">Machine Learning Projects for Beginners with Source Code</a></li>
+					<li><a href="/article/15-data-science-projects-for-beginners-with-source-code/343" title="Data Science Projects for Beginners with Source Code">Data Science Projects for Beginners with Source Code</a></li>
+					<li><a href="/article/top-20-big-data-project-ideas-for-beginners-in-2021/426" title="Big Data Projects for Beginners with Source Code">Big Data Projects for Beginners with Source Code</a></li>
+					<li><a href="/article/top-20-iot-projects-for-beginners-in-2021/428" title="IoT Projects for Beginners with Source Code">IoT Projects for Beginners with Source Code</a></li>
+					<li><a href="/article/difference-between-data-analyst-and-data-scientist/332" title="Data Analyst vs Data Scientist">Data Analyst vs Data Scientist</a></li>
+					<li><a href="/article/100-data-science-interview-questions-and-answers-for-2021/184" title="Data Science Interview Questions and Answers">Data Science Interview Questions and Answers</a></li>
+					<li class="show-more-footer-items">Show more</li>
+					<div class="hidden-footer-links">
+						<li><a href="/article/top-100-hadoop-interview-questions-and-answers-2021/159" title="Hadoop Interview Questions and Answers">Hadoop Interview Questions and Answers</a></li>
+						<li><a href="/article/top-50-spark-interview-questions-and-answers-for-2021/208" title="Spark Interview Questions and Answers">Spark Interview Questions and Answers</a></li>
+						<li><a href="/article/aws-vs-azure-who-is-the-big-winner-in-the-cloud-war/401" title="AWS vs Azure">AWS vs Azure</a></li>
+						<li><a href="/article/types-of-analytics-descriptive-predictive-prescriptive-analytics/209" title="Types of Analytics">Types of Analytics</a></li>
+						<li><a href="/article/hadoop-architecture-explained-what-it-is-and-why-it-matters/317" title="Hadoop Architecture">Hadoop Architecture</a></li>
+						<li><a href="/article/apache-spark-architecture-explained-in-detail/338" title="Spark Architecture">Spark Architecture</a></li>
+						<li><a href="/article/common-machine-learning-algorithms-for-beginners/202" title="Machine Learning Algorithms">Machine Learning Algorithms</a></li>
+						<li><a href="/article/how-data-partitioning-in-spark-helps-achieve-more-parallelism/297" title="Data Partitioning in Spark">Data Partitioning in Spark</a></li>
+						<li><a href="/article/100-machine-learning-datasets-curated-for-you/407" title="Datasets for Machine Learning">Datasets for Machine Learning</a></li>	
+						<li class="show-less-footer-link">Show less</li>
+					</div>
+					</ul>
+					
+					</div>
+					<div class="mx-3 my-4 my-sm-0 footer-contact wow " style="visibility: visible; ">
+					<p class="text-white footer_header">Trending Recipes </p>
+					<ul class="list-unstyled footer-list">
+						
+					<li><a href="/recipes/search-value-within-pandas-dataframe-column" title="Search for a Value in Pandas DataFrame">Search for a Value in Pandas DataFrame</a></li>
+					<li><a href="/recipes/insert-new-column-based-on-condition-in-python" title="Pandas Create New Column based on Multiple Condition">Pandas Create New Column based on Multiple Condition</a></li>
+					<li><a href="/recipes/what-is-difference-between-gru-and-lstm-explain-with-example" title="LSTM vs GRU">LSTM vs GRU</a></li>
+					<li><a href="/recipes/plot-roc-curve-in-python" title="Plot ROC Curve in Python">Plot ROC Curve in Python</a></li>
+					<li><a href="/recipes/upload-files-to-google-drive-using-python" title="Python Upload File to Google Drive">Python Upload File to Google Drive</a></li>
+					<li><a href="/recipes/optimize-hyper-parameters-of-logistic-regression-model-using-grid-search-in-python" title="Optimize Logistic Regression Hyper Parameters">Optimize Logistic Regression Hyper Parameters</a></li>
+					<li class="show-more-footer-items">Show more</li>
+					<div class="hidden-footer-links">
+						<li><a href="/recipes/drop-out-highly-correlated-features-in-python" title="Drop Out Highly Correlated Features in Python">Drop Out Highly Correlated Features in Python</a></li>
+						<li><a href="/recipes/split-datetime-data-create-multiple-feature-in-python" title="How to Split Data and Time in Python">How to Split Data and Time in Python</a></li>
+						<li><a href="/recipes/replace-multiple-values-in-pandas-dataframe" title="Pandas Replace Multiple Values">Pandas Replace Multiple Values</a></li>
+						<li><a href="/recipes/convert-categorical-variables-into-numerical-variables-in-python" title="Convert Categorical Variable to Numeric Pandas">Convert Categorical Variable to Numeric Pandas</a></li>
+						<li><a href="/recipes/generate-classification-report-and-confusion-matrix-in-python" title="Classification Report Python">Classification Report Python</a></li>
+						<li><a href="/recipes/find-optimal-parameters-using-randomizedsearchcv-for-regression" title="RandomizedSearchCV">RandomizedSearchCV</a></li>
+						<li><a href="/recipes/optimize-hyper-parameters-of-decisiontree-model-using-grid-search-in-python" title="Grid Search Decision Tree">Grid Search Decision Tree</a></li>
+						<li><a href="/recipes/find-optimal-parameters-for-catboost-using-gridsearchcv-for-classification" title="Catboost Hyperparameter Tuning">Catboost Hyperparameter Tuning</a></li>
+						<li><a href="/recipes/normalise-pandas-dataframe-column" title="Pandas Normalize Column">Pandas Normalize Column</a></li>
+						<li class="show-less-footer-link">Show less</li>
+					</div>	
+					</ul>
+					
+					</div>
+					<div class="mx-3 my-4 my-sm-0 footer-contact wow " style="visibility: visible; ">
+					<p class="text-white footer_header">Trending Tutorials</p>
+					<ul class="list-unstyled footer-list">
+					
+					<li><a href="/data-science-in-python-tutorial/principal-component-analysis-tutorial" title="PCA in Machine Learning Tutorial">PCA in Machine Learning Tutorial</a></li>
+					<li><a href="/apache-spark-tutorial/pyspark-tutorial" title="PySpark Tutorial">PySpark Tutorial</a></li>
+					<li><a href="/hadoop-tutorial/hive-commands" title="Hive Commands Tutorial">Hive Commands Tutorial</a></li>
+					<li><a href="/hadoop-tutorial/hadoop-mapreduce-wordcount-tutorial" title="MapReduce in Hadoop Tutorial">MapReduce in Hadoop Tutorial</a></li>
+					<li><a href="/hadoop-tutorial/apache-hive-tutorial-tables" title="Apache Hive Tutorial -Tables">Apache Hive Tutorial -Tables</a></li>
+					<li><a href="/data-science-in-r-programming-tutorial/linear-regression-tutorial" title="Linear Regression Tutorial">Linear Regression Tutorial</a></li>
+					<li class="show-more-footer-items">Show more</li>
+					<div class="hidden-footer-links">
+						<li><a href="/apache-spark-tutorial/spark-tutorial" title="Apache Spark Tutorial">Apache Spark Tutorial</a></li>
+						<li><a href="/data-science-in-python-tutorial/performance-metrics-for-machine-learning-algorithm" title="Evaluate Performance Metrics for Machine Learning Models">Evaluate Performance Metrics for Machine Learning Models</a></li>
+						<li><a href="/data-science-in-r-programming-tutorial/k-means-clustering-techniques-tutorial" title="K-Means Clustering Tutorial">K-Means Clustering Tutorial</a></li>
+						<li><a href="/hadoop-tutorial/hadoop-sqoop-tutorial" title="Sqoop Tutorial">Sqoop Tutorial</a></li>
+						<li><a href="/data-science-in-r-programming-tutorial/r-tutorial-importing-data-from-web" title="R Import Data From Website">R Import Data From Website</a></li>
+						<li><a href="/apache-spark-tutorial/apache-spark-installation-tutorial" title="Install Spark on Linux">Install Spark on Linux</a></li>
+						<li><a href="/data-science-in-r-programming-tutorial/r-data-table-tutorial" title="Data.Table Packages in R">Data.Table Packages in R</a></li>
+						<li><a href="/hadoop-tutorial/zookeeper-tutorial" title="Apache ZooKeeper Hadoop Tutorial">Apache ZooKeeper Hadoop Tutorial</a></li>
+						<li><a href="/hadoop-tutorial/big-data-hadoop-tutorial" title="Hadoop Tutorial">Hadoop Tutorial</a></li>
+						<li class="show-less-footer-link">Show less</li>
+					</div>
+					</ul>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer-bottom ml-sm-5">
+			<div class="mx-2 " style="margin-top: 2%;">
+			<div class="text-white row">
+				<h4 class="text-left footer_header col-md-3"><b class="text-white">ProjectPro</b></h4>
+				<div class="second-block-links col-md-9">
+					<p class="mx-2 ">&copy; 2023 Iconiq Inc.</p>
+					<p><a class="mx-2 ml-md-5 blue-links" href="/about-us">About us</a></p>
+					<p><a class="mx-2 blue-links" href="/contact-us">Contact us</a></p>
+					<p><a class="mx-2 blue-links" href="/privacy-policy">Privacy policy</a></p>
+					<p><a class="mx-2 blue-links" href="/user-policy">User policy</a></p>
+					<p><a class="mx-2 blue-links" href="/write-for-projectpro">Write for ProjectPro</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+        
+        
+<script>
+
+for(var b=document.querySelectorAll(".hidden-footer-links"),c=document.querySelectorAll(".show-less-footer-link"),d=document.querySelectorAll(".show-more-footer-items"),e=!1,f=0;f<=b.length-1;f++)b[f].style.display="none";
+for(var g=0;g<=c.length-1;g++)c[g].style.display="none",c[g].addEventListener("click",function(){if(e){for(var a=0;a<=b.length-1;a++)b[a].style.display="none",d[a].style.display="block";e=!1}else{for(a=0;a<=b.length-1;a++)b[a].style.display="block",c[a].style.display="block",d[a].style.display="none";e=!0}});
+for(var h=0;h<=d.length-1;h++)d[h].addEventListener("click",function(){if(e){for(var a=0;a<=b.length-1;a++)b[a].style.display="none",d[a].innerHTML="Show more";e=!1}else{for(a=0;a<=b.length-1;a++)b[a].style.display="block",c[a].style.display="block",d[a].style.display="none";e=!0}});        
+
+</script>
+
+
+
+
+<!-- TAILWIND FOOTER -->
+
+<!--LeadSquared Tracking Code Start-->
+<script type="text/javascript" src="https://web-in21.mxradon.com/t/Tracker.js"></script>
+<script type="text/javascript">
+	pidTracker('67184');
+</script>
+<!--LeadSquared Tracking Code End-->
+	
+	
+	<!-- your phone doesn't move up in lead popup box
+		so removed label tag from get-email.phtml and added placeholder instead  
+	<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+	--> 
+	<script defer type="text/javascript" src="/js/getemail.js?v=3.0"></script>
+	
+	<script>
+
+	window.onload = function() {
+
+	$(".recipelist_subscription").click(function(e) {
+		
+		var email = $("#recipelist_email").val();
+		var type = $(this).attr("data-button");
+		var page_url = $(location).attr('href');
+	    
+	    if(email.length == 0){
+			$("#recipelist_email").focus();
+			$("#recipelist_email").css("has-error");
+			$("#recipelist_email-help-text").html("Please enter you email address.");
+			return false;
+		}
+		if(!(validateEmail(email))){
+			$("#recipelist_email").focus();
+			$("#recipelist_email").addClass("has-error");
+			$("#recipelist_email-help-text").html("Please enter a valid email address.");
+			return false;
+		} 
+		
+		$.ajax({
+	        type: "POST",
+	        url: "/project/get-email",
+	        
+	        data: { 
+	            email: email,
+	            type:type,
+	            page_url: page_url
+	        },
+	        dataType: 'json',
+	        success: function(data) {
+	        	$("#recipelist_email-help-text").html(data.message);
+	        	setTimeout(function(){
+	        		//window.location.reload();
+	        		window.location.href = "/recipes";
+	        	}, 2000);
+	        },
+	        
+	        error: function(result) {
+	        	//console.log(result);
+	        	$( "div.modal-body" ).text( "An error occurred - Please contact care@projectpro.io" );
+	        }
+	    });
+	});
+
+	// to submit right side floating popup-form present in articles
+	$(".rightPaneSubmit").click(function(e) {
+		type = $(this).attr("data-button");
+		var email = $("#email-"+type).val();
+		var phone = $("#phone-"+type).val();
+
+		var page_url = $(location).attr('href');
+		var query = $(".query-"+type).val();
+
+
+		if(email.length == 0 || !(validateEmail(email))){
+			$(".email-valid-message").html("Please enter valid email address");
+			return false
+		}
+		$(".email-valid-message").html("");
+
+		if(phone.toString().length<10){
+			$(".number-valid-message").html("Please enter 10 digit number");
+			return false
+		}
+		$(".number-valid-message").html("");		
+
+	   	
+	   	$(".rightPaneSubmit").html('Please Wait');
+	   	$(".rightPaneSubmit").attr('disabled',true);
+	   	
+		const DATA = {
+			email: email,
+			phone: phone,
+			type:type,
+			page_url: page_url
+		}
+
+		if(window.MXCProspectId){
+			DATA.prospectId = window.MXCProspectId;
+		}
+
+	    $.ajax({
+	        type: "POST",
+	        url: "/project/get-email",
+	        data: DATA,
+	        dataType: 'json',
+	        success: function(data) {
+	        	redirect_path = data.redirect_path;
+	        	if(type == "blogAccessProjectFloat") {
+	        		window.location.replace(redirect_path);
+	        	}
+	        }, 
+	        error: function(result) {
+	        	//console.log(result);
+	        	$( "div.modal-body" ).text( "An error occurred - Please contact care@projectpro.io" );
+	        }
+	    });    
+	});
+
+
+	// for blog start project form in sidebar
+	if(document.getElementById('email-blogStartProject')){
+	var x=document.querySelectorAll("#phone-blogStartProject");x[0].addEventListener("input",function(){Number(x[0].value)||(x[0].value="")});
+
+	$("#blogStartProject-btn").click(function(e) {
+
+			var type = null;
+			var redirect_path = null;
+
+			type = $(this).attr("data-button");
+
+			// console.log("type==="+type);
+
+			var email = $(".email-"+type).val();
+			var phone = $(".phone-"+type).val();
+			var yoe = $(".yoe-"+type).val();
+			var page_url = $(location).attr('href');
+
+			// console.log(email)
+			// console.log(phone)
+
+			if(email.length == 0 || !(validateEmail(email))){
+				$(".email-"+type).css("border-bottom", "2px solid #DC3444");
+				return false
+			}
+			$(".email-"+type).css("border-bottom", "1.5px solid #e0e0e0");
+
+			if(phone.toString().length<10){
+				$(".phone-"+type).css("border-bottom", "2px solid #DC3444");
+				return false
+			}
+			$(".phone-"+type).css("border-bottom", "1.5px solid #e0e0e0");
+
+			// if(yoe == null || yoe === ""){
+			// 	$(".yoe-"+type).css("border-bottom", "2px solid #DC3444");
+			// 	return false
+			// }
+			// $(".yoe-"+type).css("border-bottom", "1.5px solid #e0e0e0");
+
+			
+			$(".blogStartProject-btn").html('Please Wait');
+			$(".blogStartProject-btn").attr('disabled',true);
+
+			localStorage.setItem("user_email",email);
+			localStorage.setItem("user_phone",phone);
+
+
+
+			const DATA = {
+				email: email,
+				phone: phone,
+				type:type,
+				yoe:yoe,
+				page_url: page_url
+			}
+
+			if(window.MXCProspectId){
+				DATA.prospectId = window.MXCProspectId;
+			}
+
+
+			$.ajax({
+				type: "POST",
+				url: "/project/get-email",
+				
+				data: DATA,
+				dataType: 'json',
+				success: function(data) {
+						redirect_path = data.redirect_path;
+						window.location.replace(redirect_path);
+						is_submit = 1;
+						$( ".email_submit" ).html('Thanks. Redirecting...');
+				
+				},
+				
+				error: function(result) {
+					//console.log(result);
+					$( ".email_submit" ).text( "An error occurred - Please contact care@projectpro.io" );
+				}
+			});
+
+		});
+
+	}
+
+		for(var a=document.getElementsByTagName("img"),b=0;b<=a.length-1;b++)a[b].classList.add("img-fluid");
+
+		function carouselConfigs(ELEMENT){
+			$(ELEMENT).owlCarousel({
+				loop:true,
+				margin:10,
+				nav: true,
+				navText : ['<i class="shadow left-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg></i>','<i class="shadow fa fa-angle-right right-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></i>'],
+				dots: false,
+				responsive:{
+					0:{
+						items:1
+					},
+					700:{
+						items:2
+					},
+					1100:{
+						items:3
+					},
+					1200:{
+						items:4
+					},
+					2000:{
+						items:5
+					}
+				}
+			})
+		}
+		// owl carousel in udemy components  -----for new projects
+		if(document.getElementById('owl-carousel-new-projects')){
+			carouselConfigs('#owl-carousel-new-projects');
+		}
+		// owl carousel in udemy components  -----for most watched projects
+		if(document.getElementById('owl-carousel-most-watched-projects')){
+			carouselConfigs('#owl-carousel-most-watched-projects');
+		}
+
+		// owl carousel code required in article carousel components
+		var a=document.getElementsByClassName("owl-carousel").length;if(a)for(var b=0;b<=a-1;b++)document.getElementsByClassName("owl-prev")[b].ariaLabel="prev",document.getElementsByClassName("owl-next")[b].ariaLabel="next";
+
+};
+
+	//define function to load css
+	var loadCss = function(){
+	    var cssLink = document.createElement('link');
+	    cssLink.rel = 'stylesheet';
+	    cssLink.href = 'https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css';
+	    var head = document.getElementsByTagName('head')[0];
+	    head.parentNode.insertBefore(cssLink, head);
+	};
+	 
+	window.addEventListener('DOMContentLoaded', loadCss);
+</script>
+
+</body>
+</html>

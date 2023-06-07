@@ -1,0 +1,506 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Top 10 NLP Algorithms | Analytics Steps</title>
+    <base href="/">
+    <link rel="home" href="https://www.analyticssteps.com/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet"> -->
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap">
+    <!-- CSS only -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" onload="this.rel='stylesheet'">
+    <style type="text/css">
+      #loader-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+      }
+
+      #loader {
+        display: block;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 150px;
+        height: 150px;
+        margin: -75px 0 0 -75px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #3498db;
+        -webkit-animation: spin 2s linear infinite;
+        /* Chrome, Opera 15+, Safari 5+ */
+        animation: spin 2s linear infinite;
+        /* Chrome, Firefox 16+, IE 10+, Opera */
+      }
+
+      #loader:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #e74c3c;
+        -webkit-animation: spin 3s linear infinite;
+        /* Chrome, Opera 15+, Safari 5+ */
+        animation: spin 3s linear infinite;
+        /* Chrome, Firefox 16+, IE 10+, Opera */
+      }
+
+      #loader:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #f9c922;
+        -webkit-animation: spin 1.5s linear infinite;
+        /* Chrome, Opera 15+, Safari 5+ */
+        animation: spin 1.5s linear infinite;
+        /* Chrome, Firefox 16+, IE 10+, Opera */
+      }
+
+      @-webkit-keyframes spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+          /* Chrome, Opera 15+, Safari 3.1+ */
+          -ms-transform: rotate(0deg);
+          /* IE 9 */
+          transform: rotate(0deg);
+          /* Firefox 16+, IE 10+, Opera */
+        }
+
+        100% {
+          -webkit-transform: rotate(360deg);
+          /* Chrome, Opera 15+, Safari 3.1+ */
+          -ms-transform: rotate(360deg);
+          /* IE 9 */
+          transform: rotate(360deg);
+          /* Firefox 16+, IE 10+, Opera */
+        }
+      }
+
+      @keyframes spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+          /* Chrome, Opera 15+, Safari 3.1+ */
+          -ms-transform: rotate(0deg);
+          /* IE 9 */
+          transform: rotate(0deg);
+          /* Firefox 16+, IE 10+, Opera */
+        }
+
+        100% {
+          -webkit-transform: rotate(360deg);
+          /* Chrome, Opera 15+, Safari 3.1+ */
+          -ms-transform: rotate(360deg);
+          /* IE 9 */
+          transform: rotate(360deg);
+          /* Firefox 16+, IE 10+, Opera */
+        }
+      }
+    </style>
+
+    <!-- <meta name=”robots” content=”nofollow”> -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <!-- Ad plus code starts -->
+
+    <!-- <div id='fixedban' style='width:100%;margin:auto; text-align:center;float:none;overflow:hidden; display:scroll;position:fixed; bottom:0;z-index:9999999'>
+    <div style='text-align:center;display:block;max-width:970px;height:auto;overflow:hidden;margin:auto'>  
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>  var gptadslots = [];
+      var googletag = googletag || {cmd:[]};</script>
+    <script>  googletag.cmd.push(function() {
+        var responsiveads = googletag.sizeMapping()
+               .addSize([0,0],[[320,50],[300,75],[300,50]])
+               .addSize([730,200],[[728,90],[468,60]])
+               .addSize([975,200],[[970,90],[728,90],[960,90],[750,100],[950,90],[468,60]])  .build();
+                               gptadslots.push(googletag.defineSlot('/21849154601,22514306443/Ad.Plus-Anchor', [[320,100]], 'adplus-anchor')
+                                .setTargeting('site', ['analyticssteps.com'])
+                                .defineSizeMapping(responsiveads)
+                                .addService(googletag.pubads()));
+                           googletag.enableServices();  }); </script>
+         <div> <a id='close-fixedban' onclick='document.getElementById(&apos;fixedban&apos;).style.display = &apos;none&apos;;' style='cursor:pointer;'><img src="https://ad.plus/adplus-advertising.svg" alt="adplus-dvertising" title='Ad.Plus Advertising' style='vertical-align:middle;'/></a></div> <div id='adplus-anchor'>
+      <script>   googletag.cmd.push(function() { googletag.display('adplus-anchor'); });  </script></div></div>
+    </div>
+     -->
+
+    <!-- Ad plus code ends -->
+
+    <!-- Google gtag code -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147958406-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-147958406-1", { 'send_page_view': false });
+    </script>
+    <!-- Google gtag code ends -->
+
+    <!-- In feed video ads starts -->
+    <!-- <script async src="https://cdn.ad.plus/player/adplus.js"></script> <script data-playerPro="current">(function(){var s=document.querySelector('script[data-playerPro="current"]');s.removeAttribute("data-playerPro");(playerPro=window.playerPro||[]).push({id:"ahA0pW-Ga3km",after:s});})();</script> -->
+    <!-- In feed video ends -->
+
+
+    <!-- Taboola code starts  -->
+    <!-- <script type="text/javascript">
+      window._taboola = window._taboola || [];
+      !function (e, f, u, i) {
+           if (!document.getElementById(i)){
+                e.async = 1;
+                e.src = u;
+                e.id = i;
+                f.parentNode.insertBefore(e, f);
+           }
+      }(document.createElement('script'),document.getElementsByTagName('script')[0],'//cdn.taboola.com/libtrc/analyticssteps/loader.js','tb_loader_script');
+      if(window.performance && typeof window.performance.mark == 'function')
+      {window.performance.mark('tbl_ic');}
+    </script> -->
+    <!-- Taboola code ends here -->
+  <link rel="stylesheet" href="styles.be5a68628d36202ca301.css"><style ng-transition="serverApp">.scroll-to-top[_ngcontent-sc0]{position:fixed;opacity:0;-webkit-transition:.2s ease-in-out;transition:all .2s ease-in-out}.show-scrollTop[_ngcontent-sc0]{opacity:1;-webkit-transition:.2s ease-in-out;transition:all .2s ease-in-out}.bottom_toTop[_ngcontent-sc0]{right:30px;height:40px;width:40px;bottom:10px;z-index:1;cursor:pointer;background:#b2c6de;border-radius:3px;line-height:40px;text-align:center}.bottom_toTop[_ngcontent-sc0]:hover{background:#314f74}@media(max-width:767px){.bottom_toTop[_ngcontent-sc0]{right:0}}</style><style ng-transition="serverApp">.search_icon[_ngcontent-sc1]{float:left;padding-right:40px;padding-top:12px}.right_nav[_ngcontent-sc1]{padding-top:12px}@media(max-width:767px){.search_icon[_ngcontent-sc1]{padding-right:15px;padding-top:0}.logo[_ngcontent-sc1]{width:75%}}@media(min-width:767px) and (max-width:998px){.right_nav[_ngcontent-sc1]{margin:-1px;padding-top:0}.logo[_ngcontent-sc1]{width:30%;margin:0;padding-top:5px}}@media(min-width:998px) and (max-width:2500px){.logo[_ngcontent-sc1]{width:30%;margin:0}}</style><style ng-transition="serverApp">footer[_ngcontent-sc2]{background:#3b587b;color:#fff}.topfooter[_ngcontent-sc2]{padding:30px 0}.topfooter[_ngcontent-sc2]   a[_ngcontent-sc2]{display:inline-block;margin-right:20px}footer[_ngcontent-sc2]   ul[_ngcontent-sc2]{padding-left:40px}footer[_ngcontent-sc2]   ul[_ngcontent-sc2]   li[_ngcontent-sc2]{padding-bottom:30px}footer[_ngcontent-sc2]   ul[_ngcontent-sc2]   li[_ngcontent-sc2]   a[_ngcontent-sc2]{color:#fff}.privacypolicy[_ngcontent-sc2], .privacypolicy[_ngcontent-sc2]   a[_ngcontent-sc2]{margin:10px 0;font-size:14px;color:#6985ab}.subscribebox[_ngcontent-sc2]   input[_ngcontent-sc2]{border:none;background:0 0;color:#fff;width:70%;border-bottom:1px solid #6b92c1}.subscribebox[_ngcontent-sc2]   button[_ngcontent-sc2]{border:none;padding-left:10px;margin-left:20px;border-left:1px solid #fff;line-height:14px;background:0 0;color:#fff}.subscribebox[_ngcontent-sc2]   input[type=email][_ngcontent-sc2]::-webkit-input-placeholder{color:#6b92c1}.subscribebox[_ngcontent-sc2]   input[type=email][_ngcontent-sc2]::-ms-input-placeholder{color:#6b92c1}.subscribebox[_ngcontent-sc2]   input[type=email][_ngcontent-sc2]::-moz-placeholder{color:#6b92c1}.subscribebox[_ngcontent-sc2]   input[type=email][_ngcontent-sc2]::placeholder{color:#6b92c1}.ft_nav[_ngcontent-sc2]   ul[_ngcontent-sc2], li[_ngcontent-sc2], ol[_ngcontent-sc2]{margin:0;padding:0;list-style:none}@media (max-width:575px){.foonewsinfo[_ngcontent-sc2], .topfooter[_ngcontent-sc2]{text-align:center}.topfooter[_ngcontent-sc2]   a[_ngcontent-sc2]:first-child{display:block;margin-bottom:20px}}</style><style ng-transition="serverApp">.add__txt[_ngcontent-sc3]{color:#999;display:inline-block;font-size:11px;padding:1px 0;width:100%;text-align:center}.subscribe[_ngcontent-sc3]   h1[_ngcontent-sc3]{font-size:1.5rem;color:#000;line-height:130%;letter-spacing:.07rem;margin-bottom:30px}.subscribe[_ngcontent-sc3]   span[_ngcontent-sc3]{color:#3b587b}.subscription_email[_ngcontent-sc3]{height:48px;border:1px solid #e3e6e6;line-height:33px;border-radius:10px}.subs-img[_ngcontent-sc3]{width:100%;align-self:center;height:100%;margin:2%;display:block}.subs-button[_ngcontent-sc3]{width:146px;background:#314f74;line-height:48px;padding:0;border:none;border-radius:10px;color:#fff;font-family:roboto;font-weight:500;font-size:16px;margin-left:-30px}.sub-para[_ngcontent-sc3]{margin-top:20px;color:#314f74}.sub-round-circle[_ngcontent-sc3]{cursor:pointer;border:1px solid #b5c8df;height:30px;width:30px;display:inline-block;text-align:center;border-radius:15%;margin:0 0 10px 10px;line-height:26px}@media (max-width:991px){.subs-img[_ngcontent-sc3]{width:50%;align-self:center;height:75%;display:none;margin-left:auto;margin-right:auto}.subs-button[_ngcontent-sc3]{margin-left:0;margin-top:10px}.sub-para[_ngcontent-sc3]{margin-top:70px}.blog_left_ad[_ngcontent-sc3], .right_side_percntge[_ngcontent-sc3]{display:none}}.blog-top-ad-space[_ngcontent-sc3]{box-shadow:0 0 6px 0 rgba(0,0,0,.15);background:#fff;border-radius:10px}.after-blog-ad-space[_ngcontent-sc3]{box-shadow:0 0 6px 0 rgba(0,0,0,.15);background:#fff;border-radius:10px;margin-top:30px}.right-side-trending-blog[_ngcontent-sc3]{margin-bottom:30px}.comment_title[_ngcontent-sc3]{font-family:Montserrat,sans-serif;font-weight:600;font-size:24px;margin-bottom:20px;line-height:2;letter-spacing:.6px}.comment_box[_ngcontent-sc3]{box-shadow:0 0 6px 0 rgba(0,0,0,.15);background:#fff;border-radius:15px;padding:40px}#single[_ngcontent-sc3]   .share-button[_ngcontent-sc3]{text-align:center;border-top:1px solid #f4f4f4;margin-top:50px}.section[_ngcontent-sc3]{text-align:center;padding-top:50px;padding-bottom:50px;border-bottom:1px solid #ccc;width:89.6%}.title-small[_ngcontent-sc3]{font-size:24px;margin-bottom:10px;line-height:1.45;color:#314f74}.social-icons-bottom[_ngcontent-sc3]{cursor:pointer;border:1px solid #b5c8df;height:35px;width:35px;display:inline-block;text-align:center;border-radius:15%;margin:0 10px 10px;line-height:25px}.center-align[_ngcontent-sc3]{text-align:center;display:-webkit-inline-box;display:inline-flex}.permlink[_ngcontent-sc3]   .sub-para[_ngcontent-sc3]{margin-top:10px}.pz-5[_ngcontent-sc3]{margin-top:1rem;margin-bottom:1rem}</style><meta property="og:url" content="https://www.analyticssteps.com/blogs/top-nlp-algorithms"><meta property="twitter:card" content="summary"><meta property="twitter:site" content="AnalyticsSteps"><meta property="twitter:creator" content="AnalyticsSteps"><meta property="twitter:domain" content="https://www.analyticssteps.com"><style ng-transition="serverApp"></style><meta property="og:title" content="Top 10 NLP Algorithms | Analytics Steps"><meta property="twitter:title" content="Top 10 NLP Algorithms | Analytics Steps"><meta property="og:type" content="article"><meta property="og:locale" content="en_US"><meta property="og:description" content="NLP is an AI subset that aids computers in comprehending, interpreting, and manipulating human language. Here’s a list of the top 10 NLP algorithms."><meta property="twitter:description" content="NLP is an AI subset that aids computers in comprehending, interpreting, and manipulating human language. Here’s a list of the top 10 NLP algorithms."><meta property="og:image" content="https://www.analyticssteps.com/backend/media/thumbnail/9543422/2120159_1641194602_Top NLP algorithmsArtboard 1 (1).jpg"><meta property="twitter:image" content="https://www.analyticssteps.com/backend/media/thumbnail/9543422/2120159_1641194602_Top NLP algorithmsArtboard 1 (1).jpg"><meta name="description" content="NLP is an AI subset that aids computers in comprehending, interpreting, and manipulating human language. Here’s a list of the top 10 NLP algorithms."><meta name="keywords" content="NLP, what is NLP, NLP algorithms, stemming and lemmatization, topic modeling, keyword extraction, knowledge graphs, words cloud, named entity recognition, sentiment analysis, text summarization, a bag of words, tokenization."><meta name="author" content="Utsav Mishra"></head>
+
+  <body>
+    <app-root class="mypages ng-tns-c0-0" _nghost-sc0="" ng-version="8.1.3"><span _ngcontent-sc0="" class="ng-tns-c0-0"></span><app-header _ngcontent-sc0="" class="ng-tns-c0-0" _nghost-sc1=""><div _ngcontent-sc1="" id="fixed_height_header"></div><div _ngcontent-sc1="" class="animated fadeInDown main_header" id="navbar"><!----><div _ngcontent-sc1="" class="container as_container_sa ng-star-inserted"><header _ngcontent-sc1=""><div _ngcontent-sc1="" class="container"><div _ngcontent-sc1="" class="left_nav navbar navbar-expand-lg col-lg-9 "><button _ngcontent-sc1="" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span _ngcontent-sc1="" class="navbar-toggler-icon"><span _ngcontent-sc1=""></span><span _ngcontent-sc1=""></span><span _ngcontent-sc1=""></span></span></button><div _ngcontent-sc1="" class="logo " style="float:left; "><a _ngcontent-sc1="" routerlink="/" href="/"><img _ngcontent-sc1="" alt="logo image missing" src="assets/images/logo2.png"></a></div><div _ngcontent-sc1="" class="nav_bar"><nav _ngcontent-sc1="" class="navigation collapse navbar-collapse " id="navbarSupportedContent" style="width:auto;"><ul _ngcontent-sc1=""><li _ngcontent-sc1=""><a _ngcontent-sc1="" routerlink="/blogs" href="/blogs">Blogs </a></li><li _ngcontent-sc1=""><a _ngcontent-sc1="" class="show" routerlink="/categories" href="/categories">Categories</a></li><li _ngcontent-sc1=""><a _ngcontent-sc1="" routerlink="/contact-us" href="/contact-us">Contact Us</a></li></ul></nav></div></div><div _ngcontent-sc1="" class="right_nav "><div _ngcontent-sc1="" class="search_icon"><img _ngcontent-sc1="" alt="" class="" routerlink="/search" src="assets/images/icons/search_icon.jpg" style="cursor: pointer;" tabindex="0"></div><!----><!----><!----></div></div></header></div></div></app-header><router-outlet _ngcontent-sc0="" class="ng-tns-c0-0"></router-outlet><app-blog-detail _nghost-sc3="" class="ng-star-inserted"><section _ngcontent-sc3="" class="container"><div _ngcontent-sc3="" class="largeads pz-5"><ng-adsense _ngcontent-sc3=""><ins class="adsbygoogle " classname="adsbygoogle " style="display:block;" data-ad-client="ca-pub-3053013897257552" data-ad-format="auto" data-ad-region="page-33031" data-full-width-responsive="true"></ins></ng-adsense></div></section><!----><!----><section _ngcontent-sc3="" class="blog_det ng-star-inserted"><div _ngcontent-sc3="" class="container"><div _ngcontent-sc3="" class="row "><div _ngcontent-sc3="" class="col-lg-9 blog_detail_box"><div _ngcontent-sc3="" class="fixed_right"><div _ngcontent-sc3="" class="stick_lft_social"><a _ngcontent-sc3="" class="round_circle_socail"><img _ngcontent-sc3="" alt="" src="assets/images/icons/blue_fb.png"></a><a _ngcontent-sc3="" class="round_circle_socail"><img _ngcontent-sc3="" alt="" src="assets/images/icons/blue_twitter.png"></a><a _ngcontent-sc3="" class="round_circle_socail"><img _ngcontent-sc3="" alt="" src="assets/images/icons/blue_link.png"></a></div></div><div _ngcontent-sc3="" class="blog_det_pd_lft_90" detect-scroll="" id="dom_height" style="width: 100%; border-bottom: 1px solid #ccc;
+            margin-bottom: 30px;"><!----><!----><div _ngcontent-sc3="" class="blog_date ng-star-inserted"><ul _ngcontent-sc3=""><li _ngcontent-sc3="" style="border-right:none !important; cursor: auto !important; padding: 0px 4px !important; "><span _ngcontent-sc3="" class="date">Category</span></li><!----><li _ngcontent-sc3="" style="border-right:none !important;padding: 0px 4px !important;" tabindex="0" class="ng-star-inserted"><span _ngcontent-sc3="" class="date" style="padding-right: 4px;">&gt;</span><span _ngcontent-sc3="" class="catlist" style="padding-left: 4px;">NLP</span></li></ul></div><h1 _ngcontent-sc3="">10 Top NLP Algorithms</h1><div _ngcontent-sc3="" class="blog_date"><ul _ngcontent-sc3=""><li _ngcontent-sc3=""><span _ngcontent-sc3="">Utsav Mishra</span></li><li _ngcontent-sc3=""><span _ngcontent-sc3="" class="date">Jan 08, 2022 </span></li><!----></ul></div><!----><div _ngcontent-sc3="" class="blog_img ng-star-inserted"><img _ngcontent-sc3="" class="lazyload" src="https://www.analyticssteps.com/backend/media/thumbnail/9543422/2120159_1641194602_Top NLP algorithmsArtboard 1 (1).jpg" alt="10 Top NLP Algorithms title banner" title="10 Top NLP Algorithms"></div><div _ngcontent-sc3="" class="blog_detail"><div _ngcontent-sc3=""><p dir="ltr">Before going any further, let me be very clear about a few things. Let me ask a question. How complex is human language? Many of the readers will say that it isn’t complex at all. But here I deny it.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p dir="ltr">If it isn’t that complex, why did it take so many years to build something that could understand and read it?&nbsp; And when I talk about understanding and reading it, I know that for understanding human language something needs to be clear about grammar, punctuation, and a lot of things.</p>
+
+<p>&nbsp;</p>
+
+<p dir="ltr">But, while I say these, we have something that understands human language and that too not just by speech but by texts too, it is “Natural Language Processing”. In this blog, we are going to talk about NLP and the algorithms that drive it.</p>
+
+<p><br>
+&nbsp;</p>
+
+<h2 dir="ltr"><u><strong>About NLP</strong></u></h2>
+
+<p>&nbsp;</p>
+
+<p dir="ltr">Natural language processing (NLP) is an artificial intelligence area that aids computers in comprehending, interpreting, and manipulating human language. In order to bridge the gap between human communication and machine understanding, NLP draws on a variety of fields, including <a href="https://www.analyticssteps.com/blogs/introduction-computer-science-and-its-branches-streams">computer science</a> and computational linguistics.</p>
+
+<p>&nbsp;</p>
+
+<p dir="ltr">Natural language processing isn't a new subject, but it's progressing quickly thanks to a growing interest in human-machine communication, as well as the availability of massive data, powerful computation, and improved algorithms.</p>
+
+<p>&nbsp;</p>
+
+<p dir="ltr">You can speak and write in English, Spanish, or Chinese as a human. The natural language of a computer, known as machine code or machine language, is, nevertheless, largely incomprehensible to most people. At its most basic level, your device communicates not with words but with millions of zeros and ones that produce logical actions. You may grasp a little about NLP here, an <a href="https://www.analyticssteps.com/blogs/nlp-guide-beginners">NLP guide for beginners</a>.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<h2 dir="ltr"><strong><u>Best NLP Algorithms</u>&nbsp;</strong></h2>
+
+<p>&nbsp;</p>
+
+<p dir="ltr">As explained by <a href="https://www.datasciencecentral.com/profiles/blogs/top-nlp-algorithms-amp-concepts" rel="nofollow">data science central</a>, human language is complex by nature. A technology must grasp not just grammatical rules, meaning, and context, but also colloquialisms, slang, and acronyms used in a language to interpret human speech. Natural language processing algorithms aid computers by emulating human language comprehension.</p>
+
+<p>&nbsp;</p>
+
+<p dir="ltr">Here are the top NLP algorithms used everywhere:</p>
+
+<p>&nbsp;</p>
+
+<ol>
+	<li dir="ltr">
+	<h3 dir="ltr"><strong><u>Lemmatization and Stemming</u>&nbsp;</strong></h3>
+	</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">Two of the strategies that assist us to develop a Natural Language Processing of the tasks are <a href="https://www.analyticssteps.com/blogs/what-stemming-and-lemmatization-nlp">lemmatization and stemming</a>. It works nicely with a variety of other morphological variations of a word.</p>
+
+<p style="margin-left:40px">&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">These strategies allow you to limit a single word's variability to a single root. We can, for example, reduce "singer," "singing," "sang," and "sang" to a singular version of the word "sing." We can quickly reduce the data space required and construct more powerful and robust NLP algorithms by doing this to all the terms in a document or text.</p>
+
+<p style="margin-left:40px">&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">Thus, lemmatization and stemming are pre-processing techniques, meaning that we can employ one of the two NLP algorithms based on our needs before moving forward with the NLP project to free up data space and prepare the database.</p>
+
+<p style="margin-left:40px">&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">Both lemmatization and stemming are extremely diverse procedures that can be done in a variety of ways, but the end effect is the same for both: a reduced search area for the problem we're dealing with.</p>
+
+<p style="margin-left:40px">&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">To know more about it, watch this:&nbsp;</p>
+
+<hr>
+<div data-oembed-url="www.youtube.com/watch?v=p1ccbR2P_xA">
+<div style="height:0; left:0; padding-bottom:56.25%; position:relative; width:100%"><iframe allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen="" scrolling="no" src="https://www.youtube.com/embed/p1ccbR2P_xA?rel=0" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;"></iframe></div>
+</div>
+
+<hr>
+<ol start="2">
+	<li dir="ltr">
+	<h3 dir="ltr"><u><strong>Topic Modelling</strong></u></h3>
+	</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">Topic Modeling is a type of natural language processing in which we try to find "abstract subjects" that can be used to define a text set. This implies that we have a corpus of texts and are attempting to uncover word and phrase trends that will aid us in organizing and categorizing the documents into "themes."</p>
+
+<p style="margin-left:40px">&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">One of the most prominent NLP methods for Topic Modeling is Latent Dirichlet Allocation. For this method to work, you'll need to construct a list of subjects to which your collection of documents can be applied.</p>
+
+<p style="margin-left:40px">&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">You assign a text to a random subject in your dataset at first, then go over the sample several times, enhance the concept, and reassign documents to different themes.</p>
+
+<p>&nbsp;</p>
+
+<ol start="3">
+	<li dir="ltr">
+	<h3 dir="ltr"><u><strong>Keyword Extraction</strong></u></h3>
+	</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">Keywords Extraction is one of the most important tasks in Natural Language Processing, and it is responsible for determining various methods for extracting a significant number of words and phrases from a collection of texts. All of this is done to summarise and assist in the relevant and well-organized organization, storage, search, and retrieval of content.</p>
+
+<p style="margin-left:40px">&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">There are numerous keyword extraction algorithms available, each of which employs a unique set of fundamental and theoretical methods to this type of problem.&nbsp;</p>
+
+<p style="margin-left:40px">&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">There are various types of NLP algorithms, some of which extract only words and others which extract both words and phrases. There are also NLP algorithms that extract keywords based on the complete content of the texts, as well as algorithms that extract keywords based on the entire content of the texts.</p>
+
+<p style="margin-left:40px">&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">The following are some of the most prominent keyword extraction algorithms:</p>
+
+<p>&nbsp;</p>
+
+<ul style="margin-left:40px">
+	<li dir="ltr">
+	<p dir="ltr"><strong>TextRank: </strong>This algorithm operates on the same idea as PageRank. Google uses this method to rank the importance of various websites on the internet.</p>
+	</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<ul style="margin-left:40px">
+	<li dir="ltr">
+	<p dir="ltr"><strong>Term Frequency – </strong>Inverse Document Frequency (TF-IDF): The full version of TF-IDF is Term Frequency – Inverse Document Frequency, which tries to better define the importance of a term in a document. Also, take into account the relationships between texts from the same corpus.</p>
+	</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<ul style="margin-left:40px">
+	<li dir="ltr">
+	<p dir="ltr"><strong>RAKE: </strong>RAKE stands for Rapid Automatic Keywords Extraction and is a type of NLP method. This can extract keywords and key phrases from a single document's content without taking into account other documents in the same collection.</p>
+	</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<ol start="4">
+	<li dir="ltr">
+	<h3 dir="ltr"><u><strong>Knowledge Graphs</strong></u></h3>
+	</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">Knowledge graphs are a collection of three items: a subject, a predicate, and an entity that explain a method of storing information using triples.</p>
+
+<p style="margin-left:40px">&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">The subject of approaches for extracting knowledge-getting ordered information from unstructured documents includes awareness graphs.&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px"><a href="https://www.analyticssteps.com/blogs/what-knowledge-graph">Knowledge graphs</a> have recently become more popular, particularly when they are used by multiple firms (such as the Google Information Graph) for various goods and services.&nbsp;</p>
+
+<p style="margin-left:40px">&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">Building a knowledge graph requires a variety of <a href="https://www.analyticssteps.com/blogs/7-natural-language-processing-techniques-extracting-information">NLP techniques</a> (perhaps every technique covered in this article), and employing more of these approaches will likely result in a more thorough and effective knowledge graph.</p>
+
+<p>&nbsp;</p>
+
+<ol start="5">
+	<li dir="ltr">
+	<h3 dir="ltr"><u><strong>Words Cloud</strong></u></h3>
+	</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">A word cloud, sometimes known as a tag cloud, is a data visualization approach. Words from a text are displayed in a table, with the most significant terms printed in larger letters and less important words depicted in smaller sizes or not visible at all.</p>
+
+<p style="margin-left:40px">&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">Before applying other NLP algorithms to our dataset, we can utilize word clouds to describe our findings.</p>
+
+<p>&nbsp;</p>
+
+<ol start="6">
+	<li dir="ltr">
+	<h3 dir="ltr"><u><strong>Named Entity Recognition</strong></u></h3>
+	</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">Another significant technique for analyzing natural language space is named entity recognition. It's in charge of classifying and categorizing persons in unstructured text into a set of predetermined groups. This includes individuals, groups, dates, amounts of money, and so on.</p>
+
+<p style="margin-left:40px">&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">There are two sub-steps to named entity recognition;</p>
+
+<p>&nbsp;</p>
+
+<ul style="margin-left:40px">
+	<li dir="ltr">
+	<p dir="ltr">Named Entity Identification (the identification of prospective NER algorithm candidates) and&nbsp;</p>
+	</li>
+	<li dir="ltr">
+	<p dir="ltr">Named Entity Classification are two of these phases (assignment of candidates to one of the predefined categories)</p>
+	</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<ol start="7">
+	<li dir="ltr">
+	<h3 dir="ltr"><u><strong>Sentiment Analysis</strong></u></h3>
+	</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px"><a href="https://www.analyticssteps.com/blogs/what-sentiment-analysis-nlp">Sentiment analysis</a> is the most often used NLP technique. Emotion analysis is especially useful in circumstances where consumers offer their ideas and suggestions, such as consumer polls, ratings, and debates on social media.&nbsp;</p>
+
+<p style="margin-left:40px">&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">In emotion analysis, a three-point scale (positive/negative/neutral) is the simplest to create. In more complex cases, the output can be a statistical score that can be divided into as many categories as needed.</p>
+
+<p style="margin-left:40px">&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">Both supervised and unsupervised algorithms can be used for sentiment analysis. The most frequent controlled model for interpreting sentiments is Naive Bayes.&nbsp;</p>
+
+<p style="margin-left:40px">&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">A sentiment-labeled training corpus is required, from which a model can be trained and then utilized to define the sentiment. Naive Bayes isn't the only <a href="https://www.analyticssteps.com/blogs/different-types-machine-learning-methods">machine learning method</a> that can be used; it can also employ random forest or gradient boosting.</p>
+
+<p>&nbsp;</p>
+
+<ol start="8">
+	<li dir="ltr">
+	<h3 dir="ltr"><u><strong>Text Summarization</strong></u></h3>
+	</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">As the name implies, NLP approaches can assist in the summarization of big volumes of text. Text summarization is commonly utilized in situations such as news headlines and research studies.</p>
+
+<p style="margin-left:40px">&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">Text summarization can be done in two ways: extraction and abstraction. By deleting bits from the text, extraction methods create a rundown. Abstraction tactics produce summaries by constructing new text that conveys the essence of the original content.&nbsp;</p>
+
+<p style="margin-left:40px">&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">Different NLP algorithms can be used for text summarization, such as LexRank, TextRank, and Latent Semantic Analysis. To use LexRank as an example, this algorithm ranks sentences based on their similarity. Because more sentences are identical, and those sentences are identical to other sentences, a sentence is rated higher.</p>
+
+<p>&nbsp;</p>
+
+<ol start="9">
+	<li dir="ltr">
+	<h3 dir="ltr"><u><strong>Bag of Words</strong></u></h3>
+	</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">This paradigm represents a text as a bag (multiset) of words, neglecting syntax and even word order while keeping multiplicity. In essence, the <a href="https://www.analyticssteps.com/blogs/an-optimum-approach-towards-the-bag-of-words-with-code-illustration-in-python">bag of words</a> paradigm generates a matrix of incidence. These word frequencies or instances are then employed as features in the training of a classifier.</p>
+
+<p style="margin-left:40px">&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">Unfortunately, there are some drawbacks to this paradigm. The worst is the lack of semantic meaning and context, as well as the fact that such terms are not appropriately weighted (for example, in this model, the word "universe" weighs less than the word "they").</p>
+
+<p>&nbsp;</p>
+
+<ol start="10">
+	<li dir="ltr">
+	<h3 dir="ltr"><u><strong>Tokenization</strong></u></h3>
+	</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">It's the process of breaking down the text into sentences and phrases. The work entails breaking down a text into smaller chunks (known as tokens) while discarding some characters, such as punctuation.</p>
+
+<p style="margin-left:40px">&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">Consider the following example:</p>
+
+<p style="margin-left:40px">&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">Text input: Potter walked to school yesterday.</p>
+
+<p style="margin-left:40px">&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">Potter went to school yesterday, according to the text output.</p>
+
+<p style="margin-left:40px">&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">The major disadvantage of this strategy is that it works better with some languages and worse with others. This is particularly true when it comes to tonal languages like Mandarin or Vietnamese.&nbsp;</p>
+
+<p style="margin-left:40px">&nbsp;</p>
+
+<p dir="ltr" style="margin-left:40px">Depending on the pronunciation, the Mandarin term ma can signify "a horse," "hemp," "a scold," or "a mother." The NLP algorithms are in grave danger.</p>
+
+<p><br>
+&nbsp;</p>
+
+<h2 dir="ltr"><u><strong>Conclusion</strong></u></h2>
+
+<p>&nbsp;</p>
+
+<p dir="ltr">While natural language processing (NLP) is a relatively new field of research and application in comparison to other <a href="https://www.analyticssteps.com/blogs/information-technology-its-functions-and-why-it-important">information technology</a> approaches, there have been enough successes to suggest that NLP-based information access technologies will continue to be a major area of research and development in information systems now and in the future.</p>
+
+<p>&nbsp;</p>
+
+<p dir="ltr">These were some of the top NLP approaches and algorithms that can play a decent role in the success of NLP.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p dir="ltr"><strong>(Also read: <a href="https://www.analyticssteps.com/blogs/major-uses-natural-language-processing-nlp">10 Major Uses of Natural Language Processing</a>)</strong></p></div></div></div><section _ngcontent-sc3="" class="share-button section " style="width:100%"><div _ngcontent-sc3="" class="row center-align"><h5 _ngcontent-sc3="" class="title-small">Share Blog :</h5><a _ngcontent-sc3="" class="social-icons-bottom"><img _ngcontent-sc3="" alt="" loading="lazy" src="assets/images/icons/blue_fb.png"></a><a _ngcontent-sc3="" class="social-icons-bottom"><img _ngcontent-sc3="" alt="" loading="lazy" src="assets/images/icons/blue_twitter.png"></a><a _ngcontent-sc3="" class="social-icons-bottom"><img _ngcontent-sc3="" alt="" loading="lazy" src="assets/images/icons/blue_link.png"></a></div><div _ngcontent-sc3="" class="permlink"><p _ngcontent-sc3="" class="sub-para"><i _ngcontent-sc3="">Or</i></p><p _ngcontent-sc3="" class="sub-para">Be a part of our <i _ngcontent-sc3=""><a _ngcontent-sc3="" href="https://www.instagram.com/analytics_steps/" target="_blank">Instagram</a></i> community <i _ngcontent-sc3="" aria-hidden="true" class="fa fa-heart" style="color: #314f74"></i></p></div></section></div><div _ngcontent-sc3="" class="col-lg-3 main_blog_ri"><section _ngcontent-sc3="" class="right-side-ad-space ads_block"><ng-adsense _ngcontent-sc3=""><ins class="adsbygoogle " classname="adsbygoogle " style="display:block;" data-ad-client="ca-pub-3053013897257552" data-ad-format="auto" data-ad-region="page-88841" data-full-width-responsive="true"></ins></ng-adsense></section><section _ngcontent-sc3="" class="right-side-trending-blog"><h3 _ngcontent-sc3="">Trending blogs</h3><div _ngcontent-sc3="" class="right_blog_list"><ul _ngcontent-sc3=""><!----><li _ngcontent-sc3="" class="ng-star-inserted"><p _ngcontent-sc3="" tabindex="0">5 Factors Influencing Consumer Behavior</p><a _ngcontent-sc3="" href="/blogs/5-factors-influencing-consumer-behavior">READ MORE</a></li><li _ngcontent-sc3="" class="ng-star-inserted"><p _ngcontent-sc3="" tabindex="0">Elasticity of Demand and its Types</p><a _ngcontent-sc3="" href="/blogs/elasticity-demand-and-its-types">READ MORE</a></li><li _ngcontent-sc3="" class="ng-star-inserted"><p _ngcontent-sc3="" tabindex="0">What is PESTLE Analysis? Everything you need to know about it</p><a _ngcontent-sc3="" href="/blogs/what-pestle-analysis">READ MORE</a></li><li _ngcontent-sc3="" class="ng-star-inserted"><p _ngcontent-sc3="" tabindex="0">An Overview of Descriptive Analysis</p><a _ngcontent-sc3="" href="/blogs/overview-descriptive-analysis">READ MORE</a></li><li _ngcontent-sc3="" class="ng-star-inserted"><p _ngcontent-sc3="" tabindex="0">What is Managerial Economics? Definition, Types, Nature, Principles, and Scope</p><a _ngcontent-sc3="" href="/blogs/what-managerial-economics-definition-types-nature-principles-scope">READ MORE</a></li><li _ngcontent-sc3="" class="ng-star-inserted"><p _ngcontent-sc3="" tabindex="0">5 Factors Affecting the Price Elasticity of Demand (PED)</p><a _ngcontent-sc3="" href="/blogs/5-factors-affecting-price-elasticity-demand-ped">READ MORE</a></li><li _ngcontent-sc3="" class="ng-star-inserted"><p _ngcontent-sc3="" tabindex="0">Dijkstra’s Algorithm: The Shortest Path Algorithm</p><a _ngcontent-sc3="" href="/blogs/dijkstras-algorithm-shortest-path-algorithm">READ MORE</a></li><li _ngcontent-sc3="" class="ng-star-inserted"><p _ngcontent-sc3="" tabindex="0">6 Major Branches of Artificial Intelligence (AI)</p><a _ngcontent-sc3="" href="/blogs/6-major-branches-artificial-intelligence-ai">READ MORE</a></li><li _ngcontent-sc3="" class="ng-star-inserted"><p _ngcontent-sc3="" tabindex="0">Scope of Managerial Economics</p><a _ngcontent-sc3="" href="/blogs/scope-managerial-economics">READ MORE</a></li><li _ngcontent-sc3="" class="ng-star-inserted"><p _ngcontent-sc3="" tabindex="0">7 Types of Statistical Analysis: Definition and Explanation</p><a _ngcontent-sc3="" href="/blogs/7-types-statistical-analysis-definition-explanation">READ MORE</a></li></ul></div></section><section _ngcontent-sc3="" class="right-side-ad-space ads_block"><ng-adsense _ngcontent-sc3=""><ins class="adsbygoogle " classname="adsbygoogle " style="display:block;" data-ad-client="ca-pub-3053013897257552" data-ad-format="auto" data-ad-region="page-67121" data-full-width-responsive="true"></ins></ng-adsense></section><section _ngcontent-sc3="" class="right-side-ad-space ads_block" style="position:sticky;top:6em; margin-top:20px"><ng-adsense _ngcontent-sc3=""><ins class="adsbygoogle " classname="adsbygoogle " style="display:block;" data-ad-client="ca-pub-3053013897257552" data-ad-format="auto" data-ad-region="page-24731" data-full-width-responsive="true"></ins></ng-adsense></section></div></div></div><div _ngcontent-sc3="" class="clearfix"></div><div _ngcontent-sc3="" class="clearfix"></div><div _ngcontent-sc3="" class="container" id=""><div _ngcontent-sc3="" class=" row"><div _ngcontent-sc3="" class="col-lg-9 comment_box"><h3 _ngcontent-sc3="" class="comment_title">Latest Comments</h3><div _ngcontent-sc3="" class="comnt_div"><!----><div _ngcontent-sc3="" class="clearfix"></div><div _ngcontent-sc3="" class="cmnt_user_img"><!----><!----><img _ngcontent-sc3="" alt="" loading="lazy" src="assets/images/icons/user_default.jpg" class="ng-star-inserted"></div><div _ngcontent-sc3="" class="cmnt_user_box"><form _ngcontent-sc3="" novalidate="" class="ng-untouched ng-pristine ng-invalid"><textarea _ngcontent-sc3="" class="form-control ng-untouched ng-pristine ng-invalid" formcontrolname="comment" placeholder="Write a comment.." value=""></textarea><button _ngcontent-sc3="" class="btn_post_comnt" type="submit" disabled=""><!----> Post Comment</button><button _ngcontent-sc3="" class="btn_write_blog" routerlink="/contact-us" tabindex="0">Contact Us</button></form></div></div></div></div></div></section><section _ngcontent-sc3="" class="container"><div _ngcontent-sc3="" class="largeads py-5"><ng-adsense _ngcontent-sc3=""><ins class="adsbygoogle " classname="adsbygoogle " style="display:block;" data-ad-client="ca-pub-3053013897257552" data-ad-format="auto" data-ad-region="page-43061" data-full-width-responsive="true"></ins></ng-adsense></div></section><div _ngcontent-sc3="" id="xx" style="display:none"></div></app-blog-detail><app-footer _ngcontent-sc0="" class="ng-tns-c0-0" _nghost-sc2=""><!----><footer _ngcontent-sc2="" class="py-3 ng-star-inserted"><div _ngcontent-sc2="" class="container"><div _ngcontent-sc2="" class="topfooter"><a _ngcontent-sc2="" href="https://facebook.com/AnalyticsStepsInfomedia" target="_blank"><img _ngcontent-sc2="" alt="image missing" loading="lazy" src="../../../assets/images/social-icons/facebook.png"></a><a _ngcontent-sc2="" href="https://twitter.com/AnalyticsSteps" target="_blank"><img _ngcontent-sc2="" alt="image missing" loading="lazy" src="../../../assets/images/social-icons/twitter.png"></a><a _ngcontent-sc2="" href="https://www.linkedin.com/company/analytics-steps/" target="_blank"><img _ngcontent-sc2="" alt="image missing" loading="lazy" src="../../../assets/images/social-icons/linkedin.png"></a></div><div _ngcontent-sc2="" class="row"><div _ngcontent-sc2="" class="col-md-5"><div _ngcontent-sc2="" class="foonewsinfo"><h2 _ngcontent-sc2="">Subscribe our newsletter</h2></div><form _ngcontent-sc2="" novalidate="" class="ng-untouched ng-pristine ng-invalid"><div _ngcontent-sc2="" class="position-relative mt-4 subscribebox"><input _ngcontent-sc2="" formcontrolname="email" placeholder="Email address" type="email" value="" class="ng-untouched ng-pristine ng-invalid"><button _ngcontent-sc2="" type="submit" disabled=""><!----> Subscribe</button></div><!----></form><div _ngcontent-sc2="" class="privacypolicy my-3"><a _ngcontent-sc2="" routerlink="/terms-of-use" href="/terms-of-use">Terms of Use</a> | <a _ngcontent-sc2="" routerlink="/privacy-policy" href="/privacy-policy">Privacy Policy</a></div></div><div _ngcontent-sc2="" class="col-md-3 ft_nav"><ul _ngcontent-sc2=""><li _ngcontent-sc2=""><a _ngcontent-sc2="" routerlink="/blogs" href="/blogs">Blogs</a></li><li _ngcontent-sc2=""><a _ngcontent-sc2="" routerlink="/categories" href="/categories">Blogs Categories</a></li><li _ngcontent-sc2=""><a _ngcontent-sc2="" routerlink="/about-us" href="/about-us">About Us</a></li></ul></div><div _ngcontent-sc2="" class="col-md-4"><ul _ngcontent-sc2="" class="p-0"><li _ngcontent-sc2=""><a _ngcontent-sc2="" routerlink="/news" href="/news">News</a></li><li _ngcontent-sc2=""><a _ngcontent-sc2="" routerlink="/news/categories" href="/news/categories">News Categories</a></li><li _ngcontent-sc2=""><a _ngcontent-sc2="" routerlink="/contact-us" href="/contact-us">Contact Us</a></li></ul><p _ngcontent-sc2="" style="color:#6985ab;font-size: 14px;">Copyright © Analytics Steps Infomedia LLP 2020-22. All Rights Reserved.</p></div></div></div></footer></app-footer><div _ngcontent-sc0="" class="bottom_toTop scroll-to-top"><img _ngcontent-sc0="" class="ng-tns-c0-0" alt="" src="assets/images/icons/top_go_arrow.png"></div></app-root>
+    
+
+    
+  <script src="runtime-es2015.2bbdff0cb362f5573eb7.js" type="module"></script><script src="polyfills-es2015.79e43f7af93a762d3187.js" type="module"></script><script src="runtime-es5.992c8511c574d4608899.js" nomodule=""></script><script src="polyfills-es5.a67d4199b6d6da679b1e.js" nomodule=""></script><script src="scripts.b83a426cb8c66bde8676.js"></script><script src="main-es2015.61ebe78c843bae0456de.js" type="module"></script><script src="main-es5.1c7786e42531d12d5a96.js" nomodule=""></script>
+  
+  
+
+<script id="serverApp-state" type="application/json">{}</script></body></html>
