@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#">
+
+<head>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-W5H6ZJ6');</script>
+	<!-- End Google Tag Manager -->
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://www.lexalytics.com/xmlrpc.php">
+	
+		<link rel="preload" href="https://www.lexalytics.com/wp-content/themes/wd_s/build/index.css?ver=0c4cbca560ded1aeeb10beb9a609f609" as="style">
+	<link rel="preload" href="https://www.lexalytics.com/wp-content/themes/wd_s/build/index.js?ver=0c4cbca560ded1aeeb10beb9a609f609" as="script">
+			
+<!-- Search Engine Optimization by Rank Math PRO - https://s.rankmath.com/home -->
+<title>Machine Learning (ML) for Natural Language Processing (NLP) - Lexalytics</title>
+<meta name="description" content="This article explains how machine learning can solve problems in natural language processing and text analytics and why a hybrid ML-NLP approach is best."/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://www.lexalytics.com/blog/machine-learning-natural-language-processing/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Machine Learning (ML) for Natural Language Processing (NLP) - Lexalytics" />
+<meta property="og:description" content="This article explains how machine learning can solve problems in natural language processing and text analytics and why a hybrid ML-NLP approach is best." />
+<meta property="og:url" content="https://www.lexalytics.com/blog/machine-learning-natural-language-processing/" />
+<meta property="og:site_name" content="Lexalytics" />
+<meta property="article:tag" content="ai" />
+<meta property="article:tag" content="artificial intelligence" />
+<meta property="article:tag" content="insights" />
+<meta property="article:tag" content="intelligence" />
+<meta property="article:tag" content="learning" />
+<meta property="article:tag" content="machine" />
+<meta property="article:tag" content="machine learning" />
+<meta property="article:tag" content="ML" />
+<meta property="article:tag" content="natural language processing" />
+<meta property="article:tag" content="NLP" />
+<meta property="article:section" content="Machine Learning" />
+<meta property="og:updated_time" content="2022-07-11T19:41:29+00:00" />
+<meta property="og:image" content="https://www.lexalytics.com/wp-content/uploads/2022/04/rock-em-sock-em-3.png" />
+<meta property="og:image:secure_url" content="https://www.lexalytics.com/wp-content/uploads/2022/04/rock-em-sock-em-3.png" />
+<meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="512" />
+<meta property="og:image:alt" content="machine learning" />
+<meta property="og:image:type" content="image/png" />
+<meta property="article:published_time" content="2020-09-29T07:00:53+00:00" />
+<meta property="article:modified_time" content="2022-07-11T19:41:29+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Machine Learning (ML) for Natural Language Processing (NLP) - Lexalytics" />
+<meta name="twitter:description" content="This article explains how machine learning can solve problems in natural language processing and text analytics and why a hybrid ML-NLP approach is best." />
+<meta name="twitter:image" content="https://www.lexalytics.com/wp-content/uploads/2022/04/rock-em-sock-em-3.png" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Stuart Richards" />
+<meta name="twitter:label2" content="Time to read" />
+<meta name="twitter:data2" content="14 minutes" />
+<script type="application/ld+json" class="rank-math-schema-pro">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.lexalytics.com/#organization","name":"Lexalytics","url":"https://www.lexalytics.com","logo":{"@type":"ImageObject","@id":"https://www.lexalytics.com/#logo","url":"https://www.lexalytics.com/wp-content/uploads/2022/04/lexalytics-logo-stacked.png","caption":"Lexalytics","inLanguage":"en-US","width":"600","height":"600"}},{"@type":"WebSite","@id":"https://www.lexalytics.com/#website","url":"https://www.lexalytics.com","name":"Lexalytics","publisher":{"@id":"https://www.lexalytics.com/#organization"},"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://www.lexalytics.com/wp-content/uploads/2022/04/rock-em-sock-em-3.png","url":"https://www.lexalytics.com/wp-content/uploads/2022/04/rock-em-sock-em-3.png","width":"1024","height":"512","inLanguage":"en-US"},{"@type":"Person","@id":"https://www.lexalytics.com/author/srichards/","name":"Stuart Richards","url":"https://www.lexalytics.com/author/srichards/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/591446ceecfa362c252035ffdb73bf06?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/591446ceecfa362c252035ffdb73bf06?s=96&amp;d=mm&amp;r=g","caption":"Stuart Richards","inLanguage":"en-US"},"worksFor":{"@id":"https://www.lexalytics.com/#organization"}},{"@type":"WebPage","@id":"https://www.lexalytics.com/blog/machine-learning-natural-language-processing/#webpage","url":"https://www.lexalytics.com/blog/machine-learning-natural-language-processing/","name":"Machine Learning (ML) for Natural Language Processing (NLP) - Lexalytics","datePublished":"2020-09-29T07:00:53+00:00","dateModified":"2022-07-11T19:41:29+00:00","author":{"@id":"https://www.lexalytics.com/author/srichards/"},"isPartOf":{"@id":"https://www.lexalytics.com/#website"},"primaryImageOfPage":{"@id":"https://www.lexalytics.com/wp-content/uploads/2022/04/rock-em-sock-em-3.png"},"inLanguage":"en-US"},{"@type":"BlogPosting","headline":"Machine Learning (ML) for Natural Language Processing (NLP) - Lexalytics","keywords":"machine learning","datePublished":"2020-09-29T07:00:53+00:00","dateModified":"2022-07-11T19:41:29+00:00","author":{"@id":"https://www.lexalytics.com/author/srichards/"},"publisher":{"@id":"https://www.lexalytics.com/#organization"},"description":"This article explains how machine learning can solve problems in natural language processing and text analytics and why a hybrid ML-NLP approach is best.","name":"Machine Learning (ML) for Natural Language Processing (NLP) - Lexalytics","@id":"https://www.lexalytics.com/blog/machine-learning-natural-language-processing/#richSnippet","isPartOf":{"@id":"https://www.lexalytics.com/blog/machine-learning-natural-language-processing/#webpage"},"image":{"@id":"https://www.lexalytics.com/wp-content/uploads/2022/04/rock-em-sock-em-3.png"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://www.lexalytics.com/blog/machine-learning-natural-language-processing/#webpage"}}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Lexalytics &raquo; Feed" href="https://www.lexalytics.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Lexalytics &raquo; Comments Feed" href="https://www.lexalytics.com/comments/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.lexalytics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0.3"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://www.lexalytics.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.3' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #001D30;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #FFFFFF;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--nebula: #FF5233;--wp--preset--color--mars: #DA3400;--wp--preset--color--orion: #FFE7E3;--wp--preset--color--cosmos: #012D4A;--wp--preset--color--galaxy: #002B7D;--wp--preset--color--nova: #0058FF;--wp--preset--color--comet: #8AB2FF;--wp--preset--color--zinc-600: #52525A;--wp--preset--color--zinc-500: #717179;--wp--preset--color--zinc-400: #A1A1A9;--wp--preset--color--zinc-300: #D4D4D8;--wp--preset--color--zinc-200: #E4E4E7;--wp--preset--color--zinc-100: #F4F4F5;--wp--preset--color--zinc-50: #FAFAFA;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--normal: 16px;--wp--preset--font-size--h-4: 18px;--wp--preset--font-size--h-6: 20px;--wp--preset--font-size--h-3: 28px;--wp--preset--font-size--h-2: 45px;--wp--preset--font-size--h-1: 60px;}body { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-nebula-color{color: var(--wp--preset--color--nebula) !important;}.has-mars-color{color: var(--wp--preset--color--mars) !important;}.has-orion-color{color: var(--wp--preset--color--orion) !important;}.has-cosmos-color{color: var(--wp--preset--color--cosmos) !important;}.has-galaxy-color{color: var(--wp--preset--color--galaxy) !important;}.has-nova-color{color: var(--wp--preset--color--nova) !important;}.has-comet-color{color: var(--wp--preset--color--comet) !important;}.has-zinc-600-color{color: var(--wp--preset--color--zinc-600) !important;}.has-zinc-500-color{color: var(--wp--preset--color--zinc-500) !important;}.has-zinc-400-color{color: var(--wp--preset--color--zinc-400) !important;}.has-zinc-300-color{color: var(--wp--preset--color--zinc-300) !important;}.has-zinc-200-color{color: var(--wp--preset--color--zinc-200) !important;}.has-zinc-100-color{color: var(--wp--preset--color--zinc-100) !important;}.has-zinc-50-color{color: var(--wp--preset--color--zinc-50) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-nebula-background-color{background-color: var(--wp--preset--color--nebula) !important;}.has-mars-background-color{background-color: var(--wp--preset--color--mars) !important;}.has-orion-background-color{background-color: var(--wp--preset--color--orion) !important;}.has-cosmos-background-color{background-color: var(--wp--preset--color--cosmos) !important;}.has-galaxy-background-color{background-color: var(--wp--preset--color--galaxy) !important;}.has-nova-background-color{background-color: var(--wp--preset--color--nova) !important;}.has-comet-background-color{background-color: var(--wp--preset--color--comet) !important;}.has-zinc-600-background-color{background-color: var(--wp--preset--color--zinc-600) !important;}.has-zinc-500-background-color{background-color: var(--wp--preset--color--zinc-500) !important;}.has-zinc-400-background-color{background-color: var(--wp--preset--color--zinc-400) !important;}.has-zinc-300-background-color{background-color: var(--wp--preset--color--zinc-300) !important;}.has-zinc-200-background-color{background-color: var(--wp--preset--color--zinc-200) !important;}.has-zinc-100-background-color{background-color: var(--wp--preset--color--zinc-100) !important;}.has-zinc-50-background-color{background-color: var(--wp--preset--color--zinc-50) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-nebula-border-color{border-color: var(--wp--preset--color--nebula) !important;}.has-mars-border-color{border-color: var(--wp--preset--color--mars) !important;}.has-orion-border-color{border-color: var(--wp--preset--color--orion) !important;}.has-cosmos-border-color{border-color: var(--wp--preset--color--cosmos) !important;}.has-galaxy-border-color{border-color: var(--wp--preset--color--galaxy) !important;}.has-nova-border-color{border-color: var(--wp--preset--color--nova) !important;}.has-comet-border-color{border-color: var(--wp--preset--color--comet) !important;}.has-zinc-600-border-color{border-color: var(--wp--preset--color--zinc-600) !important;}.has-zinc-500-border-color{border-color: var(--wp--preset--color--zinc-500) !important;}.has-zinc-400-border-color{border-color: var(--wp--preset--color--zinc-400) !important;}.has-zinc-300-border-color{border-color: var(--wp--preset--color--zinc-300) !important;}.has-zinc-200-border-color{border-color: var(--wp--preset--color--zinc-200) !important;}.has-zinc-100-border-color{border-color: var(--wp--preset--color--zinc-100) !important;}.has-zinc-50-border-color{border-color: var(--wp--preset--color--zinc-50) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-normal-font-size{font-size: var(--wp--preset--font-size--normal) !important;}.has-h-4-font-size{font-size: var(--wp--preset--font-size--h-4) !important;}.has-h-6-font-size{font-size: var(--wp--preset--font-size--h-6) !important;}.has-h-3-font-size{font-size: var(--wp--preset--font-size--h-3) !important;}.has-h-2-font-size{font-size: var(--wp--preset--font-size--h-2) !important;}.has-h-1-font-size{font-size: var(--wp--preset--font-size--h-1) !important;}
+</style>
+<link rel='stylesheet' id='wd_s-css'  href='https://www.lexalytics.com/wp-content/themes/wd_s/build/index.css?ver=0c4cbca560ded1aeeb10beb9a609f609' type='text/css' media='all' />
+<link rel="https://api.w.org/" href="https://www.lexalytics.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.lexalytics.com/wp-json/wp/v2/posts/325" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.lexalytics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.lexalytics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='https://www.lexalytics.com/?p=325' />
+<link rel="alternate" type="application/json+oembed" href="https://www.lexalytics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.lexalytics.com%2Fblog%2Fmachine-learning-natural-language-processing%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.lexalytics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.lexalytics.com%2Fblog%2Fmachine-learning-natural-language-processing%2F&#038;format=xml" />
+<!-- Stream WordPress user activity plugin v3.9.0 -->
+<link rel="icon" href="https://www.lexalytics.com/wp-content/uploads/2022/05/cropped-favicon-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.lexalytics.com/wp-content/uploads/2022/05/cropped-favicon-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.lexalytics.com/wp-content/uploads/2022/05/cropped-favicon-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.lexalytics.com/wp-content/uploads/2022/05/cropped-favicon-1-270x270.png" />
+
+</head>
+
+<body class="post-template-default single single-post postid-325 single-format-standard wp-embed-responsive site-wrapper group-blog no-js">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W5H6ZJ6"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	
+	
+	<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+
+		<header class="site-header js-site-header is-dark">
+
+		<div class="container">
+			<div class="">
+				<a class="logo inline-flex p-20 pl-0" href="https://www.lexalytics.com/" rel="home" aria-label="Lexalytics Logo">
+					<div class="hidden md:inline-flex">
+						<svg width="138" height="26" viewBox="0 0 138 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.9879 22.833H5.12545V17.6379H0.00610352V2.48476C0.00610352 2.03141 0.186746 1.59662 0.508293 1.27605C0.82984 0.955486 1.26595 0.775393 1.72069 0.775393H5.78444C6.01733 0.775391 6.24792 0.821227 6.463 0.910263C6.67809 0.999298 6.87343 1.12977 7.03783 1.29423C7.20222 1.45869 7.33243 1.65389 7.421 1.86863C7.50956 2.08336 7.55474 2.31342 7.55393 2.5456V15.1864H17.9879C18.434 15.188 18.8615 15.3654 19.1769 15.6799C19.4924 15.9945 19.6704 16.4206 19.672 16.8654V21.1236C19.6752 21.3464 19.6341 21.5676 19.551 21.7745C19.4678 21.9813 19.3444 22.1697 19.1878 22.3287C19.0312 22.4877 18.8445 22.6141 18.6385 22.7006C18.4325 22.7872 18.2114 22.8322 17.9879 22.833V22.833ZM7.56614 20.3997H17.2313V17.6379H7.56004L7.56614 20.3997ZM2.44679 15.2047H5.12545V3.22691H2.44679V15.2047Z" fill="#FF5233"/>
+<path d="M83.712 1.81085H78.3257C78.2634 1.81085 78.2036 1.8357 78.1594 1.87999C78.1152 1.92427 78.0901 1.98441 78.0897 2.04726V4.81825C78.0901 4.88111 78.1152 4.94123 78.1594 4.98552C78.2036 5.0298 78.2634 5.05466 78.3257 5.05466H80.4196V20.2335C80.4196 20.2645 80.4257 20.2953 80.4375 20.324C80.4492 20.3527 80.4665 20.3787 80.4883 20.4007C80.51 20.4226 80.5358 20.44 80.5643 20.4519C80.5927 20.4638 80.6232 20.4699 80.654 20.4699H83.712C83.7743 20.4699 83.8341 20.4451 83.8783 20.4008C83.9225 20.3565 83.9476 20.2964 83.948 20.2335V2.04726C83.9476 1.98441 83.9225 1.92427 83.8783 1.87999C83.8341 1.8357 83.7743 1.81085 83.712 1.81085V1.81085ZM72.541 7.35116C69.7608 7.35116 67.7372 8.98404 67.2467 11.1657C67.239 11.2005 67.239 11.2365 67.2469 11.2713C67.2548 11.306 67.2703 11.3385 67.2923 11.3664C67.3144 11.3943 67.3423 11.4168 67.3741 11.4323C67.4059 11.4479 67.4407 11.456 67.476 11.4561H70.3868C70.4325 11.4568 70.4774 11.4443 70.5162 11.4201C70.5551 11.3959 70.5863 11.3609 70.6061 11.3194C70.909 10.6541 71.4932 10.2505 72.4272 10.2505C73.8499 10.2505 74.5044 11.1404 74.5044 12.2312V13.1785C73.9922 12.8053 72.7117 12.4322 71.602 12.4322C68.8419 12.4322 66.6793 14.0971 66.6793 16.5372C66.6793 19.2068 68.8419 20.6996 71.4028 20.6996C72.7971 20.6996 74.0809 20.2116 74.5044 19.781V20.2335C74.5044 20.2962 74.5291 20.3563 74.573 20.4007C74.6169 20.445 74.6766 20.4699 74.7387 20.4699H77.6545C77.7168 20.4699 77.7766 20.4451 77.8208 20.4008C77.865 20.3565 77.89 20.2964 77.8905 20.2335V12.2886C77.8838 9.21706 75.9204 7.35116 72.5343 7.35116H72.541ZM74.5044 16.9762C74.1914 17.6651 73.2239 18.0957 72.1995 18.0957C71.0898 18.0957 69.9516 17.6364 69.9516 16.5169C69.9516 15.4261 71.0898 14.938 72.1995 14.938C73.2239 14.938 74.1914 15.3686 74.5044 16.0576V16.9762ZM40.0255 17.2261H32.4565V3.0773C32.4565 3.04626 32.4505 3.01552 32.4387 2.98683C32.4269 2.95815 32.4097 2.9321 32.3879 2.91014C32.3661 2.88819 32.3403 2.87077 32.3119 2.85889C32.2834 2.84701 32.253 2.8409 32.2222 2.8409H29.042C28.9798 2.8409 28.9202 2.86581 28.8762 2.91014C28.8323 2.95448 28.8076 3.01461 28.8076 3.0773V20.2335C28.8076 20.2962 28.8323 20.3563 28.8762 20.4007C28.9202 20.445 28.9798 20.4699 29.042 20.4699H40.0255C40.0877 20.4699 40.1473 20.445 40.1912 20.4007C40.2352 20.3563 40.2598 20.2962 40.2598 20.2335V17.4625C40.2598 17.4315 40.2538 17.4007 40.242 17.372C40.2302 17.3434 40.213 17.3173 40.1912 17.2953C40.1695 17.2734 40.1436 17.256 40.1152 17.2441C40.0868 17.2322 40.0563 17.2261 40.0255 17.2261ZM61.7851 13.8388L65.8759 8.0114C65.9007 7.97604 65.9155 7.93448 65.9185 7.89124C65.9215 7.84801 65.9127 7.80477 65.893 7.76625C65.8733 7.72773 65.8435 7.69541 65.8068 7.67283C65.7701 7.65025 65.728 7.63828 65.6851 7.63822H62.555C62.5172 7.63833 62.48 7.64759 62.4465 7.66522C62.4131 7.68285 62.3842 7.70834 62.3625 7.73953L59.9288 11.2856L57.552 7.73953C57.5302 7.70735 57.501 7.68099 57.4669 7.66275C57.4328 7.64451 57.3948 7.63493 57.3562 7.63484H54.032C53.9892 7.63481 53.9471 7.64661 53.9105 7.66899C53.8738 7.69136 53.844 7.72344 53.8241 7.76173C53.8043 7.80003 53.7952 7.84308 53.7979 7.8862C53.8006 7.92933 53.815 7.97087 53.8395 8.00634L57.9085 13.9164L53.5834 20.0967C53.5585 20.1321 53.5438 20.1737 53.5408 20.2169C53.5377 20.2601 53.5466 20.3034 53.5663 20.3419C53.586 20.3804 53.6158 20.4127 53.6525 20.4353C53.6891 20.4579 53.7312 20.4699 53.7742 20.4699H56.8975C56.9355 20.4697 56.9729 20.4603 57.0067 20.4427C57.0404 20.4251 57.0695 20.3997 57.0917 20.3686L59.7815 16.451L62.4429 20.3669C62.4645 20.3988 62.4934 20.4248 62.5273 20.4427C62.5611 20.4607 62.5988 20.47 62.637 20.4699H65.9696C66.0127 20.4702 66.0551 20.4584 66.092 20.436C66.1289 20.4135 66.1589 20.3812 66.1788 20.3426C66.1987 20.3041 66.2077 20.2607 66.2047 20.2173C66.2018 20.1739 66.187 20.1322 66.1621 20.0967L61.7851 13.8388ZM47.4924 7.35116C43.9238 7.34103 41.3545 10.1863 41.3545 14.0684C41.3545 18.0299 43.8301 20.757 47.5292 20.757C50.6007 20.757 52.5624 19.1292 53.108 16.5692C53.1158 16.5345 53.1157 16.4984 53.1078 16.4637C53.0999 16.4289 53.0844 16.3964 53.0624 16.3685C53.0404 16.3407 53.0125 16.3181 52.9807 16.3026C52.9489 16.2871 52.914 16.2789 52.8787 16.2788H50.0684C50.0189 16.2785 49.9705 16.2935 49.9297 16.3219C49.889 16.3503 49.8579 16.3907 49.8407 16.4375C49.5144 17.4203 48.6691 17.8864 47.5275 17.8864C45.9625 17.8864 44.8812 16.7381 44.7674 14.8148H53.0109C53.0732 14.8148 53.133 14.7899 53.1772 14.7456C53.2215 14.7014 53.2465 14.6412 53.247 14.5784V13.2832C53.2486 10.0563 50.6843 7.36129 47.4857 7.35116H47.4924ZM44.8545 12.6618C45.1675 11.083 46.1349 10.2505 47.5008 10.2505C48.952 10.2505 49.7487 11.3126 49.7771 12.6618H44.8545ZM126.034 16.1353H123.021C122.971 16.1351 122.922 16.1516 122.882 16.182C122.842 16.2125 122.813 16.2554 122.799 16.3041C122.549 17.1805 121.805 17.7158 120.733 17.7158C119.111 17.7158 118.116 16.2231 118.116 14.0701C118.116 11.8884 119.12 10.3957 120.733 10.3957C121.805 10.3957 122.549 10.931 122.799 11.8074C122.813 11.8561 122.842 11.899 122.882 11.9295C122.922 11.9599 122.971 11.9764 123.021 11.9762H126.034C126.069 11.9761 126.103 11.9683 126.135 11.9533C126.166 11.9382 126.194 11.9164 126.216 11.8893C126.238 11.8622 126.254 11.8305 126.263 11.7965C126.271 11.7625 126.272 11.727 126.265 11.6926C125.798 9.11913 123.808 7.35454 120.742 7.35454C117.128 7.35454 114.624 10.0816 114.624 14.0718C114.624 18.0333 117.135 20.7603 120.742 20.7603C123.818 20.7603 125.808 19.0211 126.265 16.4223C126.273 16.3874 126.272 16.3512 126.264 16.3165C126.255 16.2819 126.239 16.2495 126.217 16.222C126.194 16.1944 126.166 16.1723 126.134 16.1573C126.101 16.1423 126.066 16.1348 126.031 16.1353H126.034ZM111.082 1.89528C109.944 1.89528 108.977 2.75647 108.977 3.93343C108.977 5.13909 109.944 5.97157 111.082 5.97157C112.192 5.97157 113.159 5.13909 113.159 3.93343C113.157 3.66167 113.101 3.39312 112.995 3.14328C112.889 2.89343 112.735 2.66725 112.542 2.47777C112.349 2.28829 112.12 2.13926 111.87 2.03928C111.619 1.93931 111.352 1.89036 111.082 1.89528ZM98.1068 7.63653H95.0571C95.0073 7.63731 94.959 7.6541 94.9192 7.68447C94.8795 7.71483 94.8504 7.7572 94.8362 7.80539L91.9907 16.1707L89.1168 7.80539C89.1028 7.758 89.0744 7.71622 89.0357 7.68593C88.997 7.65564 88.9498 7.63836 88.9008 7.63653H85.6804C85.6424 7.63647 85.6049 7.64574 85.5713 7.66354C85.5376 7.68135 85.5087 7.70716 85.4871 7.73874C85.4655 7.77032 85.4519 7.80674 85.4473 7.84482C85.4428 7.88291 85.4476 7.92154 85.4611 7.95737L90.2047 20.5256L88.4841 24.8805C88.4698 24.9164 88.4645 24.9552 88.4686 24.9937C88.4727 25.0321 88.4861 25.0689 88.5076 25.1009C88.5291 25.1329 88.558 25.1591 88.5918 25.1772C88.6256 25.1953 88.6634 25.2048 88.7017 25.2048H91.666C91.7134 25.2046 91.7597 25.19 91.7988 25.1629C91.838 25.1358 91.8681 25.0974 91.8852 25.0528L98.3361 7.95737C98.35 7.92073 98.3547 7.88116 98.3497 7.84224C98.3447 7.80332 98.3302 7.76627 98.3074 7.73443C98.2847 7.7026 98.2544 7.67698 98.2194 7.65989C98.1844 7.64279 98.1457 7.63477 98.1068 7.63653V7.63653ZM134.614 12.8712L131.996 12.2684C131.2 12.0674 130.858 11.7804 130.858 11.2552C130.858 10.4514 131.683 10.0495 132.532 10.0495C133.62 10.0495 134.206 10.524 134.472 11.1691C134.49 11.212 134.52 11.2486 134.558 11.2742C134.597 11.2998 134.642 11.3132 134.688 11.3126H137.594C137.629 11.3127 137.665 11.3045 137.697 11.2888C137.729 11.273 137.757 11.2501 137.779 11.2218C137.801 11.1935 137.816 11.1605 137.823 11.1253C137.831 11.0901 137.83 11.0537 137.821 11.0188C137.306 8.77634 135.558 7.35116 132.475 7.35116C129.63 7.35116 127.41 9.01612 127.41 11.5136C127.41 13.6665 128.776 14.6713 130.711 15.1305L133.272 15.7047C134.154 15.9343 134.552 16.2214 134.552 16.7955C134.552 17.628 133.841 18.0586 132.76 18.0586C131.766 18.0586 130.999 17.6229 130.678 16.8006C130.659 16.7559 130.627 16.7179 130.587 16.6914C130.547 16.6649 130.5 16.6512 130.452 16.652H127.405C127.37 16.6523 127.336 16.6604 127.304 16.6757C127.273 16.691 127.245 16.7132 127.223 16.7406C127.201 16.7681 127.185 16.8001 127.176 16.8344C127.168 16.8687 127.167 16.9044 127.174 16.939C127.66 19.374 129.802 20.757 132.788 20.757C135.747 20.757 137.995 19.2068 137.995 16.5946C138 14.6425 136.834 13.4082 134.614 12.8712ZM112.612 7.63653H109.552C109.49 7.63653 109.431 7.66143 109.387 7.70577C109.343 7.7501 109.318 7.81024 109.318 7.87294V20.2318C109.318 20.2945 109.343 20.3546 109.387 20.399C109.431 20.4433 109.49 20.4682 109.552 20.4682H112.612C112.674 20.4682 112.734 20.4433 112.778 20.399C112.822 20.3546 112.846 20.2945 112.846 20.2318V7.87462C112.847 7.84343 112.841 7.81251 112.829 7.78363C112.817 7.75476 112.8 7.7285 112.778 7.70637C112.757 7.68424 112.731 7.66668 112.702 7.65469C112.674 7.6427 112.643 7.63653 112.612 7.63653V7.63653ZM106.938 17.3426C106.557 17.5074 106.147 17.594 105.733 17.5976C104.822 17.5976 104.281 17.1383 104.281 16.1336V10.5072H106.836C106.898 10.5072 106.957 10.4823 107.001 10.4379C107.045 10.3936 107.07 10.3334 107.07 10.2707V7.87294C107.07 7.81024 107.045 7.7501 107.001 7.70577C106.957 7.66143 106.898 7.63653 106.836 7.63653H104.281V4.40117C104.281 4.33847 104.257 4.27834 104.213 4.234C104.169 4.18967 104.109 4.16476 104.047 4.16476H101.018C100.955 4.16476 100.895 4.18961 100.851 4.2339C100.807 4.27819 100.782 4.33832 100.782 4.40117V7.63653H99.0826C99.0203 7.63653 98.9606 7.66138 98.9163 7.70567C98.8721 7.74995 98.8471 7.81009 98.8466 7.87294V10.2707C98.8471 10.3336 98.8721 10.3937 98.9163 10.438C98.9606 10.4823 99.0203 10.5072 99.0826 10.5072H100.785V16.5861C100.785 19.428 102.407 20.7198 104.996 20.7198C105.848 20.7198 106.63 20.6016 107.129 20.3821C107.172 20.3642 107.208 20.3337 107.234 20.2946C107.26 20.2555 107.273 20.2095 107.273 20.1626V17.5452C107.271 17.5064 107.259 17.4688 107.239 17.4355C107.219 17.4022 107.192 17.3744 107.158 17.3546C107.125 17.3347 107.088 17.3234 107.049 17.3216C107.011 17.3198 106.973 17.3276 106.938 17.3443V17.3426Z" fill="currentColor"/>
+</svg>
+					</div>
+					<div class="md:hidden inline-flex">
+						<svg width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.9876 22.833H5.12521V17.6379H0.00585938V2.48476C0.00585938 2.03141 0.186502 1.59662 0.508049 1.27605C0.829596 0.955484 1.26571 0.775391 1.72044 0.775391H5.78419C6.01708 0.775389 6.24768 0.821225 6.46276 0.910261C6.67784 0.999296 6.87319 1.12977 7.03758 1.29423C7.20197 1.45869 7.33219 1.65389 7.42075 1.86863C7.50932 2.08336 7.55449 2.31342 7.55369 2.5456V15.1864H17.9876C18.4338 15.188 18.8612 15.3654 19.1767 15.6799C19.4922 15.9945 19.6701 16.4206 19.6717 16.8654V21.1236C19.6749 21.3464 19.6338 21.5676 19.5507 21.7745C19.4676 21.9813 19.3442 22.1697 19.1875 22.3287C19.0309 22.4877 18.8442 22.6141 18.6383 22.7006C18.4323 22.7872 18.2112 22.8322 17.9876 22.833V22.833ZM7.5659 20.3997H17.231V17.6379H7.5598L7.5659 20.3997ZM2.44655 15.2047H5.12521V3.22691H2.44655V15.2047Z" fill="#FF5233"/>
+</svg>
+					</div>
+					<div class="screen-reader-text">Lexalytics</div>
+				</a>
+			</div>
+			<div class="js-nav-wrapper" aria-hidden="true">
+				<nav class="nav-center" aria-label="Main Navigation">
+					<ul id="primary-menu" class="menu menu-main"><li id="menu-item-2467" class="menu-item menu-item-type-custom menu-item-object-custom item-has-dropdown menu-item-2467"><button>Platform <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.683416 -0.097631 1.31658 -0.097631 1.7071 0.292893L4.99999 3.58579L8.29288 0.292893C8.6834 -0.0976311 9.31657 -0.0976311 9.70709 0.292893C10.0976 0.683417 10.0976 1.31658 9.70709 1.70711L5.7071 5.70711C5.31657 6.09763 4.68341 6.09763 4.29289 5.70711L0.292893 1.70711C-0.0976309 1.31658 -0.0976309 0.683417 0.292893 0.292893Z" fill="currentColor"/>
+			</svg> </button><div class="submenu"><div class="submenu-nav">Platform <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.683416 -0.097631 1.31658 -0.097631 1.7071 0.292893L4.99999 3.58579L8.29288 0.292893C8.6834 -0.0976311 9.31657 -0.0976311 9.70709 0.292893C10.0976 0.683417 10.0976 1.31658 9.70709 1.70711L5.7071 5.70711C5.31657 6.09763 4.68341 6.09763 4.29289 5.70711L0.292893 1.70711C-0.0976309 1.31658 -0.0976309 0.683417 0.292893 0.292893Z" fill="currentColor"/>
+			</svg> </div><div class="container"><div class="submenu-block-wrap">
+<div id="section-block_6279c6e8700fb" class="block-section relative overflow-hidden grid md:grid-cols-4 gap-32 ">
+
+									<div class="flex gap-16 flex-col ">
+									<div class="w-48 h-48 rounded-md flex justify-center items-center flex-none bg-mars ">
+						<div class="">
+															<svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 5H15M5 9H9M10 17L6 13H3C1.89543 13 1 12.1046 1 11V3C1 1.89543 1.89543 1 3 1H17C18.1046 1 19 1.89543 19 3V11C19 12.1046 18.1046 13 17 13H14L10 17Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>													</div>
+					</div>
+								<div class="flex flex-auto flex-col gap-16 items-baseline justify-between">
+					<div>
+													<h3 class="h4">
+									NLP On-Premise: Salience							</h3>
+																				<p class="">Text analytics and NLP software libraries for on-premise deployment or integration.</p>
+											</div>
+																		<a class="link" href="https://www.lexalytics.com/salience/" target="">
+								Learn More								<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1L13 6M13 6L8 11M13 6L1 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+							</a>
+																</div>
+			</div>
+
+
+
+																	<div class="flex gap-16 flex-col ">
+									<div class="w-48 h-48 rounded-md flex justify-center items-center flex-none bg-mars ">
+						<div class="">
+															<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 11C1 13.2091 2.79086 15 5 15H14C16.7614 15 19 12.7614 19 10C19 7.23858 16.7614 5 14 5C13.9666 5 13.9334 5.00033 13.9002 5.00098C13.4373 2.71825 11.4193 1 9 1C6.23858 1 4 3.23858 4 6C4 6.37684 4.04169 6.74395 4.12071 7.09695C2.33457 7.4976 1 9.09295 1 11Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+													</div>
+					</div>
+								<div class="flex flex-auto flex-col gap-16 items-baseline justify-between">
+					<div>
+													<h3 class="h4">
+									NLP Cloud API: Semantria							</h3>
+																				<p class="">Text and Sentiment Analysis, in the cloud.</p>
+											</div>
+																		<a class="link" href="https://www.lexalytics.com/semantria/" target="">
+								Learn More								<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1L13 6M13 6L8 11M13 6L1 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+							</a>
+																</div>
+			</div>
+
+
+
+																	<div class="flex gap-16 flex-col ">
+									<div class="w-48 h-48 rounded-md flex justify-center items-center flex-none bg-mars ">
+						<div class="">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 11H5M19 11C20.1046 11 21 11.8954 21 13V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V13C3 11.8954 3.89543 11 5 11M19 11V9C19 7.89543 18.1046 7 17 7M5 11V9C5 7.89543 5.89543 7 7 7M7 7V5C7 3.89543 7.89543 3 9 3H15C16.1046 3 17 3.89543 17 5V7M7 7H17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>													</div>
+					</div>
+								<div class="flex flex-auto flex-col gap-16 items-baseline justify-between">
+					<div>
+													<h3 class="h4">
+									Spotlight							</h3>
+																				<p class="">A platform for storing, managing and analyzing unstructured text documents.</p>
+											</div>
+																		<a class="link" href="https://www.lexalytics.com/spotlight/" target="">
+								Learn More								<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1L13 6M13 6L8 11M13 6L1 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+							</a>
+																</div>
+			</div>
+
+
+
+																	<div class="flex gap-16 flex-col ">
+									<div class="w-48 h-48 rounded-md flex justify-center items-center flex-none bg-mars ">
+						<div class="">
+															<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 3C1 1.89543 1.89543 1 3 1H5C6.10457 1 7 1.89543 7 3V5C7 6.10457 6.10457 7 5 7H3C1.89543 7 1 6.10457 1 5V3Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M11 3C11 1.89543 11.8954 1 13 1H15C16.1046 1 17 1.89543 17 3V5C17 6.10457 16.1046 7 15 7H13C11.8954 7 11 6.10457 11 5V3Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M1 13C1 11.8954 1.89543 11 3 11H5C6.10457 11 7 11.8954 7 13V15C7 16.1046 6.10457 17 5 17H3C1.89543 17 1 16.1046 1 15V13Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M11 13C11 11.8954 11.8954 11 13 11H15C16.1046 11 17 11.8954 17 13V15C17 16.1046 16.1046 17 15 17H13C11.8954 17 11 16.1046 11 15V13Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+													</div>
+					</div>
+								<div class="flex flex-auto flex-col gap-16 items-baseline justify-between">
+					<div>
+													<h3 class="h4">
+									Semi-Custom Applications							</h3>
+																				<p class="">Fast, effective natural language processing solutions.</p>
+											</div>
+																		<a class="link" href="https://www.lexalytics.com/semi-custom-apps/" target="">
+								Learn More								<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1L13 6M13 6L8 11M13 6L1 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+							</a>
+																</div>
+			</div>
+
+
+
+												
+</div>
+
+
+
+<p></p>
+</div></div>
+		<div class="submenu-banner"><div class="container"><div class="block-icon-links relative flex justify-start  flex-row  gap-40 items-center">
+						
+							<a class="flex items-center gap-12" href="https://www.lexalytics.com/nlp-demo/" target="">
+												<span class="flex-col text-current"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M9 3V1M9 3C7.89543 3 7 3.89543 7 5C7 6.10457 7.89543 7 9 7M9 3C10.1046 3 11 3.89543 11 5C11 6.10457 10.1046 7 9 7M3 15C4.10457 15 5 14.1046 5 13C5 11.8954 4.10457 11 3 11M3 15C1.89543 15 1 14.1046 1 13C1 11.8954 1.89543 11 3 11M3 15V17M3 11V1M9 7V17M15 15C16.1046 15 17 14.1046 17 13C17 11.8954 16.1046 11 15 11M15 15C13.8954 15 13 14.1046 13 13C13 11.8954 13.8954 11 15 11M15 15V17M15 11V1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </svg></span>
+																	<span class="">NLP Demo</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="https://www.lexalytics.com/contact/" target="">
+												<span class="flex-col text-current"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1 3C1 1.89543 1.89543 1 3 1H6.27924C6.70967 1 7.09181 1.27543 7.22792 1.68377L8.72574 6.17721C8.88311 6.64932 8.66938 7.16531 8.22427 7.38787L5.96701 8.5165C7.06925 10.9612 9.03878 12.9308 11.4835 14.033L12.6121 11.7757C12.8347 11.3306 13.3507 11.1169 13.8228 11.2743L18.3162 12.7721C18.7246 12.9082 19 13.2903 19 13.7208V17C19 18.1046 18.1046 19 17 19H16C7.71573 19 1 12.2843 1 4V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </svg></span>
+																	<span class="">Contact Sales</span>
+									</a>
+						</div>
+</div></div></div></li>
+<li id="menu-item-2468" class="menu-item menu-item-type-custom menu-item-object-custom item-has-dropdown menu-item-2468"><button>Solutions <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.683416 -0.097631 1.31658 -0.097631 1.7071 0.292893L4.99999 3.58579L8.29288 0.292893C8.6834 -0.0976311 9.31657 -0.0976311 9.70709 0.292893C10.0976 0.683417 10.0976 1.31658 9.70709 1.70711L5.7071 5.70711C5.31657 6.09763 4.68341 6.09763 4.29289 5.70711L0.292893 1.70711C-0.0976309 1.31658 -0.0976309 0.683417 0.292893 0.292893Z" fill="currentColor"/>
+			</svg> </button><div class="submenu"><div class="submenu-nav">Solutions <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.683416 -0.097631 1.31658 -0.097631 1.7071 0.292893L4.99999 3.58579L8.29288 0.292893C8.6834 -0.0976311 9.31657 -0.0976311 9.70709 0.292893C10.0976 0.683417 10.0976 1.31658 9.70709 1.70711L5.7071 5.70711C5.31657 6.09763 4.68341 6.09763 4.29289 5.70711L0.292893 1.70711C-0.0976309 1.31658 -0.0976309 0.683417 0.292893 0.292893Z" fill="currentColor"/>
+			</svg> </div><div class="container"><div class="submenu-block-wrap">
+<div id="section-block_6279c8bef77e4" class="block-section relative overflow-hidden grid md:grid-cols-4 gap-32 ">
+
+									<div class="flex gap-16 flex-col ">
+									<div class="w-48 h-48 rounded-md flex justify-center items-center flex-none bg-mars ">
+						<div class="">
+															<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.12104 15.8037C5.15267 14.6554 7.4998 14 10 14C12.5002 14 14.8473 14.6554 16.879 15.8037M13 8C13 9.65685 11.6569 11 10 11C8.34315 11 7 9.65685 7 8C7 6.34315 8.34315 5 10 5C11.6569 5 13 6.34315 13 8ZM19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+													</div>
+					</div>
+								<div class="flex flex-auto flex-col gap-16 items-baseline justify-between">
+					<div>
+													<h3 class="h4">
+									Social Media Monitoring (SMM)							</h3>
+																				<p class="">Understand social data like never before.</p>
+											</div>
+																		<a class="link" href="https://www.lexalytics.com/applications/#social-media-monitoring" target="">
+								Learn More								<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1L13 6M13 6L8 11M13 6L1 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+							</a>
+																</div>
+			</div>
+
+
+
+																	<div class="flex gap-16 flex-col ">
+									<div class="w-48 h-48 rounded-md flex justify-center items-center flex-none bg-mars ">
+						<div class="">
+															<svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 17H3C1.89543 17 1 16.1046 1 15L1 3C1 1.89543 1.89543 1 3 1L13 1C14.1046 1 15 1.89543 15 3V4M17 17C15.8954 17 15 16.1046 15 15L15 4M17 17C18.1046 17 19 16.1046 19 15V6C19 4.89543 18.1046 4 17 4L15 4M11 1L7 1M5 13H11M5 5H11V9H5V5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>													</div>
+					</div>
+								<div class="flex flex-auto flex-col gap-16 items-baseline justify-between">
+					<div>
+													<h3 class="h4">
+									Regulatory Compliance							</h3>
+																				<p class="">Solve regulatory compliance problems that involve complex text documents.</p>
+											</div>
+																		<a class="link" href="https://www.lexalytics.com/applications/#regulatory-compliance" target="">
+								Learn More								<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1L13 6M13 6L8 11M13 6L1 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+							</a>
+																</div>
+			</div>
+
+
+
+																	<div class="flex gap-16 flex-col ">
+									<div class="w-48 h-48 rounded-md flex justify-center items-center flex-none bg-mars ">
+						<div class="">
+															<svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 8V1L1 12H8L8 19L17 8L10 8Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>													</div>
+					</div>
+								<div class="flex flex-auto flex-col gap-16 items-baseline justify-between">
+					<div>
+													<h3 class="h4">
+									Robotic Process Automation							</h3>
+																				<p class="">Solve more and broader use cases involving text data in all its forms.</p>
+											</div>
+																		<a class="link" href="https://www.lexalytics.com/applications/#robotic-process-automation" target="">
+								Learn More								<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1L13 6M13 6L8 11M13 6L1 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+							</a>
+																</div>
+			</div>
+
+
+
+																	<div class="flex gap-16 flex-col ">
+									<div class="w-48 h-48 rounded-md flex justify-center items-center flex-none bg-mars ">
+						<div class="">
+															<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 8.00001V10M10 14H10.01M18.6179 4.98434C18.4132 4.99472 18.2072 4.99997 18 4.99997C14.9265 4.99997 12.123 3.84453 9.99993 1.94434C7.87691 3.84446 5.07339 4.99985 2 4.99985C1.79277 4.99985 1.58678 4.9946 1.38213 4.98422C1.1327 5.94783 1 6.95842 1 8.00001C1 13.5915 4.82432 18.2898 10 19.622C15.1757 18.2898 19 13.5915 19 8.00001C19 6.95847 18.8673 5.94791 18.6179 4.98434Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>													</div>
+					</div>
+								<div class="flex flex-auto flex-col gap-16 items-baseline justify-between">
+					<div>
+													<h3 class="h4">
+									AI for Medical Affairs							</h3>
+																				<p class="">World-class AI + domain experts = success with data-centric problems</p>
+											</div>
+																		<a class="link" href="https://www.lexalytics.com/medical-affairs/" target="">
+								Learn More								<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1L13 6M13 6L8 11M13 6L1 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+							</a>
+																</div>
+			</div>
+
+
+
+												
+</div>
+</div></div>
+		<div class="submenu-banner"><div class="container"><div class="block-icon-links relative flex justify-start  flex-row  gap-40 items-center">
+						
+							<a class="flex items-center gap-12" href="https://www.lexalytics.com/nlp-demo/" target="">
+												<span class="flex-col text-current"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M9 3V1M9 3C7.89543 3 7 3.89543 7 5C7 6.10457 7.89543 7 9 7M9 3C10.1046 3 11 3.89543 11 5C11 6.10457 10.1046 7 9 7M3 15C4.10457 15 5 14.1046 5 13C5 11.8954 4.10457 11 3 11M3 15C1.89543 15 1 14.1046 1 13C1 11.8954 1.89543 11 3 11M3 15V17M3 11V1M9 7V17M15 15C16.1046 15 17 14.1046 17 13C17 11.8954 16.1046 11 15 11M15 15C13.8954 15 13 14.1046 13 13C13 11.8954 13.8954 11 15 11M15 15V17M15 11V1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </svg></span>
+																	<span class="">NLP Demo</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="https://www.lexalytics.com/contact/" target="">
+												<span class="flex-col text-current"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1 3C1 1.89543 1.89543 1 3 1H6.27924C6.70967 1 7.09181 1.27543 7.22792 1.68377L8.72574 6.17721C8.88311 6.64932 8.66938 7.16531 8.22427 7.38787L5.96701 8.5165C7.06925 10.9612 9.03878 12.9308 11.4835 14.033L12.6121 11.7757C12.8347 11.3306 13.3507 11.1169 13.8228 11.2743L18.3162 12.7721C18.7246 12.9082 19 13.2903 19 13.7208V17C19 18.1046 18.1046 19 17 19H16C7.71573 19 1 12.2843 1 4V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </svg></span>
+																	<span class="">Contact Sales</span>
+									</a>
+						</div>
+</div></div></div></li>
+<li id="menu-item-2469" class="menu-item menu-item-type-custom menu-item-object-custom item-has-dropdown menu-item-2469"><button>Tech <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.683416 -0.097631 1.31658 -0.097631 1.7071 0.292893L4.99999 3.58579L8.29288 0.292893C8.6834 -0.0976311 9.31657 -0.0976311 9.70709 0.292893C10.0976 0.683417 10.0976 1.31658 9.70709 1.70711L5.7071 5.70711C5.31657 6.09763 4.68341 6.09763 4.29289 5.70711L0.292893 1.70711C-0.0976309 1.31658 -0.0976309 0.683417 0.292893 0.292893Z" fill="currentColor"/>
+			</svg> </button><div class="submenu"><div class="submenu-nav">Tech <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.683416 -0.097631 1.31658 -0.097631 1.7071 0.292893L4.99999 3.58579L8.29288 0.292893C8.6834 -0.0976311 9.31657 -0.0976311 9.70709 0.292893C10.0976 0.683417 10.0976 1.31658 9.70709 1.70711L5.7071 5.70711C5.31657 6.09763 4.68341 6.09763 4.29289 5.70711L0.292893 1.70711C-0.0976309 1.31658 -0.0976309 0.683417 0.292893 0.292893Z" fill="currentColor"/>
+			</svg> </div><div class="container"><div class="submenu-block-wrap">
+<div class="absolute inset-0 bg-offset left-1/2 -ml-16 hidden md:block"></div>
+
+
+
+<div class="wp-container-6 wp-block-columns relative z-10 mb-0 gap-40 md:gap-0">
+<div class="wp-container-4 wp-block-column">
+<div class="wp-container-3 wp-block-columns mb-0 gap-40 md:gap-0">
+<div class="wp-container-1 wp-block-column">
+<h5 class="text-offset">Overview</h5>
+
+
+<div class="block-icon-links font-semibold relative flex justify-start  flex-col  gap-20 items-start">
+						
+							<a class="flex items-center gap-12" href="https://www.lexalytics.com/technology/features/" target="">
+																<span class="">Languages</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="https://www.lexalytics.com/technology/industry-packs/" target="">
+																<span class="">Industry Packs</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="https://semantria-docs.lexalytics.com/" target="_blank" rel="noopener">
+																<span class="">API Documentation</span>
+									</a>
+						</div>
+</div>
+
+
+
+<div class="wp-container-2 wp-block-column">
+<h5 class="text-offset">Feature glossary</h5>
+
+
+<div class="block-icon-links font-semibold relative flex justify-start  flex-col  gap-20 items-start">
+						
+							<a class="flex items-center gap-12" href="https://www.lexalytics.com/technology/text-analytics/" target="">
+																<span class="">Text Analytics</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="https://www.lexalytics.com/technology/machine-learning/" target="">
+																<span class="">Machine Learning</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="https://www.lexalytics.com/technology/sentiment-analysis/" target="">
+																<span class="">Sentiment Analysis</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="https://www.lexalytics.com/technology/entity-extraction/" target="">
+																<span class="">Entity Extraction</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="https://www.lexalytics.com/technology/categorization/" target="">
+																<span class="">Categorization</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="https://www.lexalytics.com/technology/intentions/" target="">
+																<span class="">Intentions</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="https://www.lexalytics.com/technology/summarization/" target="">
+																<span class="">Document Summarization</span>
+									</a>
+						</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="wp-container-5 wp-block-column">
+<h5 class="text-offset">From The Blog</h5>
+
+
+
+<div class="block-inner">
+    <div class="relative">
+        <div class="relative ">
+            <div class="flex flex-col gap-24">
+            
+    <a href="https://www.lexalytics.com/blog/recent-press-dec22-jan23/" class="block">
+        <div class="flex gap-32 transition hover:opacity-90 ease-in-out duration-150 leading-156 lg:items-center">
+            <div class="hidden sm:block flex-shrink-0">
+									<img class="w-120 h-80 object-cover rounded-md" src="https://www.lexalytics.com/wp-content/uploads/2023/01/press-coverage.png" alt="Recent Press Coverage">
+					            </div>
+            <div class="min-w-0 flex-1 gap-4 flex flex-col">
+                <h4 class="text-base font-bold truncate mb-0">Recent Press Coverage</h4>
+                <p class="w-full md:w-5/6 text-sm text-offset">Check out some recent media coverage for Lexalytics, covering new industry perspectives, our recent announcement&#8230;</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://www.lexalytics.com/blog/bias-in-ai-machine-learning/" class="block">
+        <div class="flex gap-32 transition hover:opacity-90 ease-in-out duration-150 leading-156 lg:items-center">
+            <div class="hidden sm:block flex-shrink-0">
+									<img class="w-120 h-80 object-cover rounded-md" src="https://www.lexalytics.com/wp-content/uploads/2022/04/bias.png" alt="Bias in AI and Machine Learning: Sources and Solutions">
+					            </div>
+            <div class="min-w-0 flex-1 gap-4 flex flex-col">
+                <h4 class="text-base font-bold truncate mb-0">Bias in AI and Machine Learning: Sources and Solutions</h4>
+                <p class="w-full md:w-5/6 text-sm text-offset">Bias in AI causes machine learning-based systems to discriminate against particular groups. We investigated why AI bias&#8230;</p>
+            </div>
+        </div>
+    </a>
+            </div>
+
+                            <div class="flex pt-20">
+                <a target="" href="https://www.lexalytics.com/blog/" class="flex items-center gap-6 hover:gap-10 transform hover:translate-x-4 font-semibold text-nebula transition ease-in-out duration-150"><span class="grow block">Blog</span> <span class="block grow" aria-hidden="true"><svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1L13 6M13 6L8 11M13 6L1 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span></a>
+                </div>
+            
+        </div>
+    </div>
+
+
+
+</div>
+</div>
+</div>
+
+
+
+<p></p>
+</div></div>
+		<div class="submenu-banner"><div class="container"><div class="block-icon-links relative flex justify-start  flex-row  gap-40 items-center">
+						
+							<a class="flex items-center gap-12" href="https://www.lexalytics.com/nlp-demo/" target="">
+												<span class="flex-col text-current"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M9 3V1M9 3C7.89543 3 7 3.89543 7 5C7 6.10457 7.89543 7 9 7M9 3C10.1046 3 11 3.89543 11 5C11 6.10457 10.1046 7 9 7M3 15C4.10457 15 5 14.1046 5 13C5 11.8954 4.10457 11 3 11M3 15C1.89543 15 1 14.1046 1 13C1 11.8954 1.89543 11 3 11M3 15V17M3 11V1M9 7V17M15 15C16.1046 15 17 14.1046 17 13C17 11.8954 16.1046 11 15 11M15 15C13.8954 15 13 14.1046 13 13C13 11.8954 13.8954 11 15 11M15 15V17M15 11V1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </svg></span>
+																	<span class="">NLP Demo</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="https://www.lexalytics.com/contact/" target="">
+												<span class="flex-col text-current"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1 3C1 1.89543 1.89543 1 3 1H6.27924C6.70967 1 7.09181 1.27543 7.22792 1.68377L8.72574 6.17721C8.88311 6.64932 8.66938 7.16531 8.22427 7.38787L5.96701 8.5165C7.06925 10.9612 9.03878 12.9308 11.4835 14.033L12.6121 11.7757C12.8347 11.3306 13.3507 11.1169 13.8228 11.2743L18.3162 12.7721C18.7246 12.9082 19 13.2903 19 13.7208V17C19 18.1046 18.1046 19 17 19H16C7.71573 19 1 12.2843 1 4V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </svg></span>
+																	<span class="">Contact Sales</span>
+									</a>
+						</div>
+</div></div></div></li>
+<li id="menu-item-2478" class="menu-item menu-item-type-custom menu-item-object-custom item-has-dropdown menu-item-2478"><button>More <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.683416 -0.097631 1.31658 -0.097631 1.7071 0.292893L4.99999 3.58579L8.29288 0.292893C8.6834 -0.0976311 9.31657 -0.0976311 9.70709 0.292893C10.0976 0.683417 10.0976 1.31658 9.70709 1.70711L5.7071 5.70711C5.31657 6.09763 4.68341 6.09763 4.29289 5.70711L0.292893 1.70711C-0.0976309 1.31658 -0.0976309 0.683417 0.292893 0.292893Z" fill="currentColor"/>
+			</svg> </button><div class="submenu"><div class="submenu-nav">More <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.683416 -0.097631 1.31658 -0.097631 1.7071 0.292893L4.99999 3.58579L8.29288 0.292893C8.6834 -0.0976311 9.31657 -0.0976311 9.70709 0.292893C10.0976 0.683417 10.0976 1.31658 9.70709 1.70711L5.7071 5.70711C5.31657 6.09763 4.68341 6.09763 4.29289 5.70711L0.292893 1.70711C-0.0976309 1.31658 -0.0976309 0.683417 0.292893 0.292893Z" fill="currentColor"/>
+			</svg> </div><div class="container"><div class="submenu-block-wrap">
+<div class="bg-offset hidden md:block"></div>
+
+
+
+<div class="wp-container-12 wp-block-columns relative z-10 mb-0 gap-40 md:gap-0">
+<div class="wp-container-10 wp-block-column">
+<div class="wp-container-9 wp-block-columns mb-0 gap-40 md:gap-0">
+<div class="wp-container-7 wp-block-column">
+<h5 class="text-offset">Company</h5>
+
+
+<div class="block-icon-links font-semibold relative flex justify-start  flex-col  gap-20 items-start">
+						
+							<a class="flex items-center gap-12" href="https://www.lexalytics.com/about/" target="">
+												<span class="flex-col text-zinc-400"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M11 14H10V10H9M10 6H10.01M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </svg></span>
+																	<span class="">About</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="/news/" target="">
+												<span class="flex-col text-zinc-400"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M17 17H3C1.89543 17 1 16.1046 1 15L1 3C1 1.89543 1.89543 1 3 1L13 1C14.1046 1 15 1.89543 15 3V4M17 17C15.8954 17 15 16.1046 15 15L15 4M17 17C18.1046 17 19 16.1046 19 15V6C19 4.89543 18.1046 4 17 4L15 4M11 1L7 1M5 13H11M5 5H11V9H5V5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </svg></span>
+																	<span class="">Press</span>
+									</a>
+						</div>
+</div>
+
+
+
+<div class="wp-container-8 wp-block-column">
+<h5 class="text-offset">Resources</h5>
+
+
+<div class="block-icon-links font-semibold relative flex justify-start  flex-col  gap-20 items-start">
+						
+							<a class="flex items-center gap-12" href="https://www.lexalytics.com/blog/" target="">
+												<span class="flex-col text-zinc-400"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M13.2322 3.23223L16.7677 6.76777M14.7322 1.73223C15.7085 0.755922 17.2914 0.755922 18.2677 1.73223C19.244 2.70854 19.244 4.29146 18.2677 5.26777L4.5 19.0355H1V15.4644L14.7322 1.73223Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </svg></span>
+																	<span class="">Blog</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="/resources/" target="">
+												<span class="flex-col text-zinc-400"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M13 1V13L9 11L5 13V1M3 17H15C16.1046 17 17 16.1046 17 15V3C17 1.89543 16.1046 1 15 1H3C1.89543 1 1 1.89543 1 3V15C1 16.1046 1.89543 17 3 17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </svg></span>
+																	<span class="">Resources</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="https://www.lexalytics.com/support/" target="">
+												<span class="flex-col text-zinc-400"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M18 10C18 14.4183 14.4183 18 10 18V20C15.5228 20 20 15.5228 20 10H18ZM10 18C5.58172 18 2 14.4183 2 10H0C0 15.5228 4.47715 20 10 20V18ZM2 10C2 5.58172 5.58172 2 10 2V0C4.47715 0 0 4.47715 0 10H2ZM10 2C14.4183 2 18 5.58172 18 10H20C20 4.47715 15.5228 0 10 0V2ZM13 10C13 11.6569 11.6569 13 10 13V15C12.7614 15 15 12.7614 15 10H13ZM10 13C8.34315 13 7 11.6569 7 10H5C5 12.7614 7.23858 15 10 15V13ZM7 10C7 8.34315 8.34315 7 10 7V5C7.23858 5 5 7.23858 5 10H7ZM10 7C11.6569 7 13 8.34315 13 10H15C15 7.23858 12.7614 5 10 5V7ZM15.6569 2.92893L12.1213 6.46447L13.5355 7.87868L17.0711 4.34315L15.6569 2.92893ZM12.1213 13.5355L15.6569 17.0711L17.0711 15.6569L13.5355 12.1213L12.1213 13.5355ZM7.87868 6.46447L4.34315 2.92893L2.92893 4.34315L6.46447 7.87868L7.87868 6.46447ZM6.46447 12.1213L2.92893 15.6569L4.34315 17.0711L7.87868 13.5355L6.46447 12.1213Z" fill="currentColor" /> </svg></span>
+																	<span class="">Support</span>
+									</a>
+						</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="wp-container-11 wp-block-column">
+<h5 class="text-offset">From The Blog</h5>
+
+
+
+<div class="block-inner">
+    <div class="relative">
+        <div class="relative ">
+            <div class="flex flex-col gap-24">
+            
+    <a href="https://www.lexalytics.com/blog/recent-press-dec22-jan23/" class="block">
+        <div class="flex gap-32 transition hover:opacity-90 ease-in-out duration-150 leading-156 lg:items-center">
+            <div class="hidden sm:block flex-shrink-0">
+									<img class="w-120 h-80 object-cover rounded-md" src="https://www.lexalytics.com/wp-content/uploads/2023/01/press-coverage.png" alt="Recent Press Coverage">
+					            </div>
+            <div class="min-w-0 flex-1 gap-4 flex flex-col">
+                <h4 class="text-base font-bold truncate mb-0">Recent Press Coverage</h4>
+                <p class="w-full md:w-5/6 text-sm text-offset">Check out some recent media coverage for Lexalytics, covering new industry perspectives, our recent announcement&#8230;</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="https://www.lexalytics.com/blog/bias-in-ai-machine-learning/" class="block">
+        <div class="flex gap-32 transition hover:opacity-90 ease-in-out duration-150 leading-156 lg:items-center">
+            <div class="hidden sm:block flex-shrink-0">
+									<img class="w-120 h-80 object-cover rounded-md" src="https://www.lexalytics.com/wp-content/uploads/2022/04/bias.png" alt="Bias in AI and Machine Learning: Sources and Solutions">
+					            </div>
+            <div class="min-w-0 flex-1 gap-4 flex flex-col">
+                <h4 class="text-base font-bold truncate mb-0">Bias in AI and Machine Learning: Sources and Solutions</h4>
+                <p class="w-full md:w-5/6 text-sm text-offset">Bias in AI causes machine learning-based systems to discriminate against particular groups. We investigated why AI bias&#8230;</p>
+            </div>
+        </div>
+    </a>
+            </div>
+
+                            <div class="flex pt-20">
+                <a target="" href="https://www.lexalytics.com/blog/" class="flex items-center gap-6 hover:gap-10 transform hover:translate-x-4 font-semibold text-nebula transition ease-in-out duration-150"><span class="grow block">View All</span> <span class="block grow" aria-hidden="true"><svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1L13 6M13 6L8 11M13 6L1 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span></a>
+                </div>
+            
+        </div>
+    </div>
+
+
+
+</div>
+</div>
+</div>
+
+
+
+<p></p>
+</div></div>
+		<div class="submenu-banner"><div class="container"><div class="block-icon-links relative flex justify-start  flex-row  gap-40 items-center">
+						
+							<a class="flex items-center gap-12" href="https://www.lexalytics.com/nlp-demo/" target="">
+												<span class="flex-col text-current"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M9 3V1M9 3C7.89543 3 7 3.89543 7 5C7 6.10457 7.89543 7 9 7M9 3C10.1046 3 11 3.89543 11 5C11 6.10457 10.1046 7 9 7M3 15C4.10457 15 5 14.1046 5 13C5 11.8954 4.10457 11 3 11M3 15C1.89543 15 1 14.1046 1 13C1 11.8954 1.89543 11 3 11M3 15V17M3 11V1M9 7V17M15 15C16.1046 15 17 14.1046 17 13C17 11.8954 16.1046 11 15 11M15 15C13.8954 15 13 14.1046 13 13C13 11.8954 13.8954 11 15 11M15 15V17M15 11V1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </svg></span>
+																	<span class="">NLP Demo</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="https://www.lexalytics.com/contact/" target="">
+												<span class="flex-col text-current"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1 3C1 1.89543 1.89543 1 3 1H6.27924C6.70967 1 7.09181 1.27543 7.22792 1.68377L8.72574 6.17721C8.88311 6.64932 8.66938 7.16531 8.22427 7.38787L5.96701 8.5165C7.06925 10.9612 9.03878 12.9308 11.4835 14.033L12.6121 11.7757C12.8347 11.3306 13.3507 11.1169 13.8228 11.2743L18.3162 12.7721C18.7246 12.9082 19 13.2903 19 13.7208V17C19 18.1046 18.1046 19 17 19H16C7.71573 19 1 12.2843 1 4V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </svg></span>
+																	<span class="">Contact Sales</span>
+									</a>
+						</div>
+</div></div></div></li>
+<li id="menu-item-2747" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2747"><a href="https://www.lexalytics.com/nlp-demo/">NLP Demo</a></li>
+</ul>				</nav><!-- #site-navigation-->
+				<nav class="nav-right justify-end" aria-label="Right Navigation">
+					<ul id="primary-right-menu" class="menu menu-right"><li id="menu-item-2743" class="menu-item menu-item-type-post_type menu-item-object-page menu-btn menu-item-2743"><a href="https://www.lexalytics.com/contact/">Contact Us</a></li>
+</ul>				</nav><!-- #site-navigation-->
+			</div>
+
+							<button type="button" class="off-canvas-open md:hidden" aria-expanded="false" aria-label="Open Menu">
+					<div class="open-icon">
+						<svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1H17M1 7H17M1 13H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+					</div>
+					<div class="close-icon hidden">
+						<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 13L13 1M1 1L13 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+					</div>
+				</button>
+			
+		</div><!-- .container -->
+		<div class="off-canvas-screen"></div>
+	</header><!-- .site-header-->
+	<div class="submenu-cover"></div>
+
+	<main id="main" class="site-main py-80">	
+		
+<div class="bg-white py-20 posts-menu">
+    <div class="container">
+    <ul id="menu-posts-navigation" class="flex justify-start items-center gap-20 flex-wrap"><li id="menu-item-2779" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2779"><a href="https://www.lexalytics.com/resources/">All Resources</a></li>
+<li id="menu-item-2780" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2780"><a href="https://www.lexalytics.com/resource-type/case-study/">Case Studies</a></li>
+<li id="menu-item-2781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2781"><a href="https://www.lexalytics.com/resource-type/white-paper/">White Papers</a></li>
+<li id="menu-item-2782" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-2782"><a href="https://www.lexalytics.com/blog/">Blogs</a></li>
+<li id="menu-item-2783" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2783"><a href="https://www.lexalytics.com/news/">News &#038; Press</a></li>
+</ul>    </div>
+</div>
+
+
+<article class="post-container post-325 post type-post status-publish format-standard has-post-thumbnail hentry category-machine-learning tag-ai tag-artificial-intelligence tag-insights tag-intelligence tag-learning tag-machine tag-machine-learning tag-ml tag-natural-language-processing tag-nlp">
+	<div class="md:container">
+		<header class="text-lg p-20 md:p-40 w-full mx-auto bg-black md:rounded-lg">
+			<h5 class="text-center text-nebula"></h5>
+			<h1 class="text-zinc-100 text-center text-32 lg:text-heading-xl">
+				Machine Learning (ML) for Natural Language Processing (NLP)			</h1>
+		</header>
+	</div>
+	
+	<div class="entry-content relative py-60 bg-white max-w-3xl w-full mx-auto">
+		<div class="relative px-4 sm:px-6 lg:px-8">
+			<div>
+			<p class="p1">Machine learning (ML) for <a href="https://www.lexalytics.com/resources/ml-nlp-whitepaper/">natural language processing</a> (NLP) and <a href="https://www.lexalytics.com/blog/text-analytics-functions-explained/">text analytics</a> involves using machine learning algorithms and &#8220;narrow&#8221; artificial intelligence (AI) to understand the meaning of text documents. These documents can be just about anything that contains text: social media comments, online reviews, survey responses, even financial, medical, legal and regulatory documents. In essence, the role of machine learning and AI in natural language processing and text analytics is to improve, accelerate and automate the underlying <a href="https://www.lexalytics.com/blog/text-analytics-functions-explained/">text analytics functions</a> and <a href="https://www.lexalytics.com/technology/features">NLP features</a> that turn this <a href="https://en.wikipedia.org/wiki/Unstructured_data" target="new" rel="noopener noreferrer">unstructured text</a> into useable data and insights.</p>
+<p>For those who don&#8217;t know me, I&#8217;m the Chief Scientist at <a href="https://www.lexalytics.com/">Lexalytics, an InMoment company</a>. We sell <a href="https://www.lexalytics.com/wp-content/uploads/2022/06/Lexalytics-Company-Overview.pdf" target="new" rel="noopener noreferrer">text analytics and NLP solutions</a>, but at our core we&#8217;re a machine learning company. We maintain hundreds of supervised and unsupervised machine learning models that augment and improve our systems. And we&#8217;ve spent more than 15 years gathering data sets and experimenting with new algorithms.</p>
+<p>In this article, I’ll start by exploring some machine learning for natural language processing approaches. Then I&#8217;ll discuss how to apply machine learning to solve problems in natural language processing and text analytics.</p>
+<h2>Contents</h2>
+<ol>
+<li style="list-style-type: none;">
+<ol>
+<li style="list-style-type: none;">
+<ol>
+<li><a href="#background">Background: Machine Learning in the Context of Natural Language Processing</a></li>
+<li><a href="#supervised">Supervised Machine Learning for NLP</a></li>
+<li><a href="#unsupervised">Unsupervised Machine Learning for NLP</a></li>
+<li><a href="#background-nlp">Background: What is Natural Language Processing?</a></li>
+<li><a href="#ml-vs-nlp">ML vs NLP and Using Machine Learning on Natural Language Sentences</a></li>
+<li><a href="#hybrid">Hybrid Machine Learning Systems for NLP</a></li>
+<li><a href="#further-reading">Summary &amp; Further Reading</a></li>
+</ol>
+</li>
+</ol>
+<p><a name="background"></a></p>
+<h2><strong>Machine Learning for Natural Language Processing</strong></h2>
+<p>Before we dive deep into how to apply machine learning and AI for NLP and text analytics, let’s clarify some basic ideas.</p>
+<p>Most importantly, “machine learning” really means “machine teaching.” We know <strong>what</strong> the machine needs to learn, so our task is to create a <strong>learning framework</strong> and provide properly-formatted, relevant, clean <strong>data</strong> for the machine to learn from.</p>
+<p><img class="aligncenter wp-image-5335 size-medium" src="https://www.lexalytics.com/wp-content/uploads/2022/04/machine-learning-2-300x176.png" alt="Teacher guiding a class of student machines.png" width="300" height="176"></p>
+<p>When we talk about a “model,” we’re talking about a mathematical representation. Input is key. A machine learning model is the sum of the learning that has been acquired from its training data. The model changes as more learning is acquired.</p>
+<p>Unlike algorithmic programming, a machine learning model is able to generalize and deal with novel cases. If a case resembles something the model has seen before, the model can use this prior “learning” to evaluate the case. The goal is to create a system where the model continuously improves at the task you’ve set it.</p>
+<p>Machine learning for NLP and text analytics involves a set of statistical techniques for <a href="https://www.lexalytics.com/blog/text-analytics-functions-explained/" target="new" rel="noopener noreferrer">identifying parts of speech, entities, sentiment, and other aspects of text</a>. The techniques can be expressed as a model that is then applied to other text, also known as <a href="https://en.wikipedia.org/wiki/Supervised_learning" target="new" rel="noopener noreferrer">supervised machine learning</a>. It also could be a set of algorithms that work across large sets of data to extract meaning, which is known as <a href="https://en.wikipedia.org/wiki/Unsupervised_learning" target="new" rel="noopener noreferrer">unsupervised machine learning</a>. It’s important to understand the difference between supervised and unsupervised learning, and how you can get the best of both in one system.</p>
+<p><figure id="attachment_4782" aria-describedby="caption-attachment-4782" style="width: 300px" class="wp-caption aligncenter"><img loading="lazy" class="wp-image-4782 size-medium" src="https://www.lexalytics.com/wp-content/uploads/2022/04/hospitality-SL-300x189.png" alt="[A housekeeper makes a bed and beside her are a sentiment colored word cloud describing customer ratings of the room condition such as negative &quot;room service&quot; and positive &quot;polite&quot;.png]" width="300" height="189"><figcaption id="caption-attachment-4782" class="wp-caption-text"><em>Machine learning for NLP helps data analysts turn unstructured text into usable data and insights.</em></figcaption></figure><a name="supervised"></a>Text data requires a special approach to machine learning. This is because text data can have hundreds of thousands of dimensions (words and phrases) but tends to be very sparse. For example, the English language has around 100,000 words in common use. But any given tweet only contains a few dozen of them. This differs from something like video content where you have very high dimensionality, but you have oodles and oodles of data to work with, so, it’s not quite as sparse.</p>
+<h2>Supervised Machine Learning for Natural Language Processing and Text Analytics</h2>
+<p>In supervised machine learning, a batch of text documents are tagged or annotated with examples of what the machine should look for and how it should interpret that aspect. These documents are used to “train” a statistical model, which is then given un-tagged text to analyze.</p>
+<p><img loading="lazy" class="aligncenter wp-image-5478 size-medium" src="https://www.lexalytics.com/wp-content/uploads/2022/04/02-e1553548544719-300x250.png" alt="[humanized computer sits at a desk working hard on an exercise book.png]" width="300" height="250"></p>
+<p>Later, you can use larger or better datasets to retrain the model as it learns more about the documents it analyzes. For example, you can use supervised learning to train a model to analyze movie reviews, and then later train it to factor in the reviewer&#8217;s star rating.</p>
+<p>The most popular supervised NLP machine learning algorithms are:</p>
+<ul>
+<li><strong>Support Vector Machines</strong></li>
+<li><strong>Bayesian Networks</strong></li>
+<li><strong>Maximum Entropy</strong></li>
+<li><strong>Conditional Random Field</strong></li>
+<li><strong>Neural Networks/Deep Learning</strong></li>
+</ul>
+<p>All you really need to know if come across these terms is that they represent a set of data scientist guided machine learning algorithms.</p>
+<p>Lexalytics uses supervised machine learning to build and improve our core text analytics functions and NLP features.</p>
+<h3>Tokenization</h3>
+<p><a href="https://www.lexalytics.com/blog/tokenization/" target="new" rel="noopener noreferrer">Tokenization</a> involves breaking a text document into pieces that a machine can understand, such as words. Now, you&#8217;re probably pretty good at figuring out what&#8217;s a word and what&#8217;s gibberish. English is especially easy. See all this white space between the letters and paragraphs? That makes it really easy to tokenize. So, NLP rules are sufficient for English tokenization.</p>
+<p>But how do you teach a machine learning algorithm what a word looks like? And what if you’re not working with English-language documents? Logographic languages like Mandarin Chinese have no whitespace.</p>
+<p>This is where we use machine learning for tokenization. Chinese follows rules and patterns just like English, and we can train a machine learning model to identify and understand them.</p>
+<h3>Part of Speech Tagging</h3>
+<p>Part of Speech Tagging (PoS tagging) means identifying each token&#8217;s part of speech (noun, adverb, adjective, etc.) and then tagging it as such. PoS tagging forms the basis of a number of important Natural Language Processing tasks. We need to correctly identify Parts of Speech in order to recognize entities, extract themes, and to process sentiment. Lexalytics has a highly-robust model that can PoS tag with &gt;90% accuracy, even for short, gnarly social media posts.</p>
+<p><img loading="lazy" class="aligncenter wp-image-5480 size-medium" src="https://www.lexalytics.com/wp-content/uploads/2022/04/01c-251x300.png" alt="[humanized computer sitting at a desk and raising its hand.png]" width="251" height="300"></p>
+<h3>Named Entity Recognition</h3>
+<p>At their simplest, named entities are people, places, and things (products) mentioned in a text document. Unfortunately, entities can also be hashtags, emails, mailing addresses, phone numbers, and Twitter handles. In fact, just about anything can be an entity if you look at it the right way. And don&#8217;t get us stated on tangential references.</p>
+<p>At Lexalytics, we&#8217;ve trained supervised machine learning models on large amounts pre-tagged entities. This approach helps us to optimize for accuracy and flexibility. We&#8217;ve also trained NLP algorithms to recognize non-standard entities (like species of tree, or types of cancer).</p>
+<p>It&#8217;s also important to note that <a href="https://www.lexalytics.com/technology/entity-extraction" target="new" rel="noopener noreferrer">Named Entity Recognition</a> models rely on accurate PoS tagging from those models.</p>
+<h3>Sentiment Analysis</h3>
+<p><a href="https://www.lexalytics.com/technology/sentiment-analysis" target="new" rel="noopener noreferrer">Sentiment analysis</a> is the process of determining whether a piece of writing is positive, negative or neutral, and then assigning a weighted sentiment score to each entity, theme, topic, and category within the document. This is an incredibly complex task that varies wildly with context. For example, take the phrase, &#8220;sick burn&#8221; In the context of video games, this might actually be a positive statement.</p>
+<p><img loading="lazy" class="aligncenter wp-image-5479 size-medium" src="https://www.lexalytics.com/wp-content/uploads/2022/04/01b-240x300.png" alt="[humanized computer sitting at a desk, taking notes.png]" width="240" height="300">Creating a set of NLP rules to account for every possible sentiment score for every possible word in every possible context would be impossible. But by training a machine learning model on pre-scored data, it can learn to understand what “sick burn” means in the context of video gaming, versus in the context of healthcare. Unsurprisingly, each language requires its own sentiment classification model.</p>
+<h3>Categorization and Classification</h3>
+<p><a name="unsupervised"></a><br />
+<a href="https://www.lexalytics.com/technology/categorization" target="new" rel="noopener noreferrer">Categorization</a> means sorting content into buckets to get a quick, high-level overview of what&#8217;s in the data. To train a text classification model, data scientists use pre-sorted content and gently shepherd their model until it&#8217;s reached the desired level of accuracy. The result is accurate, reliable categorization of text documents that takes far less time and energy than human analysis.</p>
+<h2>Unsupervised Machine Learning for Natural Language Processing and Text Analytics</h2>
+<p>Unsupervised machine learning involves training a model without pre-tagging or annotating. Some of these techniques are surprisingly easy to understand.</p>
+<p><strong>Clustering </strong>means grouping similar documents together into groups or sets. These clusters are then sorted based on importance and relevancy (hierarchical clustering).</p>
+<p>Another type of unsupervised learning is <strong>Latent Semantic Indexing </strong>(LSI). This technique identifies on words and phrases that frequently occur with each other. Data scientists use LSI for faceted searches, or for returning search results that aren’t the exact search term.</p>
+<p>For example, the terms “manifold” and “exhaust” are closely related documents that discuss internal combustion engines. So, when you Google “manifold” you get results that also contain “exhaust”.</p>
+<p><img loading="lazy" class="aligncenter wp-image-6337 size-medium" src="https://www.lexalytics.com/wp-content/uploads/2022/04/baby-300x241.png" alt="" width="300" height="241"></p>
+<p><strong>Matrix Factorization </strong>is another technique for unsupervised NLP machine learning. This uses &#8220;latent factors&#8221; to break a large matrix down into the combination of two smaller matrices. Latent factors are similarities between the items.</p>
+<p>Think about the sentence, “I threw the ball over the mountain.” The word &#8220;threw&#8221; is more likely to be associated with &#8220;ball&#8221; than with &#8220;mountain&#8221;.</p>
+<p><img loading="lazy" class="aligncenter wp-image-5528 size-medium" src="https://www.lexalytics.com/wp-content/uploads/2022/04/Baseball_withoutbackground_SLrevshadow-300x218.png" alt="[boy throwing a ball to his dad.png]" width="300" height="218"></p>
+<p>In fact, humans have a natural ability to understand the factors that make something throwable. But a machine learning NLP algorithm must be taught this difference.</p>
+<p>Unsupervised learning is tricky, but far less labor- and data-intensive than its supervised counterpart. Lexalytics uses unsupervised learning algorithms to produce some “basic understanding” of how language works. We extract certain important patterns within large sets of text documents to help our models understand the most likely interpretation.</p>
+<h3>Concept Matrix™</h3>
+<p>The Lexalytics Concept Matrix™ is, in a nutshell, unsupervised learning applied to the top articles on Wikipedia™. Using unsupervised machine learning, we built a web of semantic relationships between the articles. This web allows our text analytics and NLP to understand that “apple” is close to “fruit” and is close to “tree”, but is far away from “lion”, and that it is closer to “lion” than it is to “linear algebra.” Unsupervised learning, through the Concept Matrix™, forms the basis of our understanding of semantic information&nbsp; (remember our discussion above).</p>
+<h3>Syntax Matrix™</h3>
+<p><a name="background-nlp"></a><br />
+Our Syntax Matrix™ is unsupervised matrix factorization applied to a massive corpus of content (many billions of sentences). The Syntax Matrix™ helps us understand the most likely parsing of a sentence – forming the base of our understanding of syntax (again, recall our discussion earlier in this article).</p>
+<h2>Background: What is Natural Language Processing?</h2>
+<p>Natural Language Processing broadly refers to the study and development of computer systems that can interpret speech and text as humans naturally speak and type it. Human communication is frustratingly vague at times; we all use colloquialisms, abbreviations, and don’t often bother to correct misspellings. These inconsistencies make computer analysis of natural language difficult at best. But in the last decade, both NLP techniques and machine learning algorithms have progressed immeasurably.</p>
+<p>There are three aspects to any given chunk of text:</p>
+<h3>Semantic Information</h3>
+<p>Semantic information is the specific meaning of an individual word. A phrase like “the bat flew through the air” can have multiple meanings depending on the definition of bat: winged mammal, wooden stick, or something else entirely? Knowing the relevant definition is vital for understanding the meaning of a sentence.</p>
+<p><img loading="lazy" class="aligncenter wp-image-5475 size-medium" src="https://www.lexalytics.com/wp-content/uploads/2022/04/Boy_sized-221x300.png" alt="[boy with a baseball bat, in the ready position]" width="221" height="300"></p>
+<p>Another example: “Billy hit the ball over the house.” As the reader, you may assume that the ball in question is a baseball, but how do you know? The ball could be a volleyball, a tennis ball, or even a bocce ball. We assume baseball because they are the type of balls most often “hit” in such a way, but without natural language machine learning a computer wouldn’t know to make the connection.</p>
+<h3>Syntax Information</h3>
+<p>The second key component of text is sentence or phrase structure, known as syntax information. Take the sentence, “Sarah joined the group already with some search experience.” Who exactly has the search experience here? Sarah, or the group? Depending on how you read it, the sentence has very different meaning with respect to Sarah’s abilities.</p>
+<h3>Context Information</h3>
+<p><a name="ml-vs-nlp"></a><br />
+Finally, you must understand the context that a word, phrase, or sentence appears in. What is the concept being discussed? If a person says that something is “sick”, are they talking about healthcare or video games? The implication of “sick” is often positive when mentioned in a context of gaming, but almost always negative when discussing healthcare.</p>
+<h2><strong>ML vs NLP and Using Machine Learning on Natural Language Sentences</strong></h2>
+<p>Let’s return to the sentence, “Billy hit the ball over the house.” Taken separately, the three types of information would return:</p>
+<ul>
+<li><span style="font-weight: normal !msorm;"><strong>Semantic information</strong></span>: <span style="font-style: normal !msorm;"><em>person – act of striking an object with another object – spherical play</em></span><span style="font-style: normal !msorm;"><em> item – place people live</em></span></li>
+<li><span style="font-weight: normal !msorm;"><strong>Syntax information</strong></span>: <span style="font-style: normal !msorm;"><em>subject – action – direct object – indirect object</em></span></li>
+<li><span style="font-weight: normal !msorm;"><strong>Context information</strong></span>: <span style="font-style: normal !msorm;"><em>this sentence is about a child playing with a ball</em></span></li>
+</ul>
+<p>These aren’t very helpful by themselves. They indicate a vague idea of what the sentence is about, but full understanding requires the successful combination of all three components.</p>
+<p>This analysis can be accomplished in a number of ways, through machine learning models or by inputting rules for a computer to follow when analyzing text. Alone, however, these methods don’t work so well.</p>
+<p>Machine learning models are great at recognizing entities and overall sentiment for a document, but they struggle to extract themes and topics, and they’re not very good at matching sentiment to individual entities or themes.</p>
+<p><img loading="lazy" class="aligncenter wp-image-5566 size-medium" src="https://www.lexalytics.com/wp-content/uploads/2022/04/190404-266x300.png" alt="[thoughtful man reading a document, with sentiment emojis for positive, neutral and negative sentiment.png]" width="266" height="300"></p>
+<p>Alternatively, you can teach your system to identify the basic rules and patterns of language. In many languages, a proper noun followed by the word “street” probably denotes a street name. Similarly, a number followed by a proper noun followed by the word “street” is probably a street address. And people’s names usually follow generalized two- or three-word formulas of proper nouns and nouns.</p>
+<p>Unfortunately, recording and implementing language rules takes a lot of time. What’s more, NLP rules can&#8217;t keep up with the evolution of language. The Internet has butchered traditional conventions of the English language. And no static NLP codebase can possibly encompass every inconsistency and meme-ified misspelling on social media.</p>
+<p><img loading="lazy" class="aligncenter wp-image-5477 size-medium" src="https://www.lexalytics.com/wp-content/uploads/2022/04/03-300x287.png" alt="[woman holding a transparent box showing it's contents in one hand and a black box in the other.png]" width="300" height="287"></p>
+<p>Very early text mining systems were entirely based on rules and patterns. Over time, as natural language processing and machine learning techniques have evolved, an increasing number of companies offer products that rely exclusively on machine learning. But as we just explained, both approaches have major drawbacks.<a name="hybrid"></a></p>
+<p>That’s why at Lexalytics, we utilize a <strong>hybrid approach. </strong>We&#8217;ve trained a range of supervised and unsupervised models that work in tandem with rules and patterns that we’ve been refining for over a decade.</p>
+<h2>Hybrid Machine Learning Systems for NLP</h2>
+<p>Our text analysis functions are based on patterns and rules. Each time we add a new language, we begin by coding in the patterns and rules that the language follows. Then our supervised and unsupervised machine learning models keep those rules in mind when developing their classifiers. We apply variations on this system for low-, mid-, and high-level text functions.</p>
+<p><img loading="lazy" class="aligncenter wp-image-5481 size-full" src="https://www.lexalytics.com/wp-content/uploads/2022/04/TextParsing_NLP_chart.png" alt="[text parsing flow.png]" width="169" height="576"></p>
+<p>Low-level text functions are the initial processes through which you run any text input. These functions are the first step in turning unstructured text into structured data. They form the base layer of information that our mid-level functions draw on. Mid-level text analytics functions involve extracting the real content of a document of text. This means who is speaking, what they are saying, and what they are talking about.</p>
+<p>The high-level function of sentiment analysis is the last step, determining and applying sentiment on the entity, theme, and document levels.</p>
+<h3>Low-Level</h3>
+<ul>
+<li><strong>Tokenization</strong>: ML + Rules</li>
+<li><strong>PoS Tagging</strong>: Machine Learning</li>
+<li><strong>Chunking</strong>: Rules</li>
+<li><strong>Sentence Boundaries</strong>: ML + Rules</li>
+<li><strong>Syntax Analysis</strong>: ML + Rules</li>
+</ul>
+<h3>Mid-Level</h3>
+<ul>
+<li><strong>Entities</strong>: ML + Rules to determine “Who, What, Where”</li>
+<li><strong>Themes</strong>: Rules “What’s the buzz?”</li>
+<li><strong>Topics</strong>: ML + Rules “About this?”</li>
+<li><strong>Summaries</strong>: Rules “Make it short”</li>
+<li><strong>Intentions</strong>: ML + Rules “What are you going to do?”
+<ul>
+<li>Intentions uses the syntax matrix to extract the intender, intendee, and intent</li>
+<li>We use ML to train models for the different types of intent</li>
+<li>We use rules to whitelist or blacklist certain words</li>
+<li>Multilayered approach to get you the best accuracy</li>
+</ul>
+</li>
+</ul>
+<h3>High-Level</h3>
+<ul>
+<li><strong>Apply Sentiment</strong>: ML + Rules “How do you feel about that?”</li>
+</ul>
+<p>You can see how this system pans out in the chart below:</li>
+<li style="list-style-type: none;"><img loading="lazy" class="aligncenter wp-image-5975 size-large" src="https://www.lexalytics.com/wp-content/uploads/2022/04/LX19-05_WebsiteCharts_Latest_051019-copy-2-1-1024x954.png" alt="[Lexalytics NLP Rules/ML Technology Stack.png]" width="1024" height="954"><br />
+<h2>Summary</h2>
+<p><a name="further-reading"></a><br />
+Language is messy and complex. Meaning varies from speaker to speaker and listener to listener. Machine learning can be a good solution for analyzing text data. In fact, it&#8217;s vital &#8211; purely rules-based text analytics is a dead-end. But it’s not enough to use a single type of machine learning model. Certain aspects of machine learning are very subjective. You need to tune or train your system to match your perspective.</p>
+<p>In short:</p>
+<p><strong>The best way to do machine learning for NLP is a hybrid approach: many types of machine learning working in tandem with pure NLP code.</strong></p>
+<h2>Further Reading</h2>
+<p>For <strong>best practices in machine learning for NLP</strong>, read our companion article: <a href="https://www.lexalytics.com/blog/machine-learning-micromodels/">Machine Learning Micromodels: More Data is Not Always Better</a></p>
+<p>To learn about <strong>the</strong> <strong>difference between tuning and training</strong>, and how to approach them, read our guide: <a href="https://www.lexalytics.com/resources/tune-text-analytics-then-train/">Tune First, Then Train</a></p>
+<p>And, to learn more about <strong>general machine learning for NLP and text analytics</strong>, read our <a href="https://lexalytics.com/resources/lifting-the-load-natural-language-processing-experts/" target="_blank" rel="noopener">full white paper</a> on the subject.</p>
+<p><a href="https://www.lexalytics.com/resources/wp-content/uploads/sites/3/2019/02/Lexalytics_Machine_Learning_Natural_Language_Processing_Whitepaper.pdf"><img loading="lazy" class="aligncenter wp-image-5485 size-medium" src="https://www.lexalytics.com/wp-content/uploads/2022/04/Lexalytics-ML-for-NLP-White-Paper-Title-Page-234x300.png" alt="Lexalytics Machine Learning for Natural Language Processing and Text Analytics White Paper" width="234" height="300"></a></p>
+<p>Want to <strong>get started with machine learning</strong>? Try these machine learning tutorials: <a href="https://medium.com/machine-learning-in-practice/over-200-of-the-best-machine-learning-nlp-and-python-tutorials-2018-edition-dd8cf53cb7dc" target="_blank" rel="noopener">Over 200 of the Best Machine Learning, NLP, and Python Tutorials </a></p>
+<p>Read about <strong>the difference between ML and AI</strong>: <a href="https://www.forbes.com/sites/forbestechcouncil/2017/10/20/whats-the-difference-between-machine-learning-and-artificial-intelligence/#8e2429e34a1f" target="_blank" rel="noopener">What&#8217;s The Difference Between Machine Learning And Artificial Intelligence?</a></li>
+</ol>
+<p><span id="more-325"></span></p>
+			</div>
+		</div>
+</article><!-- #post-## -->
+
+	<nav class="navigation post-navigation" aria-label="Posts">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="https://www.lexalytics.com/blog/ai-in-financial-services-three-current-and-emerging-applications/" rel="prev">AI In Financial Services: Three Current And Emerging Applications</a></div><div class="nav-next"><a href="https://www.lexalytics.com/blog/text-analytics-nlp-healthcare-applications/" rel="next">Text Analytics &#038; NLP in Healthcare: Applications &#038; Use Cases</a></div></div>
+	</nav>
+	</main><!-- #main -->
+
+
+	<footer class="site-footer">
+
+		<div class="block-area block-area-site-footer" id="site-footer">
+<div id="section-block_62869f7943eec" class="block-section text-white relative 0">
+
+	<div class="bg-black py-64    bg-cover bg-center bg-no-repeat" style="">
+
+		
+		<div class="relative container">
+
+			
+
+<div class="wp-container-20 wp-block-columns gap-32 md:gap-0">
+<div class="wp-container-13 wp-block-column flex flex-col gap-32" style="flex-basis:33.33%"><div class="block-inline-svg text-nebula">
+	<svg width="246" height="60" viewBox="0 0 246 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g>
+<path d="M31.99 39.24H9.11V30H0V3.04C0 2.23 0.32 1.46 0.89 0.89C1.47 0.32 2.24 0 3.05 0H10.28C10.69 0 11.1 0.08 11.49 0.24C11.87 0.4 12.22 0.63 12.51 0.92C12.8 1.21 13.03 1.56 13.19 1.94C13.35 2.32 13.43 2.73 13.43 3.14V25.64H31.99C32.78 25.64 33.54 25.96 34.11 26.52C34.67 27.08 34.99 27.84 34.99 28.63V36.21C34.99 36.61 34.92 37 34.77 37.37C34.62 37.74 34.4 38.07 34.12 38.36C33.84 38.64 33.51 38.87 33.14 39.02C32.77 39.17 32.38 39.25 31.98 39.26L31.99 39.24ZM13.45 34.91H30.65V30H13.44V34.91H13.45ZM4.34 25.67H9.11V4.36H4.34V25.67Z" fill="currentColor" />
+<path d="M148.92 1.83984H139.34C139.23 1.83984 139.12 1.87984 139.04 1.95984C138.96 2.03984 138.92 2.14984 138.92 2.25984V7.18984C138.92 7.29984 138.97 7.40984 139.04 7.48984C139.12 7.56984 139.23 7.60984 139.34 7.60984H143.07V34.6098C143.07 34.6698 143.08 34.7198 143.1 34.7698C143.12 34.8198 143.15 34.8698 143.19 34.9098C143.23 34.9498 143.27 34.9798 143.33 34.9998C143.39 35.0198 143.43 35.0298 143.49 35.0298H148.93C149.04 35.0298 149.15 34.9898 149.23 34.9098C149.31 34.8298 149.35 34.7198 149.35 34.6098V2.25984C149.35 2.14984 149.3 2.03984 149.23 1.95984C149.16 1.87984 149.04 1.83984 148.93 1.83984H148.92ZM129.05 11.6998C124.1 11.6998 120.5 14.6098 119.63 18.4898C119.62 18.5498 119.62 18.6198 119.63 18.6798C119.64 18.7398 119.67 18.7998 119.71 18.8498C119.75 18.8998 119.8 18.9398 119.86 18.9698C119.92 18.9998 119.98 19.0098 120.04 19.0098H125.22C125.3 19.0098 125.38 18.9898 125.45 18.9498C125.52 18.9098 125.57 18.8398 125.61 18.7698C126.15 17.5898 127.19 16.8698 128.85 16.8698C131.38 16.8698 132.55 18.4498 132.55 20.3898V22.0798C131.64 21.4198 129.36 20.7498 127.39 20.7498C122.48 20.7498 118.63 23.7098 118.63 28.0498C118.63 32.7998 122.48 35.4598 127.03 35.4598C129.51 35.4598 131.79 34.5898 132.55 33.8298V34.6398C132.55 34.7498 132.59 34.8598 132.67 34.9398C132.75 35.0198 132.85 35.0598 132.96 35.0598H138.15C138.26 35.0598 138.37 35.0198 138.45 34.9398C138.53 34.8598 138.57 34.7498 138.57 34.6398V20.5098C138.56 15.0498 135.07 11.7298 129.04 11.7298H129.05V11.6998ZM132.54 28.8198C131.98 30.0498 130.26 30.8098 128.44 30.8098C126.47 30.8098 124.44 29.9898 124.44 27.9998C124.44 26.0098 126.47 25.1898 128.44 25.1898C130.26 25.1898 131.98 25.9598 132.54 27.1798V28.8098V28.8198ZM71.2 29.2598H57.73V4.09984C57.73 4.03984 57.72 3.98984 57.7 3.93984C57.68 3.88984 57.65 3.83984 57.61 3.79984C57.57 3.75984 57.53 3.72984 57.47 3.70984C57.42 3.68984 57.37 3.67984 57.31 3.67984H51.65C51.54 3.67984 51.43 3.71984 51.36 3.79984C51.28 3.87984 51.24 3.98984 51.24 4.09984V34.6198C51.24 34.7298 51.28 34.8398 51.36 34.9198C51.44 34.9998 51.54 35.0398 51.65 35.0398H71.19C71.3 35.0398 71.41 34.9998 71.48 34.9198C71.56 34.8398 71.6 34.7298 71.6 34.6198V29.6898C71.6 29.6298 71.59 29.5798 71.57 29.5298C71.55 29.4798 71.52 29.4298 71.48 29.3898C71.44 29.3498 71.39 29.3198 71.34 29.2998C71.29 29.2798 71.24 29.2698 71.18 29.2698L71.2 29.2598ZM109.91 23.2298L117.19 12.8598C117.23 12.7998 117.26 12.7198 117.27 12.6498C117.27 12.5698 117.26 12.4998 117.22 12.4298C117.19 12.3598 117.13 12.2998 117.07 12.2598C117 12.2198 116.93 12.1998 116.85 12.1998H111.28C111.21 12.1998 111.15 12.2198 111.09 12.2498C111.03 12.2798 110.98 12.3298 110.94 12.3798L106.61 18.6898L102.38 12.3798C102.34 12.3198 102.29 12.2798 102.23 12.2398C102.17 12.2098 102.1 12.1898 102.03 12.1898H96.12C96.04 12.1898 95.97 12.2098 95.9 12.2498C95.83 12.2898 95.78 12.3498 95.75 12.4198C95.71 12.4898 95.7 12.5598 95.7 12.6398C95.7 12.7198 95.73 12.7898 95.77 12.8498L103.01 23.3598L95.32 34.3598C95.28 34.4198 95.25 34.4998 95.24 34.5698C95.24 34.6498 95.25 34.7198 95.29 34.7898C95.33 34.8598 95.38 34.9198 95.44 34.9598C95.51 34.9998 95.58 35.0198 95.66 35.0198H101.22C101.29 35.0198 101.35 34.9998 101.41 34.9698C101.47 34.9398 101.52 34.8898 101.56 34.8398L106.35 27.8698L111.08 34.8398C111.12 34.8998 111.17 34.9398 111.23 34.9698C111.29 34.9998 111.36 35.0198 111.43 35.0198H117.36C117.44 35.0198 117.51 34.9998 117.58 34.9598C117.65 34.9198 117.7 34.8598 117.73 34.7898C117.77 34.7198 117.78 34.6398 117.78 34.5698C117.78 34.4898 117.75 34.4198 117.7 34.3598L109.91 23.2298ZM84.48 11.6898C78.13 11.6698 73.56 16.7298 73.56 23.6398C73.56 30.5498 77.96 35.5398 84.55 35.5398C90.01 35.5398 93.5 32.6398 94.48 28.0898C94.49 28.0298 94.49 27.9598 94.48 27.8998C94.47 27.8398 94.44 27.7798 94.4 27.7298C94.36 27.6798 94.31 27.6398 94.25 27.6098C94.19 27.5798 94.13 27.5698 94.07 27.5698H89.07C88.98 27.5698 88.9 27.5998 88.82 27.6498C88.75 27.6998 88.69 27.7698 88.66 27.8598C88.08 29.6098 86.58 30.4398 84.54 30.4398C81.76 30.4398 79.83 28.3998 79.63 24.9798H94.3C94.41 24.9798 94.52 24.9398 94.6 24.8598C94.68 24.7798 94.72 24.6698 94.72 24.5598V22.2598C94.72 16.5198 90.16 11.7198 84.47 11.7098H84.48V11.6898ZM79.79 21.1398C80.35 18.3298 82.07 16.8498 84.5 16.8498C87.08 16.8498 88.5 18.7398 88.55 21.1398H79.79ZM224.22 27.3198H218.86C218.77 27.3198 218.68 27.3498 218.61 27.3998C218.54 27.4498 218.49 27.5298 218.46 27.6198C218.02 29.1798 216.69 30.1298 214.79 30.1298C211.9 30.1298 210.13 27.4698 210.13 23.6398C210.13 19.8098 211.92 17.0998 214.79 17.0998C216.7 17.0998 218.02 18.0498 218.46 19.6098C218.48 19.6998 218.54 19.7698 218.61 19.8298C218.68 19.8798 218.77 19.9098 218.86 19.9098H224.22C224.28 19.9098 224.34 19.8998 224.4 19.8698C224.46 19.8398 224.51 19.7998 224.54 19.7598C224.58 19.7098 224.61 19.6598 224.62 19.5898C224.64 19.5298 224.64 19.4698 224.62 19.4098C223.79 14.8298 220.25 11.6898 214.79 11.6898C208.36 11.6898 203.91 16.5398 203.91 23.6398C203.91 30.7398 208.38 35.5398 214.79 35.5398C220.26 35.5398 223.8 32.4498 224.62 27.8198C224.63 27.7598 224.63 27.6898 224.62 27.6298C224.6 27.5698 224.58 27.5098 224.54 27.4598C224.5 27.4098 224.45 27.3698 224.39 27.3398C224.33 27.3098 224.27 27.2998 224.21 27.2998L224.22 27.3198ZM197.62 1.98984C195.59 1.98984 193.87 3.51984 193.87 5.61984C193.87 7.71984 195.59 9.24984 197.62 9.24984C199.65 9.24984 201.32 7.76984 201.32 5.61984C201.32 5.13984 201.22 4.65984 201.03 4.20984C200.84 3.76984 200.57 3.35984 200.22 3.02984C199.88 2.68984 199.47 2.42984 199.02 2.24984C198.57 2.06984 198.1 1.98984 197.62 1.98984ZM174.54 12.1998H169.11C169.02 12.1998 168.94 12.2298 168.87 12.2898C168.8 12.3398 168.75 12.4198 168.72 12.5098L163.66 27.3898L158.55 12.5098C158.52 12.4298 158.47 12.3498 158.41 12.2998C158.34 12.2498 158.26 12.2198 158.17 12.2098H152.44C152.37 12.2098 152.31 12.2298 152.25 12.2598C152.19 12.2898 152.14 12.3398 152.1 12.3898C152.06 12.4498 152.04 12.5098 152.03 12.5798C152.03 12.6498 152.03 12.7198 152.05 12.7798L160.49 35.1398L157.43 42.8898C157.4 42.9498 157.4 43.0198 157.4 43.0898C157.4 43.1598 157.43 43.2198 157.47 43.2798C157.51 43.3398 157.56 43.3798 157.62 43.4198C157.68 43.4498 157.75 43.4698 157.82 43.4698H163.09C163.17 43.4698 163.26 43.4398 163.33 43.3998C163.4 43.3498 163.45 43.2798 163.48 43.1998L174.96 12.7898C174.98 12.7198 174.99 12.6498 174.98 12.5898C174.98 12.5198 174.95 12.4498 174.9 12.3998C174.86 12.3398 174.81 12.2998 174.74 12.2698C174.68 12.2398 174.61 12.2298 174.54 12.2298V12.1998ZM239.49 21.5098L234.83 20.4398C233.41 20.0798 232.8 19.5698 232.8 18.6398C232.8 17.2098 234.27 16.4898 235.78 16.4898C237.72 16.4898 238.76 17.3298 239.23 18.4798C239.26 18.5598 239.31 18.6198 239.38 18.6698C239.45 18.7198 239.53 18.7398 239.61 18.7398H244.78C244.84 18.7398 244.91 18.7298 244.96 18.6998C245.02 18.6698 245.07 18.6298 245.11 18.5798C245.15 18.5298 245.18 18.4698 245.19 18.4098C245.2 18.3498 245.2 18.2798 245.19 18.2198C244.27 14.2298 241.16 11.6898 235.68 11.6898C230.62 11.6898 226.67 14.6498 226.67 19.0998C226.67 22.9298 229.1 24.7198 232.54 25.5398L237.1 26.5598C238.67 26.9698 239.38 27.4798 239.38 28.4998C239.38 29.9798 238.11 30.7498 236.19 30.7498C234.42 30.7498 233.06 29.9698 232.49 28.5098C232.46 28.4298 232.4 28.3598 232.33 28.3198C232.26 28.2698 232.17 28.2498 232.09 28.2498H226.67C226.61 28.2498 226.55 28.2598 226.49 28.2898C226.43 28.3198 226.38 28.3598 226.34 28.4098C226.3 28.4598 226.27 28.5198 226.26 28.5798C226.24 28.6398 226.24 28.6998 226.26 28.7698C227.12 33.0998 230.94 35.5598 236.25 35.5598C241.56 35.5598 245.51 32.7998 245.51 28.1498C245.51 24.6798 243.44 22.4798 239.49 21.5298V21.5098ZM200.35 12.1998H194.91C194.8 12.1998 194.69 12.2398 194.62 12.3198C194.54 12.3998 194.5 12.5098 194.5 12.6198V34.6098C194.5 34.7198 194.54 34.8298 194.62 34.9098C194.7 34.9898 194.8 35.0298 194.91 35.0298H200.35C200.46 35.0298 200.57 34.9898 200.64 34.9098C200.72 34.8298 200.76 34.7198 200.76 34.6098V12.6298C200.76 12.5698 200.75 12.5198 200.73 12.4698C200.71 12.4198 200.68 12.3698 200.64 12.3298C200.6 12.2898 200.55 12.2598 200.5 12.2398C200.45 12.2198 200.4 12.2098 200.34 12.2098L200.35 12.1998ZM190.25 29.4698C189.57 29.7598 188.84 29.9198 188.11 29.9198C186.49 29.9198 185.53 29.0998 185.53 27.3198V17.3098H190.07C190.18 17.3098 190.29 17.2698 190.36 17.1898C190.44 17.1098 190.48 16.9998 190.48 16.8898V12.6198C190.48 12.5098 190.44 12.3998 190.36 12.3198C190.28 12.2398 190.18 12.1998 190.07 12.1998H185.53V6.44984C185.53 6.33984 185.49 6.22984 185.41 6.14984C185.33 6.06984 185.23 6.02984 185.12 6.02984H179.73C179.62 6.02984 179.51 6.06984 179.43 6.14984C179.35 6.22984 179.31 6.33984 179.31 6.44984V12.2098H176.29C176.18 12.2098 176.07 12.2498 175.99 12.3298C175.91 12.4098 175.87 12.5198 175.87 12.6298V16.8998C175.87 17.0098 175.92 17.1198 175.99 17.1998C176.07 17.2798 176.18 17.3198 176.29 17.3198H179.32V28.1398C179.32 33.1998 182.21 35.4898 186.81 35.4898C188.33 35.4898 189.72 35.2798 190.6 34.8898C190.68 34.8598 190.74 34.7998 190.79 34.7298C190.84 34.6598 190.86 34.5798 190.86 34.4998V29.8398C190.86 29.7698 190.84 29.6998 190.8 29.6398C190.76 29.5798 190.71 29.5298 190.66 29.4998C190.6 29.4598 190.53 29.4398 190.47 29.4398C190.4 29.4398 190.33 29.4498 190.27 29.4798L190.25 29.4698Z" fill="white" />
+<path d="M57.6 47.9399L61.13 57.1499H59.18L58.35 54.9299H54.9L54.09 57.1499H52.17L55.7 47.9399H57.6ZM55.5 53.3099H57.75L56.63 50.2499L55.51 53.3099H55.5Z" fill="white" />
+<path d="M62.12 50.4398H63.98V51.0598C64.34 50.6398 65 50.2998 65.78 50.2998C67.29 50.2998 68.15 51.2898 68.15 52.7698V57.1498H66.29V53.1598C66.29 52.4598 65.93 51.9798 65.2 51.9798C64.63 51.9798 64.14 52.3198 63.99 52.9098V57.1598H62.13V50.4498L62.12 50.4398Z" fill="white" />
+<path d="M75.02 57.1499H73.1V47.9399H75.02V57.1499Z" fill="white" />
+<path d="M76.75 50.4398H78.61V51.0598C78.97 50.6398 79.63 50.2998 80.41 50.2998C81.92 50.2998 82.78 51.2898 82.78 52.7698V57.1498H80.92V53.1598C80.92 52.4598 80.56 51.9798 79.83 51.9798C79.26 51.9798 78.77 52.3198 78.62 52.9098V57.1598H76.76V50.4498L76.75 50.4398Z" fill="white" />
+<path d="M88.56 57.1499L86.28 51.1399V57.1499H84.48V47.9399H86.76L89.22 54.4399L91.66 47.9399H93.91V57.1499H92.1V51.1399L89.86 57.1499H88.56Z" fill="white" />
+<path d="M98.58 57.3C96.63 57.3 95.29 55.86 95.29 53.8C95.29 51.74 96.62 50.29 98.58 50.29C100.54 50.29 101.87 51.73 101.87 53.8C101.87 55.87 100.54 57.3 98.58 57.3ZM98.58 51.87C97.65 51.87 97.14 52.68 97.14 53.8C97.14 54.92 97.65 55.72 98.58 55.72C99.51 55.72 100.02 54.91 100.02 53.8C100.02 52.69 99.51 51.87 98.58 51.87Z" fill="white" />
+<path d="M110.48 50.2903C111.86 50.2903 112.69 51.2503 112.69 52.7603V57.1403H110.83V53.1503C110.83 52.4303 110.52 51.9503 109.87 51.9503C109.39 51.9503 108.96 52.2503 108.84 52.8203V57.1403H106.96V53.1503C106.96 52.4303 106.66 51.9503 106.01 51.9503C105.53 51.9503 105.08 52.2503 104.96 52.8203V57.1403H103.1V50.4303H104.96V50.9903C105.29 50.5703 105.91 50.2803 106.66 50.2803C107.45 50.2803 108.08 50.6403 108.46 51.1303C108.89 50.6503 109.54 50.2803 110.48 50.2803V50.2903Z" fill="white" />
+<path d="M120.1 54.96C119.86 56.38 118.81 57.3 117.13 57.3C115.18 57.3 113.88 55.87 113.88 53.8C113.88 51.73 115.23 50.29 117.11 50.29C118.99 50.29 120.15 51.65 120.15 53.62V54.19H115.68C115.74 55.19 116.31 55.8 117.14 55.8C117.77 55.8 118.24 55.53 118.39 54.96H120.11H120.1ZM115.72 53.07H118.31C118.29 52.36 117.87 51.81 117.11 51.81C116.39 51.81 115.88 52.24 115.72 53.07Z" fill="white" />
+<path d="M121.42 50.4398H123.28V51.0598C123.64 50.6398 124.3 50.2998 125.08 50.2998C126.59 50.2998 127.45 51.2898 127.45 52.7698V57.1498H125.59V53.1598C125.59 52.4598 125.23 51.9798 124.5 51.9798C123.93 51.9798 123.44 52.3198 123.29 52.9098V57.1598H121.43V50.4498L121.42 50.4398Z" fill="white" />
+<path d="M129.35 51.9399H128.33V50.4399H129.35V48.6299H131.19V50.4399H132.66V51.9399H131.19V54.8799C131.19 55.3999 131.48 55.6399 131.96 55.6399C132.24 55.6399 132.56 55.5499 132.77 55.4199V57.0699C132.52 57.1999 132.06 57.2799 131.57 57.2799C130.21 57.2799 129.35 56.6099 129.35 55.1199V51.9399Z" fill="white" />
+<path d="M141.37 47.79C143.54 47.79 144.88 49.06 145.23 50.91H143.32C143 50.07 142.44 49.5 141.37 49.5C139.9 49.5 139.03 50.79 139.03 52.54C139.03 54.29 139.9 55.58 141.37 55.58C142.44 55.58 143 55.01 143.32 54.15H145.23C144.88 56.01 143.55 57.29 141.37 57.29C138.91 57.29 137.08 55.35 137.08 52.54C137.08 49.73 138.91 47.79 141.37 47.79Z" fill="white" />
+<path d="M149.38 57.3C147.43 57.3 146.09 55.86 146.09 53.8C146.09 51.74 147.42 50.29 149.38 50.29C151.34 50.29 152.67 51.73 152.67 53.8C152.67 55.87 151.34 57.3 149.38 57.3ZM149.38 51.87C148.45 51.87 147.94 52.68 147.94 53.8C147.94 54.92 148.45 55.72 149.38 55.72C150.31 55.72 150.82 54.91 150.82 53.8C150.82 52.69 150.31 51.87 149.38 51.87Z" fill="white" />
+<path d="M161.28 50.2903C162.66 50.2903 163.49 51.2503 163.49 52.7603V57.1403H161.63V53.1503C161.63 52.4303 161.32 51.9503 160.67 51.9503C160.19 51.9503 159.76 52.2503 159.64 52.8203V57.1403H157.76V53.1503C157.76 52.4303 157.46 51.9503 156.81 51.9503C156.33 51.9503 155.88 52.2503 155.76 52.8203V57.1403H153.9V50.4303H155.76V50.9903C156.09 50.5703 156.71 50.2803 157.46 50.2803C158.25 50.2803 158.88 50.6403 159.26 51.1303C159.69 50.6503 160.34 50.2803 161.28 50.2803V50.2903Z" fill="white" />
+<path d="M166.93 59.62H165.07V50.44H166.93V51C167.23 50.64 167.89 50.29 168.61 50.29C170.56 50.29 171.67 51.91 171.67 53.8C171.67 55.69 170.56 57.3 168.61 57.3C167.89 57.3 167.23 56.95 166.93 56.59V59.62ZM166.93 54.9C167.15 55.36 167.65 55.68 168.19 55.68C169.19 55.68 169.8 54.87 169.8 53.8C169.8 52.73 169.2 51.91 168.19 51.91C167.64 51.91 167.15 52.24 166.93 52.69V54.9Z" fill="white" />
+<path d="M176.59 57.15V56.79C176.36 57.02 175.69 57.27 174.95 57.27C173.6 57.27 172.46 56.49 172.46 55.1C172.46 53.82 173.6 52.95 175.05 52.95C175.63 52.95 176.31 53.15 176.58 53.34V52.84C176.58 52.27 176.23 51.8 175.48 51.8C174.96 51.8 174.64 52.04 174.49 52.43H172.72C172.92 51.22 174.01 50.29 175.54 50.29C177.32 50.29 178.36 51.26 178.36 52.87V57.14H176.58L176.59 57.15ZM176.59 54.84C176.42 54.48 175.91 54.26 175.37 54.26C174.79 54.26 174.19 54.51 174.19 55.08C174.19 55.65 174.79 55.91 175.37 55.91C175.91 55.91 176.42 55.69 176.59 55.33V54.85V54.84Z" fill="white" />
+<path d="M179.92 50.4398H181.78V51.0598C182.14 50.6398 182.8 50.2998 183.58 50.2998C185.09 50.2998 185.95 51.2898 185.95 52.7698V57.1498H184.09V53.1598C184.09 52.4598 183.73 51.9798 183 51.9798C182.43 51.9798 181.94 52.3198 181.79 52.9098V57.1598H179.93V50.4498L179.92 50.4398Z" fill="white" />
+<path d="M188.18 59.6199L189.15 57.1799L186.59 50.4399H188.55L190.09 54.8999L191.62 50.4399H193.5L190.01 59.6199H188.18Z" fill="white" />
+</g>
+<defs>
+
+<rect width="245.5" height="59.62" fill="white" />
+
+</defs>
+</svg></div>
+
+
+
+
+<p class="mb-0 has-zinc-400-color has-text-color">Tell powerful stories from complex text data</p>
+
+
+<div class="block-icon-links text-zinc-500 relative flex justify-start  flex-row  gap-20 items-center">
+						
+							<a class="flex items-center gap-12" href="https://www.facebook.com/pages/Lexalytics/124936814233570" target="" rel="noopener">
+												<span class="flex-col text-current"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M20 10C20 4.477 15.523 0 10 0C4.477 0 0 4.477 0 10C0 14.991 3.657 19.128 8.438 19.878V12.891H5.898V10H8.438V7.797C8.438 5.291 9.93 3.907 12.215 3.907C13.309 3.907 14.453 4.102 14.453 4.102V6.562H13.193C11.95 6.562 11.563 7.333 11.563 8.124V10H14.336L13.893 12.89H11.563V19.878C16.343 19.128 20 14.991 20 10Z" fill="currentColor" /> </svg></span>
+															</a>
+								
+							<a class="flex items-center gap-12" href="https://twitter.com/lexalytics" target="_blank" rel="noopener">
+												<span class="flex-col text-current"><svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M6.29 16.2534C13.837 16.2534 17.965 10.0004 17.965 4.5784C17.965 4.4004 17.965 4.2234 17.953 4.0484C18.7562 3.46693 19.4493 2.74701 20 1.9224C19.2511 2.2544 18.4566 2.47216 17.643 2.5684C18.4996 2.05546 19.1408 1.24875 19.447 0.298398C18.6417 0.776285 17.7607 1.11313 16.842 1.2944C16.2234 0.636163 15.405 0.200233 14.5136 0.0541031C13.6222 -0.0920265 12.7075 0.0597974 11.9111 0.486067C11.1147 0.912337 10.4811 1.58927 10.1083 2.41206C9.7355 3.23485 9.64437 4.15758 9.849 5.0374C8.21759 4.95564 6.6216 4.53172 5.16465 3.79317C3.70769 3.05461 2.42233 2.01792 1.392 0.750398C0.867318 1.6536 0.706589 2.72282 0.942536 3.74036C1.17848 4.75791 1.79337 5.64728 2.662 6.2274C2.00926 6.2085 1.37063 6.0329 0.8 5.7154V5.7674C0.800389 6.71469 1.1284 7.6327 1.7284 8.36576C2.3284 9.09881 3.16347 9.60179 4.092 9.7894C3.48781 9.95411 2.85389 9.97806 2.239 9.8594C2.50116 10.6749 3.01168 11.388 3.69913 11.899C4.38658 12.41 5.21657 12.6934 6.073 12.7094C5.22212 13.378 4.24779 13.8722 3.20573 14.1639C2.16367 14.4556 1.07432 14.539 0 14.4094C1.8766 15.6137 4.06019 16.2525 6.29 16.2494" fill="currentColor" /> </svg></span>
+															</a>
+								
+							<a class="flex items-center gap-12" href="https://www.linkedin.com/company/lexalytics/" target="_blank" rel="noopener">
+												<span class="flex-col text-current"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 30 30" width="26px" height="26px"><path d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M10.496,8.403c0.842,0,1.403,0.561,1.403,1.309c0,0.748-0.561,1.309-1.496,1.309C9.561,11.022,9,10.46,9,9.712C9,8.964,9.561,8.403,10.496,8.403z M12,20H9v-8h3V20z M22,20h-2.824v-4.372c0-1.209-0.753-1.488-1.035-1.488s-1.224,0.186-1.224,1.488c0,0.186,0,4.372,0,4.372H14v-8h2.918v1.116C17.294,12.465,18.047,12,19.459,12C20.871,12,22,13.116,22,15.628V20z" /></svg></span>
+															</a>
+						</div>
+</div>
+
+
+
+<div class="wp-container-19 wp-block-column" style="flex-basis:66.66%">
+<div class="wp-container-18 wp-block-columns gap-32 md:gap-0">
+<div class="wp-container-14 wp-block-column">
+<h5 class="has-zinc-500-color has-text-color">Platform &amp; Services</h5>
+
+
+<div class="block-icon-links relative flex justify-start  flex-col gap-16 items-start">
+						
+							<a class="flex items-center gap-12" href="/salience" target="">
+																<span class="">Salience (on premise)</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="/semantria" target="">
+																<span class="">Semantria (cloud API)</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="https://www.lexalytics.com/spotlight/" target="">
+																<span class="">Spotlight (storage &amp; visualization)</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="/semi-custom-apps" target="">
+																<span class="">Semi-Custom Applications</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="/services/" target="">
+																<span class="">Professional Services</span>
+									</a>
+						</div>
+</div>
+
+
+
+<div class="wp-container-15 wp-block-column">
+<h5 class="has-zinc-500-color has-text-color">Resources</h5>
+
+
+<div class="block-icon-links relative flex justify-start  flex-col gap-16 items-start">
+						
+							<a class="flex items-center gap-12" href="/nlp-demo/" target="">
+																<span class="">Demo</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="/blog/" target="">
+																<span class="">Blog</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="/technology/text-analytics/" target="">
+																<span class="">Technology</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="/resources/" target="">
+																<span class="">Case Studies &amp; Papers</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="/technology/industry-packs/" target="">
+																<span class="">Industry Packs</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="/applications/" target="">
+																<span class="">Applications</span>
+									</a>
+						</div>
+</div>
+
+
+
+<div class="wp-container-16 wp-block-column">
+<h5 class="has-zinc-500-color has-text-color">Support</h5>
+
+
+<div class="block-icon-links relative flex justify-start  flex-col gap-16 items-start">
+						
+							<a class="flex items-center gap-12" href="/support/" target="">
+																<span class="">Support home</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="https://semantria-docs.lexalytics.com/docs" target="" rel="noopener">
+																<span class="">API integration</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="https://salience-docs.lexalytics.com/docs" target="" rel="noopener">
+																<span class="">Salience Integration</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="https://spotlight-docs.lexalytics.com/" target="" rel="noopener">
+																<span class="">Spotlight Documentation</span>
+									</a>
+						</div>
+</div>
+
+
+
+<div class="wp-container-17 wp-block-column">
+<h5 class="has-zinc-500-color has-text-color">Company</h5>
+
+
+<div class="block-icon-links relative flex justify-start  flex-col gap-16 items-start">
+						
+							<a class="flex items-center gap-12" href="/contact" target="">
+																<span class="">Contact us</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="/about/" target="">
+																<span class="">About</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="/news/" target="">
+																<span class="">Press</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="/privacy-policy/" target="">
+																<span class="">Privacy Policy</span>
+									</a>
+								
+							<a class="flex items-center gap-12" href="/security-overview" target="">
+																<span class="">Security Overview</span>
+									</a>
+						</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<p class="has-text-align-center border-t border-cosmos pt-32 mt-50 has-zinc-400-color has-text-color">© 2022 Lexalytics, an InMoment Company, all rights reserved. Lexalytics® and Semantria® are registered trademarks of Lexalytics, Inc.</p>
+
+
+		</div>
+
+	</div>
+
+
+</div>
+</div>
+	</footer>
+
+		<style>.wp-container-1 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-1 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-1 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-2 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-2 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-2 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-3 {display: flex;gap: 2em;flex-wrap: nowrap;align-items: center;}.wp-container-3 > * { margin: 0; }</style>
+<style>.wp-container-4 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-4 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-4 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-5 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-5 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-5 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-6 {display: flex;gap: 2em;flex-wrap: nowrap;align-items: center;}.wp-container-6 > * { margin: 0; }</style>
+<style>.wp-container-7 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-7 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-7 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-8 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-8 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-8 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-9 {display: flex;gap: 2em;flex-wrap: nowrap;align-items: center;}.wp-container-9 > * { margin: 0; }</style>
+<style>.wp-container-10 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-10 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-10 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-11 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-11 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-11 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-12 {display: flex;gap: 2em;flex-wrap: nowrap;align-items: center;}.wp-container-12 > * { margin: 0; }</style>
+<style>.wp-container-13 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-13 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-13 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-14 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-14 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-14 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-15 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-15 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-15 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-16 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-16 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-16 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-17 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-17 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-17 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-18 {display: flex;gap: 2em;flex-wrap: nowrap;align-items: center;}.wp-container-18 > * { margin: 0; }</style>
+<style>.wp-container-19 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-19 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-19 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-20 {display: flex;gap: 2em;flex-wrap: nowrap;align-items: center;}.wp-container-20 > * { margin: 0; }</style>
+<script type='text/javascript' src='https://www.lexalytics.com/wp-content/themes/wd_s/build/index.js?ver=0c4cbca560ded1aeeb10beb9a609f609' id='wds-scripts-js'></script>
+<style>.wp-block-button.is-style-btn-white>a{color:black!important;}</style>
+</body>
+
+</html>
