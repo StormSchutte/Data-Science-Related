@@ -52,6 +52,7 @@ Happy exploring!
 
 ## Text Book
  * Data Science Thesaurus [View](text_book/Data Science Thesaurus.pdf)
+ * More coming soon.
 
 
 
