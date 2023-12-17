@@ -27,7 +27,7 @@ class AudioClassifier:
         self.create_training_data()
 
     def create_training_data(self):
-        for category in self.categories:
+        for category in self.categories :
             path=os.path.join(self.data_dir, category)
             class_num=self.categories.index(category)
             for audio in os.listdir(path):
