@@ -15,7 +15,7 @@ from sklearn.model_selection import cross_val_score, GridSearchCV
 
 class AudioClassifier:
     """
-    This class is used to classify audio files into cat and dog.
+    This class is used to classify audio files into cat and dog
     """
     def __init__(self, data_dir):
         self.data_dir = data_dir
