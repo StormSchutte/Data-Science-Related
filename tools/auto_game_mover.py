@@ -15,9 +15,8 @@ def on_move(x, y):
     global last_mouse_move_time
     if (x, y) not in script_positions:
         last_mouse_move_time = time.time()
-        print("Human mouse movement detected.")
 
-def right_click_randomly():
+def click_randomly():
     try:
         # Set up the mouse listener
         listener = mouse.Listener(on_move=on_move)
@@ -31,13 +30,11 @@ def right_click_randomly():
 
             # Check if the current time is within the allowed range
             if not (start_time <= current_time <= end_time):
-                print("Outside of operating hours. Sleeping for 5 minutes.")
                 time.sleep(300)
                 continue
 
             # Check if there was recent human mouse movement
             if time.time() - last_mouse_move_time < 300:
-                print("Human activity detected. Pausing actions for 5 minutes.")
                 time.sleep(300)
                 continue
 
@@ -48,7 +45,6 @@ def right_click_randomly():
 
             # Check again before performing the action
             if time.time() - last_mouse_move_time < 300:
-                print("Human activity detected. Pausing actions for 5 minutes.")
                 time.sleep(300)
                 continue
 
@@ -77,12 +73,12 @@ def right_click_randomly():
             pyautogui.click()
             pyautogui.keyUp('ctrl')
             print(f"Ctrl + click performed at position ({target_x}, {center_y}).")
-            time.sleep(1)  # Short delay to ensure the move is processed
-            script_positions.pop()  # Remove the position after action
+            time.sleep(1)
+            script_positions.pop()
 
     except KeyboardInterrupt:
         print("Script stopped by the user.")
     finally:
         listener.stop()
 
-right_click_randomly()
+click_randomly()
